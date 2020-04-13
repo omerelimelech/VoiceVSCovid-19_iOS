@@ -1,0 +1,103 @@
+/* 
+  Localizable.strings
+  Covid19VOCAAi
+
+  Created by Omer Elimelech on 11/04/2020.
+  Copyright © 2020 Omer Elimelech. All rights reserved.
+*/
+
+"We need your help to beat COVID-19." = "אנחנו צריכים את עזרתך בכדי לנצח את נגיף הקורונה";
+"We would be very grateful if you are willing to log in and complete this questionnaire daily. This will enable researchers to understand trends prior to symptoms, which is critical in fighting COVID-19." = "אנא הכניסו את פרטיכם בכדי לענות על האתר בפעמים הבאות במהירות ובקלות. זה יאפשר לחוקרים להבין שינויים שקרו לפני הופעת הסימפוטמים במידה ויהיו, דבר הכרחי בשביל להילחם בנגיף הקורונה";
+"Please fill your details below:" = "בבקשה מלאו את הפרטים הבאים:";
+"SIGN UP / SIGN IN" = "הרשם/י";
+"SKIP" = "דלג";
+"Age" = "גיל";
+"Gender" = "מגדר";
+"Male" = "Male";
+"Female" = "Female";
+"Other" = "Other";
+"Height" = "גובה";
+"Centimeters" = "סנטימטרים";
+"Feet" = "רגל";
+"Inches" = "אינץ'";
+"Country" = "מדינה";
+"Have you been diagnosed with any of the following conditions?" = "האם אובחנת בעבר באחד מהבאים?";
+"Diabetes" = "סוכרת";
+"Hypertension" = "יתר לחץ דם";
+"Ischemic heart disease" = "מחלת לב";
+"Asthma" = "אסתמה";
+"Allergies" = "אלרגיות";
+"Chronic lung disease" = "כשל ריאתי כרוני";
+"Chronic kidney disease" = "כשל כלייתי כרוני";
+"Seasonal allergies" = "אלרגיה עונתית";
+"Current body temperature" = "טמפרטורת גוף נוכחית";
+"Celsious" = "צלזיוס";
+"SUBMIT" = "הרשם/י";
+"Fahrenheit" = "פרנהייט";
+"Nausea and/or vomiting" = "בחילה ו/או הקאות";
+"Diarrhea" = "שלשול";
+"Itching (eyes or other)" = "גירוד (בעיניים או במקום אחר)";
+"Runny nose or Nasal congestion" = "נזלת או גודש באף";
+"Shortness of breath" = "קוצר נשימה";
+"Sneezing" = "התעטשויות";
+"Sore throat" = "כאב גרון";
+"Headache" = "כאבי ראש";
+"Muscle aches" = "כאבי שרירים";
+"Fatigue" = "עייפות ";
+"Cough with sputum production" = "שיעול עם כיח";
+"Dry cough" = "שיעול יבש";
+"I have a fever" = "יש לי חום";
+"I feel well" = "אני מרגיש/ה טוב";
+"Are you currently experiencing any of the following symptoms:" = "האם את/ה חווה אחד או יותר מהתסמינים הבאים?";
+"Were you diagnosed with COVID-19?" = "האם אובחנת כחולה קורונה?";
+"What is your current status?" = "מה מצבך מבחינת אבחון קורונה?";
+"Do you smoke?" = "האם את/ה מעשן/ת?";
+"I currently smoke" = "אני מעשן";
+"I used to smoke" = "הגתי לעשן";
+"I've never smoked" = "מעולם לא עישנתי";
+"Not in isolation" = "לא בבידוד";
+"Hospitalized" = "מאושפז";
+"in isolation due to being diagnoed with COVID-19" = "בבידוד עקב אבחון בקורונה";
+"in isolation due to contant with an individual who was infected with coronavirus or an individual who recently" = "בבידוד עקב אינטרטאקציה עם חולה מאומת";
+"in isulation due to govenrment regulations" = "בבידוד עקב  הוראה ממשלתית";
+"in isulation due to recent international travel" = "בבידוד עקב חזרה מחוץ לארץ";
+"Yes" = "כן";
+"No" = "לא";
+"Please cough three times" = "בבקשה השתעלו שלוש פעמים";
+"Click to start recording:" = "לחצו כאן כדי להתחיל להקליט";
+"Recording! Click here to stop:" = "מקליט! לחצו כאן בכדי לעצור את ההקלטה";
+"Count from 1 to 20" = "אנא ספרו מא-1 עד 20";
+"Please recite the alphabet:" = "בבקשה אמרו את אותיות האלף בית העברי לפי הסדר";
+"A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z" = "א, ב, ג, ד, ה, ו, ז, ח, ט, י, כ, ל, מ, נ, ס, ע, פ, צ, ק, ר, ש, ת";
+"Say the vowel \"ee\" for as long ass you can : EEEE" = "אנא אמרו את ההברה אי הכי הרבה זמן שתוכלו";
+"(as in the word \"cheese\")" = "(כמו במילה גבינה)";
+"Say the vowel \"o\" for as long ass you can : OOOO" = "אנא אמרו את ההברה או הכי הרבה זמן שתוכלו";
+"(as in the word \"box\")" = "(כמו במילה אור)";
+"Say the vowel \"a\" for as long ass you can : AAAA" = "אנא אמרו את ההברה אה הכי הרבה זמן שתוכלו";
+"(as in the word \"sad\")" = "(כמו במילה אהבה)";
+"Thank you for your recording!" = "תודה על הקלטתך!";
+"You have completed 6 out of 6 tasks thus far!" = "סיימת את כל המשימות";
+"PLAY PREVIOUS RECORDING" = "השמע הקלטה אחרונה";
+"REDO RECORDING" = "הקלטה חוזרת";
+"End Session" = "סיים";
+"You have completed %d out of 6 tasks thus far!" = "השלמת %d הקלטות מתוך 6 עד כה!";
+"Made with ❤ by Voca.ai" = "נעשה באהבה ע\"י Voca.ai וחברים";
+"We'd appreaciate your feedback:" = "אנו מעריכים את המשוב אשר נתת.";
+"If you would like to help some more, please do another recording tomorrow." = "אם ברצונך להמשיך לסייע, אנא הפיצו את השאלון לעוד אנשים והקליטו גם מחר.";
+"Thank you for your participation!" = "תודה רבה על השתתפותך";
+"The data will be used anonymously for research purposes." = "המידע שנתת ישמש באופן אנונימי למחקר";
+"All done!" = "כל הכבוד!";
+"Following the success of the data collection phase, people will soon be able to determine the likelihood of contracting the virus – with just one short voice recording\nNOW THAT SOUNDS REMARKABLE!!!" = "בעקבות הצלחת שלב איסוף הנתונים, בקרוב אנשים יוכלו לקבל מידע על מידת הסבירות בה הם נשאי קורונה על סמך דגימת קול קצרה בלבד.\n והכל בזכותכם!!!!";
+"RECORD" = "הקלט";
+"Interested to learn more about this project or Voca?" = "מועניין ללמוד עוד על הפרויקט או עלינו?";
+
+
+"Corona Voice Detect, is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO & Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevention in spreading. We’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with the virus from voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect COVID-19 and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis of Coronavirus." = "אנו מתחילים באיסוף מידע מכל רחבי העולם. עם הנתונים הללו נוכל לזהות את המאפיינים הייחודיים של הקורונה בגלי הקול ולפתח טכנולוגיות אשר יזהו באופן אוטומטי את הסבירות בה מישהו נדבק בוירוס הקורונה ומחלות דומות - רק על סמך דגימת הקול. כלים אלו יאפשרו לבצע בדיקות מהירות שיכולות להתבצע מרחוק, אפילו באמצעות הטלפון או המחשב ולסייע באבחון וטיפול מהיר בחולים.   פרויקט גילוי הקורונה באמצעות גלי הקול מובל על ידי פרופסור שמואל אור, ממציא ישראלי, יחד עם דוקטור אלן בקר, המנהל הטכנולוגי והמייסד voca.ai. המחקר והפיתוח נעשים תוך שיתוף פעולה עם פרופסור ריטה שינג/'ה מאוניברסיטת קרנגי מלון יחד עם חוקרות וחוקרים מכל רחבי העולם. הצלחת הפרויקט תביא להשפעה משמעותית על הבריאות של כולנו ותמנע את התפשטות נגיף הקורונה. ";
+"CLICK BELOW TO ANSWER THE QUESTIONNAIRE & RECORD YOUR VOICE TO HELP US STOP COVID-19." = "הקליקו מטה בכדי להקליט את קולכם ועזרו לכולנו להביס את נגיף הקורונה.";
+"HELP US BEAT" = "מביסים יחד";
+"COVID-19 (Coronavirus)" = "את נגיף הקורונה";
+"Voca.ai and Carnegie Mellon University partner to enable fast diagnosis of COVID-19." = "שותפות חוקרים בין לאומית בהובלת אוניברסיטת קרנגי מלון וחברת voca.ai לאבחון מהיר של נגיף הקורונה";
+"The project, Corona Voice Detect, was created for early diagnosis of COVID-19 (Coronavirus). It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors." = "מטרת הפרויקט הינה אבחון של נגיף הקורונה (COVID19) באמצעות דגימת קול בלבד. הפרויקט משלב את היכולות המתקדמות בעולם בתחום הבינה המלאכותית (AI) ועיבוד אותות. הטכנולוגיות שנפתח יחפשו תבניות ספציפיות בקול אשר נגרמות על ידי נגיף הקורונה.  לשם כך - אנו זקוקים לעזרתכם ועזרתכן! אנו אוספים הקלטות של אנשים בריאים ושל חולי קורונה, על בסיסן נוכל לפתח את טכנולוגיית האבחון. בבקשה הקליטו את כולכם באופן יומי ועזרו לנו להביס את המחלה! הטביעו את חותמכם וקחו חלק במסע המרגש והחדשני יחד איתנו. עזרו לנו לאבחן את הקורונה מהר יותר, באופן מיידי, מרחוק ובחינם!  ";
+
+"Together with researches from all around the world, we are developing a COVID19 diagnostic tool that is based on your voice samples only from both healthy individuals and those tested positive for Coronavirus. Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of Coronavirus and bring remote testing to every human in the world at NO EXPENSE!." = "יחד עם חוקרות וחוקרים מכל רחבי העולם אני מפתחים כלי לאבחון נגיף הקורונה על סמך דגימות הקול בלבד - הן של חולים והן של בריאים.\nיחד, ניצור כלי לאבחון מיידי וחינמי שאפשר להפעיל בקלות מרחוק.\nהצטרפו למסע, הקליטו עצמכם והפיצו את האפליקציה.\nיחד ננצח את הקורונה\nתודה!";
+

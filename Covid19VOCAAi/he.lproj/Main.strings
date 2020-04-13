@@ -1,0 +1,81 @@
+
+/* Class = "UITextView"; text = "Following the success of the data collection phase, people will soon be able to determine the likelihood of contracting the virus – with just one short voice recording.\nNOW THAT SOUNDS REMARKABLE!!!"; ObjectID = "06w-KT-QWc"; */
+"06w-KT-QWc.text" = "Following the success of the data collection phase, people will soon be able to determine the likelihood of contracting the virus – with just one short voice recording.\nNOW THAT SOUNDS REMARKABLE!!!";
+
+/* Class = "UILabel"; text = "Thank you for your recording! "; ObjectID = "3u9-vT-akq"; */
+"3u9-vT-akq.text" = "Thank you for your recording! ";
+
+/* Class = "UILabel"; text = "Voca.ai and Carnegie Mellon University partner to enable fast diagnosis of COVID-19."; ObjectID = "5ke-oI-mNW"; */
+"5ke-oI-mNW.text" = "Voca.ai and Carnegie Mellon University partner to enable fast diagnosis of COVID-19.";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "7Wy-gU-pGc"; */
+"7Wy-gU-pGc.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "LEARN MORE"; ObjectID = "7jZ-e7-q8p"; */
+"7jZ-e7-q8p.normalTitle" = "LEARN MORE";
+
+/* Class = "UILabel"; text = "help text"; ObjectID = "8ej-2e-pJw"; */
+"8ej-2e-pJw.text" = "help text";
+
+/* Class = "UITextView"; text = "Corona Voice Detect, is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO & Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevention in spreading. \n\nWe’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with the virus from voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect COVID-19 and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis of Coronavirus."; ObjectID = "A8I-o6-QqA"; */
+"A8I-o6-QqA.text" = "Corona Voice Detect, is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO & Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevention in spreading. \n\nWe’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with the virus from voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect COVID-19 and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis of Coronavirus.";
+
+/* Class = "UIButton"; normalTitle = "RECORD YOUR VOICE"; ObjectID = "ANU-ac-FWu"; */
+"ANU-ac-FWu.normalTitle" = "RECORD YOUR VOICE";
+
+/* Class = "UITextView"; text = "The project, Corona Voice Detect, was created for early diagnosis of COVID-19 (Coronavirus). It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors.\n\nBut first we need your help! We need to curate recordings from both healthy individuals and those tested positive for Coronavirus in order to gather enough data for consumer use. Please record your voice daily and reply to a few questions to help us fight this illness! Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of Coronavirus and bring remote testing to every human in the world at NO EXPENSE!\n\nCLICK BELOW TO ANSWER THE QUESTIONNAIRE & RECORD YOUR VOICE TO HELP US STOP COVID-19."; ObjectID = "AO5-xu-VDo"; */
+"AO5-xu-VDo.text" = "The project, Corona Voice Detect, was created for early diagnosis of COVID-19 (Coronavirus). It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors.\n\nBut first we need your help! We need to curate recordings from both healthy individuals and those tested positive for Coronavirus in order to gather enough data for consumer use. Please record your voice daily and reply to a few questions to help us fight this illness! Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of Coronavirus and bring remote testing to every human in the world at NO EXPENSE!\n\nCLICK BELOW TO ANSWER THE QUESTIONNAIRE & RECORD YOUR VOICE TO HELP US STOP COVID-19.";
+
+/* Class = "UIButton"; normalTitle = "RECORD"; ObjectID = "AQm-Fc-dZr"; */
+"AQm-Fc-dZr.normalTitle" = "RECORD";
+
+/* Class = "UIButton"; normalTitle = "NEXT RECORDING"; ObjectID = "Anp-IQ-NXU"; */
+"Anp-IQ-NXU.normalTitle" = "NEXT RECORDING";
+
+/* Class = "UILabel"; text = "Please fill your details below:"; ObjectID = "E1Z-tb-bF0"; */
+"E1Z-tb-bF0.text" = "Please fill your details below:";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "FKd-PM-a4o"; */
+"FKd-PM-a4o.normalTitle" = "SUBMIT";
+
+/* Class = "UIButton"; normalTitle = "RECORD YOUR VOICE"; ObjectID = "FQ9-gd-oUM"; */
+"FQ9-gd-oUM.normalTitle" = "RECORD YOUR VOICE";
+
+/* Class = "UIButton"; normalTitle = "PLAY PREVIOUS RECORDING"; ObjectID = "GpF-iM-fBF"; */
+"GpF-iM-fBF.normalTitle" = "PLAY PREVIOUS RECORDING";
+
+/* Class = "UILabel"; text = "you have completed 1 out of 6 tasks thus far! "; ObjectID = "J4j-V0-4UC"; */
+"J4j-V0-4UC.text" = "you have completed 1 out of 6 tasks thus far! ";
+
+/* Class = "UILabel"; text = "Covid-19 (CoronaVirus)"; ObjectID = "L2t-uZ-6wB"; */
+"L2t-uZ-6wB.text" = "Covid-19 (CoronaVirus)";
+
+/* Class = "UILabel"; text = "HELP US BEAT"; ObjectID = "LbS-xB-wpm"; */
+"LbS-xB-wpm.text" = "HELP US BEAT";
+
+/* Class = "UILabel"; text = "Made with ❤️ By Omer Elimelech"; ObjectID = "PWb-z2-geS"; */
+"PWb-z2-geS.text" = "Made with ❤️ By Omer Elimelech";
+
+/* Class = "UIBarButtonItem"; title = "About"; ObjectID = "Pnt-hT-Gir"; */
+"Pnt-hT-Gir.title" = "About";
+
+/* Class = "UILabel"; text = "With your voice sample\nwe can beat the Coronavirus\n"; ObjectID = "YL5-tv-KDp"; */
+"YL5-tv-KDp.text" = "With your voice sample\nwe can beat the Coronavirus\n";
+
+/* Class = "UILabel"; text = "click to start recording"; ObjectID = "afP-ZD-oJh"; */
+"afP-ZD-oJh.text" = "click to start recording";
+
+/* Class = "UILabel"; text = "Instruction"; ObjectID = "ajF-gZ-UiY"; */
+"ajF-gZ-UiY.text" = "Instruction";
+
+/* Class = "UILabel"; text = "omer.tkd@gmail.com"; ObjectID = "bzv-BZ-xA1"; */
+"bzv-BZ-xA1.text" = "omer.tkd@gmail.com";
+
+/* Class = "UINavigationItem"; title = "Corona Form"; ObjectID = "fnJ-K2-kEb"; */
+"fnJ-K2-kEb.title" = "Corona Form";
+
+/* Class = "UIButton"; normalTitle = "RECORD"; ObjectID = "m8S-Cm-dKg"; */
+"m8S-Cm-dKg.normalTitle" = "RECORD";
+
+/* Class = "UIButton"; normalTitle = "REDO RECORDING"; ObjectID = "wbs-EG-klS"; */
+"wbs-EG-klS.normalTitle" = "REDO RECORDING";
