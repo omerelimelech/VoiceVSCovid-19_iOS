@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+
+func languageCode() -> String? {
+    return NSLocale.autoupdatingCurrent.languageCode
+}

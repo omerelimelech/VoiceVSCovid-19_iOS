@@ -10,62 +10,75 @@ import Foundation
 import Alamofire
 import SVProgressHUD
 
-typealias completion = (_ result: Result<Any?>) -> Void
+//typealias completion = (_ result: Result<Any?>) -> Void
+typealias completion = (_ result: Result<Any?, Error>) -> Void
 typealias parameters = [String : Any]
 
 struct ParameterKey{
     static var deviceId = "device_id"
 }
+
+enum MyErrors : Error{
+    case noResults
+    case parseError
+    case decodeError
+    
+}
+
+
 class APIManager : NSObject {
     
     static let shared = APIManager()
    
-    func getCategories(completion: @escaping completion){
-        let url = UrlManager.shared.url(endpoint: .categories)
+    private let Alamofire = AF
+    func sendReport(params: [String: Any], completion: @escaping completion){
+        let url = UrlManager.shared.url(endpoint: .submissions)
         print (url)
-        self.request(withUrlString: url, method: .get, completion: completion)
+        self.baseRequest(withUrlString: url, method: .post, params: params, completion: completion)
         
     }
     
-    func getDifficulties(completion: @escaping completion){
-        let url = UrlManager.shared.url(endpoint: .difficulties)
+    func submitRecord(submitId: String, recordName: String, completion: @escaping completion){
+        let url = UrlManager.shared.url(endpoint: .record(submitId, recordName))
         print (url)
-        self.request(withUrlString: url, method: .get, completion: completion)
+        let json = ["fileType": "audio/wav"]
+        self.baseRequest(withUrlString: url, method: .post, params: json, completion: completion)
     }
     
-    func getQuestions(completion: @escaping completion){
-        let url = UrlManager.shared.url(endpoint: .questions)
-        print (url)
-        self.request(withUrlString: url, method: .get, completion: completion)
+    func submitFeedback(submitId: String){
+        let url = UrlManager.shared.url(endpoint: .feedback(submitId))
+        self.baseRequest(withUrlString: url, method: .post) { (result) in
+            print (result)
+        }
     }
     
-    func setLike(questionId : String, params: parameters, completion: @escaping completion){
-        let url = UrlManager.shared.url(endpoint: .likes(questionId))
-        self.baseRequest(withUrlString: url, method: .post, params: params, completion: completion)
+    func uploadS3(to url: String, fileURL: URL, withName name: String, completion: @escaping completion){
+        
+        AF.upload(fileURL, to: URL(string: url)!).response { (response) in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
-    
-    func setDislike(questionId : String, params: parameters, completion: @escaping completion){
-        let url = UrlManager.shared.url(endpoint: .dislikes(questionId))
-        self.baseRequest(withUrlString: url, method: .post, params: params ,completion: completion)
-    }
-    
-    
 }
 
 //MARK: Base requests
 extension APIManager {
     
-    func request(withUrlString urlString: String, method: HTTPMethod, params: Parameters? = nil, headers: HTTPHeaders? = nil, completion: @escaping completion){
+    func request(withUrlString urlString: String, method: HTTPMethod, params: Parameters? = nil, headers: HTTPHeaders? = ["Content-Type":"application/json"], completion: @escaping completion){
         guard let url = URL(string: urlString) else {return}
         Alamofire.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
             switch response.result {
             case .success(let value):
-                guard let json = value as? [String: Any] else {completion(.failure(myErrors.parseError)); return}
+                guard let json = value as? [String: Any] else {completion(.failure(MyErrors.parseError)); return}
                 completion(.success(json))
             case .failure(let error):
                 completion(.failure(error))
             }
-           
+
         }
     }
 
@@ -81,15 +94,16 @@ extension APIManager {
         } catch let error {
             print("Error : \(error.localizedDescription)")
         }
-        Alamofire.request(request).response{ (response) in
-            switch response.response?.statusCode {
-                case 200:
-                    completion(.success(nil))
-                default:
-                   completion(.failure(MyErrors.noResults))
-           }
+
+        Alamofire.request(request).responseJSON { (response) in
+            switch response.result{
+            case .success(let json):
+                completion(.success(json))
+            case .failure(let error):
+                completion(.failure(error))
+            }
         }
-        
+                
     }
 }
 

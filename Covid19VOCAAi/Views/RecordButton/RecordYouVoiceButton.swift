@@ -7,3 +7,26 @@
 //
 
 import Foundation
+import UIKit
+
+
+class RecordYourVoiceButton: BaseView {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initialConfig()
+        
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        initialConfig()
+    }
+    
+    override func initialConfig() {
+        super.initialConfig()
+    }
+    
+    
+}

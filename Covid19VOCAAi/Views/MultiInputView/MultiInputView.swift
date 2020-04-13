@@ -15,35 +15,7 @@ enum MultiInputViewType{
     case bodyTemp
 }
 
-enum TempertureType : String, LocalizedEnum{
-    case celsious = "Celsious"
-    case fahrenheit = "Fahrenheit"
-    
-    func localizedString() -> String {
-        return self.rawValue.localized()
-    }
-    static var allValues: [LocalizedEnum]{
-        return [TempertureType.celsious, TempertureType.fahrenheit]
-    }
-    var englishValue: String{
-        return self.rawValue
-    }
-}
 
-enum HeightType : String, LocalizedEnum{
-    case feet = "Feet"
-    case centimeters = "Centimeters"
-    
-    func localizedString() -> String {
-        return self.rawValue.localized()
-    }
-    static var allValues: [LocalizedEnum]{
-        return [HeightType.centimeters, HeightType.feet]
-    }
-    var englishValue: String{
-        return self.rawValue
-    }
-}
 class MultiInputView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var leftTextField: UITextField!

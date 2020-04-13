@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+
+struct Submission: Codable{
+    var submissionId: String?
+}

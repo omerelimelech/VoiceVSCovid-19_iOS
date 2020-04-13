@@ -7,3 +7,29 @@
 //
 
 import Foundation
+
+
+class GlobalData : NSObject {
+    
+    private var defaults = UserDefaults.standard
+    static let shared = GlobalData()
+    
+    var currentSubmissionId: String? {
+        set{
+            defaults.set(newValue, forKey: "currentSubmissionId")
+        }
+        get{
+            defaults.value(forKey: "currentSubmissionId") as? String
+        }
+    }
+    
+    var agreedToTerms: Bool? {
+        set{
+            defaults.set(newValue, forKey: "agreedToTerms")
+        }
+        get{
+            defaults.value(forKey: "agreedToTerms") as? Bool ?? false
+        }
+    }
+    
+}

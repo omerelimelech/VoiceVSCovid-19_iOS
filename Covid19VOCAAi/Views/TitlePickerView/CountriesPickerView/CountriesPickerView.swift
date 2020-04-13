@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 
-class TitlePickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource, ConfigureView{
+class CountriesPickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource{
   
     
     
-    var dataSource = [LocalizedEnum]()
+    var dataSource = [String]()
     
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -41,12 +41,13 @@ class TitlePickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource, C
     }
     var selectedString = ""
     @objc func selectItem(){
-        self.pickerTextField.text = dataSource[pickerView.selectedRow(inComponent: 0)].localizedString()
+        self.selectedString = self.dataSource[pickerView.selectedRow(inComponent: 0)]
+        self.pickerTextField.text = dataSource[pickerView.selectedRow(inComponent: 0)].localized()
         endEditing(true)
     }
     
     
-    func configure(with title: String, dataSource: [LocalizedEnum]?, isPrimary: Bool){
+    func configure(with title: String, dataSource: [String]?, isPrimary: Bool){
         if let dataSource = dataSource {
             self.dataSource = dataSource
             setupPicker()
@@ -66,7 +67,7 @@ class TitlePickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource, C
            pickerView.reloadAllComponents()
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return dataSource[row].localizedString()
+        return dataSource[row].localized()
     }
     
      func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -78,7 +79,7 @@ class TitlePickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource, C
     
     public func getData() -> String{
         if pickerTextField.text != ""{
-            return self.dataSource.count == 0 ? pickerTextField.text ?? "" : dataSource[pickerView.selectedRow(inComponent: 0)].englishValue
+            return self.dataSource.count == 0 ? pickerTextField.text ?? "" : self.selectedString
         }
         return ""
     }

@@ -17,4 +17,10 @@ extension SVProgressHUD {
         }
     }
     
+    static func showOnMain(){
+        DispatchQueue.main.async {
+            SVProgressHUD.dismiss()
+        }
+    }
+    
 }

@@ -17,24 +17,19 @@ struct UrlManager {
     
     enum Endpoint {
             typealias RawValue = String
-            case categories
-            case difficulties
-            case questions
-            case likes(String)
-            case dislikes(String)
-        
+            case submissions
+            case record(String, String)
+            case feedback(String)
             var rawValue: String {
                switch self {
-               case .categories:
-                return "api/categories"
-               case .difficulties:
-                return "api/difficulties"
-               case .questions:
-                return "api/questions"
-               case .dislikes(let s):
-                  return fotmattedString(string: "api/questions/%@/dislikes", withParam: s)
-               case .likes(let s):
-                return fotmattedString(string: "api/questions/%@/likes", withParam: s)
+               case .submissions:
+                return "/submissions"
+               case .record(let id, let name):
+                return String(format: "/submissions/%@/recordings/%@", id, name)
+               case .feedback(let id):
+                return String(format: "/submissions/%@/feedback", id)
+                
+                
             }
                 
            }

@@ -75,9 +75,9 @@ class RecordInstructions {
         case cough = ""
         case count = " "
         case ABC = "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"
-        case eee = "(as in the word \"cheese\""
-        case ooo = "(as in the word \"box\""
-        case aaa = "(as in the word \"sad\""
+        case eee = "(as in the word \"cheese\")"
+        case ooo = "(as in the word \"box\")"
+        case aaa = "(as in the word \"sad\")"
         
     }
     
