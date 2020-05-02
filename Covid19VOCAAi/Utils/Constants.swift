@@ -9,7 +9,12 @@
 import Foundation
 
 struct Constants {
+    enum BaseUrls : String{
+        case baseUrl = "https://jdbruorwj5.execute-api.us-west-2.amazonaws.com/prod"
+        case MODBaseUrl = "https://tnj0200iy8.execute-api.eu-west-1.amazonaws.com/staging"
+    }
     static let baseUrl = "https://jdbruorwj5.execute-api.us-west-2.amazonaws.com/prod"
+    static let MODBaseURL = "https://tnj0200iy8.execute-api.eu-west-1.amazonaws.com/staging"
 }
 
 import UIKit

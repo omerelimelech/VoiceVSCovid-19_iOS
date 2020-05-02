@@ -35,5 +35,13 @@ extension UIView {
          
          return view
      }
-     
+}
+extension UIButton {
+    func loadButtonNib(_ name: String) -> UIButton {
+         let bundle = Bundle(for: type(of: self))
+         let nib = UINib(nibName: name, bundle: bundle)
+         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIButton
+         
+         return view
+     }
 }

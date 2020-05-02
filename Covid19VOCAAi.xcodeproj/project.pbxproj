@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2712109124410C450074DFBD /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712109024410C450074DFBD /* TermsViewController.swift */; };
-		27121094244120D90074DFBD /* Base.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27121092244120D90074DFBD /* Base.strings */; };
 		271210982441D6A20074DFBD /* CountriesPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271210962441D61E0074DFBD /* CountriesPickerView.swift */; };
 		271210992441D6A70074DFBD /* CountriesPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271210972441D61E0074DFBD /* CountriesPickerView.xib */; };
 		2712109C24450F810074DFBD /* LocalizationEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712109B24450F810074DFBD /* LocalizationEnums.swift */; };
@@ -18,10 +17,7 @@
 		2761E874243F43BD00C06C75 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2761E86F243F43BD00C06C75 /* Montserrat-Light.ttf */; };
 		2761E875243F43BD00C06C75 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2761E870243F43BD00C06C75 /* Montserrat-Black.ttf */; };
 		2761E876243F43BD00C06C75 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2761E871243F43BD00C06C75 /* Montserrat-Medium.ttf */; };
-		2761E881243FAFE400C06C75 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2761E87F243FAFE400C06C75 /* Localizable.strings */; };
 		276FEA662440FD6300000BD5 /* FormNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276FEA652440FD6300000BD5 /* FormNavigationController.swift */; };
-		27796551243F18A700B6BF05 /* RecordYouVoiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27796550243F18A700B6BF05 /* RecordYouVoiceButton.swift */; };
-		27796553243F18CC00B6BF05 /* RecordYourVoiceButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27796552243F18CC00B6BF05 /* RecordYourVoiceButton.xib */; };
 		27A73975243CD55400A3D18C /* MainViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A73974243CD55400A3D18C /* MainViewContrller.swift */; };
 		27A7397A243CF52200A3D18C /* S3Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A73979243CF52200A3D18C /* S3Model.swift */; };
 		27A7397C243CF6D300A3D18C /* FormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A7397B243CF6D300A3D18C /* FormPresenter.swift */; };
@@ -42,12 +38,10 @@
 		27D45E35243A49D00031448E /* ThankYouForRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D45E34243A49D00031448E /* ThankYouForRecordViewController.swift */; };
 		27D45E37243A4EAE0031448E /* RecordInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D45E36243A4EAE0031448E /* RecordInstructions.swift */; };
 		27E01B40243A0E3C0062B4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B3F243A0E3C0062B4A6 /* AppDelegate.swift */; };
-		27E01B42243A0E3C0062B4A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B41243A0E3C0062B4A6 /* SceneDelegate.swift */; };
 		27E01B44243A0E3C0062B4A6 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B43243A0E3C0062B4A6 /* FormViewController.swift */; };
-		27E01B47243A0E3C0062B4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E01B45243A0E3C0062B4A6 /* Main.storyboard */; };
+		27E01B47243A0E3C0062B4A6 /* Main12.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E01B45243A0E3C0062B4A6 /* Main12.storyboard */; };
 		27E01B4A243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B48243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld */; };
 		27E01B4C243A0E3E0062B4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E01B4B243A0E3E0062B4A6 /* Assets.xcassets */; };
-		27E01B4F243A0E3E0062B4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E01B4D243A0E3E0062B4A6 /* LaunchScreen.storyboard */; };
 		27E01B5A243A0E3E0062B4A6 /* Covid19VOCAAiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B59243A0E3E0062B4A6 /* Covid19VOCAAiTests.swift */; };
 		27E01B65243A0E3F0062B4A6 /* Covid19VOCAAiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B64243A0E3F0062B4A6 /* Covid19VOCAAiUITests.swift */; };
 		27E01B89243A0E720062B4A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B73243A0E720062B4A6 /* Constants.swift */; };
@@ -83,6 +77,34 @@
 		37F552A7B3AB9262BFBA7C4A /* Pods_Covid19VOCAAi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93404E59A34D04B3B3EA53F /* Pods_Covid19VOCAAi.framework */; };
 		47FEDE26B00838BF8EF38EB2 /* Pods_Covid19VOCAAiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */; };
 		62223CB9DFCF2EE098767FC5 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */; };
+		E00FC076245776AC00924B8D /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC075245776AC00924B8D /* APIModels.swift */; };
+		E00FC078245776CB00924B8D /* DTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC077245776CB00924B8D /* DTOModel.swift */; };
+		E082931E245C3AFE00737F33 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */; };
+		E0829323245C40AA00737F33 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829322245C40AA00737F33 /* RadioButton.swift */; };
+		E0829326245C5EC500737F33 /* BackgroundDiseasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829325245C5EC500737F33 /* BackgroundDiseasesViewController.swift */; };
+		E0829334245C621900737F33 /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829332245C621900737F33 /* TextCollectionViewCell.swift */; };
+		E0829335245C621900737F33 /* TextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0829333245C621900737F33 /* TextCollectionViewCell.xib */; };
+		E082933A245CC1E800737F33 /* PersonalDetails1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */; };
+		E094F162245DC70100DFD604 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E094F161245DC70100DFD604 /* GoogleService-Info.plist */; };
+		E094F165245DCA5B00DFD604 /* OxymeterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F164245DCA5B00DFD604 /* OxymeterPresenter.swift */; };
+		E094F167245DCA6300DFD604 /* OxymeterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F166245DCA6300DFD604 /* OxymeterModel.swift */; };
+		E094F169245DCA6C00DFD604 /* OxymeterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F168245DCA6C00DFD604 /* OxymeterDelegate.swift */; };
+		E094F16C245DD68E00DFD604 /* VoiceUpMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F16B245DD68E00DFD604 /* VoiceUpMainViewController.swift */; };
+		E094F16E245DD69900DFD604 /* VoiceUpMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F16D245DD69900DFD604 /* VoiceUpMainPresenter.swift */; };
+		E094F170245DD6AD00DFD604 /* VoiceUpMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F16F245DD6AD00DFD604 /* VoiceUpMainModel.swift */; };
+		E0992A3524574BAB0087E7DD /* OpenSansHebrew-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0992A3324574BAB0087E7DD /* OpenSansHebrew-Regular.ttf */; };
+		E0992A3624574BAB0087E7DD /* OpenSansHebrew-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0992A3424574BAB0087E7DD /* OpenSansHebrew-Bold.ttf */; };
+		E0992A3D245759220087E7DD /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0992A3C245759220087E7DD /* OnBoardingPageViewController.swift */; };
+		E0DC280924584B0A00F1AF97 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC280824584B0A00F1AF97 /* ImageProcessing.swift */; };
+		E0DC280C24584FD800F1AF97 /* Oxymeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC280B24584FD800F1AF97 /* Oxymeter.swift */; };
+		E0DC280E2458509C00F1AF97 /* OxymeterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC280D2458509C00F1AF97 /* OxymeterImpl.swift */; };
+		E0DC28132458518000F1AF97 /* SMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC28122458518000F1AF97 /* SMA.swift */; };
+		E0DC2815245851D100F1AF97 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2814245851D100F1AF97 /* LinkedList.swift */; };
+		E0DC281724588CED00F1AF97 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC281624588CED00F1AF97 /* FFT.swift */; };
+		E0DC281924589D8200F1AF97 /* dataTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC281824589D8200F1AF97 /* dataTestFile.swift */; };
+		E0DC281B2458CE0800F1AF97 /* OxymeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC281A2458CE0800F1AF97 /* OxymeterViewController.swift */; };
+		E0F06C3F245B4E6100D25388 /* onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F06C41245B4E6100D25388 /* onboarding.storyboard */; };
+		E0F06C44245C28DC00D25388 /* PersonalDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,9 +126,7 @@
 
 /* Begin PBXFileReference section */
 		15900C814FD2A0294E53DB09 /* Pods-Covid19VOCAAi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi/Pods-Covid19VOCAAi.release.xcconfig"; sourceTree = "<group>"; };
-		2712108E24410A710074DFBD /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
 		2712109024410C450074DFBD /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
-		27121093244120D90074DFBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Covid19VOCAAi/Base.lproj/Base.strings; sourceTree = SOURCE_ROOT; };
 		271210962441D61E0074DFBD /* CountriesPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesPickerView.swift; sourceTree = "<group>"; };
 		271210972441D61E0074DFBD /* CountriesPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesPickerView.xib; sourceTree = "<group>"; };
 		2712109B24450F810074DFBD /* LocalizationEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationEnums.swift; sourceTree = "<group>"; };
@@ -116,11 +136,7 @@
 		2761E86F243F43BD00C06C75 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		2761E870243F43BD00C06C75 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		2761E871243F43BD00C06C75 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		2761E878243FAD5F00C06C75 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		2761E880243FAFE400C06C75 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		276FEA652440FD6300000BD5 /* FormNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormNavigationController.swift; sourceTree = "<group>"; };
-		27796550243F18A700B6BF05 /* RecordYouVoiceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordYouVoiceButton.swift; sourceTree = "<group>"; };
-		27796552243F18CC00B6BF05 /* RecordYourVoiceButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordYourVoiceButton.xib; sourceTree = "<group>"; };
 		27A73974243CD55400A3D18C /* MainViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewContrller.swift; sourceTree = "<group>"; };
 		27A73979243CF52200A3D18C /* S3Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3Model.swift; sourceTree = "<group>"; };
 		27A7397B243CF6D300A3D18C /* FormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenter.swift; sourceTree = "<group>"; };
@@ -140,14 +156,11 @@
 		27D45E31243A3EC80031448E /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		27D45E34243A49D00031448E /* ThankYouForRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouForRecordViewController.swift; sourceTree = "<group>"; };
 		27D45E36243A4EAE0031448E /* RecordInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInstructions.swift; sourceTree = "<group>"; };
-		27E01B3C243A0E3C0062B4A6 /* VoiceVSCovid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceVSCovid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E01B3C243A0E3C0062B4A6 /* VoiceUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E01B3F243A0E3C0062B4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27E01B41243A0E3C0062B4A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		27E01B43243A0E3C0062B4A6 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
-		27E01B46243A0E3C0062B4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27E01B49243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Covid19VOCAAi.xcdatamodel; sourceTree = "<group>"; };
 		27E01B4B243A0E3E0062B4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		27E01B4E243A0E3E0062B4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27E01B50243A0E3E0062B4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27E01B55243A0E3E0062B4A6 /* Covid19VOCAAiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Covid19VOCAAiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E01B59243A0E3E0062B4A6 /* Covid19VOCAAiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19VOCAAiTests.swift; sourceTree = "<group>"; };
@@ -193,6 +206,37 @@
 		948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93404E59A34D04B3B3EA53F /* Pods_Covid19VOCAAi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00FC075245776AC00924B8D /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		E00FC077245776CB00924B8D /* DTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOModel.swift; sourceTree = "<group>"; };
+		E081A46B245B4986005D8086 /* he */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = he; path = he.lproj/Main12.storyboard; sourceTree = "<group>"; };
+		E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
+		E0829322245C40AA00737F33 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		E0829325245C5EC500737F33 /* BackgroundDiseasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDiseasesViewController.swift; sourceTree = "<group>"; };
+		E0829332245C621900737F33 /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0829333245C621900737F33 /* TextCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCollectionViewCell.xib; sourceTree = "<group>"; };
+		E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails1ViewController.swift; sourceTree = "<group>"; };
+		E094F161245DC70100DFD604 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E094F164245DCA5B00DFD604 /* OxymeterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterPresenter.swift; sourceTree = "<group>"; };
+		E094F166245DCA6300DFD604 /* OxymeterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterModel.swift; sourceTree = "<group>"; };
+		E094F168245DCA6C00DFD604 /* OxymeterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterDelegate.swift; sourceTree = "<group>"; };
+		E094F16B245DD68E00DFD604 /* VoiceUpMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceUpMainViewController.swift; sourceTree = "<group>"; };
+		E094F16D245DD69900DFD604 /* VoiceUpMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceUpMainPresenter.swift; sourceTree = "<group>"; };
+		E094F16F245DD6AD00DFD604 /* VoiceUpMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceUpMainModel.swift; sourceTree = "<group>"; };
+		E0992A3324574BAB0087E7DD /* OpenSansHebrew-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansHebrew-Regular.ttf"; sourceTree = "<group>"; };
+		E0992A3424574BAB0087E7DD /* OpenSansHebrew-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSansHebrew-Bold.ttf"; sourceTree = "<group>"; };
+		E0992A3C245759220087E7DD /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
+		E0DC280824584B0A00F1AF97 /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
+		E0DC280B24584FD800F1AF97 /* Oxymeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oxymeter.swift; sourceTree = "<group>"; };
+		E0DC280D2458509C00F1AF97 /* OxymeterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterImpl.swift; sourceTree = "<group>"; };
+		E0DC28122458518000F1AF97 /* SMA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMA.swift; sourceTree = "<group>"; };
+		E0DC2814245851D100F1AF97 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		E0DC281624588CED00F1AF97 /* FFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
+		E0DC281824589D8200F1AF97 /* dataTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataTestFile.swift; sourceTree = "<group>"; };
+		E0DC281A2458CE0800F1AF97 /* OxymeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterViewController.swift; sourceTree = "<group>"; };
+		E0DC281E2458FF5700F1AF97 /* Covid19VOCAAi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Covid19VOCAAi-Bridging-Header.h"; sourceTree = "<group>"; };
+		E0F06C3E245B4E5800D25388 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main12.storyboard; sourceTree = "<group>"; };
+		E0F06C40245B4E6100D25388 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/onboarding.storyboard; sourceTree = "<group>"; };
+		E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +296,8 @@
 		271210A0244510830074DFBD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E094F163245DCA4800DFD604 /* OxymeterViewController */,
+				E0992A37245758DF0087E7DD /* OnBoardingPageController */,
 				276FEA642440FD4800000BD5 /* FormNavController */,
 				2712108F24410C2C0074DFBD /* TermsViewController */,
 				27D45E33243A49BD0031448E /* ThankYouForRecordVC */,
@@ -259,6 +305,7 @@
 				27D45E2F243A3E990031448E /* FormViewController */,
 				27A73973243CD54100A3D18C /* MainViewController */,
 				27EB59BB243FD97B00A9CA52 /* NewMainViewController */,
+				E0DC281E2458FF5700F1AF97 /* Covid19VOCAAi-Bridging-Header.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -266,11 +313,9 @@
 		2761E86C243F43A600C06C75 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				2761E870243F43BD00C06C75 /* Montserrat-Black.ttf */,
-				2761E86E243F43BD00C06C75 /* Montserrat-Bold.ttf */,
-				2761E86F243F43BD00C06C75 /* Montserrat-Light.ttf */,
-				2761E871243F43BD00C06C75 /* Montserrat-Medium.ttf */,
-				2761E86D243F43BD00C06C75 /* Montserrat-Regular.ttf */,
+				E0992A3424574BAB0087E7DD /* OpenSansHebrew-Bold.ttf */,
+				E0992A3324574BAB0087E7DD /* OpenSansHebrew-Regular.ttf */,
+				E0992A3224574B750087E7DD /* montserrat */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -281,15 +326,6 @@
 				276FEA652440FD6300000BD5 /* FormNavigationController.swift */,
 			);
 			path = FormNavController;
-			sourceTree = "<group>";
-		};
-		2779654F243F188400B6BF05 /* RecordButton */ = {
-			isa = PBXGroup;
-			children = (
-				27796550243F18A700B6BF05 /* RecordYouVoiceButton.swift */,
-				27796552243F18CC00B6BF05 /* RecordYourVoiceButton.xib */,
-			);
-			path = RecordButton;
 			sourceTree = "<group>";
 		};
 		27A73973243CD54100A3D18C /* MainViewController */ = {
@@ -307,6 +343,8 @@
 				27A73981243CFD2B00A3D18C /* Submission.swift */,
 				27A73984243D00A900A3D18C /* GlobalData.swift */,
 				27D45E36243A4EAE0031448E /* RecordInstructions.swift */,
+				E00FC075245776AC00924B8D /* APIModels.swift */,
+				E00FC077245776CB00924B8D /* DTOModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -368,7 +406,7 @@
 		27E01B3D243A0E3C0062B4A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27E01B3C243A0E3C0062B4A6 /* VoiceVSCovid.app */,
+				27E01B3C243A0E3C0062B4A6 /* VoiceUp.app */,
 				27E01B55243A0E3E0062B4A6 /* Covid19VOCAAiTests.xctest */,
 				27E01B60243A0E3F0062B4A6 /* Covid19VOCAAiUITests.xctest */,
 			);
@@ -378,21 +416,23 @@
 		27E01B3E243A0E3C0062B4A6 /* Covid19VOCAAi */ = {
 			isa = PBXGroup;
 			children = (
+				E0DC28102458516F00F1AF97 /* PPG */,
 				27E01B3F243A0E3C0062B4A6 /* AppDelegate.swift */,
-				27E01B41243A0E3C0062B4A6 /* SceneDelegate.swift */,
 				2712109A24450F740074DFBD /* Localozation */,
 				27A73978243CF51600A3D18C /* Models */,
 				27E01BA1243A11760062B4A6 /* Base */,
 				27E01B72243A0E720062B4A6 /* Utils */,
 				27E01B9C243A0E890062B4A6 /* APIManager */,
 				27E01BA4243A14F80062B4A6 /* Views */,
+				E094F16A245DD65800DFD604 /* VoiceUpMainViewController */,
 				271210A0244510830074DFBD /* Controllers */,
-				27E01B45243A0E3C0062B4A6 /* Main.storyboard */,
+				E0F06C42245C28CA00D25388 /* PersonalDetails */,
+				27E01B45243A0E3C0062B4A6 /* Main12.storyboard */,
 				27E01B4B243A0E3E0062B4A6 /* Assets.xcassets */,
-				27E01B4D243A0E3E0062B4A6 /* LaunchScreen.storyboard */,
+				E094F161245DC70100DFD604 /* GoogleService-Info.plist */,
 				27E01B50243A0E3E0062B4A6 /* Info.plist */,
 				27E01B48243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld */,
-				2761E87F243FAFE400C06C75 /* Localizable.strings */,
+				E0F06C41245B4E6100D25388 /* onboarding.storyboard */,
 			);
 			path = Covid19VOCAAi;
 			sourceTree = "<group>";
@@ -488,7 +528,7 @@
 		27E01BA4243A14F80062B4A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2779654F243F188400B6BF05 /* RecordButton */,
+				E082931F245C408600737F33 /* RadioButtons */,
 				27D45E2A243A282B0031448E /* MultiInputView */,
 				27E01BAC243A228F0062B4A6 /* MulitipleSelectionView */,
 				27E01BAB243A22830062B4A6 /* TitlePickerView */,
@@ -502,7 +542,6 @@
 				271210952441D6110074DFBD /* CountriesPickerView */,
 				27E01BA7243A15C10062B4A6 /* TitlePickerView.xib */,
 				27E01BA9243A15E60062B4A6 /* TitlePickerView.swift */,
-				27121092244120D90074DFBD /* Base.strings */,
 			);
 			path = TitlePickerView;
 			sourceTree = "<group>";
@@ -557,6 +596,138 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E082931F245C408600737F33 /* RadioButtons */ = {
+			isa = PBXGroup;
+			children = (
+				E0829322245C40AA00737F33 /* RadioButton.swift */,
+			);
+			path = RadioButtons;
+			sourceTree = "<group>";
+		};
+		E0829324245C5EAE00737F33 /* BackgroundDiseaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E0829327245C5F5E00737F33 /* Cell */,
+				E0829325245C5EC500737F33 /* BackgroundDiseasesViewController.swift */,
+			);
+			path = BackgroundDiseaseViewController;
+			sourceTree = "<group>";
+		};
+		E0829327245C5F5E00737F33 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E0829332245C621900737F33 /* TextCollectionViewCell.swift */,
+				E0829333245C621900737F33 /* TextCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E0829336245CC1BD00737F33 /* PersonalDetailsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0829337245CC1CC00737F33 /* PersonalDetails1 */,
+				E0829324245C5EAE00737F33 /* BackgroundDiseaseViewController */,
+			);
+			path = PersonalDetailsControllers;
+			sourceTree = "<group>";
+		};
+		E0829337245CC1CC00737F33 /* PersonalDetails1 */ = {
+			isa = PBXGroup;
+			children = (
+				E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */,
+			);
+			path = PersonalDetails1;
+			sourceTree = "<group>";
+		};
+		E094F163245DCA4800DFD604 /* OxymeterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC281A2458CE0800F1AF97 /* OxymeterViewController.swift */,
+				E094F164245DCA5B00DFD604 /* OxymeterPresenter.swift */,
+				E094F166245DCA6300DFD604 /* OxymeterModel.swift */,
+				E094F168245DCA6C00DFD604 /* OxymeterDelegate.swift */,
+			);
+			path = OxymeterViewController;
+			sourceTree = "<group>";
+		};
+		E094F16A245DD65800DFD604 /* VoiceUpMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E094F16B245DD68E00DFD604 /* VoiceUpMainViewController.swift */,
+				E094F16D245DD69900DFD604 /* VoiceUpMainPresenter.swift */,
+				E094F16F245DD6AD00DFD604 /* VoiceUpMainModel.swift */,
+			);
+			path = VoiceUpMainViewController;
+			sourceTree = "<group>";
+		};
+		E0992A3224574B750087E7DD /* montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				2761E870243F43BD00C06C75 /* Montserrat-Black.ttf */,
+				2761E86E243F43BD00C06C75 /* Montserrat-Bold.ttf */,
+				2761E86F243F43BD00C06C75 /* Montserrat-Light.ttf */,
+				2761E871243F43BD00C06C75 /* Montserrat-Medium.ttf */,
+				2761E86D243F43BD00C06C75 /* Montserrat-Regular.ttf */,
+			);
+			path = montserrat;
+			sourceTree = "<group>";
+		};
+		E0992A37245758DF0087E7DD /* OnBoardingPageController */ = {
+			isa = PBXGroup;
+			children = (
+				E0992A3C245759220087E7DD /* OnBoardingPageViewController.swift */,
+			);
+			path = OnBoardingPageController;
+			sourceTree = "<group>";
+		};
+		E0DC280724584AF700F1AF97 /* ImageProccesssing */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC280824584B0A00F1AF97 /* ImageProcessing.swift */,
+			);
+			path = ImageProccesssing;
+			sourceTree = "<group>";
+		};
+		E0DC280A24584FA900F1AF97 /* Oxymeter */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC280B24584FD800F1AF97 /* Oxymeter.swift */,
+				E0DC280D2458509C00F1AF97 /* OxymeterImpl.swift */,
+			);
+			path = Oxymeter;
+			sourceTree = "<group>";
+		};
+		E0DC28102458516F00F1AF97 /* PPG */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC28112458517300F1AF97 /* SMA */,
+				E0DC280A24584FA900F1AF97 /* Oxymeter */,
+				E0DC280724584AF700F1AF97 /* ImageProccesssing */,
+				E0DC281624588CED00F1AF97 /* FFT.swift */,
+				E0DC281824589D8200F1AF97 /* dataTestFile.swift */,
+			);
+			path = PPG;
+			sourceTree = "<group>";
+		};
+		E0DC28112458517300F1AF97 /* SMA */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC28122458518000F1AF97 /* SMA.swift */,
+				E0DC2814245851D100F1AF97 /* LinkedList.swift */,
+			);
+			name = SMA;
+			sourceTree = "<group>";
+		};
+		E0F06C42245C28CA00D25388 /* PersonalDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E0829336245CC1BD00737F33 /* PersonalDetailsControllers */,
+				E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */,
+				E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */,
+			);
+			path = PersonalDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -576,7 +747,7 @@
 			);
 			name = Covid19VOCAAi;
 			productName = Covid19VOCAAi;
-			productReference = 27E01B3C243A0E3C0062B4A6 /* VoiceVSCovid.app */;
+			productReference = 27E01B3C243A0E3C0062B4A6 /* VoiceUp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		27E01B54243A0E3E0062B4A6 /* Covid19VOCAAiTests */ = {
@@ -630,6 +801,7 @@
 				TargetAttributes = {
 					27E01B3B243A0E3C0062B4A6 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1140;
 					};
 					27E01B54243A0E3E0062B4A6 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -643,12 +815,12 @@
 			};
 			buildConfigurationList = 27E01B37243A0E3C0062B4A6 /* Build configuration list for PBXProject "Covid19VOCAAi" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = he;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
 				he,
+				Base,
+				en,
 			);
 			mainGroup = 27E01B33243A0E3C0062B4A6;
 			productRefGroup = 27E01B3D243A0E3C0062B4A6 /* Products */;
@@ -669,20 +841,22 @@
 			files = (
 				2761E873243F43BD00C06C75 /* Montserrat-Bold.ttf in Resources */,
 				2761E872243F43BD00C06C75 /* Montserrat-Regular.ttf in Resources */,
-				27E01B4F243A0E3E0062B4A6 /* LaunchScreen.storyboard in Resources */,
-				2761E881243FAFE400C06C75 /* Localizable.strings in Resources */,
 				27E01B4C243A0E3E0062B4A6 /* Assets.xcassets in Resources */,
-				27796553243F18CC00B6BF05 /* RecordYourVoiceButton.xib in Resources */,
+				E0F06C44245C28DC00D25388 /* PersonalDetails.storyboard in Resources */,
 				2761E875243F43BD00C06C75 /* Montserrat-Black.ttf in Resources */,
-				27E01B47243A0E3C0062B4A6 /* Main.storyboard in Resources */,
+				27E01B47243A0E3C0062B4A6 /* Main12.storyboard in Resources */,
 				2761E874243F43BD00C06C75 /* Montserrat-Light.ttf in Resources */,
+				E0829335245C621900737F33 /* TextCollectionViewCell.xib in Resources */,
 				27D45E2C243A28430031448E /* MultiInputView.xib in Resources */,
-				27121094244120D90074DFBD /* Base.strings in Resources */,
+				E0992A3624574BAB0087E7DD /* OpenSansHebrew-Bold.ttf in Resources */,
 				27E01BA8243A15C10062B4A6 /* TitlePickerView.xib in Resources */,
+				E094F162245DC70100DFD604 /* GoogleService-Info.plist in Resources */,
 				2761E876243F43BD00C06C75 /* Montserrat-Medium.ttf in Resources */,
 				271210992441D6A70074DFBD /* CountriesPickerView.xib in Resources */,
 				27E01BB5243A23020062B4A6 /* SelectionTableViewCell.xib in Resources */,
 				27E01BAE243A22A30062B4A6 /* MultipleSelectionView.xib in Resources */,
+				E0992A3524574BAB0087E7DD /* OpenSansHebrew-Regular.ttf in Resources */,
+				E0F06C3F245B4E6100D25388 /* onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,32 +986,45 @@
 			files = (
 				27A7398E243D0B9300A3D18C /* ThankYouForRecordDelegate.swift in Sources */,
 				27E01B9F243A0E890062B4A6 /* APIManager.swift in Sources */,
+				E094F167245DCA6300DFD604 /* OxymeterModel.swift in Sources */,
 				27E01B9A243A0E720062B4A6 /* LocalizationManager.swift in Sources */,
 				27E01B89243A0E720062B4A6 /* Constants.swift in Sources */,
+				E0DC281924589D8200F1AF97 /* dataTestFile.swift in Sources */,
+				E0DC281724588CED00F1AF97 /* FFT.swift in Sources */,
 				27A7397E243CF6DC00A3D18C /* FormModel.swift in Sources */,
 				27E01BA0243A0E890062B4A6 /* UrlManager.swift in Sources */,
 				2712109F24450FFB0074DFBD /* languageCode.swift in Sources */,
+				E0DC28132458518000F1AF97 /* SMA.swift in Sources */,
 				27EB59BD243FD99300A9CA52 /* NewMainViewController.swift in Sources */,
 				27E01B90243A0E720062B4A6 /* Optionals+Utils.swift in Sources */,
 				27E01B4A243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld in Sources */,
 				27E01BA6243A155B0062B4A6 /* BaseView.swift in Sources */,
 				271210982441D6A20074DFBD /* CountriesPickerView.swift in Sources */,
+				E0992A3D245759220087E7DD /* OnBoardingPageViewController.swift in Sources */,
 				27D45E35243A49D00031448E /* ThankYouForRecordViewController.swift in Sources */,
+				E0829326245C5EC500737F33 /* BackgroundDiseasesViewController.swift in Sources */,
 				27E01B8B243A0E720062B4A6 /* InterfaceBuilder+Localization.swift in Sources */,
 				27A73992243D0BA200A3D18C /* ThankYouForRecordModel.swift in Sources */,
 				27E01B8C243A0E720062B4A6 /* TableViewCell+Utils.swift in Sources */,
 				27D45E2E243A284C0031448E /* MultiInputView.swift in Sources */,
 				27E01B8D243A0E720062B4A6 /* NSLocale+Utils.swift in Sources */,
 				27E01B92243A0E720062B4A6 /* UIFont+Utils.swift in Sources */,
+				E094F16C245DD68E00DFD604 /* VoiceUpMainViewController.swift in Sources */,
 				27E01B8E243A0E720062B4A6 /* UIDevice+Utils.swift in Sources */,
 				27A73982243CFD2B00A3D18C /* Submission.swift in Sources */,
+				E082931E245C3AFE00737F33 /* PersonalDetailsViewController.swift in Sources */,
+				E0829334245C621900737F33 /* TextCollectionViewCell.swift in Sources */,
+				E0DC280C24584FD800F1AF97 /* Oxymeter.swift in Sources */,
+				E082933A245CC1E800737F33 /* PersonalDetails1ViewController.swift in Sources */,
 				27E01B44243A0E3C0062B4A6 /* FormViewController.swift in Sources */,
 				27E01B97243A0E720062B4A6 /* ScrollView+Utils.swift in Sources */,
 				27E01B93243A0E720062B4A6 /* SVProgressHud+Utils.swift in Sources */,
+				E0DC2815245851D100F1AF97 /* LinkedList.swift in Sources */,
 				27E01B8A243A0E720062B4A6 /* CALayer+Utils.swift in Sources */,
 				27A7398C243D028800A3D18C /* RecordModel.swift in Sources */,
 				276FEA662440FD6300000BD5 /* FormNavigationController.swift in Sources */,
 				27E01B40243A0E3C0062B4A6 /* AppDelegate.swift in Sources */,
+				E0DC280E2458509C00F1AF97 /* OxymeterImpl.swift in Sources */,
 				27E01B95243A0E720062B4A6 /* UIImage+Utils.swift in Sources */,
 				27D45E32243A3EC80031448E /* RecordViewController.swift in Sources */,
 				27E01BB4243A23020062B4A6 /* SelectionTableViewCell.swift in Sources */,
@@ -846,11 +1033,14 @@
 				27A73994243D0EAD00A3D18C /* S3Uploader.swift in Sources */,
 				27A73980243CF71700A3D18C /* FormDelegate.swift in Sources */,
 				27E01B98243A0E720062B4A6 /* Notification+Utils.swift in Sources */,
-				27E01B42243A0E3C0062B4A6 /* SceneDelegate.swift in Sources */,
 				27E01B96243A0E720062B4A6 /* String+Utils.swift in Sources */,
+				E094F169245DCA6C00DFD604 /* OxymeterDelegate.swift in Sources */,
+				E094F16E245DD69900DFD604 /* VoiceUpMainPresenter.swift in Sources */,
 				27E01BA3243A117F0062B4A6 /* BasePresenter.swift in Sources */,
 				27E01B94243A0E720062B4A6 /* Collections+Utils.swift in Sources */,
-				27796551243F18A700B6BF05 /* RecordYouVoiceButton.swift in Sources */,
+				E0DC280924584B0A00F1AF97 /* ImageProcessing.swift in Sources */,
+				E094F165245DCA5B00DFD604 /* OxymeterPresenter.swift in Sources */,
+				E00FC078245776CB00924B8D /* DTOModel.swift in Sources */,
 				27E01B91243A0E720062B4A6 /* UIColor+Utils.swift in Sources */,
 				27D45E37243A4EAE0031448E /* RecordInstructions.swift in Sources */,
 				27E01BB0243A22B10062B4A6 /* MultipleSelectionView.swift in Sources */,
@@ -860,9 +1050,13 @@
 				27A73990243D0B9B00A3D18C /* ThankYouForRecordPresenter.swift in Sources */,
 				27A7397C243CF6D300A3D18C /* FormPresenter.swift in Sources */,
 				27E01B99243A0E720062B4A6 /* EventBus.swift in Sources */,
+				E00FC076245776AC00924B8D /* APIModels.swift in Sources */,
 				27A73975243CD55400A3D18C /* MainViewContrller.swift in Sources */,
+				E094F170245DD6AD00DFD604 /* VoiceUpMainModel.swift in Sources */,
+				E0DC281B2458CE0800F1AF97 /* OxymeterViewController.swift in Sources */,
 				27A73987243D027100A3D18C /* RecordPresenter.swift in Sources */,
 				27A7398A243D028100A3D18C /* RecordDelegate.swift in Sources */,
+				E0829323245C40AA00737F33 /* RadioButton.swift in Sources */,
 				27E01B8F243A0E720062B4A6 /* UIView+Utils.swift in Sources */,
 				27E01BAA243A15E60062B4A6 /* TitlePickerView.swift in Sources */,
 			);
@@ -900,38 +1094,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		27121092244120D90074DFBD /* Base.strings */ = {
+		27E01B45243A0E3C0062B4A6 /* Main12.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				27121093244120D90074DFBD /* Base */,
+				E081A46B245B4986005D8086 /* he */,
+				E0F06C3E245B4E5800D25388 /* en */,
 			);
-			name = Base.strings;
+			name = Main12.storyboard;
 			sourceTree = "<group>";
 		};
-		2761E87F243FAFE400C06C75 /* Localizable.strings */ = {
+		E0F06C41245B4E6100D25388 /* onboarding.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2761E880243FAFE400C06C75 /* he */,
+				E0F06C40245B4E6100D25388 /* en */,
 			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		27E01B45243A0E3C0062B4A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27E01B46243A0E3C0062B4A6 /* Base */,
-				2712108E24410A710074DFBD /* he */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		27E01B4D243A0E3E0062B4A6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27E01B4E243A0E3E0062B4A6 /* Base */,
-				2761E878243FAD5F00C06C75 /* he */,
-			);
-			name = LaunchScreen.storyboard;
+			name = onboarding.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -988,7 +1165,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1043,7 +1220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1058,6 +1235,7 @@
 			baseConfigurationReference = 54C81089705B59FC47FEF190 /* Pods-Covid19VOCAAi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6FHC6MWKSK;
@@ -1066,8 +1244,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omerElimelech.Covid19VOCAAi;
-				PRODUCT_NAME = VoiceVSCovid;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerElimelech.VoiceUp;
+				PRODUCT_NAME = VoiceUp;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1078,6 +1257,7 @@
 			baseConfigurationReference = 15900C814FD2A0294E53DB09 /* Pods-Covid19VOCAAi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 6FHC6MWKSK;
@@ -1086,8 +1266,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omerElimelech.Covid19VOCAAi;
-				PRODUCT_NAME = VoiceVSCovid;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerElimelech.VoiceUp;
+				PRODUCT_NAME = VoiceUp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

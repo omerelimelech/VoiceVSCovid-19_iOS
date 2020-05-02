@@ -11,6 +11,10 @@ target 'Covid19VOCAAi' do
   pod 'SVProgressHUD'
   pod ‘AWSS3’
   pod 'ReachabilitySwift'
+  pod 'Charts'
+  pod 'SRCountdownTimer'
+  pod 'JWTDecode', '~> 2.4'
+pod 'Firebase/Analytics'
 pod 'PKHUD', '~> 5.0'
 
   target 'Covid19VOCAAiTests' do

@@ -20,6 +20,15 @@ struct UrlManager {
             case submissions
             case record(String, String)
             case feedback(String)
+            case me
+            case questions
+            case question(String)
+            case userInfo
+            case questionResponse
+            case signUp
+            case login
+            case refreshToken
+            case ppgMeasurment
             var rawValue: String {
                switch self {
                case .submissions:
@@ -28,8 +37,24 @@ struct UrlManager {
                 return String(format: "/submissions/%@/recordings/%@", id, name)
                case .feedback(let id):
                 return String(format: "/submissions/%@/feedback", id)
-                
-                
+               case .me:
+                return "/api/me/"
+               case .questions:
+                return "/api/question/"
+               case .question(let id):
+                return String(format: "/api/question/%@/", id)
+               case .userInfo:
+                return "/api/user-info/"
+               case .questionResponse:
+                return "/question-response/"
+               case .signUp:
+                return "/api/me/sign-up/"
+               case .login:
+                return "/auth/login/email/"
+               case .refreshToken:
+                return "/auth/refresh/"
+               case .ppgMeasurment:
+                return "/api/ppg-measurement/"
             }
                 
            }
@@ -38,9 +63,9 @@ struct UrlManager {
                 return String(format: string, param)
         }
        }
-       func url(endpoint: Endpoint) -> String{
-           return "\(baseUrl)\(endpoint.rawValue)"
-       }
+    func url(base: Constants.BaseUrls = .baseUrl, endpoint: Endpoint) -> String{
+        return "\(base.rawValue)\(endpoint.rawValue)"
+    }
     
     
     

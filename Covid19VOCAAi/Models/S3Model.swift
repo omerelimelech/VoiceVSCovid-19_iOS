@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct S3Model: Codable{
+struct S3Model: Codable {
     var bucket: String?
     var key: String?
     var presignedS3Url: String?

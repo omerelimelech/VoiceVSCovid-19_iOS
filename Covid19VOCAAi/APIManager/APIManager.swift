@@ -30,6 +30,7 @@ class APIManager : NSObject {
     
     static let shared = APIManager()
    
+    // MARK: - VOCA FUNCTIONS
     private let Alamofire = AF
     func sendReport(params: [String: Any], completion: @escaping completion){
         let url = UrlManager.shared.url(endpoint: .submissions)
@@ -63,6 +64,136 @@ class APIManager : NSObject {
             }
         }
     }
+    
+    
+    
+    //MARK: - MOD FUNCTIONS
+    
+    //MARK: - USER
+    func getUser(completion: @escaping completion){
+        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .me)
+        AF.request(url).responseJSON { (response) in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    func postUserInfo(method: HTTPMethod = .post, params: Parameters?, completion: @escaping completion){
+        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .userInfo)
+        let headers = HTTPHeaders([:])
+        AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+            
+        }
+    }
+    
+    //MARK: - AUTHENTICATION
+    
+    func signUp(method: HTTPMethod = .post, params: Parameters?, completion: @escaping completion){
+       let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .signUp)
+       let headers = HTTPHeaders([:])
+       AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
+       switch response.result {
+           case .success(let data):
+               completion(.success(data))
+           case .failure(let error):
+               completion(.failure(error))
+           }
+       }
+   }
+    
+    func login(method: HTTPMethod = .post, params: Parameters?, completion: @escaping completion){
+        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .login)
+        let headers = HTTPHeaders([:])
+        AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    func refreshToken(method: HTTPMethod = .get, params: Parameters?, completion: @escaping completion){
+        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .refreshToken)
+        let headers = HTTPHeaders([:])
+        AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    //MARK: - APP LOGIC
+    func getQuestions(method: HTTPMethod = .get, params: Parameters?, completion: @escaping completion){
+        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .questions)
+        let headers = HTTPHeaders([:])
+        AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    func getQuestionById(id: String, method: HTTPMethod = .get, params: Parameters?, completion: @escaping completion){
+        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .question(id))
+        let headers = HTTPHeaders([:])
+        AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+            
+        }
+    }
+    
+    func sendQuestionResponse(method: HTTPMethod = .get, params: Parameters?, completion: @escaping completion){
+        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .questionResponse)
+        let headers = HTTPHeaders([:])
+        AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    //MARK: - PPG
+    func sendPPGData(method: HTTPMethod = .post, params: Parameters?, completion: @escaping completion){
+        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .ppgMeasurment)
+        let headers = HTTPHeaders([:])
+        AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+            
+        }
+    }
+    
+    
 }
 
 //MARK: Base requests

@@ -22,7 +22,7 @@ class FormModel: NSObject {
     var countryDataSource : [String]{
         return countriesArray()
     }
-    let smokeDataSource = SmokeSatus.allValue
+    let smokeDataSource = SmokeSatus.allValues
     var diagnoseDataSource = Diagnoses.allValues
     let currentStatusDataSource = CurrentStatus.allValues
     var areYouDisgnoseDataSource = YesNo.allValues

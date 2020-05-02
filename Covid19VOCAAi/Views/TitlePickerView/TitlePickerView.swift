@@ -14,6 +14,16 @@ class TitlePickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource, C
   
     
     
+    @IBOutlet weak var unitLabel: UILabel!
+    
+    
+    @IBInspectable var unitText: String?{
+        didSet{
+            guard let unit = unitText else {return}
+            self.unitLabel.text = unit
+            self.unitLabel.isHidden = false
+        }
+    }
     var dataSource = [LocalizedEnum]()
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -21,11 +31,20 @@ class TitlePickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource, C
     @IBOutlet weak var pickerTextField: UITextField!
     var isPrimary = true
     
-     let pickerView = UIPickerView()
+    let pickerView = UIPickerView()
+    
+    @IBInspectable var title: String? {
+        didSet{
+            self.titleLabel.text = title
+        }
+    }
+    
+    
+    var onFillData: ( (_ text: String?) -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialConfig()
-        
     }
     
     
@@ -37,6 +56,7 @@ class TitlePickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource, C
     override func initialConfig() {
         super.initialConfig()
         isHidden = false
+        pickerTextField.delegate = self
         
     }
     var selectedString = ""
@@ -86,3 +106,11 @@ class TitlePickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSource, C
     
 }
 
+extension TitlePickerView : UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+         if textField.text != "", let fillData = onFillData {
+               fillData(textField.text)
+        }
+    }
+}
