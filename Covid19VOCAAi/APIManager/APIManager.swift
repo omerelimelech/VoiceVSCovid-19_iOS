@@ -141,14 +141,7 @@ class APIManager : NSObject {
     func getQuestions(method: HTTPMethod = .get, params: Parameters?, completion: @escaping completion){
         let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .questions)
         let headers = HTTPHeaders([:])
-        AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
-            switch response.result {
-            case .success(let data):
-                completion(.success(data))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
+        self.baseRequest(withUrlString: url, method: .get, completion: completion)
     }
     
     func getQuestionById(id: String, method: HTTPMethod = .get, params: Parameters?, completion: @escaping completion){
@@ -181,7 +174,13 @@ class APIManager : NSObject {
     //MARK: - PPG
     func sendPPGData(method: HTTPMethod = .post, params: Parameters?, completion: @escaping completion){
         let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .ppgMeasurment)
-        let headers = HTTPHeaders([:])
+        let headers = HTTPHeaders(["Authorization": "JWT \(UserModel.shared.token?.access ?? "")"])
+        self.baseRequest(withUrlString: url, method: .post, params: params, headers: headers, completion: completion)
+    }
+    
+    func sendMeasurment(method: HTTPMethod = .post, params: Parameters?, completion: @escaping completion){
+        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .measurment)
+        let headers = HTTPHeaders(["Authorization": "JWT \(UserModel.shared.token?.access ?? "")"])
         AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
             switch response.result {
             case .success(let data):
@@ -199,7 +198,7 @@ class APIManager : NSObject {
 //MARK: Base requests
 extension APIManager {
     
-    func request(withUrlString urlString: String, method: HTTPMethod, params: Parameters? = nil, headers: HTTPHeaders? = ["Content-Type":"application/json"], completion: @escaping completion){
+    func request(withUrlString urlString: String, method: HTTPMethod, params: Parameters? = nil, headers: HTTPHeaders? = ["Content-Type":"application/json", ], completion: @escaping completion){
         guard let url = URL(string: urlString) else {return}
         Alamofire.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
             switch response.result {
@@ -213,10 +212,11 @@ extension APIManager {
         }
     }
 
-    func baseRequest(withUrlString urlString: String, method: HTTPMethod, params: Parameters? = nil, headers: HTTPHeaders? = ["Content-Type": "application/json"], completion: @escaping completion){
+    func baseRequest(withUrlString urlString: String, method: HTTPMethod, params: Parameters? = nil, headers: HTTPHeaders? = ["Content-Type": "application/json", "Authorization": "JWT \(UserModel.shared.token?.access ?? "")"], completion: @escaping completion){
         guard let url = URL(string: urlString) else {return}
         var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = method.rawValue
+        request.addValue("JWT \(UserModel.shared.token?.access ?? "")", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         do {
             if let params = params{

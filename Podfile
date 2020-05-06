@@ -14,6 +14,8 @@ target 'Covid19VOCAAi' do
   pod 'Charts'
   pod 'SRCountdownTimer'
   pod 'JWTDecode', '~> 2.4'
+pod 'SVGKit'
+	pod 'Kingfisher', '~> 5.0'
 pod 'Firebase/Analytics'
 pod 'PKHUD', '~> 5.0'
 

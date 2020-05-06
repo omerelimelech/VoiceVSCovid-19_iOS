@@ -10,5 +10,5 @@ import Foundation
 
 
 protocol OxymeterDelegate: class {
-    
+    func didReceiveMeasureId(id: Int)
 }

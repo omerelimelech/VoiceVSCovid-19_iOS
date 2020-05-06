@@ -14,7 +14,6 @@ class BasePresenter : NSObject {
     func handleResult<T: Codable>(result: Result<Any?, Error>, type: T.Type ,group: DispatchGroup? = nil, completion: @escaping (_ result: T?) -> Void){
          switch result{
          case .success(let value):
-            guard let value = value as? [String: Any] else {handleError(error: MyErrors.parseError, group: group); return}
              let data = try? JSONSerialization.data(withJSONObject: value, options: .prettyPrinted)
             guard let obj = try? decode(withObj: type.self, data: data!) else {handleError(error: MyErrors.decodeError, group: group); return}
                 group?.leave()

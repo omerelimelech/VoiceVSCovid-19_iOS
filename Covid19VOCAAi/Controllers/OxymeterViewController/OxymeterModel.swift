@@ -12,4 +12,8 @@ import Foundation
 
 class OxymeterModel {
     
+    
+    func sendPPGData(red: [Double], blue: [Double], green: [Double], timePoint: [Int],measureId: Int, completion: @escaping completion) {
+        APIManager.shared.sendPPGData(params: ["red": red, "blue": blue, "green": green, "timepoint": timePoint, "measurement": measureId], completion: completion)
+    }
 }

@@ -29,6 +29,7 @@ struct UrlManager {
             case login
             case refreshToken
             case ppgMeasurment
+            case measurment
             var rawValue: String {
                switch self {
                case .submissions:
@@ -50,11 +51,13 @@ struct UrlManager {
                case .signUp:
                 return "/api/me/sign-up/"
                case .login:
-                return "/auth/login/email/"
+                return "/auth/login/phonenumber/"
                case .refreshToken:
                 return "/auth/refresh/"
                case .ppgMeasurment:
                 return "/api/ppg-measurement/"
+               case .measurment:
+                return "/api/measurement/"
             }
                 
            }

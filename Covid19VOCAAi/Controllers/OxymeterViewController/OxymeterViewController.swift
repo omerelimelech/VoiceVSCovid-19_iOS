@@ -15,6 +15,12 @@ import SRCountdownTimer
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureDataOutputSynchronizerDelegate, AVCaptureDepthDataOutputDelegate {
 
+    @IBOutlet weak var finalHeartRateLabel: UILabel!
+    
+    
+    @IBOutlet weak var testIdLabel: UILabel!
+    
+    
     var captureSession: AVCaptureSession?
     var dataOutput: AVCaptureVideoDataOutput?
     var customPreviewLayer: AVCaptureVideoPreviewLayer?
@@ -22,7 +28,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     @IBOutlet weak var cameraView: UIView!
     
-    
+    var measurmentId: Int!
     @IBOutlet weak var heartRateLabel: UILabel!
     var oxymeter: OxymeterImpl = OxymeterImpl(samplingFreq: 15)
     private let sessionQueue = DispatchQueue(label: "session queue", attributes: [], autoreleaseFrequency: .workItem)
@@ -37,16 +43,16 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             }
         }
     }
-    override func viewWillAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
     
-    }
+    
+    var presenter: OxymeterPresetner?
+  
     @IBOutlet weak var countDownTimer: SRCountdownTimer!
     
 override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-    //captureSession?.startRunning()
+ 
+    self.presenter = OxymeterPresetner(delegate: self)
     setupCameraSession()
     
     self.captureSession?.startRunning()
@@ -170,6 +176,12 @@ func setupCameraSession() {
         }
     }
     
+    
+    @IBAction func goBackTapped(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
     var timer: Timer!
 
     let framesToSend = 500
@@ -180,7 +192,6 @@ func setupCameraSession() {
     }
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         let imageBuffer: CVImageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)!
-        // seems needed: kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix
         CVPixelBufferLockBaseAddress(imageBuffer, CVPixelBufferLockFlags(rawValue: 0))
         let width: size_t = CVPixelBufferGetWidthOfPlane(imageBuffer, 0)
         let height: size_t = CVPixelBufferGetHeightOfPlane(imageBuffer, 0)
@@ -201,7 +212,14 @@ func setupCameraSession() {
             }else{
                 captureSession?.stopRunning()
                 let data = self.oxymeter.finish(samplingFreq: 15)
-                print(data?.heartRate)
+                DispatchQueue.main.async {
+                       self.finalHeartRateLabel.text = "FINAL HEART RATE: \(data?.heartRate ?? 0)"
+                    guard let d = data, let measureId = self.measurmentId else {
+                                     self.testIdLabel.text = "ERROR GETTING DATA. TRY AGAIN"
+                                     return
+                                 }
+                    self.presenter?.sendPPGData(red: d.red, blue: d.blue, green: d.green, timePoint: d.timePoint, measureId: measureId)
+                }
             }
         }
         CVPixelBufferUnlockBaseAddress(imageBuffer, CVPixelBufferLockFlags(rawValue: 0))
@@ -243,3 +261,8 @@ extension AVCaptureDevice {
 }
 
 
+extension ViewController: OxymeterDelegate {
+    func didReceiveMeasureId(id: Int){
+        self.testIdLabel.text = "MEASURMENT ID: \(id)"
+    }
+}

@@ -79,13 +79,14 @@
 		62223CB9DFCF2EE098767FC5 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */; };
 		E00FC076245776AC00924B8D /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC075245776AC00924B8D /* APIModels.swift */; };
 		E00FC078245776CB00924B8D /* DTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC077245776CB00924B8D /* DTOModel.swift */; };
+		E02B4A7B245E032300A9F3E5 /* OxymeterPreperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02B4A7A245E032300A9F3E5 /* OxymeterPreperViewController.swift */; };
+		E0571F36245DE3310097AB61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0571F35245DE3310097AB61 /* GoogleService-Info.plist */; };
 		E082931E245C3AFE00737F33 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */; };
 		E0829323245C40AA00737F33 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829322245C40AA00737F33 /* RadioButton.swift */; };
 		E0829326245C5EC500737F33 /* BackgroundDiseasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829325245C5EC500737F33 /* BackgroundDiseasesViewController.swift */; };
 		E0829334245C621900737F33 /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829332245C621900737F33 /* TextCollectionViewCell.swift */; };
 		E0829335245C621900737F33 /* TextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0829333245C621900737F33 /* TextCollectionViewCell.xib */; };
 		E082933A245CC1E800737F33 /* PersonalDetails1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */; };
-		E094F162245DC70100DFD604 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E094F161245DC70100DFD604 /* GoogleService-Info.plist */; };
 		E094F165245DCA5B00DFD604 /* OxymeterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F164245DCA5B00DFD604 /* OxymeterPresenter.swift */; };
 		E094F167245DCA6300DFD604 /* OxymeterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F166245DCA6300DFD604 /* OxymeterModel.swift */; };
 		E094F169245DCA6C00DFD604 /* OxymeterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F168245DCA6C00DFD604 /* OxymeterDelegate.swift */; };
@@ -103,6 +104,9 @@
 		E0DC281724588CED00F1AF97 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC281624588CED00F1AF97 /* FFT.swift */; };
 		E0DC281924589D8200F1AF97 /* dataTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC281824589D8200F1AF97 /* dataTestFile.swift */; };
 		E0DC281B2458CE0800F1AF97 /* OxymeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC281A2458CE0800F1AF97 /* OxymeterViewController.swift */; };
+		E0E0CF55245F68970001875B /* SympthomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0CF54245F68970001875B /* SympthomsViewController.swift */; };
+		E0E0CF59245F68B20001875B /* SympthomsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0CF57245F68B20001875B /* SympthomsCollectionViewCell.swift */; };
+		E0E0CF5A245F68B20001875B /* SympthomsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E0CF58245F68B20001875B /* SympthomsCollectionViewCell.xib */; };
 		E0F06C3F245B4E6100D25388 /* onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F06C41245B4E6100D25388 /* onboarding.storyboard */; };
 		E0F06C44245C28DC00D25388 /* PersonalDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */; };
 /* End PBXBuildFile section */
@@ -208,6 +212,8 @@
 		D93404E59A34D04B3B3EA53F /* Pods_Covid19VOCAAi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00FC075245776AC00924B8D /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
 		E00FC077245776CB00924B8D /* DTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOModel.swift; sourceTree = "<group>"; };
+		E02B4A7A245E032300A9F3E5 /* OxymeterPreperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterPreperViewController.swift; sourceTree = "<group>"; };
+		E0571F35245DE3310097AB61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E081A46B245B4986005D8086 /* he */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = he; path = he.lproj/Main12.storyboard; sourceTree = "<group>"; };
 		E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 		E0829322245C40AA00737F33 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
@@ -215,7 +221,6 @@
 		E0829332245C621900737F33 /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0829333245C621900737F33 /* TextCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCollectionViewCell.xib; sourceTree = "<group>"; };
 		E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails1ViewController.swift; sourceTree = "<group>"; };
-		E094F161245DC70100DFD604 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E094F164245DCA5B00DFD604 /* OxymeterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterPresenter.swift; sourceTree = "<group>"; };
 		E094F166245DCA6300DFD604 /* OxymeterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterModel.swift; sourceTree = "<group>"; };
 		E094F168245DCA6C00DFD604 /* OxymeterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterDelegate.swift; sourceTree = "<group>"; };
@@ -234,6 +239,9 @@
 		E0DC281824589D8200F1AF97 /* dataTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataTestFile.swift; sourceTree = "<group>"; };
 		E0DC281A2458CE0800F1AF97 /* OxymeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterViewController.swift; sourceTree = "<group>"; };
 		E0DC281E2458FF5700F1AF97 /* Covid19VOCAAi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Covid19VOCAAi-Bridging-Header.h"; sourceTree = "<group>"; };
+		E0E0CF54245F68970001875B /* SympthomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympthomsViewController.swift; sourceTree = "<group>"; };
+		E0E0CF57245F68B20001875B /* SympthomsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympthomsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0E0CF58245F68B20001875B /* SympthomsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SympthomsCollectionViewCell.xib; sourceTree = "<group>"; };
 		E0F06C3E245B4E5800D25388 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main12.storyboard; sourceTree = "<group>"; };
 		E0F06C40245B4E6100D25388 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/onboarding.storyboard; sourceTree = "<group>"; };
 		E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalDetails.storyboard; sourceTree = "<group>"; };
@@ -296,6 +304,7 @@
 		271210A0244510830074DFBD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E02B4A79245E031300A9F3E5 /* OxymeterPreperVIew */,
 				E094F163245DCA4800DFD604 /* OxymeterViewController */,
 				E0992A37245758DF0087E7DD /* OnBoardingPageController */,
 				276FEA642440FD4800000BD5 /* FormNavController */,
@@ -429,10 +438,9 @@
 				E0F06C42245C28CA00D25388 /* PersonalDetails */,
 				27E01B45243A0E3C0062B4A6 /* Main12.storyboard */,
 				27E01B4B243A0E3E0062B4A6 /* Assets.xcassets */,
-				E094F161245DC70100DFD604 /* GoogleService-Info.plist */,
 				27E01B50243A0E3E0062B4A6 /* Info.plist */,
+				E0571F35245DE3310097AB61 /* GoogleService-Info.plist */,
 				27E01B48243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld */,
-				E0F06C41245B4E6100D25388 /* onboarding.storyboard */,
 			);
 			path = Covid19VOCAAi;
 			sourceTree = "<group>";
@@ -596,6 +604,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E02B4A79245E031300A9F3E5 /* OxymeterPreperVIew */ = {
+			isa = PBXGroup;
+			children = (
+				E02B4A7A245E032300A9F3E5 /* OxymeterPreperViewController.swift */,
+			);
+			path = OxymeterPreperVIew;
+			sourceTree = "<group>";
+		};
 		E082931F245C408600737F33 /* RadioButtons */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,9 +734,29 @@
 			name = SMA;
 			sourceTree = "<group>";
 		};
+		E0E0CF53245F68810001875B /* SympthomsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E0E0CF56245F689B0001875B /* cell */,
+				E0E0CF54245F68970001875B /* SympthomsViewController.swift */,
+			);
+			path = SympthomsViewController;
+			sourceTree = "<group>";
+		};
+		E0E0CF56245F689B0001875B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E0E0CF57245F68B20001875B /* SympthomsCollectionViewCell.swift */,
+				E0E0CF58245F68B20001875B /* SympthomsCollectionViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		E0F06C42245C28CA00D25388 /* PersonalDetails */ = {
 			isa = PBXGroup;
 			children = (
+				E0F06C41245B4E6100D25388 /* onboarding.storyboard */,
+				E0E0CF53245F68810001875B /* SympthomsViewController */,
 				E0829336245CC1BD00737F33 /* PersonalDetailsControllers */,
 				E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */,
 				E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */,
@@ -840,17 +876,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2761E873243F43BD00C06C75 /* Montserrat-Bold.ttf in Resources */,
+				E0571F36245DE3310097AB61 /* GoogleService-Info.plist in Resources */,
 				2761E872243F43BD00C06C75 /* Montserrat-Regular.ttf in Resources */,
 				27E01B4C243A0E3E0062B4A6 /* Assets.xcassets in Resources */,
 				E0F06C44245C28DC00D25388 /* PersonalDetails.storyboard in Resources */,
 				2761E875243F43BD00C06C75 /* Montserrat-Black.ttf in Resources */,
+				E0E0CF5A245F68B20001875B /* SympthomsCollectionViewCell.xib in Resources */,
 				27E01B47243A0E3C0062B4A6 /* Main12.storyboard in Resources */,
 				2761E874243F43BD00C06C75 /* Montserrat-Light.ttf in Resources */,
 				E0829335245C621900737F33 /* TextCollectionViewCell.xib in Resources */,
 				27D45E2C243A28430031448E /* MultiInputView.xib in Resources */,
 				E0992A3624574BAB0087E7DD /* OpenSansHebrew-Bold.ttf in Resources */,
 				27E01BA8243A15C10062B4A6 /* TitlePickerView.xib in Resources */,
-				E094F162245DC70100DFD604 /* GoogleService-Info.plist in Resources */,
 				2761E876243F43BD00C06C75 /* Montserrat-Medium.ttf in Resources */,
 				271210992441D6A70074DFBD /* CountriesPickerView.xib in Resources */,
 				27E01BB5243A23020062B4A6 /* SelectionTableViewCell.xib in Resources */,
@@ -1027,6 +1064,7 @@
 				E0DC280E2458509C00F1AF97 /* OxymeterImpl.swift in Sources */,
 				27E01B95243A0E720062B4A6 /* UIImage+Utils.swift in Sources */,
 				27D45E32243A3EC80031448E /* RecordViewController.swift in Sources */,
+				E0E0CF59245F68B20001875B /* SympthomsCollectionViewCell.swift in Sources */,
 				27E01BB4243A23020062B4A6 /* SelectionTableViewCell.swift in Sources */,
 				27A73985243D00A900A3D18C /* GlobalData.swift in Sources */,
 				27E01B9B243A0E720062B4A6 /* UserSettings.swift in Sources */,
@@ -1038,6 +1076,7 @@
 				E094F16E245DD69900DFD604 /* VoiceUpMainPresenter.swift in Sources */,
 				27E01BA3243A117F0062B4A6 /* BasePresenter.swift in Sources */,
 				27E01B94243A0E720062B4A6 /* Collections+Utils.swift in Sources */,
+				E0E0CF55245F68970001875B /* SympthomsViewController.swift in Sources */,
 				E0DC280924584B0A00F1AF97 /* ImageProcessing.swift in Sources */,
 				E094F165245DCA5B00DFD604 /* OxymeterPresenter.swift in Sources */,
 				E00FC078245776CB00924B8D /* DTOModel.swift in Sources */,
@@ -1047,6 +1086,7 @@
 				2712109124410C450074DFBD /* TermsViewController.swift in Sources */,
 				27A7397A243CF52200A3D18C /* S3Model.swift in Sources */,
 				2712109C24450F810074DFBD /* LocalizationEnums.swift in Sources */,
+				E02B4A7B245E032300A9F3E5 /* OxymeterPreperViewController.swift in Sources */,
 				27A73990243D0B9B00A3D18C /* ThankYouForRecordPresenter.swift in Sources */,
 				27A7397C243CF6D300A3D18C /* FormPresenter.swift in Sources */,
 				27E01B99243A0E720062B4A6 /* EventBus.swift in Sources */,
@@ -1236,16 +1276,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 6FHC6MWKSK;
 				INFOPLIST_FILE = Covid19VOCAAi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omerElimelech.VoiceUp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerElimelech.Covid19VOCAAi;
 				PRODUCT_NAME = VoiceUp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1258,16 +1300,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 6FHC6MWKSK;
 				INFOPLIST_FILE = Covid19VOCAAi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omerElimelech.VoiceUp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omerElimelech.Covid19VOCAAi;
 				PRODUCT_NAME = VoiceUp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -31,7 +31,7 @@ struct Token: Codable{
 }
 class UserModel : Codable{
   
-    static let shared = UserModel()
+    static var shared = UserModel()
     
     var user: UserModel?
     var token: Token?

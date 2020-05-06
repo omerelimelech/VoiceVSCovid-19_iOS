@@ -7,24 +7,36 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class VoiceUpMainViewController: UIViewController {
 
+    let presenter = VoiceUpMainPresenter()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        SVProgressHUD.show()
+        APIManager.shared.login(params: ["phoneNumberHash": "0528880170"]) { (reuslt) in
+            self.presenter.handleResult(result: reuslt, type: UserModel.self) { (user) in
+                SVProgressHUD.dismiss()
+                UserModel.shared = user ?? UserModel()
+            }
+        }
+        
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func startTestTapped(_ sender: UIButton) {
+        guard let cameraVC = UIStoryboard(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "SympthomsViewController") as? SympthomsViewController else {return}
+        
+        self.present(cameraVC, animated: true, completion: nil)
     }
-    */
+    
+    
 
+}
+
+
+class VoiceUpMainPresenter: BasePresenter{
+    
 }
