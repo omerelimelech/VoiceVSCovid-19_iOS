@@ -28,7 +28,7 @@
         <!--Main View Controller-->
         <scene sceneID="CC4-Ix-l7w">
             <objects>
-                <viewController id="Xo2-oX-ZFO" customClass="MainViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xo2-oX-ZFO" customClass="MainViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0DN-T4-I2m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brW-2f-O6q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Id0-21-zx4" customClass="GradientView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Id0-21-zx4" customClass="GradientView" customModule="VoiceUp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1131.6666666666667"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -56,7 +56,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjo-A7-RtN" customClass="GradientView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjo-A7-RtN" customClass="GradientView" customModule="VoiceUp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="2456" width="375" height="345.33333333333348"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -98,7 +98,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElO-av-dwt">
                                                 <rect key="frame" x="0.0" y="60" width="375" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQ9-gd-oUM" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQ9-gd-oUM" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="2.6666666666666714" width="262.66666666666669" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="a3s-1C-Ngz"/>
@@ -233,7 +233,7 @@ CLICK BELOW TO ANSWER THE QUESTIONNAIRE &amp; RECORD YOUR VOICE TO HELP US STOP 
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Euj-hw-uMd">
                                                 <rect key="frame" x="0.0" y="1031.6666666666667" width="375" height="60"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-Fc-dZr" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-Fc-dZr" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="5" width="343" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="eIM-Eq-Suv"/>
@@ -332,7 +332,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6y7-Fg-Shu">
                                                 <rect key="frame" x="0.0" y="2611.3333333333335" width="375" height="60"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8S-Cm-dKg" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8S-Cm-dKg" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                                         <rect key="frame" x="93.666666666666671" y="5" width="187.66666666666663" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="MX6-dB-uAm"/>
@@ -454,7 +454,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
         <!--Corona Form-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FormViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FormViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FormViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FormViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -484,64 +484,64 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
                                                     <constraint firstItem="E1Z-tb-bF0" firstAttribute="top" secondItem="4p1-OG-7ob" secondAttribute="top" id="nfj-RV-Tx3"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OkZ-XT-C4V" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OkZ-XT-C4V" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="o70-Ex-wec"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3N-Cg-xu0" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3N-Cg-xu0" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="eBY-XV-F81"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3a-ED-OmY" customClass="MultiInputView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3a-ED-OmY" customClass="MultiInputView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="AZl-JL-ss5"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-Dx-MAV" customClass="CountriesPickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-Dx-MAV" customClass="CountriesPickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="fEW-oB-vsM"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7n-e7-pzp" customClass="MultipleSelectionView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7n-e7-pzp" customClass="MultipleSelectionView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-4f-AJZ" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-4f-AJZ" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="n7Q-Bw-bVX"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeR-5W-dNh" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeR-5W-dNh" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="u31-U5-6BH"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDg-E1-WYa" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDg-E1-WYa" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="0vn-uh-AwV"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPU-rF-soR" customClass="MultipleSelectionView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPU-rF-soR" customClass="MultipleSelectionView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoz-JM-yXp" customClass="MultiInputView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoz-JM-yXp" customClass="MultiInputView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -623,7 +623,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
         <!--Terms & Conditions-->
         <scene sceneID="7jq-lM-zds">
             <objects>
-                <viewController storyboardIdentifier="TermsViewController" title="Terms &amp; Conditions" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YRh-H6-F7K" customClass="TermsViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TermsViewController" title="Terms &amp; Conditions" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YRh-H6-F7K" customClass="TermsViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fCf-M2-h4G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -943,7 +943,7 @@ We thank you for your participation.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqk-Xb-RDL">
                                 <rect key="frame" x="0.0" y="728" width="375" height="84"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRk-Py-f6q" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRk-Py-f6q" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                         <rect key="frame" x="24" y="22" width="327" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="EBT-1h-HX5"/>
@@ -1029,7 +1029,7 @@ We thank you for your participation.</string>
         <!--Record View Controller-->
         <scene sceneID="xe6-RD-mzd">
             <objects>
-                <viewController storyboardIdentifier="RecordViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rjK-aE-1vN" customClass="RecordViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecordViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rjK-aE-1vN" customClass="RecordViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yc7-Tz-SQt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1101,7 +1101,7 @@ We thank you for your participation.</string>
         <!--Thank You For Record View Controller-->
         <scene sceneID="DFO-oJ-zqq">
             <objects>
-                <viewController storyboardIdentifier="ThankYouForRecordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W6S-Do-v2Y" customClass="ThankYouForRecordViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThankYouForRecordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W6S-Do-v2Y" customClass="ThankYouForRecordViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UXl-Es-dP6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1252,16 +1252,16 @@ We thank you for your participation.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gX3-rY-sJR">
-                                        <rect key="frame" x="49.999999999999986" y="74" width="34.666666666666671" height="14"/>
+                                        <rect key="frame" x="49.999999999999986" y="71.333333333333314" width="35.666666666666671" height="16.666666666666671"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="כעת" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVF-mA-DT7">
-                                                <rect key="frame" x="0.0" y="0.0" width="19.666666666666668" height="14"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="16.666666666666668"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="l97-xp-QuB">
-                                                <rect key="frame" x="19.666666666666686" y="3" width="15" height="8"/>
+                                                <rect key="frame" x="20.666666666666686" y="4.3333333333333712" width="15" height="8"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="V_icon" translatesAutoresizingMaskIntoConstraints="NO" id="apm-83-rm7">
                                                         <rect key="frame" x="0.0" y="0.0" width="10" height="8"/>
@@ -1299,7 +1299,7 @@ We thank you for your participation.</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הקול שלך יכול  לנצח את הקורונה" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNn-uS-Pms">
-                                <rect key="frame" x="46" y="268" width="289" height="84"/>
+                                <rect key="frame" x="46" y="253.66666666666666" width="289" height="98.333333333333343"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1339,7 +1339,7 @@ We thank you for your participation.</string>
         <!--On Boarding Page View Controller-->
         <scene sceneID="4WW-4L-G2k">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4dA-Pe-30V" customClass="OnBoardingPageViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4dA-Pe-30V" customClass="OnBoardingPageViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDq-lw-n5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4215" y="-867"/>
@@ -1361,7 +1361,7 @@ We thank you for your participation.</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="two_doctors" translatesAutoresizingMaskIntoConstraints="NO" id="tEc-iF-NYX">
                                 <rect key="frame" x="79" y="92" width="217" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyM-cz-qcA" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyM-cz-qcA" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                 <rect key="frame" x="84.333333333333329" y="628" width="206.33333333333337" height="50"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                                 <constraints>
@@ -1488,12 +1488,12 @@ We thank you for your participation.</string>
         <!--New Main View Controller-->
         <scene sceneID="vIY-vA-AEG">
             <objects>
-                <viewController id="hmS-BY-UDB" customClass="NewMainViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hmS-BY-UDB" customClass="NewMainViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l8m-t3-HC4" customClass="GradientView" customModule="VocaAi_19">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANU-ac-FWu" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANU-ac-FWu" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="536" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Fj6-UD-bBW"/>
@@ -1669,6 +1669,43 @@ we can beat the Coronavirus
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEv-bO-rvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2079.7101449275365" y="12.228260869565219"/>
+        </scene>
+        <!--Daily Questions View Controller-->
+        <scene sceneID="q6K-QC-7ki">
+            <objects>
+                <viewController storyboardIdentifier="DailyQuestionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DfE-yY-mxp" customClass="DailyQuestionsViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfc-P6-XmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e2f-97-2Av">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mkx-1C-Tf0">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mkx-1C-Tf0" id="oXh-h4-zn2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e2f-97-2Av" firstAttribute="top" secondItem="Wih-1z-GJa" secondAttribute="top" id="9lg-LS-3Li"/>
+                            <constraint firstItem="Wih-1z-GJa" firstAttribute="bottom" secondItem="e2f-97-2Av" secondAttribute="bottom" id="KUE-1g-iWC"/>
+                            <constraint firstItem="Wih-1z-GJa" firstAttribute="trailing" secondItem="e2f-97-2Av" secondAttribute="trailing" id="Tms-er-9PF"/>
+                            <constraint firstItem="e2f-97-2Av" firstAttribute="leading" secondItem="Wih-1z-GJa" secondAttribute="leading" id="VE5-eX-val"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wih-1z-GJa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVZ-t7-oyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5126" y="-667"/>
         </scene>
     </scenes>
     <resources>
