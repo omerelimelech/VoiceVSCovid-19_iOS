@@ -631,7 +631,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXP-GK-KVN">
-                                                        <rect key="frame" x="24" y="8" width="207.66666666666666" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="195.66666666666666" height="49"/>
                                                         <string key="text">Consent Form
 CONCISE SUMMARY</string>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
@@ -675,7 +675,7 @@ If you are interested in learning more about this study, please continue to read
                                                 <rect key="frame" x="0.0" y="784" width="414" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPx-rv-IWv">
-                                                        <rect key="frame" x="24" y="8" width="163.33333333333334" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="149.33333333333334" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -717,7 +717,7 @@ By clicking the button, you are agreeing that you’ve had time to read and cons
                                                 <rect key="frame" x="0.0" y="1568" width="414" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE OF RESEARCH PROJECT" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTy-Hc-jxT">
-                                                        <rect key="frame" x="24" y="8" width="309.33333333333331" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="292" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -756,7 +756,7 @@ By clicking the button, you are agreeing that you’ve had time to read and cons
                                                 <rect key="frame" x="0.0" y="2352" width="414" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENEFITS AND RISKS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qu-OG-MeA">
-                                                        <rect key="frame" x="24" y="8" width="219" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="204.66666666666666" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -797,7 +797,7 @@ We have not identified any particular risk associated with your participation in
                                                 <rect key="frame" x="0.0" y="3136" width="414" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIDENTIALITY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzW-v6-FG6">
-                                                        <rect key="frame" x="24" y="8" width="187.66666666666666" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="172" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -838,7 +838,7 @@ If you log-in using your GOOGLE™ identifier, we will not collect any informati
                                                 <rect key="frame" x="0.0" y="3920" width="414" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESEARCH DATA &amp; FEEDBACK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTx-jm-4Fb">
-                                                        <rect key="frame" x="24" y="8" width="314" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="288.33333333333331" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -878,7 +878,7 @@ If you log-in using your GOOGLE™ identifier, we will not collect any informati
                                                 <rect key="frame" x="0.0" y="4704" width="414" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR AUTHORITY TO PARTICIPATE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHa-7c-66t">
-                                                        <rect key="frame" x="24" y="8" width="357.66666666666669" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="332" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1367,10 +1367,10 @@ we can beat the Coronavirus
             </objects>
             <point key="canvasLocation" x="313.125" y="-666.54929577464793"/>
         </scene>
-        <!--View Controller-->
+        <!--Notification View Controller-->
         <scene sceneID="1Jb-dY-jxL">
             <objects>
-                <viewController id="vLR-P5-PtF" sceneMemberID="viewController">
+                <viewController id="vLR-P5-PtF" customClass="NotificationViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="shz-Kf-Uaa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1397,6 +1397,10 @@ we can beat the Coronavirus
                                 <rect key="frame" x="188" y="548" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="SetNotification:" destination="0EG-Va-oBj" eventType="touchUpInside" id="fQH-yR-kyN"/>
+                                    <action selector="setNotification:" destination="vLR-P5-PtF" eventType="touchUpInside" id="WNj-2I-JLc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb0-El-mfu">
                                 <rect key="frame" x="190" y="636" width="36" height="30"/>
@@ -1407,8 +1411,12 @@ we can beat the Coronavirus
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="wwR-yi-N4R"/>
                     </view>
+                    <connections>
+                        <outlet property="timePicker" destination="98Y-50-Gk5" id="uNr-7u-H4O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mXm-cW-1ra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0EG-Va-oBj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1560.8695652173915" y="-1440.4891304347827"/>
         </scene>
