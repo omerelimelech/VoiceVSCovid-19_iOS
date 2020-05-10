@@ -76,6 +76,18 @@
 		27EB59BD243FD99300A9CA52 /* NewMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB59BC243FD99300A9CA52 /* NewMainViewController.swift */; };
 		37F552A7B3AB9262BFBA7C4A /* Pods_Covid19VOCAAi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93404E59A34D04B3B3EA53F /* Pods_Covid19VOCAAi.framework */; };
 		47FEDE26B00838BF8EF38EB2 /* Pods_Covid19VOCAAiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */; };
+		57AEC2FF2465C7D9007199E9 /* DailyQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */; };
+		57AEC3052465C80B007199E9 /* DailyQuestionsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */; };
+		57AEC3082465C80B007199E9 /* DailyQuestionsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC3042465C80B007199E9 /* DailyQuestionsHeaderView.swift */; };
+		57AEC31D2466D9D3007199E9 /* QuestionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC31B2466D9D3007199E9 /* QuestionListCell.swift */; };
+		57AEC31E2466D9D3007199E9 /* QuestionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AEC31C2466D9D3007199E9 /* QuestionListCell.xib */; };
+		57AEC32224670F46007199E9 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32124670F46007199E9 /* StringHelper.swift */; };
+		57AEC32524671693007199E9 /* DailyQuestionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32424671693007199E9 /* DailyQuestionsPresenter.swift */; };
+		57AEC32924673A76007199E9 /* ActionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32724673A76007199E9 /* ActionButtonCell.swift */; };
+		57AEC32A24673A76007199E9 /* ActionButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AEC32824673A76007199E9 /* ActionButtonCell.xib */; };
+		57AEC32C24673D33007199E9 /* DailyQuestionsViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32B24673D33007199E9 /* DailyQuestionsViewController+Table.swift */; };
+		57AEC33024674DC6007199E9 /* UIView+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */; };
+		57AEC3322467541D007199E9 /* DailyQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC3312467541D007199E9 /* DailyQuestion.swift */; };
 		62223CB9DFCF2EE098767FC5 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */; };
 		E00FC076245776AC00924B8D /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC075245776AC00924B8D /* APIModels.swift */; };
 		E00FC078245776CB00924B8D /* DTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC077245776CB00924B8D /* DTOModel.swift */; };
@@ -206,6 +218,18 @@
 		498C6093FB6A0614335226E5 /* Pods-Covid19VOCAAiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAiTests.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAiTests/Pods-Covid19VOCAAiTests.release.xcconfig"; sourceTree = "<group>"; };
 		54C81089705B59FC47FEF190 /* Pods-Covid19VOCAAi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi/Pods-Covid19VOCAAi.debug.xcconfig"; sourceTree = "<group>"; };
 		578F41A7C45C9C9ED24FDFFB /* Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi-Covid19VOCAAiUITests/Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsViewController.swift; sourceTree = "<group>"; };
+		57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyQuestionsHeaderView.xib; sourceTree = "<group>"; };
+		57AEC3042465C80B007199E9 /* DailyQuestionsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsHeaderView.swift; sourceTree = "<group>"; };
+		57AEC31B2466D9D3007199E9 /* QuestionListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListCell.swift; sourceTree = "<group>"; };
+		57AEC31C2466D9D3007199E9 /* QuestionListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionListCell.xib; sourceTree = "<group>"; };
+		57AEC32124670F46007199E9 /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		57AEC32424671693007199E9 /* DailyQuestionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuestionsPresenter.swift; sourceTree = "<group>"; };
+		57AEC32724673A76007199E9 /* ActionButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonCell.swift; sourceTree = "<group>"; };
+		57AEC32824673A76007199E9 /* ActionButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionButtonCell.xib; sourceTree = "<group>"; };
+		57AEC32B24673D33007199E9 /* DailyQuestionsViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyQuestionsViewController+Table.swift"; sourceTree = "<group>"; };
+		57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Interaction.swift"; sourceTree = "<group>"; };
+		57AEC3312467541D007199E9 /* DailyQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuestion.swift; sourceTree = "<group>"; };
 		838C70F42504E96D1926E879 /* Pods-Covid19VOCAAiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAiTests.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAiTests/Pods-Covid19VOCAAiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -314,6 +338,7 @@
 				27D45E2F243A3E990031448E /* FormViewController */,
 				27A73973243CD54100A3D18C /* MainViewController */,
 				27EB59BB243FD97B00A9CA52 /* NewMainViewController */,
+				57AEC3002465C7E7007199E9 /* DailyQuestionnaireViewController */,
 				E0DC281E2458FF5700F1AF97 /* Covid19VOCAAi-Bridging-Header.h */,
 			);
 			path = Controllers;
@@ -432,6 +457,8 @@
 				27E01BA1243A11760062B4A6 /* Base */,
 				27E01B72243A0E720062B4A6 /* Utils */,
 				27E01B9C243A0E890062B4A6 /* APIManager */,
+				57AEC32E24674DB1007199E9 /* Extensions */,
+				57AEC32024670F36007199E9 /* Helpers */,
 				27E01BA4243A14F80062B4A6 /* Views */,
 				E094F16A245DD65800DFD604 /* VoiceUpMainViewController */,
 				271210A0244510830074DFBD /* Controllers */,
@@ -592,6 +619,71 @@
 				498C6093FB6A0614335226E5 /* Pods-Covid19VOCAAiTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		57AEC3002465C7E7007199E9 /* DailyQuestionnaireViewController */ = {
+			isa = PBXGroup;
+			children = (
+				57AEC3132465E785007199E9 /* Model */,
+				57AEC326246716AA007199E9 /* Presenter */,
+				57AEC30A2465C9AA007199E9 /* Cells */,
+				57AEC3092465C81D007199E9 /* Views */,
+				57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */,
+				57AEC32B24673D33007199E9 /* DailyQuestionsViewController+Table.swift */,
+			);
+			path = DailyQuestionnaireViewController;
+			sourceTree = "<group>";
+		};
+		57AEC3092465C81D007199E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57AEC3042465C80B007199E9 /* DailyQuestionsHeaderView.swift */,
+				57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57AEC30A2465C9AA007199E9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				57AEC31B2466D9D3007199E9 /* QuestionListCell.swift */,
+				57AEC31C2466D9D3007199E9 /* QuestionListCell.xib */,
+				57AEC32724673A76007199E9 /* ActionButtonCell.swift */,
+				57AEC32824673A76007199E9 /* ActionButtonCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		57AEC3132465E785007199E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57AEC3312467541D007199E9 /* DailyQuestion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57AEC32024670F36007199E9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				57AEC32124670F46007199E9 /* StringHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		57AEC326246716AA007199E9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57AEC32424671693007199E9 /* DailyQuestionsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		57AEC32E24674DB1007199E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BB17CF1D299E6B8F5F19CC24 /* Frameworks */ = {
@@ -876,12 +968,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2761E873243F43BD00C06C75 /* Montserrat-Bold.ttf in Resources */,
+				57AEC32A24673A76007199E9 /* ActionButtonCell.xib in Resources */,
 				E0571F36245DE3310097AB61 /* GoogleService-Info.plist in Resources */,
 				2761E872243F43BD00C06C75 /* Montserrat-Regular.ttf in Resources */,
 				27E01B4C243A0E3E0062B4A6 /* Assets.xcassets in Resources */,
 				E0F06C44245C28DC00D25388 /* PersonalDetails.storyboard in Resources */,
 				2761E875243F43BD00C06C75 /* Montserrat-Black.ttf in Resources */,
 				E0E0CF5A245F68B20001875B /* SympthomsCollectionViewCell.xib in Resources */,
+				57AEC3052465C80B007199E9 /* DailyQuestionsHeaderView.xib in Resources */,
+				57AEC31E2466D9D3007199E9 /* QuestionListCell.xib in Resources */,
 				27E01B47243A0E3C0062B4A6 /* Main12.storyboard in Resources */,
 				2761E874243F43BD00C06C75 /* Montserrat-Light.ttf in Resources */,
 				E0829335245C621900737F33 /* TextCollectionViewCell.xib in Resources */,
@@ -1026,7 +1121,9 @@
 				E094F167245DCA6300DFD604 /* OxymeterModel.swift in Sources */,
 				27E01B9A243A0E720062B4A6 /* LocalizationManager.swift in Sources */,
 				27E01B89243A0E720062B4A6 /* Constants.swift in Sources */,
+				57AEC2FF2465C7D9007199E9 /* DailyQuestionsViewController.swift in Sources */,
 				E0DC281924589D8200F1AF97 /* dataTestFile.swift in Sources */,
+				57AEC32224670F46007199E9 /* StringHelper.swift in Sources */,
 				E0DC281724588CED00F1AF97 /* FFT.swift in Sources */,
 				27A7397E243CF6DC00A3D18C /* FormModel.swift in Sources */,
 				27E01BA0243A0E890062B4A6 /* UrlManager.swift in Sources */,
@@ -1068,9 +1165,11 @@
 				27E01BB4243A23020062B4A6 /* SelectionTableViewCell.swift in Sources */,
 				27A73985243D00A900A3D18C /* GlobalData.swift in Sources */,
 				27E01B9B243A0E720062B4A6 /* UserSettings.swift in Sources */,
+				57AEC3082465C80B007199E9 /* DailyQuestionsHeaderView.swift in Sources */,
 				27A73994243D0EAD00A3D18C /* S3Uploader.swift in Sources */,
 				27A73980243CF71700A3D18C /* FormDelegate.swift in Sources */,
 				27E01B98243A0E720062B4A6 /* Notification+Utils.swift in Sources */,
+				57AEC32524671693007199E9 /* DailyQuestionsPresenter.swift in Sources */,
 				27E01B96243A0E720062B4A6 /* String+Utils.swift in Sources */,
 				E094F169245DCA6C00DFD604 /* OxymeterDelegate.swift in Sources */,
 				E094F16E245DD69900DFD604 /* VoiceUpMainPresenter.swift in Sources */,
@@ -1080,14 +1179,18 @@
 				E0DC280924584B0A00F1AF97 /* ImageProcessing.swift in Sources */,
 				E094F165245DCA5B00DFD604 /* OxymeterPresenter.swift in Sources */,
 				E00FC078245776CB00924B8D /* DTOModel.swift in Sources */,
+				57AEC32924673A76007199E9 /* ActionButtonCell.swift in Sources */,
 				27E01B91243A0E720062B4A6 /* UIColor+Utils.swift in Sources */,
 				27D45E37243A4EAE0031448E /* RecordInstructions.swift in Sources */,
 				27E01BB0243A22B10062B4A6 /* MultipleSelectionView.swift in Sources */,
 				2712109124410C450074DFBD /* TermsViewController.swift in Sources */,
 				27A7397A243CF52200A3D18C /* S3Model.swift in Sources */,
 				2712109C24450F810074DFBD /* LocalizationEnums.swift in Sources */,
+				57AEC3322467541D007199E9 /* DailyQuestion.swift in Sources */,
 				E02B4A7B245E032300A9F3E5 /* OxymeterPreperViewController.swift in Sources */,
+				57AEC31D2466D9D3007199E9 /* QuestionListCell.swift in Sources */,
 				27A73990243D0B9B00A3D18C /* ThankYouForRecordPresenter.swift in Sources */,
+				57AEC33024674DC6007199E9 /* UIView+Interaction.swift in Sources */,
 				27A7397C243CF6D300A3D18C /* FormPresenter.swift in Sources */,
 				27E01B99243A0E720062B4A6 /* EventBus.swift in Sources */,
 				E00FC076245776AC00924B8D /* APIModels.swift in Sources */,
@@ -1095,6 +1198,7 @@
 				E094F170245DD6AD00DFD604 /* VoiceUpMainModel.swift in Sources */,
 				E0DC281B2458CE0800F1AF97 /* OxymeterViewController.swift in Sources */,
 				27A73987243D027100A3D18C /* RecordPresenter.swift in Sources */,
+				57AEC32C24673D33007199E9 /* DailyQuestionsViewController+Table.swift in Sources */,
 				27A7398A243D028100A3D18C /* RecordDelegate.swift in Sources */,
 				E0829323245C40AA00737F33 /* RadioButton.swift in Sources */,
 				27E01B8F243A0E720062B4A6 /* UIView+Utils.swift in Sources */,

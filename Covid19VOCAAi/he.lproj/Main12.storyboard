@@ -1670,43 +1670,6 @@ we can beat the Coronavirus
             </objects>
             <point key="canvasLocation" x="2079.7101449275365" y="12.228260869565219"/>
         </scene>
-        <!--Daily Questions View Controller-->
-        <scene sceneID="q6K-QC-7ki">
-            <objects>
-                <viewController storyboardIdentifier="DailyQuestionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DfE-yY-mxp" customClass="DailyQuestionsViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dfc-P6-XmQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e2f-97-2Av">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mkx-1C-Tf0">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mkx-1C-Tf0" id="oXh-h4-zn2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="e2f-97-2Av" firstAttribute="top" secondItem="Wih-1z-GJa" secondAttribute="top" id="9lg-LS-3Li"/>
-                            <constraint firstItem="Wih-1z-GJa" firstAttribute="bottom" secondItem="e2f-97-2Av" secondAttribute="bottom" id="KUE-1g-iWC"/>
-                            <constraint firstItem="Wih-1z-GJa" firstAttribute="trailing" secondItem="e2f-97-2Av" secondAttribute="trailing" id="Tms-er-9PF"/>
-                            <constraint firstItem="e2f-97-2Av" firstAttribute="leading" secondItem="Wih-1z-GJa" secondAttribute="leading" id="VE5-eX-val"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Wih-1z-GJa"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IVZ-t7-oyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5126" y="-667"/>
-        </scene>
     </scenes>
     <resources>
         <image name="V_icon" width="7.3333334922790527" height="8"/>

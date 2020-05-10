@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mwS-uL-afk">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -1388,6 +1388,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEI-cs-654" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1201.875" y="222.88732394366198"/>
+        </scene>
+        <!--Daily Questions View Controller-->
+        <scene sceneID="nfB-rx-sxG">
+            <objects>
+                <viewController storyboardIdentifier="DailyQuestionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mwS-uL-afk" customClass="DailyQuestionsViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wnA-2L-TJM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hOO-Xr-q3i">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Epg-Af-Ydt" firstAttribute="bottom" secondItem="hOO-Xr-q3i" secondAttribute="bottom" id="K9W-g8-chu"/>
+                            <constraint firstItem="hOO-Xr-q3i" firstAttribute="top" secondItem="Epg-Af-Ydt" secondAttribute="top" id="ku5-Zt-6vM"/>
+                            <constraint firstItem="hOO-Xr-q3i" firstAttribute="leading" secondItem="Epg-Af-Ydt" secondAttribute="leading" id="p0w-Is-5t1"/>
+                            <constraint firstItem="Epg-Af-Ydt" firstAttribute="trailing" secondItem="hOO-Xr-q3i" secondAttribute="trailing" id="tg9-uM-k3G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Epg-Af-Ydt"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="hOO-Xr-q3i" id="T4u-9X-uAs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUJ-5Q-faa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3531" y="965"/>
         </scene>
     </scenes>
     <resources>
