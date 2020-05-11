@@ -87,7 +87,7 @@
 		57AEC32A24673A76007199E9 /* ActionButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AEC32824673A76007199E9 /* ActionButtonCell.xib */; };
 		57AEC32C24673D33007199E9 /* DailyQuestionsViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32B24673D33007199E9 /* DailyQuestionsViewController+Table.swift */; };
 		57AEC33024674DC6007199E9 /* UIView+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */; };
-		57AEC3322467541D007199E9 /* DailyQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC3312467541D007199E9 /* DailyQuestion.swift */; };
+		57AEC3322467541D007199E9 /* DailyQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC3312467541D007199E9 /* DailyQuestionModel.swift */; };
 		62223CB9DFCF2EE098767FC5 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */; };
 		E00FC076245776AC00924B8D /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC075245776AC00924B8D /* APIModels.swift */; };
 		E00FC078245776CB00924B8D /* DTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC077245776CB00924B8D /* DTOModel.swift */; };
@@ -229,7 +229,7 @@
 		57AEC32824673A76007199E9 /* ActionButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionButtonCell.xib; sourceTree = "<group>"; };
 		57AEC32B24673D33007199E9 /* DailyQuestionsViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyQuestionsViewController+Table.swift"; sourceTree = "<group>"; };
 		57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Interaction.swift"; sourceTree = "<group>"; };
-		57AEC3312467541D007199E9 /* DailyQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuestion.swift; sourceTree = "<group>"; };
+		57AEC3312467541D007199E9 /* DailyQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuestionModel.swift; sourceTree = "<group>"; };
 		838C70F42504E96D1926E879 /* Pods-Covid19VOCAAiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAiTests.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAiTests/Pods-Covid19VOCAAiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -457,8 +457,6 @@
 				27E01BA1243A11760062B4A6 /* Base */,
 				27E01B72243A0E720062B4A6 /* Utils */,
 				27E01B9C243A0E890062B4A6 /* APIManager */,
-				57AEC32E24674DB1007199E9 /* Extensions */,
-				57AEC32024670F36007199E9 /* Helpers */,
 				27E01BA4243A14F80062B4A6 /* Views */,
 				E094F16A245DD65800DFD604 /* VoiceUpMainViewController */,
 				271210A0244510830074DFBD /* Controllers */,
@@ -493,6 +491,7 @@
 		27E01B72243A0E720062B4A6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				57AEC32024670F36007199E9 /* Helpers */,
 				2761E86C243F43A600C06C75 /* Fonts */,
 				27E01B73243A0E720062B4A6 /* Constants.swift */,
 				27E01B74243A0E720062B4A6 /* Extention */,
@@ -520,6 +519,7 @@
 				27E01B81243A0E720062B4A6 /* String+Utils.swift */,
 				27E01B82243A0E720062B4A6 /* ScrollView+Utils.swift */,
 				27E01B83243A0E720062B4A6 /* Notification+Utils.swift */,
+				57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -624,10 +624,10 @@
 		57AEC3002465C7E7007199E9 /* DailyQuestionnaireViewController */ = {
 			isa = PBXGroup;
 			children = (
-				57AEC3132465E785007199E9 /* Model */,
-				57AEC326246716AA007199E9 /* Presenter */,
 				57AEC30A2465C9AA007199E9 /* Cells */,
 				57AEC3092465C81D007199E9 /* Views */,
+				57AEC3312467541D007199E9 /* DailyQuestionModel.swift */,
+				57AEC32424671693007199E9 /* DailyQuestionsPresenter.swift */,
 				57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */,
 				57AEC32B24673D33007199E9 /* DailyQuestionsViewController+Table.swift */,
 			);
@@ -654,36 +654,12 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		57AEC3132465E785007199E9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				57AEC3312467541D007199E9 /* DailyQuestion.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		57AEC32024670F36007199E9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				57AEC32124670F46007199E9 /* StringHelper.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		57AEC326246716AA007199E9 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				57AEC32424671693007199E9 /* DailyQuestionsPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		57AEC32E24674DB1007199E9 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BB17CF1D299E6B8F5F19CC24 /* Frameworks */ = {
@@ -1186,7 +1162,7 @@
 				2712109124410C450074DFBD /* TermsViewController.swift in Sources */,
 				27A7397A243CF52200A3D18C /* S3Model.swift in Sources */,
 				2712109C24450F810074DFBD /* LocalizationEnums.swift in Sources */,
-				57AEC3322467541D007199E9 /* DailyQuestion.swift in Sources */,
+				57AEC3322467541D007199E9 /* DailyQuestionModel.swift in Sources */,
 				E02B4A7B245E032300A9F3E5 /* OxymeterPreperViewController.swift in Sources */,
 				57AEC31D2466D9D3007199E9 /* QuestionListCell.swift in Sources */,
 				27A73990243D0B9B00A3D18C /* ThankYouForRecordPresenter.swift in Sources */,
