@@ -1,0 +1,137 @@
+/* 
+  Localizable.strings
+  Covid19VOCAAi
+
+  Created by Omer Elimelech on 09/04/2020.
+  Copyright © 2020 Omer Elimelech. All rights reserved.
+*/
+
+"We need your help to beat COVID-19." = "אנחנו צריכים את עזרתך בכדי לנצח את נגיף הקורונה";
+"We would be very grateful if you are willing to log in and complete this questionnaire daily. This will enable researchers to understand trends prior to symptoms, which is critical in fighting COVID-19." = "אנא הכניסו את פרטיכם בכדי לענות על האתר בפעמים הבאות במהירות ובקלות. זה יאפשר לחוקרים להבין שינויים שקרו לפני הופעת הסימפוטמים במידה ויהיו, דבר הכרחי בשביל להילחם בנגיף הקורונה";
+"Please fill your details below:" = "בבקשה מלאו את הפרטים הבאים:";
+"SIGN UP / SIGN IN" = "הרשם/י";
+"SKIP" = "דלג";
+"Age" = "גיל";
+"Gender" = "מגדר";
+"Male" = "זכר";
+"Female" = "נקבה";
+"Other" = "אחר";
+"Height" = "גובה";
+"Centimeters" = "סנטימטרים";
+"Feet" = "רגל";
+"Inches" = "אינץ'";
+"Country" = "מדינה";
+"Have you been diagnosed with any of the following conditions?" = "האם אובחנת בעבר באחד מהבאים?";
+"Diabetes" = "סוכרת";
+"Hypertension" = "יתר לחץ דם";
+"Ischemic heart disease" = "מחלת לב";
+"Asthma" = "אסתמה";
+"Allergies" = "אלרגיות";
+"Chronic lung disease" = "כשל ריאתי כרוני";
+"Chronic kidney disease" = "כשל כלייתי כרוני";
+"Seasonal allergies" = "אלרגיה עונתית";
+"Current body temperature" = "טמפרטורת גוף נוכחית";
+"Celsious" = "צלזיוס";
+"SUBMIT" = "הרשם/י";
+"Fahrenheit" = "פרנהייט";
+"Nausea and/or vomiting" = "בחילה ו/או הקאות";
+"Diarrhea" = "שלשול";
+"Itching (eyes or other)" = "גירוד (בעיניים או במקום אחר)";
+"Runny nose or Nasal congestion" = "נזלת או גודש באף";
+"Shortness of breath" = "קוצר נשימה";
+"Sneezing" = "התעטשויות";
+"Sore throat" = "כאב גרון";
+"Headache" = "כאבי ראש";
+"Muscle aches" = "כאבי שרירים";
+"Fatigue" = "עייפות ";
+"Cough with sputum production" = "שיעול עם כיח";
+"Dry cough" = "שיעול יבש";
+"I have a fever" = "יש לי חום";
+"I feel well" = "אני מרגיש/ה טוב";
+"Are you currently experiencing any of the following symptoms:" = "האם את/ה חווה אחד או יותר מהתסמינים הבאים?";
+"Were you diagnosed with COVID-19?" = "האם אובחנת כחולה קורונה?";
+"What is your current status?" = "מה מצבך מבחינת אבחון קורונה?";
+"Do you smoke?" = "האם את/ה מעשן/ת?";
+"I currently smoke" = "אני מעשן";
+"I used to smoke" = "נהגתי לעשן";
+"I've never smoked" = "מעולם לא עישנתי";
+"Not in isolation" = "לא בבידוד";
+"Hospitalized" = "מאושפז";
+"in isolation due to being diagnoed with COVID-19" = "בבידוד עקב אבחון בקורונה";
+"in isolation due to contant with an individual who was infected with coronavirus or an individual who recently" = "בבידוד עקב אינטרטאקציה עם חולה מאומת";
+"in isulation due to govenrment regulations" = "בבידוד עקב  הוראה ממשלתית";
+"in isulation due to recent international travel" = "בבידוד עקב חזרה מחוץ לארץ";
+"Yes" = "כן";
+"No" = "לא";
+"Please cough three times" = "בבקשה השתעלו שלוש פעמים";
+"Click to start recording:" = "לחצו כאן כדי להתחיל להקליט";
+"Recording! Click here to stop:" = "מקליט! לחצו כאן בכדי לעצור את ההקלטה";
+"Count from 1 to 20" = "אנא ספרו מא-1 עד 20";
+"Please recite the alphabet:" = "בבקשה אמרו את אותיות האלף בית העברי לפי הסדר";
+"A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z" = "א, ב, ג, ד, ה, ו, ז, ח, ט, י, כ, ל, מ, נ, ס, ע, פ, צ, ק, ר, ש, ת";
+"Say the vowel \"ee\" for as long ass you can : EEEE" = "אנא אמרו את ההברה אי הכי הרבה זמן שתוכלו";
+"(as in the word \"cheese\")" = "(כמו במילה גבינה)";
+"Say the vowel \"o\" for as long ass you can : OOOO" = "אנא אמרו את ההברה או הכי הרבה זמן שתוכלו";
+"(as in the word \"box\")" = "(כמו במילה אור)";
+"Say the vowel \"a\" for as long ass you can : AAAA" = "אנא אמרו את ההברה אה הכי הרבה זמן שתוכלו";
+"(as in the word \"sad\")" = "(כמו במילה אהבה)";
+"Thank you for your recording!" = "תודה על הקלטתך!";
+"You have completed 6 out of 6 tasks thus far!" = "סיימת את כל המשימות";
+"PLAY PREVIOUS RECORDING" = "השמע הקלטה אחרונה";
+"REDO RECORDING" = "הקלטה חוזרת";
+"End Session" = "סיים";
+"You have completed %d out of 6 tasks thus far!" = "השלמת %d הקלטות מתוך 6 עד כה!";
+"Made with ❤ by Voca.ai" = "נעשה באהבה ע\"י Voca.ai וחברים";
+"We'd appreaciate your feedback:" = "אנו מעריכים את המשוב אשר נתת.";
+"If you would like to help some more, please do another recording tomorrow." = "אם ברצונך להמשיך לסייע, אנא הפיצו את השאלון לעוד אנשים והקליטו גם מחר.";
+"Thank you for your participation!" = "תודה רבה על השתתפותך";
+"The data will be used anonymously for research purposes." = "המידע שנתת ישמש באופן אנונימי למחקר";
+"All done!" = "כל הכבוד!";
+"Following the success of the data collection phase, people will soon be able to determine the likelihood of contracting the virus – with just one short voice recording\nNOW THAT SOUNDS REMARKABLE!!!" = "בעקבות הצלחת שלב איסוף הנתונים, בקרוב אנשים יוכלו לקבל מידע על מידת הסבירות בה הם נשאי קורונה על סמך דגימת קול קצרה בלבד.\n והכל בזכותכם!!!!";
+"RECORD" = "הקלט";
+"Interested to learn more about this project or Voca?" = "מועניין ללמוד עוד על הפרויקט או עלינו?";
+
+
+"Corona Voice Detect, is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO & Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevention in spreading. We’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with the virus from voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect COVID-19 and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis of Coronavirus." = "אנו מתחילים באיסוף מידע מכל רחבי העולם. עם הנתונים הללו נוכל לזהות את המאפיינים הייחודיים של הקורונה בגלי הקול ולפתח טכנולוגיות אשר יזהו באופן אוטומטי את הסבירות בה מישהו נדבק בוירוס הקורונה ומחלות דומות - רק על סמך דגימת הקול. כלים אלו יאפשרו לבצע בדיקות מהירות שיכולות להתבצע מרחוק, אפילו באמצעות הטלפון או המחשב ולסייע באבחון וטיפול מהיר בחולים.   פרויקט גילוי הקורונה באמצעות גלי הקול מובל על ידי פרופסור שמואל אור, ממציא ישראלי, יחד עם דוקטור אלן בקר, המנהל הטכנולוגי והמייסד voca.ai. המחקר והפיתוח נעשים תוך שיתוף פעולה עם פרופסור ריטה שינג/'ה מאוניברסיטת קרנגי מלון יחד עם חוקרות וחוקרים מכל רחבי העולם. הצלחת הפרויקט תביא להשפעה משמעותית על הבריאות של כולנו ותמנע את התפשטות נגיף הקורונה. ";
+"CLICK BELOW TO ANSWER THE QUESTIONNAIRE & RECORD YOUR VOICE TO HELP US STOP COVID-19." = "הקליקו מטה בכדי להקליט את קולכם ועזרו לכולנו להביס את נגיף הקורונה.";
+"HELP US BEAT" = "מביסים יחד";
+"COVID-19 (Coronavirus)" = "את נגיף הקורונה";
+"Voca.ai and Carnegie Mellon University partner to enable fast diagnosis of COVID-19." = "שותפות חוקרים בין לאומית בהובלת אוניברסיטת קרנגי מלון וחברת voca.ai לאבחון מהיר של נגיף הקורונה";
+"The project, Corona Voice Detect, was created for early diagnosis of COVID-19 (Coronavirus). It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors." = "מטרת הפרויקט הינה אבחון של נגיף הקורונה (COVID19) באמצעות דגימת קול בלבד. הפרויקט משלב את היכולות המתקדמות בעולם בתחום הבינה המלאכותית (AI) ועיבוד אותות. הטכנולוגיות שנפתח יחפשו תבניות ספציפיות בקול אשר נגרמות על ידי נגיף הקורונה.  לשם כך - אנו זקוקים לעזרתכם ועזרתכן! אנו אוספים הקלטות של אנשים בריאים ושל חולי קורונה, על בסיסן נוכל לפתח את טכנולוגיית האבחון. בבקשה הקליטו את כולכם באופן יומי ועזרו לנו להביס את המחלה! הטביעו את חותמכם וקחו חלק במסע המרגש והחדשני יחד איתנו. עזרו לנו לאבחן את הקורונה מהר יותר, באופן מיידי, מרחוק ובחינם!  ";
+
+"Together with researches from all around the world, we are developing a COVID19 diagnostic tool that is based on your voice samples only from both healthy individuals and those tested positive for Coronavirus. Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of Coronavirus and bring remote testing to every human in the world at NO EXPENSE!." = "יחד עם חוקרות וחוקרים מכל רחבי העולם אני מפתחים כלי לאבחון נגיף הקורונה על סמך דגימות הקול בלבד - הן של חולים והן של בריאים.\nיחד, ניצור כלי לאבחון מיידי וחינמי שאפשר להפעיל בקלות מרחוק.\nהצטרפו למסע, הקליטו עצמכם והפיצו את האפליקציה.\nיחד ננצח את הקורונה\nתודה!";
+
+//MARK: -Terms And Conditions
+
+"Consent Form\nCONCISE SUMMARY" = "טופס הסכמה\nתקציר";
+
+"The purpose of this venture is to collect data that is useful for diagnosis of COVID-19 patients based on voice analysis. If successful, we hope to use voice samples as a new screening method for early detection of COVID-19 infection. However, at this stage, we are simply collecting information to be made available for the research community and advance rapid new techniques for COVID-19 detection.\nYou will be shown a short questionnaire to collect demographic information, as well as an indication whether or not you have been tested positive for COVID-19. You will be asked to provide a voice sample. We may request that you log-on using your GOOGLE™ account, to enable provisioning of multiple samples over time.\nIf you are interested in learning more about this study, please continue to read below. " = "מטרת מיזם זה היא לאסוף נתונים אשר יסייעו לאבחון נגיף הקורונה (להלן: COVID-19) על סמך ניתוח קולי. אם נצליח, אנו מקווים להשתמש בדגימות קוליות כשיטת אבחון חדשה לגילוי מוקדם של COVID-19. עם זאת, בשלב זה אנו פשוט אוספים מידע שיהיה זמין עבור קהילת המחקר לפיתוח טכנולוגיות חדשות ומהירות לגילוי COVID-19. יוצג לך שאלון קצר לאיסוף מידע דמוגרפי, וכן שאלה האם אובחנת כחולה ב-COVID-19 או לא. בנוסף, תתבקש לספק דגימה קולית. נבקש ממך להתחבר באמצעות חשבון Google™ שלך, בכדי לאפשר מתן דוגמאות מרובות בקלות לאורך זמן. אם אתה מעוניין ללמוד עוד אודות מחקר זה, המשך לקרוא. טופס זה כתוב בלשון זכר אך פונה כמובן לשני המינים.";
+
+"INTRODUCTION" = "הקדמה";
+
+"Thank you for deciding to volunteer in our research project. We aim to study the ability of Deep Learning techniques and voice analysis to assist in diagnosis of COVID-19, and assist in stopping the pandemic. The research project will consist of you filling a short questionnaire and obtaining a recordation of your voice. All your data collected will be anonymized.\nPlease note that you have no obligation to participate and you may decide to terminate your participation at any time. Below is a description of the research project, and your consent to participate. Please read this information carefully.\nBy clicking the button, you are agreeing that you’ve had time to read and consider this consent waiver and are comfortable with what is being asked of you as a participant. " = "תודה שהחלטת להתנדב בפרויקט המחקר שלנו. בפרויקט זה, אנו שואפים להשתמש בטכנולוגיות של למידה עמוקה (Deep learning), בינה מלאכותית (AI) וניתוח קולי בכדי לסייע באבחון COVID-19, ובך לסייע באופן ישיר להפסקת המגיפה. פרויקט המחקר מורכב ממילוי שאלון קצר וקבלת הקלטת קולך. כל הנתונים נאספים באופן אנונימי. אנא שים לב כי אינך מחוייב להשתתף ואתה יכול להחליט להפסיק את השתתפותך בכל עת. להלן תיאור של פרויקט המחקר ופרטי הסכמתך להשתתף. אנא קרא מידע זה בעיון. בלחיצה על כפתור האישור, אתה מאשר כי היה לך זמן לקרוא ולשקול את הסכמתך ומקובלות עליך בקשותינו כמשתתף בפרויקט.";
+
+"TITLE OF RESEARCH PROJECT" = "כותרת המחקר";
+
+"Corona Voice Detect" = "גילוי קורונה בעזרת גלי הקול";
+
+"BENEFITS AND RISKS" = "תועלות וסיכונים";
+
+"We hope to be able to assist in early and remote diagnosis of COVID-19 patients, to target suspected cases for expensive laboratory tests.\nWe have not identified any particular risk associated with your participation in this venture. " = "אנו מקווים שנוכל לסייע באבחון מוקדם ומרוחק של חולי COVID-19 בכדי לאפשר שימוש מושכל ומדויק במשאבי אבחון מעבדתיים יקרים. לא זיהינו שום סיכון מיוחד הקשור להשתתפותך במיזם זה.";
+
+"CONFIDENTIALITY" = "סודיות";
+
+"We will keep your information confidential and will not divulge any non-anonymized data. Anonymized dataset may be transferred to third parties. In particular, anonymized data may be transferred to third parties for COVID-19 related research purposes.\nIf you log-in using your GOOGLE™ identifier, we will not collect any information from your GOOGLE™ account other than your identifier. The identifier will be retained in a hashed manner, preventing us from being able to reconstruct your identifier, and being useful for the sole purpose of determining if a new identifier is identical to a previously retained one. " = "אנו נשמור על המידע שלך סודי ולא נמסור נתונים לא אנונימיים. מסד נתונים אנונימי עשוי להיות מועבר לצדדים שלישיים. בפרט, נתונים אנונימיים עשויים להיות מועברים לצדדים שלישיים למטרות מחקר ופיתוח בנושא COVID-19. אם אתה מתחבר באמצעות חשבון ה-GOOGLE ™ שלך, אנו לא נאסוף מידע מחשבון זה מלבד המזהה (ID) שלך. המזהה יישמר בצורה מגובבת, מה שימנע מאיתנו אפשרות לשחזר את המזהה שלך, ויהיה שימושי אך ורק בכדי לקבוע אם מזהה הינו חדש או כבר נשמר במערכת בעבר.";
+
+"RESEARCH DATA & FEEDBACK" = "נתוני מחקר ומשוב";
+
+
+"You give your permission to Voca.ai to collect information about your participation in the research project in the formats and medium (“Data”) described above. We shall own and control all Data in connection with the research project. You may also provide suggestions, comments or other feedback (“Feedback”) to the investigators with respect to the research project. Feedback is entirely voluntary and the research team shall be free to use, disclose, license, or otherwise distribute, and exploit the Feedback and Data as authorized by the research participant. " = "אתה נותן את רשותך לחברת  Voca.ai לאסוף מידע על השתתפותך בפרויקט המחקר בתבנית ובמדיום (\"נתונים\") כפי שתוארו לעיל. אנו נחזיק בבעלותנו את כל הנתונים הקשורים לפרויקט המחקר. אתה יכול לספק הצעות, הערות או משוב אחר (\"משוב\") לחוקרים ביחס לפרויקט המחקר. המישוב הינו התנדבותי ומרצון חופשי לחלוטין וצוות המחקר יהיה חופשי להשתמש, לחשוף, להעניק רישיון או להפיץ בדרך אחרת את המשוב והנתונים שניתנו על ידי משתתפי המחקר.";
+
+"YOUR AUTHORITY TO PARTICIPATE" = "הסכמתך להשתתף";
+
+"You represent that you have the full right and authority to sign this form.\nBy clicking the survey button, you confirm that you understand what the project is about and how and why it is being done. Should you have any questions concerning this project, please contact the supervising researchers:\n\nVoca.ai\nShmuel Ur at shmuel.ur@gmail.com\nPlease print this page for your records.\n\nWe thank you for your participation." = "אתה מצהיר כי יש לך את הזכות והסמכות המלאה לחתום על טופס זה. בלחיצה על כפתור הסקר, אתה מאשר שאתה מבין על מה הפרויקט, כיצד ואיך הוא מתבצע. אם יש לך שאלות הנוגעות לפרויקט זה, אנא צור קשר עם החוקרים האחראיים:\n\nחברת Voca.ai\nדוקטור שמואל אור:  shmuel.ur@gmail.com\nהנך מוזמן ורשאי להדפיס עמוד זה ולשמור אותו.\n\nאנו מודים לך מאוד על השתתפותך.
+";
+
+"Agree & Continue" = "הסכם והמשך";
+"Terms And Conditions" = "מדיניות הפרטיות";
