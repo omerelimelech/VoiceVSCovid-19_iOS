@@ -2,7 +2,7 @@
 //  NotificationViewController.swift
 //  Covid19VOCAAi
 //
-//  Created by Worg Wis on 10/05/2020.
+//  Created by Danielle Honigstein on 10/05/2020.
 //  Copyright © 2020 Omer Elimelech. All rights reserved.
 //
 
@@ -11,30 +11,21 @@ import UIKit
 class NotificationViewController: UIViewController {
 
     @IBOutlet weak var timePicker: UIDatePicker!
+    var presenter: NotificationPresenter?
+
     
     @IBAction func setNotification(_ sender: UIButton) {
-        //create notification
-        let content = UNMutableNotificationContent()
-        content.title = NSString.localizedUserNotificationString(forKey: "Test", arguments: nil)
-        content.body = NSString.localizedUserNotificationString(forKey: "Message_Body", arguments: nil)
-        content.sound = UNNotificationSound.default
-        //test: deliver in 5 seconds
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        let request = UNNotificationRequest(identifier: "FiveSecond", content: content, trigger: trigger)
-        let center = UNUserNotificationCenter.current()
-        center.add(request) { (error) in
-            if let error = error {
-                print("Error \(error.localizedDescription)")
-            }
-        }
-        
+        //get user time
+        let date = timePicker.date;
+        presenter?.setNotification(date: date)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter = NotificationPresenter(with:self)
     }
+    
+
     
 
     /*
@@ -47,4 +38,18 @@ class NotificationViewController: UIViewController {
     }
     */
 
+}
+
+extension NotificationViewController:NotificationDelegate{
+    func notificationFailed(error: Error) {
+        //show error somehow?
+        print("Uh oh... \(error.localizedDescription)")
+    }
+    
+    func notificationOK() {
+        //go to next view
+        print("great!")
+    }
+    
+    
 }

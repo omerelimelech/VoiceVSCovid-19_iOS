@@ -84,6 +84,9 @@
 		47FEDE26B00838BF8EF38EB2 /* Pods_Covid19VOCAAiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */; };
 		62223CB9DFCF2EE098767FC5 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */; };
 		657EA5FE24686B2600E29C75 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657EA5FD24686B2600E29C75 /* NotificationViewController.swift */; };
+		65E58FC7246AC9DD0092B0C9 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E58FC6246AC9DD0092B0C9 /* NotificationModel.swift */; };
+		65E58FC9246ACBF30092B0C9 /* NotificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E58FC8246ACBF30092B0C9 /* NotificationPresenter.swift */; };
+		65E58FCB246ACE320092B0C9 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E58FCA246ACE320092B0C9 /* NotificationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +194,9 @@
 		54C81089705B59FC47FEF190 /* Pods-Covid19VOCAAi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi/Pods-Covid19VOCAAi.debug.xcconfig"; sourceTree = "<group>"; };
 		578F41A7C45C9C9ED24FDFFB /* Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi-Covid19VOCAAiUITests/Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		657EA5FD24686B2600E29C75 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		65E58FC6246AC9DD0092B0C9 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		65E58FC8246ACBF30092B0C9 /* NotificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenter.swift; sourceTree = "<group>"; };
+		65E58FCA246ACE320092B0C9 /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
 		838C70F42504E96D1926E879 /* Pods-Covid19VOCAAiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAiTests.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAiTests/Pods-Covid19VOCAAiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -554,6 +560,9 @@
 			isa = PBXGroup;
 			children = (
 				657EA5FD24686B2600E29C75 /* NotificationViewController.swift */,
+				65E58FC8246ACBF30092B0C9 /* NotificationPresenter.swift */,
+				65E58FC6246AC9DD0092B0C9 /* NotificationModel.swift */,
+				65E58FCA246ACE320092B0C9 /* NotificationDelegate.swift */,
 			);
 			path = NotificationController;
 			sourceTree = "<group>";
@@ -839,6 +848,7 @@
 				27A73992243D0BA200A3D18C /* ThankYouForRecordModel.swift in Sources */,
 				27E01B8C243A0E720062B4A6 /* TableViewCell+Utils.swift in Sources */,
 				27D45E2E243A284C0031448E /* MultiInputView.swift in Sources */,
+				65E58FC7246AC9DD0092B0C9 /* NotificationModel.swift in Sources */,
 				27E01B8D243A0E720062B4A6 /* NSLocale+Utils.swift in Sources */,
 				27E01B92243A0E720062B4A6 /* UIFont+Utils.swift in Sources */,
 				27E01B8E243A0E720062B4A6 /* UIDevice+Utils.swift in Sources */,
@@ -863,6 +873,7 @@
 				27E01BA3243A117F0062B4A6 /* BasePresenter.swift in Sources */,
 				27E01B94243A0E720062B4A6 /* Collections+Utils.swift in Sources */,
 				27796551243F18A700B6BF05 /* RecordYouVoiceButton.swift in Sources */,
+				65E58FC9246ACBF30092B0C9 /* NotificationPresenter.swift in Sources */,
 				27E01B91243A0E720062B4A6 /* UIColor+Utils.swift in Sources */,
 				27D45E37243A4EAE0031448E /* RecordInstructions.swift in Sources */,
 				27E01BB0243A22B10062B4A6 /* MultipleSelectionView.swift in Sources */,
@@ -876,6 +887,7 @@
 				27A73987243D027100A3D18C /* RecordPresenter.swift in Sources */,
 				27A7398A243D028100A3D18C /* RecordDelegate.swift in Sources */,
 				27E01B8F243A0E720062B4A6 /* UIView+Utils.swift in Sources */,
+				65E58FCB246ACE320092B0C9 /* NotificationDelegate.swift in Sources */,
 				27E01BAA243A15E60062B4A6 /* TitlePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
