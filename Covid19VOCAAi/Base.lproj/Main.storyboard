@@ -1379,15 +1379,12 @@ we can beat the Coronavirus
                                 <rect key="frame" x="64" y="52" width="287" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When do you want to perform the next test? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFU-e5-ACX">
-                                <rect key="frame" x="53" y="281" width="341" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFU-e5-ACX">
+                                <rect key="frame" x="53" y="281" width="300" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="When do you want to perform the next test? "/>
-                                </userDefinedRuntimeAttributes>
                             </label>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="98Y-50-Gk5">
                                 <rect key="frame" x="1" y="306" width="414" height="216"/>
@@ -1412,6 +1409,9 @@ we can beat the Coronavirus
                         <viewLayoutGuide key="safeArea" id="wwR-yi-N4R"/>
                     </view>
                     <connections>
+                        <outlet property="doneButton" destination="AF4-Ke-mc8" id="7pK-fI-mxf"/>
+                        <outlet property="label" destination="pFU-e5-ACX" id="D1i-sC-RSU"/>
+                        <outlet property="laterButton" destination="xb0-El-mfu" id="LfB-Lx-ZSt"/>
                         <outlet property="timePicker" destination="98Y-50-Gk5" id="uNr-7u-H4O"/>
                     </connections>
                 </viewController>

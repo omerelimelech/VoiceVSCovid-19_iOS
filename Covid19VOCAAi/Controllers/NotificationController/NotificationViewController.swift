@@ -10,9 +10,12 @@ import UIKit
 
 class NotificationViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var timePicker: UIDatePicker!
     var presenter: NotificationPresenter?
 
+    @IBOutlet weak var laterButton: UIButton!
+    @IBOutlet weak var doneButton: UIButton!
     
     @IBAction func setNotification(_ sender: UIButton) {
         //get user time
@@ -23,6 +26,19 @@ class NotificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = NotificationPresenter(with:self)
+        //arrange question text
+        label.text = "When to remind you again?".localized()
+        label.sizeToFit()
+        label.center.x = self.view.center.x
+        //arrange button text
+        doneButton.setTitle("Done".localized(), for:.normal)
+        doneButton.sizeToFit()
+        doneButton.center.x = self.view.center.x
+        laterButton.setTitle("Later".localized(), for: .normal)
+        laterButton.sizeToFit()
+        laterButton.center.x = self.view.center.x
+        
+        
     }
     
 
