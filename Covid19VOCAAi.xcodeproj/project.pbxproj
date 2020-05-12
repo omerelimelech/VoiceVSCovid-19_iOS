@@ -76,6 +76,8 @@
 		27EB59BD243FD99300A9CA52 /* NewMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB59BC243FD99300A9CA52 /* NewMainViewController.swift */; };
 		37F552A7B3AB9262BFBA7C4A /* Pods_Covid19VOCAAi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93404E59A34D04B3B3EA53F /* Pods_Covid19VOCAAi.framework */; };
 		47FEDE26B00838BF8EF38EB2 /* Pods_Covid19VOCAAiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */; };
+		5732C015246AE58F0024334E /* QuestionCheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732C013246AE58F0024334E /* QuestionCheckboxCell.swift */; };
+		5732C016246AE58F0024334E /* QuestionCheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5732C014246AE58F0024334E /* QuestionCheckboxCell.xib */; };
 		57AEC2FF2465C7D9007199E9 /* DailyQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */; };
 		57AEC3052465C80B007199E9 /* DailyQuestionsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */; };
 		57AEC3082465C80B007199E9 /* DailyQuestionsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC3042465C80B007199E9 /* DailyQuestionsHeaderView.swift */; };
@@ -217,6 +219,8 @@
 		2C53D8587E7DC3F81E5E125C /* Pods-Covid19VOCAAi-Covid19VOCAAiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi-Covid19VOCAAiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi-Covid19VOCAAiUITests/Pods-Covid19VOCAAi-Covid19VOCAAiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		498C6093FB6A0614335226E5 /* Pods-Covid19VOCAAiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAiTests.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAiTests/Pods-Covid19VOCAAiTests.release.xcconfig"; sourceTree = "<group>"; };
 		54C81089705B59FC47FEF190 /* Pods-Covid19VOCAAi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi/Pods-Covid19VOCAAi.debug.xcconfig"; sourceTree = "<group>"; };
+		5732C013246AE58F0024334E /* QuestionCheckboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCheckboxCell.swift; sourceTree = "<group>"; };
+		5732C014246AE58F0024334E /* QuestionCheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCheckboxCell.xib; sourceTree = "<group>"; };
 		578F41A7C45C9C9ED24FDFFB /* Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi-Covid19VOCAAiUITests/Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsViewController.swift; sourceTree = "<group>"; };
 		57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyQuestionsHeaderView.xib; sourceTree = "<group>"; };
@@ -650,6 +654,8 @@
 				57AEC31C2466D9D3007199E9 /* QuestionListCell.xib */,
 				57AEC32724673A76007199E9 /* ActionButtonCell.swift */,
 				57AEC32824673A76007199E9 /* ActionButtonCell.xib */,
+				5732C013246AE58F0024334E /* QuestionCheckboxCell.swift */,
+				5732C014246AE58F0024334E /* QuestionCheckboxCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -962,6 +968,7 @@
 				2761E876243F43BD00C06C75 /* Montserrat-Medium.ttf in Resources */,
 				271210992441D6A70074DFBD /* CountriesPickerView.xib in Resources */,
 				27E01BB5243A23020062B4A6 /* SelectionTableViewCell.xib in Resources */,
+				5732C016246AE58F0024334E /* QuestionCheckboxCell.xib in Resources */,
 				27E01BAE243A22A30062B4A6 /* MultipleSelectionView.xib in Resources */,
 				E0992A3524574BAB0087E7DD /* OpenSansHebrew-Regular.ttf in Resources */,
 				E0F06C3F245B4E6100D25388 /* onboarding.storyboard in Resources */,
@@ -1160,6 +1167,7 @@
 				27D45E37243A4EAE0031448E /* RecordInstructions.swift in Sources */,
 				27E01BB0243A22B10062B4A6 /* MultipleSelectionView.swift in Sources */,
 				2712109124410C450074DFBD /* TermsViewController.swift in Sources */,
+				5732C015246AE58F0024334E /* QuestionCheckboxCell.swift in Sources */,
 				27A7397A243CF52200A3D18C /* S3Model.swift in Sources */,
 				2712109C24450F810074DFBD /* LocalizationEnums.swift in Sources */,
 				57AEC3322467541D007199E9 /* DailyQuestionModel.swift in Sources */,

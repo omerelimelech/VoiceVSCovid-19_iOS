@@ -7,15 +7,28 @@
 //
 
 protocol DailyQuestionsDelegate: class {
-    func formPresenterDidPostQuestions(_ presenter: DailyQuestionsPresenter)
-    func formPresenter(_ presenter: DailyQuestionsPresenter, didFailPostSubmissionWith error: Error)
+    func dailyQuestionsPresenter(didUpdateWith questions: [DailyQuestion])
 }
 
 class DailyQuestionsPresenter: BasePresenter{
     
     weak var delegate: DailyQuestionsDelegate?
     
-    let model = DailyQuestionModel()
+    var dailyQuestionsDataSource = [
+        
+        DailyQuestion(type: .yesNoWithInput(inputType: .number(inputFieldName: "Temperature:")),
+                      text: "Do you have a fever?",
+                      answerOptions: ["Yes", "No"]),
+        DailyQuestion(type: .yesNoWithInput(inputType: .date(inputFieldName: "Date:")),
+                      text: "Have you been exposed as a verified corona patient?",
+                      answerOptions: ["Yes", "No"]),
+        DailyQuestion(type: .yesNoWithInput(inputType: .date(inputFieldName: "Date of test")),
+                      text: "Have you been checked for corona?",
+                      answerOptions: ["Yes", "No"]),
+        DailyQuestion(type: .checkboxed,
+                      text: "How are you feeling today?",
+                      answerOptions: ["Same", "Better", "Worse"])
+    ]
     
     init(with delegate : DailyQuestionsDelegate){
         self.delegate = delegate
@@ -25,6 +38,8 @@ class DailyQuestionsPresenter: BasePresenter{
         return "How do you feel today?".localized()
     }
     
-    
+    func getDailyQuestions() {
+        delegate?.dailyQuestionsPresenter(didUpdateWith: dailyQuestionsDataSource)
+    }
 }
 

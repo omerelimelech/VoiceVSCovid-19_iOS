@@ -8,57 +8,43 @@
 
 import UIKit
 
-// MARK: Table-view related
-
-extension DailyQuestionsViewController {
-    
-    struct Row {
-        enum RowType {
-            case optionQuestion
-            case optionTextFieldQuestion
-            case optionDatePickerQuestion
-            case continueButton
-        }
-        
-        let type: RowType
-    }
-    
-    func reloadTableData() {
-        var rows = [Row]()
-        for _ in 0..<3 {
-            rows.append(Row(type: .optionQuestion))
-        }
-        rows.append(Row(type: .continueButton))
-        self.tableRows = rows
-    }
-}
-
 extension DailyQuestionsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableRows.count
+        return questions.count + 1 // + continue button row
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let rowType = tableRows[indexPath.row].type
-        
-        switch rowType {
-        case .optionQuestion, .optionTextFieldQuestion, .optionDatePickerQuestion:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: QuestionListCell.ReuseIdentifier, for: indexPath) as? QuestionListCell else { return UITableViewCell() }
-                cell.delegate = self
-                cell.config = QuestionListCell.Config(title: "How do you feel?",
-                                                      yesButtonText: "Yes",
-                                                      noButtonText: "No",
-                                                      textFieldDescription: nil)
-                return cell
-        case .continueButton:
+        if indexPath == continueButtonIndexPath {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ActionButtonCell.ReuseIdentifier, for: indexPath) as? ActionButtonCell else { return UITableViewCell() }
             cell.actionButton.setTitle("Continue", for: .normal)
             return cell
+        }
+        
+        let question = questions[indexPath.row]
+        
+        switch question.type {
+        case .yesNoType:
+            //No case for this cell
+            return UITableViewCell()
+            
+        case .checkboxed:
+            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: QuestionCheckboxCell.ReuseIdentifier, for: indexPath) as? QuestionCheckboxCell else { return UITableViewCell() }
+            cell.delegate = self
+            cell.setData(question: question)
+            return cell
+            
+        case .yesNoWithInput:
+            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: QuestionListCell.ReuseIdentifier, for: indexPath) as? QuestionListCell else { return UITableViewCell() }
+            cell.delegate = self
+            cell.question = question
+             return cell
         }
     }
     
@@ -82,15 +68,24 @@ extension DailyQuestionsViewController: UITableViewDelegate, UITableViewDataSour
 // MARK: Cell Delegate
 
 extension DailyQuestionsViewController: QuestionListCellDelegate {
-    func didSelectYesOption() {
-        print("YES")
+    
+    func questionListCell(_ cell: QuestionListCell, didSelectAnswer answer: String) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        questions[indexPath.row].submittedAnswer = answer
     }
     
-    func didSelectNoOption() {
-        print("NO")
+    func questionListCell(_ cell: QuestionListCell, inputFieldTextDidChange text: String) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        questions[indexPath.row].inputDataAnswer = text
     }
+}
+
+// MARK: Checkbox cell delegate
+
+extension DailyQuestionsViewController: QuestionCheckboxCellDelegate {
     
-    func inputFieldTextDidChange(text: String) {
-        print("Temperature: \(text)")
+    func questionCheckboxCell(_ cell: QuestionCheckboxCell, didSelectVariant variant: String) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        questions[indexPath.row].submittedAnswer = variant
     }
 }

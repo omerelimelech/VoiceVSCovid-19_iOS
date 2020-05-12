@@ -9,21 +9,23 @@
 import Foundation
 
 struct DailyQuestion {
-    enum FeedbackType {
-        case textInput
-        case date
+    
+    enum RelatedData {
+        case number(inputFieldName: String)
+        case date(inputFieldName: String)
     }
+    
+    enum QuestionType {
+        case yesNoType
+        case checkboxed
+        case yesNoWithInput(inputType: RelatedData)
+    }
+    
+    let type: QuestionType
     let text: String
-    var isYes: Bool?
-    var feedbackType: FeedbackType
+    var answerOptions: [String]
+    var submittedAnswer: String? = nil
+    var inputDataAnswer: String? = nil
 }
 
-class DailyQuestionModel {
-    
-    var dailyQuestionsDataSource = [
-        DailyQuestion(text: "Have you checked your fever today?", isYes: nil, feedbackType: .textInput),
-        DailyQuestion(text: "Have you been exposed as a verified patient?", isYes: nil, feedbackType: .date),
-        DailyQuestion(text: "Have you been tested and received a lab result for Corona?", isYes: nil)
-    ]
-}
 

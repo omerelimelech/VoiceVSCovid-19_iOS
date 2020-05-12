@@ -12,16 +12,23 @@ class DailyQuestionsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var tableRows = [Row]() {
-        didSet{
+    var questions = [DailyQuestion]() {
+        didSet {
             tableView.reloadData()
         }
     }
     
+    var presenter: DailyQuestionsPresenter?
+    
+    var continueButtonIndexPath: IndexPath {
+        return IndexPath(row: questions.count, section: 0)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = DailyQuestionsPresenter(with: self)
         configure()
-        reloadTableData()
+        presenter?.getDailyQuestions()
     }
     
     private func configure() {
@@ -31,7 +38,14 @@ class DailyQuestionsViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: StringHelper.stringForClass(QuestionListCell.self), bundle: nil), forCellReuseIdentifier: QuestionListCell.ReuseIdentifier)
-        tableView.register(UINib(nibName: StringHelper.stringForClass(ActionButtonCell.self), bundle: nil), forCellReuseIdentifier: ActionButtonCell.ReuseIdentifier)
+        tableView.register(UINib(nibName: StringHelper.stringForClass(QuestionListCell.self), bundle: nil), forCellReuseIdentifier: "QuestionListCell")
+        tableView.register(UINib(nibName: StringHelper.stringForClass(ActionButtonCell.self), bundle: nil), forCellReuseIdentifier: "ActionButtonCell")
+        tableView.register(UINib(nibName: "QuestionCheckboxCell", bundle: nil), forCellReuseIdentifier: QuestionCheckboxCell.ReuseIdentifier)
+    }
+}
+
+extension DailyQuestionsViewController: DailyQuestionsDelegate {
+    func dailyQuestionsPresenter(didUpdateWith questions: [DailyQuestion]) {
+        self.questions = questions
     }
 }
