@@ -9,11 +9,11 @@
 import UIKit
 
 class NotificationViewController: UIViewController {
-
+    
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var timePicker: UIDatePicker!
     var presenter: NotificationPresenter?
-
+    
     @IBOutlet weak var laterButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
     
@@ -23,6 +23,10 @@ class NotificationViewController: UIViewController {
         presenter?.setNotification(date: date)
     }
     
+    @IBAction func setLater(_ sender: UIButton) {
+        print("pressed setlater")
+        presenter?.setLater()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = NotificationPresenter(with:self)
@@ -30,30 +34,31 @@ class NotificationViewController: UIViewController {
         label.text = "When to remind you again?".localized()
         label.sizeToFit()
         label.center.x = self.view.center.x
-        //arrange button text
-        doneButton.setTitle("Done".localized(), for:.normal)
-        doneButton.sizeToFit()
-        doneButton.center.x = self.view.center.x
-        laterButton.setTitle("Later".localized(), for: .normal)
-        laterButton.sizeToFit()
-        laterButton.center.x = self.view.center.x
+        presenter?.checkNotification()
+        NotificationCenter.default.addObserver(self, selector: #selector(onResume), name:
+        UIApplication.willEnterForegroundNotification, object: nil)
         
         
     }
     
+    @objc func onResume() {
+        presenter?.checkNotification()
 
+    }
     
-
+    
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension NotificationViewController:NotificationDelegate{
@@ -65,6 +70,29 @@ extension NotificationViewController:NotificationDelegate{
     func notificationOK() {
         //go to next view
         print("great!")
+    }
+    
+    func setView(haveNotification: Bool, date:Date?) {
+        if (haveNotification){
+            //arrange button text
+            doneButton.setTitle("Done".localized(), for:.normal)
+            laterButton.setTitle("Remove Notification".localized(), for: .normal)
+            if let notificationDate = date {
+                timePicker.date = notificationDate
+            }
+        }
+        else {
+            doneButton.setTitle("Done".localized(), for:.normal)
+            laterButton.setTitle("Later".localized(), for: .normal)
+            timePicker.date = Date()
+            
+            
+            
+        }
+        doneButton.sizeToFit()
+        doneButton.center.x = self.view.center.x
+        laterButton.sizeToFit()
+        laterButton.center.x = self.view.center.x
     }
     
     

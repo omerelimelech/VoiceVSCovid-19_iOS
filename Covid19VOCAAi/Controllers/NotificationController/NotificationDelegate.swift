@@ -11,4 +11,6 @@ import Foundation
 protocol NotificationDelegate : class {
     func notificationFailed(error: Error)
     func notificationOK()
+    
+    func setView(haveNotification:Bool,date:Date?)
 }
