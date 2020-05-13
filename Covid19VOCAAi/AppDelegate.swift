@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
+        Router.default.setupAppNavigation(appNavigation: VoiceUpAppNavigation())
+
         //oxy.updateWithFrame(data: nil)
         return true
     }

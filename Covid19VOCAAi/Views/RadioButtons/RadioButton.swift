@@ -10,16 +10,8 @@ import Foundation
 import UIKit
 
 class RadioButton: UIButton {
-    
-    
-//    override var isSelected: Bool {
-//        didSet{
-//            self.backgroundColor = isSelected ? .blue : .white
-//            print ("YSE")
-//            self.imageView?.image = UIImage(named: "V_icon_white")
-//        }
-//    }
-    
+
+
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,19 +26,17 @@ class RadioButton: UIButton {
     }
     
      func initialConfig() {
-        
         self.cornerRadius = self.frame.height / 2
         self.borderColor = .mainBlue
         self.layerBorderWidth = 1
-        let g = UITapGestureRecognizer(target: self, action: #selector(selectME))
-        addGestureRecognizer(g)
+        self.setTitle("", for: .normal)
+
     }
     
-    @objc func selectME(){
-        self.setImage(UIImage(named: "V_icon_white"), for: .normal)
-        self.backgroundColor = self.backgroundColor == .purpleBlue ? .white : .purpleBlue
-        
+    public func select(){
+        self.backgroundColor = isSelected ? .purpleBlue : .white
     }
+    
     
     
 }
