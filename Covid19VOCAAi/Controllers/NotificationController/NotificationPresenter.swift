@@ -14,17 +14,16 @@ import UserNotifications
 public class NotificationPresenter{
     
     
-   weak var delegate: NotificationDelegate?
+    weak var delegate: NotificationDelegate?
     
     let model = NotificationModel()
     
     init(with delegate: NotificationDelegate){
         self.delegate = delegate
     }
-    
+    //checks ifnotification exists
     func checkNotification(){
         if let isSet = model.isSet  {
-            
             delegate?.setView(haveNotification: isSet,date: model.time)
         }
         else{
@@ -32,22 +31,21 @@ public class NotificationPresenter{
         }
     }
     
+    //second option of user: don't set/cancel notification
     func setLater(){
         //if exists and true, cancel and set to false
-        //print("isset: \(model.isSet)")
         if let isSet = model.isSet  {
             if (isSet){
                 //cancel notification
                 let center = UNUserNotificationCenter.current()
                 center.removeAllPendingNotificationRequests()
                 model.isSet = false;
-                //print("set isset to \(model.isSet)")
             }
         }
         //otherwise do nothing
-        
     }
     
+    //first option of user: set or change notification
     func setNotification(date:Date){
         //update model
         model.time = date
@@ -71,10 +69,10 @@ public class NotificationPresenter{
                 self.delegate?.notificationOK()
             }
         }
-       
+        
     }
     
     
-
+    
 }
 
