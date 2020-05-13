@@ -42,6 +42,10 @@ class DailyQuestionsViewController: UIViewController {
         tableView.register(UINib(nibName: StringHelper.stringForClass(ActionButtonCell.self), bundle: nil), forCellReuseIdentifier: "ActionButtonCell")
         tableView.register(UINib(nibName: "QuestionCheckboxCell", bundle: nil), forCellReuseIdentifier: QuestionCheckboxCell.ReuseIdentifier)
     }
+    
+    func sendResults() {
+        print(questions)
+    }
 }
 
 extension DailyQuestionsViewController: DailyQuestionsDelegate {

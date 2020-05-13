@@ -78,6 +78,7 @@
 		47FEDE26B00838BF8EF38EB2 /* Pods_Covid19VOCAAiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */; };
 		5732C015246AE58F0024334E /* QuestionCheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5732C013246AE58F0024334E /* QuestionCheckboxCell.swift */; };
 		5732C016246AE58F0024334E /* QuestionCheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5732C014246AE58F0024334E /* QuestionCheckboxCell.xib */; };
+		575DAC01246BE45700F6974C /* DatePickerActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC00246BE45700F6974C /* DatePickerActionSheet.swift */; };
 		57AEC2FF2465C7D9007199E9 /* DailyQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */; };
 		57AEC3052465C80B007199E9 /* DailyQuestionsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */; };
 		57AEC3082465C80B007199E9 /* DailyQuestionsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC3042465C80B007199E9 /* DailyQuestionsHeaderView.swift */; };
@@ -221,6 +222,7 @@
 		54C81089705B59FC47FEF190 /* Pods-Covid19VOCAAi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi/Pods-Covid19VOCAAi.debug.xcconfig"; sourceTree = "<group>"; };
 		5732C013246AE58F0024334E /* QuestionCheckboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCheckboxCell.swift; sourceTree = "<group>"; };
 		5732C014246AE58F0024334E /* QuestionCheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCheckboxCell.xib; sourceTree = "<group>"; };
+		575DAC00246BE45700F6974C /* DatePickerActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerActionSheet.swift; sourceTree = "<group>"; };
 		578F41A7C45C9C9ED24FDFFB /* Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi-Covid19VOCAAiUITests/Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsViewController.swift; sourceTree = "<group>"; };
 		57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyQuestionsHeaderView.xib; sourceTree = "<group>"; };
@@ -567,6 +569,7 @@
 		27E01BA4243A14F80062B4A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				575DABFF246BE42D00F6974C /* DatePickerActionSheet */,
 				E082931F245C408600737F33 /* RadioButtons */,
 				27D45E2A243A282B0031448E /* MultiInputView */,
 				27E01BAC243A228F0062B4A6 /* MulitipleSelectionView */,
@@ -623,6 +626,14 @@
 				498C6093FB6A0614335226E5 /* Pods-Covid19VOCAAiTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		575DABFF246BE42D00F6974C /* DatePickerActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				575DAC00246BE45700F6974C /* DatePickerActionSheet.swift */,
+			);
+			path = DatePickerActionSheet;
 			sourceTree = "<group>";
 		};
 		57AEC3002465C7E7007199E9 /* DailyQuestionnaireViewController */ = {
@@ -1142,6 +1153,7 @@
 				276FEA662440FD6300000BD5 /* FormNavigationController.swift in Sources */,
 				27E01B40243A0E3C0062B4A6 /* AppDelegate.swift in Sources */,
 				E0DC280E2458509C00F1AF97 /* OxymeterImpl.swift in Sources */,
+				575DAC01246BE45700F6974C /* DatePickerActionSheet.swift in Sources */,
 				27E01B95243A0E720062B4A6 /* UIImage+Utils.swift in Sources */,
 				27D45E32243A3EC80031448E /* RecordViewController.swift in Sources */,
 				E0E0CF59245F68B20001875B /* SympthomsCollectionViewCell.swift in Sources */,

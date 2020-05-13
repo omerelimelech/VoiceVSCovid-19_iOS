@@ -13,6 +13,7 @@ import UIKit
 protocol QuestionListCellDelegate: class {
     func questionListCell(_ cell: QuestionListCell, didSelectAnswer answer: String)
     func questionListCell(_ cell: QuestionListCell, inputFieldTextDidChange text: String)
+    func questionListCellDatePickerRequestedFor(cell: QuestionListCell)
 }
 
 class QuestionListCell: UITableViewCell {
@@ -34,6 +35,7 @@ class QuestionListCell: UITableViewCell {
         tf.borderStyle = .none
         tf.textAlignment = .center
         tf.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        tf.addTarget(self, action: #selector(inputFieldEndEditing), for: .editingDidEnd)
         tf.keyboardType = .numberPad
         return tf
     }()
@@ -43,6 +45,15 @@ class QuestionListCell: UITableViewCell {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont.systemFont(ofSize: 14)
         return lbl
+    }()
+    
+    lazy var textFieldCoverView: UIView = {
+        let v = UIView()
+        v.translatesAutoresizingMaskIntoConstraints = false
+        v.backgroundColor = .clear
+        v.isUserInteractionEnabled = true
+        v.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnTextField)))
+        return v
     }()
     
     var inputFieldBottomLine: UIView = {
@@ -62,6 +73,8 @@ class QuestionListCell: UITableViewCell {
     
     var currentInputType: DailyQuestion.RelatedData?
     
+    private var pendingInputFieldText: String?
+    
     var showsBottomSeparator: Bool {
         set {
             bottomSeparator.isHidden = !newValue
@@ -77,6 +90,7 @@ class QuestionListCell: UITableViewCell {
         
         self.addSubview(inputFieldLabel)
         self.addSubview(inputField)
+        self.addSubview(textFieldCoverView)
         self.addSubview(inputFieldBottomLine)
         
         NSLayoutConstraint.activate([
@@ -84,9 +98,14 @@ class QuestionListCell: UITableViewCell {
             inputFieldLabel.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24),
             
             inputField.centerYAnchor.constraint(equalTo: inputFieldLabel.centerYAnchor),
-            inputField.widthAnchor.constraint(equalToConstant: 60),
+            inputField.widthAnchor.constraint(equalToConstant: 100),
             inputField.heightAnchor.constraint(equalToConstant: 20),
             inputField.leadingAnchor.constraint(equalTo: inputFieldLabel.trailingAnchor, constant: 10),
+            
+            textFieldCoverView.topAnchor.constraint(equalTo: inputField.topAnchor),
+            textFieldCoverView.leadingAnchor.constraint(equalTo: inputField.leadingAnchor),
+            textFieldCoverView.bottomAnchor.constraint(equalTo: inputField.bottomAnchor),
+            textFieldCoverView.trailingAnchor.constraint(equalTo: inputField.trailingAnchor),
             
             inputFieldBottomLine.topAnchor.constraint(equalTo: inputField.bottomAnchor),
             inputFieldBottomLine.leadingAnchor.constraint(equalTo: inputField.leadingAnchor),
@@ -104,6 +123,7 @@ class QuestionListCell: UITableViewCell {
         label.text = currentQuestion.text
         firstOptionCheckmarkLabel.text = currentQuestion.answerOptions.first
         secondOptionCheckmarkLabel.text = currentQuestion.answerOptions.last
+        inputField.text = currentQuestion.inputDataAnswer
         
         switch currentQuestion.type {
         case .yesNoWithInput(inputType: let inputType):
@@ -117,10 +137,13 @@ class QuestionListCell: UITableViewCell {
                 self.currentInputType = .date(inputFieldName: datePickerTitle)
                 inputFieldLabel.text = datePickerTitle
                 inputFieldLabel.sizeToFit()
+                textFieldCoverView.isHidden = false
+                
             case .number(inputFieldName: let temperaturePickerTitle):
                 self.currentInputType = .number(inputFieldName: temperaturePickerTitle)
                 inputFieldLabel.text = temperaturePickerTitle
                 inputFieldLabel.sizeToFit()
+                textFieldCoverView.isHidden = true
             }
             
         default:
@@ -131,17 +154,21 @@ class QuestionListCell: UITableViewCell {
         layoutIfNeeded()
     }
     
-    private func animateTransitionOf(view: UIView, animationHandler: @escaping (() -> Void)) {
-        UIView.transition(with: firstOptionCheckmark,
-                          duration: 0.1,
-                          options: [.beginFromCurrentState, .transitionCrossDissolve],
-                          animations: {
-                            animationHandler()
-        },
-                          completion: nil)
+    //Called if question input based on date
+    @objc func didTapOnTextField() {
+        guard inputField.isEnabled else { return }
+        delegate?.questionListCellDatePickerRequestedFor(cell: self)
+    }
+    
+    @objc func inputFieldEndEditing() {
+        submit()
     }
     
     @objc func textFieldDidChange() {
+        pendingInputFieldText = inputField.text
+    }
+    
+    func submit() {
         delegate?.questionListCell(self, inputFieldTextDidChange: inputField.text ?? "")
     }
 }
@@ -150,15 +177,14 @@ class QuestionListCell: UITableViewCell {
 
 extension QuestionListCell {
     func selectYes() {
-        animateTransitionOf(view: firstOptionCheckmark, animationHandler: { self.firstOptionCheckmark.setImage(self.selectedButtonImage, for: .normal) })
-        animateTransitionOf(view: firstOptionCheckmark, animationHandler: { self.secondOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal) })
-        
+        self.firstOptionCheckmark.setImage(self.selectedButtonImage, for: .normal)
+        self.secondOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal)
         delegate?.questionListCell(self, didSelectAnswer: question?.answerOptions.first ?? "")
     }
     
     func selectNo() {
-        animateTransitionOf(view: firstOptionCheckmark, animationHandler: { self.firstOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal) })
-        animateTransitionOf(view: firstOptionCheckmark, animationHandler: { self.secondOptionCheckmark.setImage(self.selectedButtonImage, for: .normal) })
+        self.firstOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal)
+        self.secondOptionCheckmark.setImage(self.selectedButtonImage, for: .normal)
         
         delegate?.questionListCell(self, didSelectAnswer: question?.answerOptions.last ?? "")
     }

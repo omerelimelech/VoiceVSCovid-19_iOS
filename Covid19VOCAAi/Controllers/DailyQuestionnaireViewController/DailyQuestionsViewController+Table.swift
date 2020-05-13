@@ -22,6 +22,8 @@ extension DailyQuestionsViewController: UITableViewDelegate, UITableViewDataSour
         if indexPath == continueButtonIndexPath {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ActionButtonCell.ReuseIdentifier, for: indexPath) as? ActionButtonCell else { return UITableViewCell() }
             cell.actionButton.setTitle("Continue", for: .normal)
+            cell.actionButton.transform = LanguageType.current == .heb ? CGAffineTransform(scaleX: -1, y: 1) : .identity
+            cell.delegate = self
             return cell
         }
         
@@ -78,6 +80,17 @@ extension DailyQuestionsViewController: QuestionListCellDelegate {
         guard let indexPath = tableView.indexPath(for: cell) else { return }
         questions[indexPath.row].inputDataAnswer = text
     }
+    
+    func questionListCellDatePickerRequestedFor(cell: QuestionListCell) {
+        let datePicker = DatePickerActionSheet()
+        datePicker.dateStringHandler = { [weak cell] dateString in
+            guard let wkCell = cell else { return }
+            wkCell.inputField.text = dateString
+            wkCell.submit()
+        }
+        
+        self.present(datePicker, animated: true)
+    }
 }
 
 // MARK: Checkbox cell delegate
@@ -87,5 +100,13 @@ extension DailyQuestionsViewController: QuestionCheckboxCellDelegate {
     func questionCheckboxCell(_ cell: QuestionCheckboxCell, didSelectVariant variant: String) {
         guard let indexPath = tableView.indexPath(for: cell) else { return }
         questions[indexPath.row].submittedAnswer = variant
+    }
+}
+
+// MARK: Continue button delegate
+
+extension DailyQuestionsViewController: ActionButtonCellDelegate {
+    func actionButtonDidTap(cell: ActionButtonCell, button: GradientButton) {
+        sendResults()
     }
 }
