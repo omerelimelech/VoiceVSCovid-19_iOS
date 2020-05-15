@@ -35,9 +35,9 @@
 		<string>OpenSansHebrew-Bold.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>onboarding</string>
+	<string>launchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>PersonalDetails</string>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

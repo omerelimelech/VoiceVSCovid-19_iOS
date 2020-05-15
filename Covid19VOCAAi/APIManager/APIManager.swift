@@ -84,24 +84,15 @@ class APIManager : NSObject {
     
     func postUserInfo(method: HTTPMethod = .post, params: Parameters?, completion: @escaping completion){
         let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .userInfo)
-        let headers = HTTPHeaders([:])
-        AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
-            switch response.result {
-            case .success(let data):
-                completion(.success(data))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-            
-        }
+        self.baseRequest(withUrlString: url, method: method, params: params, completion: completion)
     }
     
     //MARK: - AUTHENTICATION
     
-    func signUp(method: HTTPMethod = .post, params: Parameters?, completion: @escaping completion){
+    func signUp(method: HTTPMethod = .post, phoneNumber: String, completion: @escaping completion){
        let url = UrlManager.shared.url(base: .MODBaseUrl, endpoint: .signUp)
        let headers = HTTPHeaders([:])
-       AF.request(url, method: method, parameters: params, headers: headers).responseJSON { (response) in
+        AF.request(url, method: method, parameters: ["phoneNumberHash": phoneNumber], headers: headers).responseJSON { (response) in
        switch response.result {
            case .success(let data):
                completion(.success(data))

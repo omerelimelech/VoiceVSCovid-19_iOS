@@ -34,7 +34,8 @@ class BasePresenter : NSObject {
      
      
      func handleError(error: Error,group: DispatchGroup? = nil) -> Void {
-             print(error.localizedDescription)
+        group?.leave()
+        print(error.localizedDescription)
      }
 }
 

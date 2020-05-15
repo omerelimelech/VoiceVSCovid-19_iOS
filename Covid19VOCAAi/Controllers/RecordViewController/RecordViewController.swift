@@ -10,17 +10,30 @@ import UIKit
 import AVFoundation
 import SVProgressHUD
 import PKHUD
+import SoundWave
+
 
 class RecordViewController: UIViewController {
     
     @IBOutlet weak var recordButton: UIButton!
     var recordingSession: AVAudioSession!
+    
     var audioRecorder: AVAudioRecorder!
+    
+    @IBOutlet weak var buttonContainerHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var buttonContainerWidth: NSLayoutConstraint!
+    
+    @IBOutlet weak var recordLineView: UIView!
+    @IBOutlet weak var playButton: UIButton!
     
     @IBOutlet weak var instructionLabel: UILabel!
     
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var soundStackView: UIStackView!
+    
+    @IBOutlet weak var audioVisualization: AudioVisualizationView!
     
     var recording = false
     
@@ -28,6 +41,29 @@ class RecordViewController: UIViewController {
     var instructions: RecordInstructions?
     
     var presenter: RecordPresenter?
+    
+    var timer: Timer!
+    
+    @IBOutlet weak var buttonContainer: GradientView!
+    
+    @IBOutlet weak var buttonSeperator: UIView!
+    
+    var recordButtonOriginalCenter: CGPoint!
+    
+    @IBOutlet weak var visualizeLeading: NSLayoutConstraint!
+    
+    @IBOutlet weak var visualizeTrailing: NSLayoutConstraint!
+    
+    @IBOutlet weak var recordInstructionLabel: UILabel!
+    
+    @IBOutlet weak var preInstructionLabel: UILabel!
+    @IBOutlet weak var recordContainer: UIView!
+    
+    
+    @IBOutlet weak var continueButton: GradientButton!
+    
+    @IBOutlet weak var continueFlowInstructionLabel: UILabel!
+    
     
     static func initialization(instructions: RecordInstructions, recordNumber: Int) -> RecordViewController?{
         guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecordViewController") as? RecordViewController else {return nil}
@@ -40,28 +76,23 @@ class RecordViewController: UIViewController {
         super.viewDidLoad()
 
         self.presenter = RecordPresenter(with: self)
-       recordingSession = AVAudioSession.sharedInstance()
+        recordingSession = AVAudioSession.sharedInstance()
+        try? recordingSession.setCategory(.playAndRecord)
         if let instructions = self.instructions {
                   self.setup(with: instructions)
               }else{
-                  self.instructions = RecordInstructions(stage: .cough)
+                  self.instructions = RecordInstructions(stage: .aaa)
                   self.setup(with: self.instructions!)
-              }
-        do {
-            try recordingSession.setCategory(.playAndRecord, mode: .default)
-            try recordingSession.setActive(true)
-            recordingSession.requestRecordPermission() { [unowned self] allowed in
-                DispatchQueue.main.async {
-                    if allowed {
-                        print ("Allowed")
-                    } else {
-                        print ("now allowed")
-                    }
-                }
-            }
-        } catch {
-            // failed to record!
         }
+        
+        self.presenter?.setupMicrophon(session: recordingSession)
+        buttonContainer.autoresizesSubviews = false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.recordButtonOriginalCenter = self.buttonContainer.center
+        
     }
     
 
@@ -70,51 +101,96 @@ class RecordViewController: UIViewController {
         self.instructionLabel.text = instruction?.title.localized()
         self.descriptionLabel.text = instruction?.description.localized()
     }
+    
+    
     @IBAction func recordTapped(_ sender: UIButton) {
         if !recording{
-            startRecording()
+            resetPlayer()
+            self.presenter?.setupMicrophon(session: self.recordingSession)
+            indicateIsRecording {
+                self.startRecording()
+            }
         }else{
             finishRecording(success: true)
         }
         recording = !recording
     }
     
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-    
-    func startRecording() {
-        let audioFilename = getDocumentsDirectory().appendingPathComponent("\(instructions?.instruction.recordName ?? "").wav")
-
-            
-             let settings = [
-                   AVFormatIDKey: kAudioFormatLinearPCM,
-                   AVSampleRateKey: 12000,
-                   AVNumberOfChannelsKey: 1,
-                   AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-                ] as [String : Any]
-
-        do {
-            audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
-            audioRecorder.delegate = self
-            audioRecorder.record()
-
-            recordButton.setImage(UIImage(named: "stop"), for: .normal)
-        } catch {
-            finishRecording(success: false)
-        }
-    }
-    
     func finishRecording(success: Bool) {
         audioRecorder.stop()
         audioRecorder = nil
+        indicateIsStoppedRecord()
+        self.audioVisualization.audioVisualizationMode = .read
+        self.audioVisualization.meteringLevels = meterArr
+        //HUD.show(.progress)
         
-        presenter?.sendRecord(with: instructions?.instruction.recordName ?? "")
-        HUD.show(.progress)
-        recordButton.setTitle("Tap to Re-record", for: .normal)
+        //presenter?.sendRecord(with: instructions?.instruction.recordName ?? "")
     }
+    
+    var meterArr = [Float]()
+    @objc func refreshAudioView(_:Timer) {
+        if self.audioRecorder == nil {
+            self.endTimer()
 
+            return
+        }
+        audioRecorder.updateMeters()
+        let peak = self.audioRecorder.peakPower(forChannel: 0)
+        let floatPeak = 1 - Float(abs(peak) / 50)
+        print (floatPeak)
+        meterArr.append(floatPeak)
+        self.audioVisualization.add(meteringLevel: floatPeak)
+        
+    }
+    
+    func endTimer(){
+        self.timer.invalidate()
+    }
+    
+    @IBAction func playButtonTapped(_ sender: UIButton) {
+        preparePlayer()
+    }
+    
+    
+    var player: AVAudioPlayer?
+    func preparePlayer() {
+        let url = getDocumentsDirectory().appendingPathComponent("\(instructions?.instruction.recordName ?? "").wav")
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+            guard let player = player else { return }
+
+            let audioTime = player.duration
+            self.audioVisualization.play(for: audioTime)
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func resetPlayer(){
+        self.player?.stop()
+        self.player = nil
+        
+    }
+    
+    @IBAction func continueButtonTapped(_ sender: GradientButton) {
+        guard let nextStage = instructions?.nextStage,
+                    let nextVC = RecordViewController.initialization(instructions: RecordInstructions(stage: nextStage), recordNumber: recordNumber + 1)
+                    else { self.navigationController?.dismiss(animated: true, completion: nil); return}
+                self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    
 }
 
 extension RecordViewController: AVAudioRecorderDelegate {
@@ -141,5 +217,20 @@ extension RecordViewController: RecordDelegate{
         recordButton.setImage(UIImage(named: "rec"), for: .normal)
     }
     
+    
+}
+
+
+extension RecordViewController {
+    
+    
+    func startRecording() {
+        audioVisualization.audioVisualizationMode = .write
+        let audioFilename = getDocumentsDirectory().appendingPathComponent("\(instructions?.instruction.recordName ?? "").wav")
+        guard let settings = self.presenter?.getRecorderSettings() else {return}
+        audioRecorder = try? AVAudioRecorder(url: audioFilename, settings: settings)
+        self.presenter?.startRecording(recorder: self.audioRecorder)
+               self.timer = Timer.scheduledTimer(timeInterval: 0.0295, target: self, selector: #selector(refreshAudioView(_:)), userInfo: nil, repeats: true)
+       }
     
 }

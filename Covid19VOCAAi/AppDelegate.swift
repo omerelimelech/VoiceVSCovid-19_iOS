@@ -24,6 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         Router.default.setupAppNavigation(appNavigation: VoiceUpAppNavigation())
 
+        let vc = RecordViewController.initialization(instructions: RecordInstructions(stage: .aaa), recordNumber: 1)
+        let nav = UINavigationController(rootViewController: vc!)
+        nav.isNavigationBarHidden = true
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
         //oxy.updateWithFrame(data: nil)
         return true
     }

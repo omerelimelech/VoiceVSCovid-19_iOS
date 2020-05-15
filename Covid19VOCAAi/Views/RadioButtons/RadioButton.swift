@@ -29,7 +29,7 @@ class RadioButton: UIButton {
         self.cornerRadius = self.frame.height / 2
         self.borderColor = .mainBlue
         self.layerBorderWidth = 1
-        self.setTitle("", for: .normal)
+        self.setTitle(nil, for: .normal)
 
     }
     

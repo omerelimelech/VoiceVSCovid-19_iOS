@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4dA-Pe-30V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fug-rE-aKI">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -28,7 +28,7 @@
         <!--Main View Controller-->
         <scene sceneID="CC4-Ix-l7w">
             <objects>
-                <viewController id="Xo2-oX-ZFO" customClass="MainViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xo2-oX-ZFO" customClass="MainViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0DN-T4-I2m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brW-2f-O6q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Id0-21-zx4" customClass="GradientView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Id0-21-zx4" customClass="GradientView" customModule="VoiceUp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1131.6666666666667"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -56,7 +56,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjo-A7-RtN" customClass="GradientView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjo-A7-RtN" customClass="GradientView" customModule="VoiceUp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="2456" width="375" height="345.33333333333348"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -98,7 +98,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElO-av-dwt">
                                                 <rect key="frame" x="0.0" y="60" width="375" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQ9-gd-oUM" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQ9-gd-oUM" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="2.6666666666666714" width="262.66666666666669" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="a3s-1C-Ngz"/>
@@ -233,7 +233,7 @@ CLICK BELOW TO ANSWER THE QUESTIONNAIRE &amp; RECORD YOUR VOICE TO HELP US STOP 
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Euj-hw-uMd">
                                                 <rect key="frame" x="0.0" y="1031.6666666666667" width="375" height="60"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-Fc-dZr" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-Fc-dZr" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="5" width="343" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="eIM-Eq-Suv"/>
@@ -332,7 +332,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6y7-Fg-Shu">
                                                 <rect key="frame" x="0.0" y="2611.3333333333335" width="375" height="60"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8S-Cm-dKg" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8S-Cm-dKg" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                                         <rect key="frame" x="93.666666666666671" y="5" width="187.66666666666663" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="MX6-dB-uAm"/>
@@ -386,13 +386,13 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Made with ❤️ By Omer Elimelech" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWb-z2-geS">
-                                                                <rect key="frame" x="61.000000000000014" y="0.0" width="253.33333333333337" height="31.666666666666668"/>
+                                                                <rect key="frame" x="74.333333333333329" y="0.0" width="226.33333333333337" height="32.333333333333336"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="omer.tkd@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-BZ-xA1">
-                                                                <rect key="frame" x="105.66666666666667" y="31.666666666666515" width="163.66666666666663" height="18.333333333333329"/>
+                                                                <rect key="frame" x="117.33333333333333" y="32.33333333333303" width="140.66666666666669" height="17.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -454,7 +454,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
         <!--Corona Form-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FormViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FormViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FormViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FormViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -484,64 +484,64 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
                                                     <constraint firstItem="E1Z-tb-bF0" firstAttribute="top" secondItem="4p1-OG-7ob" secondAttribute="top" id="nfj-RV-Tx3"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OkZ-XT-C4V" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OkZ-XT-C4V" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="o70-Ex-wec"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3N-Cg-xu0" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3N-Cg-xu0" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="eBY-XV-F81"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3a-ED-OmY" customClass="MultiInputView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3a-ED-OmY" customClass="MultiInputView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="AZl-JL-ss5"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-Dx-MAV" customClass="CountriesPickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-Dx-MAV" customClass="CountriesPickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="fEW-oB-vsM"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7n-e7-pzp" customClass="MultipleSelectionView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7n-e7-pzp" customClass="MultipleSelectionView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-4f-AJZ" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vb-4f-AJZ" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="n7Q-Bw-bVX"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeR-5W-dNh" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeR-5W-dNh" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="u31-U5-6BH"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDg-E1-WYa" customClass="TitlePickerView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDg-E1-WYa" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="0vn-uh-AwV"/>
                                                 </constraints>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPU-rF-soR" customClass="MultipleSelectionView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPU-rF-soR" customClass="MultipleSelectionView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoz-JM-yXp" customClass="MultiInputView" customModule="VoiceVSCovid" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoz-JM-yXp" customClass="MultiInputView" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
@@ -623,7 +623,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
         <!--Terms & Conditions-->
         <scene sceneID="7jq-lM-zds">
             <objects>
-                <viewController storyboardIdentifier="TermsViewController" title="Terms &amp; Conditions" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YRh-H6-F7K" customClass="TermsViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TermsViewController" title="Terms &amp; Conditions" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YRh-H6-F7K" customClass="TermsViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fCf-M2-h4G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -638,7 +638,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXP-GK-KVN">
-                                                        <rect key="frame" x="24" y="8" width="207.66666666666666" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="195.66666666666666" height="49"/>
                                                         <string key="text">Consent Form
 CONCISE SUMMARY</string>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
@@ -682,7 +682,7 @@ If you are interested in learning more about this study, please continue to read
                                                 <rect key="frame" x="0.0" y="784" width="375" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCTION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPx-rv-IWv">
-                                                        <rect key="frame" x="24" y="8" width="163.33333333333334" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="149.33333333333334" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -724,7 +724,7 @@ By clicking the button, you are agreeing that you’ve had time to read and cons
                                                 <rect key="frame" x="0.0" y="1568" width="375" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE OF RESEARCH PROJECT" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTy-Hc-jxT">
-                                                        <rect key="frame" x="24" y="8" width="309.33333333333331" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="292" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -763,7 +763,7 @@ By clicking the button, you are agreeing that you’ve had time to read and cons
                                                 <rect key="frame" x="0.0" y="2352" width="375" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BENEFITS AND RISKS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qu-OG-MeA">
-                                                        <rect key="frame" x="24" y="8" width="219" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="204.66666666666666" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -804,7 +804,7 @@ We have not identified any particular risk associated with your participation in
                                                 <rect key="frame" x="0.0" y="3136" width="375" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIDENTIALITY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzW-v6-FG6">
-                                                        <rect key="frame" x="24" y="8" width="187.66666666666666" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="172" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -845,7 +845,7 @@ If you log-in using your GOOGLE™ identifier, we will not collect any informati
                                                 <rect key="frame" x="0.0" y="3920" width="375" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESEARCH DATA &amp; FEEDBACK" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTx-jm-4Fb">
-                                                        <rect key="frame" x="24" y="8" width="314" height="49"/>
+                                                        <rect key="frame" x="24" y="8" width="288.33333333333331" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -885,7 +885,7 @@ If you log-in using your GOOGLE™ identifier, we will not collect any informati
                                                 <rect key="frame" x="0.0" y="4704" width="375" height="65"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR AUTHORITY TO PARTICIPATE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHa-7c-66t">
-                                                        <rect key="frame" x="24" y="8" width="224" height="49"/>
+                                                        <rect key="frame" x="23.999999999999986" y="8" width="211.66666666666663" height="49"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -943,7 +943,7 @@ We thank you for your participation.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqk-Xb-RDL">
                                 <rect key="frame" x="0.0" y="728" width="375" height="84"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRk-Py-f6q" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRk-Py-f6q" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                         <rect key="frame" x="24" y="22" width="327" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="EBT-1h-HX5"/>
@@ -1029,79 +1029,282 @@ We thank you for your participation.</string>
         <!--Record View Controller-->
         <scene sceneID="xe6-RD-mzd">
             <objects>
-                <viewController storyboardIdentifier="RecordViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rjK-aE-1vN" customClass="RecordViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecordViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rjK-aE-1vN" customClass="RecordViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yc7-Tz-SQt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instruction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajF-gZ-UiY">
-                                <rect key="frame" x="8" y="144" width="359" height="34.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="לחץ כדי להקליט" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afP-ZD-oJh">
+                                <rect key="frame" x="16" y="581.66666666666663" width="343" height="38.333333333333371"/>
+                                <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="help text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ej-2e-pJw">
-                                <rect key="frame" x="8" y="194.66666666666666" width="359" height="26.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="click to start recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afP-ZD-oJh">
-                                <rect key="frame" x="16" y="541" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcu-Mz-duR">
-                                <rect key="frame" x="137.66666666666666" y="578" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor_circle" translatesAutoresizingMaskIntoConstraints="NO" id="eFC-ys-0W1">
+                                <rect key="frame" x="143" y="74" width="89" height="84"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="2Cm-e9-Fhc"/>
-                                    <constraint firstAttribute="height" constant="100" id="uEr-sO-sjR"/>
+                                    <constraint firstAttribute="width" constant="89" id="8Wn-gg-Yar"/>
+                                    <constraint firstAttribute="height" constant="84" id="Vg9-d3-Xvg"/>
                                 </constraints>
-                                <state key="normal" image="rec"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="rQC-0A-ebW">
+                                <rect key="frame" x="27" y="188" width="321" height="140.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="נרצה לשמוע את הצליל" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJ6-i8-8k6">
+                                        <rect key="frame" x="70.666666666666671" y="0.0" width="179.66666666666663" height="24.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instruction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajF-gZ-UiY">
+                                        <rect key="frame" x="60.333333333333329" y="45.666666666666657" width="200.33333333333337" height="49.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="36"/>
+                                        <color key="textColor" red="0.054901960784313725" green="0.42352941176470588" blue="0.98431372549019602" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="help text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ej-2e-pJw">
+                                        <rect key="frame" x="120" y="116.00000000000001" width="81" height="24.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTu-D2-reV">
+                                        <rect key="frame" x="0.0" y="140.66666666666669" width="321" height="80"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97i-o9-jxp">
+                                                <rect key="frame" x="0.0" y="39.666666666666629" width="321" height="1"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="LmN-4L-2oW"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ivf-oP-xB8">
+                                                <rect key="frame" x="30" y="0.0" width="286" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEI-vc-Hdr">
+                                                        <rect key="frame" x="0.0" y="28" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="IUX-Jd-xCC"/>
+                                                            <constraint firstAttribute="width" constant="24" id="JqD-aM-kFg"/>
+                                                        </constraints>
+                                                        <state key="normal" image="play_button"/>
+                                                        <connections>
+                                                            <action selector="playButtonTapped:" destination="rjK-aE-1vN" eventType="touchUpInside" id="SXR-Fc-0hi"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j4-kC-yad">
+                                                        <rect key="frame" x="220" y="7" width="66" height="66"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="66" id="dEN-it-BQO"/>
+                                                            <constraint firstAttribute="width" constant="66" id="wRO-F3-mFG"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="lF0-QB-hhX"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPo-us-kSc" customClass="AudioVisualizationView" customModule="SoundWave">
+                                                <rect key="frame" x="15" y="4" width="291" height="72"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.34901960784313724" green="0.15686274509803921" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="xPo-us-kSc" firstAttribute="top" secondItem="qTu-D2-reV" secondAttribute="top" constant="4" id="0Gk-wx-xiV"/>
+                                            <constraint firstAttribute="trailing" secondItem="ivf-oP-xB8" secondAttribute="trailing" constant="5" id="GDF-mX-1dD"/>
+                                            <constraint firstItem="97i-o9-jxp" firstAttribute="centerY" secondItem="qTu-D2-reV" secondAttribute="centerY" id="LNz-v9-r5E"/>
+                                            <constraint firstItem="ivf-oP-xB8" firstAttribute="leading" secondItem="qTu-D2-reV" secondAttribute="leading" constant="30" id="WAL-dG-fHb"/>
+                                            <constraint firstAttribute="bottom" secondItem="ivf-oP-xB8" secondAttribute="bottom" id="ZbE-sQ-NoF"/>
+                                            <constraint firstAttribute="height" constant="80" id="cDr-8Q-fd1"/>
+                                            <constraint firstAttribute="trailing" secondItem="97i-o9-jxp" secondAttribute="trailing" id="gYt-uF-6gr"/>
+                                            <constraint firstItem="xPo-us-kSc" firstAttribute="leading" secondItem="qTu-D2-reV" secondAttribute="leading" constant="15" id="iIo-Tn-swP"/>
+                                            <constraint firstAttribute="trailing" secondItem="xPo-us-kSc" secondAttribute="trailing" constant="15" id="kBa-mt-KuW"/>
+                                            <constraint firstItem="ivf-oP-xB8" firstAttribute="top" secondItem="qTu-D2-reV" secondAttribute="top" id="lfz-hZ-NNH"/>
+                                            <constraint firstItem="97i-o9-jxp" firstAttribute="leading" secondItem="qTu-D2-reV" secondAttribute="leading" id="nsT-kZ-EGy"/>
+                                            <constraint firstAttribute="bottom" secondItem="xPo-us-kSc" secondAttribute="bottom" constant="4" id="qNI-y3-HDJ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qTu-D2-reV" firstAttribute="width" secondItem="rQC-0A-ebW" secondAttribute="width" id="mg6-iv-b3F"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbH-R1-Pcb" customClass="GradientView" customModule="VoiceUp" customModuleProvider="target">
+                                <rect key="frame" x="142.66666666666666" y="638" width="90" height="90"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kza-rc-xiV">
+                                        <rect key="frame" x="2" y="2" width="86" height="86"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.17254901959999999" green="0.72549019609999998" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" red="0.062745098040000002" green="0.43137254899999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="43.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcu-Mz-duR" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="5" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="2Cm-e9-Fhc"/>
+                                            <constraint firstAttribute="height" constant="80" id="uEr-sO-sjR"/>
+                                        </constraints>
+                                        <state key="normal" image="mic_white"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.17254901959999999" green="0.72549019609999998" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" red="0.062745098040000002" green="0.43137254899999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="recordTapped:" destination="rjK-aE-1vN" eventType="touchUpInside" id="JUC-d2-KNz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="bcu-Mz-duR" firstAttribute="centerX" secondItem="NbH-R1-Pcb" secondAttribute="centerX" id="9hr-tg-hFb"/>
+                                    <constraint firstAttribute="width" constant="90" id="Cml-lJ-e6e"/>
+                                    <constraint firstAttribute="height" constant="90" id="OBd-kX-OE1"/>
+                                    <constraint firstItem="bcu-Mz-duR" firstAttribute="centerY" secondItem="NbH-R1-Pcb" secondAttribute="centerY" id="Sj4-xS-qJe"/>
+                                    <constraint firstItem="kza-rc-xiV" firstAttribute="centerY" secondItem="NbH-R1-Pcb" secondAttribute="centerY" id="ed2-4q-HMQ"/>
+                                    <constraint firstItem="kza-rc-xiV" firstAttribute="top" secondItem="NbH-R1-Pcb" secondAttribute="top" constant="2" id="g0c-G9-N9A"/>
+                                    <constraint firstAttribute="bottom" secondItem="kza-rc-xiV" secondAttribute="bottom" constant="2" id="iBu-lj-n0t"/>
+                                    <constraint firstItem="kza-rc-xiV" firstAttribute="centerX" secondItem="NbH-R1-Pcb" secondAttribute="centerX" id="pRm-r4-1cI"/>
+                                    <constraint firstAttribute="trailing" secondItem="kza-rc-xiV" secondAttribute="trailing" constant="2" id="rhg-jD-A1K"/>
+                                    <constraint firstItem="kza-rc-xiV" firstAttribute="leading" secondItem="NbH-R1-Pcb" secondAttribute="leading" constant="2" id="yFl-cH-Z5k"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.17254901959999999" green="0.72549019609999998" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.062745098040000002" green="0.43137254899999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaW-fg-ZYW" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
+                                <rect key="frame" x="75" y="658" width="225" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="z5t-zD-oa2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="24"/>
+                                <state key="normal" title="המשך">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
+                                        <real key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.17254901959999999" green="0.72549019609999998" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.062745098040000002" green="0.43137254899999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="recordTapped:" destination="rjK-aE-1vN" eventType="touchUpInside" id="JUC-d2-KNz"/>
+                                    <action selector="continueButtonTapped:" destination="rjK-aE-1vN" eventType="touchUpInside" id="aJ9-wi-Ivc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="להקלטה חוזרת יש ללחוץ על המיקרופון  להקלטה הבאה לחץ המשך" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHm-id-kLI">
+                                <rect key="frame" x="16" y="581.66666666666663" width="343" height="38.333333333333371"/>
+                                <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bcu-Mz-duR" firstAttribute="centerX" secondItem="CSp-l1-Zu2" secondAttribute="centerX" id="1Gg-9L-dTK"/>
-                            <constraint firstItem="CSp-l1-Zu2" firstAttribute="bottom" secondItem="bcu-Mz-duR" secondAttribute="bottom" constant="100" id="K4D-Qb-s8x"/>
-                            <constraint firstItem="ajF-gZ-UiY" firstAttribute="top" secondItem="CSp-l1-Zu2" secondAttribute="top" constant="100" id="Vag-2T-xGU"/>
+                            <constraint firstItem="AaW-fg-ZYW" firstAttribute="centerY" secondItem="NbH-R1-Pcb" secondAttribute="centerY" id="11I-sd-8cK"/>
+                            <constraint firstItem="EHm-id-kLI" firstAttribute="centerY" secondItem="afP-ZD-oJh" secondAttribute="centerY" id="8ri-kq-OPl"/>
+                            <constraint firstItem="EHm-id-kLI" firstAttribute="trailing" secondItem="afP-ZD-oJh" secondAttribute="trailing" id="B67-mn-rjE"/>
+                            <constraint firstItem="EHm-id-kLI" firstAttribute="centerX" secondItem="afP-ZD-oJh" secondAttribute="centerX" id="BMg-Qr-1UR"/>
+                            <constraint firstItem="EHm-id-kLI" firstAttribute="bottom" secondItem="afP-ZD-oJh" secondAttribute="bottom" id="D1h-zJ-37l"/>
+                            <constraint firstItem="CSp-l1-Zu2" firstAttribute="trailing" secondItem="rQC-0A-ebW" secondAttribute="trailing" constant="27" id="F2j-6b-vZR"/>
+                            <constraint firstItem="eFC-ys-0W1" firstAttribute="centerX" secondItem="CSp-l1-Zu2" secondAttribute="centerX" id="FK4-PT-yfe"/>
+                            <constraint firstItem="EHm-id-kLI" firstAttribute="leading" secondItem="afP-ZD-oJh" secondAttribute="leading" id="HC0-9t-3fP"/>
+                            <constraint firstItem="NbH-R1-Pcb" firstAttribute="centerX" secondItem="CSp-l1-Zu2" secondAttribute="centerX" id="I8o-DU-f5e"/>
+                            <constraint firstItem="CSp-l1-Zu2" firstAttribute="bottom" secondItem="NbH-R1-Pcb" secondAttribute="bottom" constant="50" id="O7D-Kc-IbB"/>
+                            <constraint firstItem="afP-ZD-oJh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rQC-0A-ebW" secondAttribute="bottom" constant="8" id="Ss5-82-ex6"/>
+                            <constraint firstItem="CSp-l1-Zu2" firstAttribute="trailing" secondItem="AaW-fg-ZYW" secondAttribute="trailing" constant="75" id="UQM-VA-lbE"/>
+                            <constraint firstItem="AaW-fg-ZYW" firstAttribute="centerX" secondItem="NbH-R1-Pcb" secondAttribute="centerX" id="XDW-43-Y5x"/>
                             <constraint firstItem="afP-ZD-oJh" firstAttribute="leading" secondItem="CSp-l1-Zu2" secondAttribute="leading" constant="16" id="boE-eC-Pwh"/>
-                            <constraint firstItem="ajF-gZ-UiY" firstAttribute="leading" secondItem="CSp-l1-Zu2" secondAttribute="leading" constant="8" id="egP-SN-cgs"/>
-                            <constraint firstItem="8ej-2e-pJw" firstAttribute="leading" secondItem="CSp-l1-Zu2" secondAttribute="leading" constant="8" id="ikm-OK-drT"/>
-                            <constraint firstItem="CSp-l1-Zu2" firstAttribute="trailing" secondItem="8ej-2e-pJw" secondAttribute="trailing" constant="8" id="lig-sI-uCo"/>
-                            <constraint firstItem="afP-ZD-oJh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8ej-2e-pJw" secondAttribute="bottom" constant="8" id="n0e-H0-nD4"/>
+                            <constraint firstItem="rQC-0A-ebW" firstAttribute="leading" secondItem="Yc7-Tz-SQt" secondAttribute="leading" constant="27" id="cBM-FV-cm8"/>
+                            <constraint firstItem="EHm-id-kLI" firstAttribute="top" secondItem="afP-ZD-oJh" secondAttribute="top" id="i6x-ys-GBU"/>
                             <constraint firstItem="CSp-l1-Zu2" firstAttribute="trailing" secondItem="afP-ZD-oJh" secondAttribute="trailing" constant="16" id="pK1-T6-Mh3"/>
-                            <constraint firstItem="bcu-Mz-duR" firstAttribute="top" secondItem="afP-ZD-oJh" secondAttribute="bottom" constant="16" id="pb7-sq-LlJ"/>
-                            <constraint firstItem="8ej-2e-pJw" firstAttribute="top" secondItem="ajF-gZ-UiY" secondAttribute="bottom" constant="16" id="tBD-Wn-3we"/>
-                            <constraint firstItem="CSp-l1-Zu2" firstAttribute="trailing" secondItem="ajF-gZ-UiY" secondAttribute="trailing" constant="8" id="tgO-PT-2Qo"/>
+                            <constraint firstItem="eFC-ys-0W1" firstAttribute="top" secondItem="CSp-l1-Zu2" secondAttribute="top" constant="30" id="vCN-6r-OOm"/>
+                            <constraint firstItem="AaW-fg-ZYW" firstAttribute="leading" secondItem="CSp-l1-Zu2" secondAttribute="leading" constant="75" id="vCu-Oc-Q07"/>
+                            <constraint firstItem="rQC-0A-ebW" firstAttribute="top" secondItem="eFC-ys-0W1" secondAttribute="bottom" constant="30" id="wTW-Pi-QOX"/>
+                            <constraint firstItem="kza-rc-xiV" firstAttribute="top" secondItem="afP-ZD-oJh" secondAttribute="bottom" constant="20" id="x0Z-Hc-QXj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CSp-l1-Zu2"/>
                     </view>
                     <navigationItem key="navigationItem" id="vAs-uZ-fAk"/>
                     <connections>
+                        <outlet property="audioVisualization" destination="xPo-us-kSc" id="MHP-Bx-X5l"/>
+                        <outlet property="buttonContainer" destination="NbH-R1-Pcb" id="53S-qZ-H8Z"/>
+                        <outlet property="buttonContainerHeight" destination="OBd-kX-OE1" id="vrj-3U-fWY"/>
+                        <outlet property="buttonContainerWidth" destination="Cml-lJ-e6e" id="cwu-WP-2T8"/>
+                        <outlet property="buttonSeperator" destination="kza-rc-xiV" id="Gvf-hm-Ipr"/>
+                        <outlet property="continueButton" destination="AaW-fg-ZYW" id="Tg0-a5-vXB"/>
+                        <outlet property="continueFlowInstructionLabel" destination="EHm-id-kLI" id="Ji4-KC-UDt"/>
                         <outlet property="descriptionLabel" destination="8ej-2e-pJw" id="ENJ-oi-HN1"/>
                         <outlet property="instructionLabel" destination="ajF-gZ-UiY" id="hwn-ct-HXw"/>
+                        <outlet property="playButton" destination="PEI-vc-Hdr" id="S34-GF-cAB"/>
+                        <outlet property="preInstructionLabel" destination="wJ6-i8-8k6" id="xco-6J-zzr"/>
                         <outlet property="recordButton" destination="bcu-Mz-duR" id="heC-vs-KhE"/>
+                        <outlet property="recordContainer" destination="qTu-D2-reV" id="9TC-jN-E9x"/>
+                        <outlet property="recordInstructionLabel" destination="afP-ZD-oJh" id="Jfg-Uv-RPi"/>
+                        <outlet property="recordLineView" destination="97i-o9-jxp" id="H45-6w-hco"/>
+                        <outlet property="soundStackView" destination="ivf-oP-xB8" id="Qj2-vi-epV"/>
+                        <outlet property="visualizeLeading" destination="iIo-Tn-swP" id="uSc-CZ-fSB"/>
+                        <outlet property="visualizeTrailing" destination="kBa-mt-KuW" id="cAb-CN-1OQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGy-sP-Iet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3654.375" y="-665.49295774647885"/>
+            <point key="canvasLocation" x="3653.5999999999999" y="-665.76354679802955"/>
         </scene>
         <!--Thank You For Record View Controller-->
         <scene sceneID="DFO-oJ-zqq">
             <objects>
-                <viewController storyboardIdentifier="ThankYouForRecordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W6S-Do-v2Y" customClass="ThankYouForRecordViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThankYouForRecordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="W6S-Do-v2Y" customClass="ThankYouForRecordViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UXl-Es-dP6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1217,6 +1420,9 @@ We thank you for your participation.</string>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UIx-KM-zc2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="rjK-aE-1vN" kind="relationship" relationship="rootViewController" id="fzL-bE-euF"/>
                     </connections>
@@ -1252,16 +1458,16 @@ We thank you for your participation.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gX3-rY-sJR">
-                                        <rect key="frame" x="49.999999999999986" y="74" width="34.666666666666671" height="14"/>
+                                        <rect key="frame" x="49.999999999999986" y="71.333333333333314" width="35.666666666666671" height="16.666666666666671"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="כעת" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVF-mA-DT7">
-                                                <rect key="frame" x="0.0" y="0.0" width="19.666666666666668" height="14"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="16.666666666666668"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="l97-xp-QuB">
-                                                <rect key="frame" x="19.666666666666686" y="3" width="15" height="8"/>
+                                                <rect key="frame" x="20.666666666666686" y="4.3333333333333712" width="15" height="8"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="V_icon" translatesAutoresizingMaskIntoConstraints="NO" id="apm-83-rm7">
                                                         <rect key="frame" x="0.0" y="0.0" width="10" height="8"/>
@@ -1299,7 +1505,7 @@ We thank you for your participation.</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הקול שלך יכול  לנצח את הקורונה" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNn-uS-Pms">
-                                <rect key="frame" x="46" y="268" width="289" height="84"/>
+                                <rect key="frame" x="46" y="253.66666666666666" width="289" height="98.333333333333343"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1339,7 +1545,7 @@ We thank you for your participation.</string>
         <!--On Boarding Page View Controller-->
         <scene sceneID="4WW-4L-G2k">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4dA-Pe-30V" customClass="OnBoardingPageViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4dA-Pe-30V" customClass="OnBoardingPageViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDq-lw-n5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4215" y="-867"/>
@@ -1361,7 +1567,7 @@ We thank you for your participation.</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="two_doctors" translatesAutoresizingMaskIntoConstraints="NO" id="tEc-iF-NYX">
                                 <rect key="frame" x="79" y="92" width="217" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyM-cz-qcA" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyM-cz-qcA" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
                                 <rect key="frame" x="84.333333333333329" y="628" width="206.33333333333337" height="50"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                                 <constraints>
@@ -1488,13 +1694,13 @@ We thank you for your participation.</string>
         <!--New Main View Controller-->
         <scene sceneID="vIY-vA-AEG">
             <objects>
-                <viewController id="hmS-BY-UDB" customClass="NewMainViewController" customModule="VoiceVSCovid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hmS-BY-UDB" customClass="NewMainViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l8m-t3-HC4" customClass="GradientView" customModule="VocaAi_19">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANU-ac-FWu" customClass="GradientButton" customModule="VoiceVSCovid" customModuleProvider="target">
-                                <rect key="frame" x="16" y="536" width="343" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANU-ac-FWu" customClass="GradientButton" customModule="VoiceUp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="530.33333333333337" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Fj6-UD-bBW"/>
                                 </constraints>
@@ -1526,7 +1732,7 @@ We thank you for your participation.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YL5-tv-KDp">
-                                <rect key="frame" x="20.666666666666657" y="115.99999999999999" width="334" height="131.66666666666663"/>
+                                <rect key="frame" x="46.666666666666657" y="116" width="281.66666666666674" height="126"/>
                                 <string key="text">With your voice sample
 we can beat the Coronavirus
 </string>
@@ -1541,7 +1747,7 @@ we can beat the Coronavirus
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gut-Xb-C29">
-                                <rect key="frame" x="16" y="247.66666666666666" width="343" height="280.33333333333337"/>
+                                <rect key="frame" x="16" y="241.99999999999997" width="343" height="280.33333333333326"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1557,7 +1763,7 @@ we can beat the Coronavirus
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jZ-e7-q8p">
-                                <rect key="frame" x="16" y="594" width="343" height="50"/>
+                                <rect key="frame" x="16" y="588.33333333333337" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="k7A-uc-lr9"/>
                                 </constraints>
@@ -1680,11 +1886,13 @@ we can beat the Coronavirus
         <image name="docot_with_stat" width="112" height="186"/>
         <image name="doctor_back_background" width="87" height="305.33334350585938"/>
         <image name="doctor_background" width="325.66665649414062" height="278"/>
+        <image name="doctor_circle" width="75" height="75.666664123535156"/>
         <image name="doctor_icon" width="106" height="307.66665649414062"/>
         <image name="doctors_background" width="182" height="124"/>
         <image name="heart_rate_icon" width="89" height="87"/>
+        <image name="mic_white" width="45" height="45"/>
         <image name="multiply" catalog="system" width="128" height="111"/>
-        <image name="rec" width="1024" height="1024"/>
+        <image name="play_button" width="25.333333969116211" height="25.333333969116211"/>
         <image name="text_bubble_background" width="264" height="125.66666412353516"/>
         <image name="two_doctors" width="157" height="129"/>
         <image name="voca-logo-v2" width="369" height="125"/>

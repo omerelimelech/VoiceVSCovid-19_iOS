@@ -87,7 +87,7 @@ class TransformableViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        transformSubviewsForView(view: self.view)
+     //   transformSubviewsForView(view: self.view)
     }
     
 }

@@ -24,18 +24,19 @@ enum PersonalDetailsKey: String{
 }
 
 
-enum Sex: String {
+enum Sex: String, Codable{
     case male = "MALE"
     case female = "FEMALE"
 }
 
-enum SmokingStatus: String {
+enum SmokingStatus: String , Codable{
     case current = "CURRENT"
     case never = "NEVER"
     case stopped = "STOPPED"
 }
-class UserInfo {
+class UserInfo : Codable{
     
+    static var shared = UserInfo()
     var phoneNumber: String?
     var age: Int?
     var sex: Sex?
@@ -44,6 +45,18 @@ class UserInfo {
     var height: String?
     var smokingStatus: SmokingStatus?
     var backgroundDiseases: [String]?
+    
+    
+    func getAsParams() -> [String: Any]{
+        return [PersonalDetailsKey.age.rawValue: self.age,
+                PersonalDetailsKey.sex.rawValue: self.sex?.rawValue,
+                PersonalDetailsKey.country.rawValue: self.country,
+                PersonalDetailsKey.weight.rawValue: self.weight,
+                PersonalDetailsKey.height.rawValue: self.height,
+                PersonalDetailsKey.smokingStatus.rawValue: self.smokingStatus?.rawValue,
+                PersonalDetailsKey.backgroundDiseases.rawValue: self.backgroundDiseases
+                ]
+    }
     
 }
 
@@ -63,16 +76,18 @@ class PersonalDetailsViewController: UIPageViewController, UIPageViewControllerD
         pd2.delegate = self
         let pd3 = sb.instantiateViewController(withIdentifier: "pd3") as! PersonalDetails3ViewController
         pd3.delegate = self
-        let pd4 = sb.instantiateViewController(withIdentifier: "pd4")
+        let pd4 = sb.instantiateViewController(withIdentifier: "pd4") as! BackgroundDiseasesViewController
+        pd4.delegate = self
         return [pd1,pd2,pd3,pd4]
     }()
 
+    var presenter: PersonalDetailsPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setViewControllers([controllers.first!], direction: .forward, animated: true, completion: nil)
         dataSource = self
-        
+        self.presenter = PersonalDetailsPresenter(delegate: self, userInfo: userInfo)
         
         
     }
@@ -109,6 +124,10 @@ class PersonalDetailsViewController: UIPageViewController, UIPageViewControllerD
 
 
 extension PersonalDetailsViewController : PersonalDetailsDelegate {
+    func personalDetailsDoneSuccessfully() {
+        navigate(.dailyQuestionnaire)
+    }
+    
     func personalDetailsViewController(_ controller: UIViewController, didTapContiueWith values: [String : Any?]) {
       
         if let _ = controller as? PersonalDetails1ViewController {
@@ -127,10 +146,14 @@ extension PersonalDetailsViewController : PersonalDetailsDelegate {
             self.userInfo.smokingStatus = values[PersonalDetailsKey.smokingStatus.rawValue] as? SmokingStatus
         }
         
-        self.userInfo.backgroundDiseases = values[PersonalDetailsKey.backgroundDiseases.rawValue] as? [String]
         self.goToNextPage()
     }
     
+    
+    func personalDetailsViewController(_ controller: UIViewController, didFinishPickingDiseases values: [String]) {
+        self.userInfo.backgroundDiseases = values
+        self.presenter?.registerUser()
+    }
     
 }
 

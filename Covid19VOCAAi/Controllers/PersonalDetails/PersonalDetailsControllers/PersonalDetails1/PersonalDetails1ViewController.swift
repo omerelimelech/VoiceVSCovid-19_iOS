@@ -10,8 +10,13 @@ import UIKit
 
 protocol PersonalDetailsDelegate: class{
     func personalDetailsViewController(_ controller: UIViewController, didTapContiueWith values: [String: Any?])
+    func personalDetailsViewController(_ controller: UIViewController, didFinishPickingDiseases values: [String])
+    func personalDetailsDoneSuccessfully()
 }
-
+extension PersonalDetailsDelegate {
+    func personalDetailsViewController(_ controller: UIViewController, didTapContiueWith values: [String: Any?]) {}
+    func personalDetailsViewController(_ controller: UIViewController, didFinishPickingDiseases values: [String]) {}
+}
 class PersonalDetails1ViewController: UIViewController {
 
     @IBOutlet weak var phoneNumberPickerView: TitlePickerView!

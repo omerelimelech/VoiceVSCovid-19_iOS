@@ -1,0 +1,132 @@
+
+/* Class = "UITextView"; text = "Following the success of the data collection phase, people will soon be able to determine the likelihood of contracting the virus – with just one short voice recording.\nNOW THAT SOUNDS REMARKABLE!!!"; ObjectID = "06w-KT-QWc"; */
+"06w-KT-QWc.text" = "Following the success of the data collection phase, people will soon be able to determine the likelihood of contracting the virus – with just one short voice recording.\nNOW THAT SOUNDS REMARKABLE!!!";
+
+/* Class = "UILabel"; text = "Thank you for your recording! "; ObjectID = "3u9-vT-akq"; */
+"3u9-vT-akq.text" = "Thank you for your recording! ";
+
+/* Class = "UILabel"; text = "BENEFITS AND RISKS"; ObjectID = "5Qu-OG-MeA"; */
+"5Qu-OG-MeA.text" = "BENEFITS AND RISKS";
+
+/* Class = "UILabel"; text = "Voca.ai and Carnegie Mellon University partner to enable fast diagnosis of COVID-19."; ObjectID = "5ke-oI-mNW"; */
+"5ke-oI-mNW.text" = "Voca.ai and Carnegie Mellon University partner to enable fast diagnosis of COVID-19.";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "7Wy-gU-pGc"; */
+"7Wy-gU-pGc.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "LEARN MORE"; ObjectID = "7jZ-e7-q8p"; */
+"7jZ-e7-q8p.normalTitle" = "LEARN MORE";
+
+/* Class = "UITextView"; text = "We hope to be able to assist in early and remote diagnosis of COVID-19 patients, to target suspected cases for expensive laboratory tests. \nWe have not identified any particular risk associated with your participation in this venture. "; ObjectID = "8L8-yt-ik5"; */
+"8L8-yt-ik5.text" = "We hope to be able to assist in early and remote diagnosis of COVID-19 patients, to target suspected cases for expensive laboratory tests. \nWe have not identified any particular risk associated with your participation in this venture. ";
+
+/* Class = "UILabel"; text = "help text"; ObjectID = "8ej-2e-pJw"; */
+"8ej-2e-pJw.text" = "help text";
+
+/* Class = "UITextView"; text = "You give your permission to Voca.ai to collect information about your participation in the research project in the formats and medium (“Data”) described above. We shall own and control all Data in connection with the research project. You may also provide suggestions, comments or other feedback (“Feedback”) to the investigators with respect to the research project. Feedback is entirely voluntary and the research team shall be free to use, disclose, license, or otherwise distribute, and exploit the Feedback and Data as authorized by the research participant. "; ObjectID = "97S-L3-tme"; */
+"97S-L3-tme.text" = "You give your permission to Voca.ai to collect information about your participation in the research project in the formats and medium (“Data”) described above. We shall own and control all Data in connection with the research project. You may also provide suggestions, comments or other feedback (“Feedback”) to the investigators with respect to the research project. Feedback is entirely voluntary and the research team shall be free to use, disclose, license, or otherwise distribute, and exploit the Feedback and Data as authorized by the research participant. ";
+
+/* Class = "UITextView"; text = "Corona Voice Detect, is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO & Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevention in spreading. \n\nWe’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with the virus from voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect COVID-19 and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis of Coronavirus."; ObjectID = "A8I-o6-QqA"; */
+"A8I-o6-QqA.text" = "Corona Voice Detect, is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO & Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevention in spreading. \n\nWe’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with the virus from voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect COVID-19 and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis of Coronavirus.";
+
+/* Class = "UIButton"; normalTitle = "RECORD YOUR VOICE"; ObjectID = "ANU-ac-FWu"; */
+"ANU-ac-FWu.normalTitle" = "RECORD YOUR VOICE";
+
+/* Class = "UITextView"; text = "The project, Corona Voice Detect, was created for early diagnosis of COVID-19 (Coronavirus). It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors.\n\nBut first we need your help! We need to curate recordings from both healthy individuals and those tested positive for Coronavirus in order to gather enough data for consumer use. Please record your voice daily and reply to a few questions to help us fight this illness! Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of Coronavirus and bring remote testing to every human in the world at NO EXPENSE!\n\nCLICK BELOW TO ANSWER THE QUESTIONNAIRE & RECORD YOUR VOICE TO HELP US STOP COVID-19."; ObjectID = "AO5-xu-VDo"; */
+"AO5-xu-VDo.text" = "The project, Corona Voice Detect, was created for early diagnosis of COVID-19 (Coronavirus). It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors.\n\nBut first we need your help! We need to curate recordings from both healthy individuals and those tested positive for Coronavirus in order to gather enough data for consumer use. Please record your voice daily and reply to a few questions to help us fight this illness! Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of Coronavirus and bring remote testing to every human in the world at NO EXPENSE!\n\nCLICK BELOW TO ANSWER THE QUESTIONNAIRE & RECORD YOUR VOICE TO HELP US STOP COVID-19.";
+
+/* Class = "UIButton"; normalTitle = "RECORD"; ObjectID = "AQm-Fc-dZr"; */
+"AQm-Fc-dZr.normalTitle" = "RECORD";
+
+/* Class = "UIButton"; normalTitle = "NEXT RECORDING"; ObjectID = "Anp-IQ-NXU"; */
+"Anp-IQ-NXU.normalTitle" = "NEXT RECORDING";
+
+/* Class = "UITextView"; text = "You represent that you have the full right and authority to sign this form.\nBy clicking the survey button, you confirm that you understand what the project is about and how and why it is being done. Should you have any questions concerning this project, please contact the supervising researchers: \n\nVoca.ai\nShmuel Ur at shmuel.ur@gmail.com\nPlease print this page for your records.\n\nWe thank you for your participation."; ObjectID = "Dt4-lO-EgP"; */
+"Dt4-lO-EgP.text" = "You represent that you have the full right and authority to sign this form.\nBy clicking the survey button, you confirm that you understand what the project is about and how and why it is being done. Should you have any questions concerning this project, please contact the supervising researchers: \n\nVoca.ai\nShmuel Ur at shmuel.ur@gmail.com\nPlease print this page for your records.\n\nWe thank you for your participation.";
+
+/* Class = "UILabel"; text = "Please fill your details below:"; ObjectID = "E1Z-tb-bF0"; */
+"E1Z-tb-bF0.text" = "Please fill your details below:";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "FKd-PM-a4o"; */
+"FKd-PM-a4o.normalTitle" = "SUBMIT";
+
+/* Class = "UIButton"; normalTitle = "RECORD YOUR VOICE"; ObjectID = "FQ9-gd-oUM"; */
+"FQ9-gd-oUM.normalTitle" = "RECORD YOUR VOICE";
+
+/* Class = "UIButton"; normalTitle = "PLAY PREVIOUS RECORDING"; ObjectID = "GpF-iM-fBF"; */
+"GpF-iM-fBF.normalTitle" = "PLAY PREVIOUS RECORDING";
+
+/* Class = "UITextView"; text = "We will keep your information confidential and will not divulge any non-anonymized data. Anonymized dataset may be transferred to third parties. In particular, anonymized data may be transferred to third parties for COVID-19 related research purposes. \nIf you log-in using your GOOGLE™ identifier, we will not collect any information from your GOOGLE™ account other than your identifier. The identifier will be retained in a hashed manner, preventing us from being able to reconstruct your identifier, and being useful for the sole purpose of determining if a new identifier is identical to a previously retained one. "; ObjectID = "IDt-5a-Yiw"; */
+"IDt-5a-Yiw.text" = "We will keep your information confidential and will not divulge any non-anonymized data. Anonymized dataset may be transferred to third parties. In particular, anonymized data may be transferred to third parties for COVID-19 related research purposes. \nIf you log-in using your GOOGLE™ identifier, we will not collect any information from your GOOGLE™ account other than your identifier. The identifier will be retained in a hashed manner, preventing us from being able to reconstruct your identifier, and being useful for the sole purpose of determining if a new identifier is identical to a previously retained one. ";
+
+/* Class = "UILabel"; text = "you have completed 1 out of 6 tasks thus far! "; ObjectID = "J4j-V0-4UC"; */
+"J4j-V0-4UC.text" = "you have completed 1 out of 6 tasks thus far! ";
+
+/* Class = "UILabel"; text = "Covid-19 (CoronaVirus)"; ObjectID = "L2t-uZ-6wB"; */
+"L2t-uZ-6wB.text" = "Covid-19 (CoronaVirus)";
+
+/* Class = "UILabel"; text = "HELP US BEAT"; ObjectID = "LbS-xB-wpm"; */
+"LbS-xB-wpm.text" = "HELP US BEAT";
+
+/* Class = "UILabel"; text = "Made with ❤️ By Omer Elimelech"; ObjectID = "PWb-z2-geS"; */
+"PWb-z2-geS.text" = "Made with ❤️ By Omer Elimelech";
+
+/* Class = "UIBarButtonItem"; title = "About"; ObjectID = "Pnt-hT-Gir"; */
+"Pnt-hT-Gir.title" = "About";
+
+/* Class = "UITextView"; text = "Corona Voice Detect"; ObjectID = "RZP-47-Jfb"; */
+"RZP-47-Jfb.text" = "Corona Voice Detect";
+
+/* Class = "UILabel"; text = "YOUR AUTHORITY TO PARTICIPATE"; ObjectID = "VHa-7c-66t"; */
+"VHa-7c-66t.text" = "YOUR AUTHORITY TO PARTICIPATE";
+
+/* Class = "UILabel"; text = "With your voice sample\nwe can beat the Coronavirus\n"; ObjectID = "YL5-tv-KDp"; */
+"YL5-tv-KDp.text" = "With your voice sample\nwe can beat the Coronavirus\n";
+
+/* Class = "UIViewController"; title = "Terms & Conditions"; ObjectID = "YRh-H6-F7K"; */
+"YRh-H6-F7K.title" = "Terms & Conditions";
+
+/* Class = "UITextView"; text = "Thank you for deciding to volunteer in our research project. We aim to study the ability of Deep Learning techniques and voice analysis to assist in diagnosis of COVID-19, and assist in stopping the pandemic. The research project will consist of you filling a short questionnaire and obtaining a recordation of your voice. All your data collected will be anonymized.\nPlease note that you have no obligation to participate and you may decide to terminate your participation at any time. Below is a description of the research project, and your consent to participate. Please read this information carefully. \nBy clicking the button, you are agreeing that you’ve had time to read and consider this consent waiver and are comfortable with what is being asked of you as a participant. "; ObjectID = "ZDf-pF-Age"; */
+"ZDf-pF-Age.text" = "Thank you for deciding to volunteer in our research project. We aim to study the ability of Deep Learning techniques and voice analysis to assist in diagnosis of COVID-19, and assist in stopping the pandemic. The research project will consist of you filling a short questionnaire and obtaining a recordation of your voice. All your data collected will be anonymized.\nPlease note that you have no obligation to participate and you may decide to terminate your participation at any time. Below is a description of the research project, and your consent to participate. Please read this information carefully. \nBy clicking the button, you are agreeing that you’ve had time to read and consider this consent waiver and are comfortable with what is being asked of you as a participant. ";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Zj4-s7-BLe"; */
+"Zj4-s7-BLe.title" = "Item";
+
+/* Class = "UILabel"; text = "click to start recording"; ObjectID = "afP-ZD-oJh"; */
+"afP-ZD-oJh.text" = "click to start recording";
+
+/* Class = "UILabel"; text = "Instruction"; ObjectID = "ajF-gZ-UiY"; */
+"ajF-gZ-UiY.text" = "Instruction";
+
+/* Class = "UILabel"; text = "omer.tkd@gmail.com"; ObjectID = "bzv-BZ-xA1"; */
+"bzv-BZ-xA1.text" = "omer.tkd@gmail.com";
+
+/* Class = "UILabel"; text = "INTRODUCTION"; ObjectID = "dPx-rv-IWv"; */
+"dPx-rv-IWv.text" = "INTRODUCTION";
+
+/* Class = "UINavigationItem"; title = "Corona Form"; ObjectID = "fnJ-K2-kEb"; */
+"fnJ-K2-kEb.title" = "Corona Form";
+
+/* Class = "UITextView"; text = "The purpose of this venture is to collect data that is useful for diagnosis of COVID-19 patients based on voice analysis. If successful, we hope to use voice samples as a new screening method for early detection of COVID-19 infection. However, at this stage, we are simply collecting information to be made available for the research community and advance rapid new techniques for COVID-19 detection.\nYou will be shown a short questionnaire to collect demographic information, as well as an indication whether or not you have been tested positive for COVID-19. You will be asked to provide a voice sample. We may request that you log-on using your GOOGLE™ account, to enable provisioning of multiple samples over time. \nIf you are interested in learning more about this study, please continue to read below."; ObjectID = "m2Q-5m-Uvg"; */
+"m2Q-5m-Uvg.text" = "The purpose of this venture is to collect data that is useful for diagnosis of COVID-19 patients based on voice analysis. If successful, we hope to use voice samples as a new screening method for early detection of COVID-19 infection. However, at this stage, we are simply collecting information to be made available for the research community and advance rapid new techniques for COVID-19 detection.\nYou will be shown a short questionnaire to collect demographic information, as well as an indication whether or not you have been tested positive for COVID-19. You will be asked to provide a voice sample. We may request that you log-on using your GOOGLE™ account, to enable provisioning of multiple samples over time. \nIf you are interested in learning more about this study, please continue to read below.";
+
+/* Class = "UIButton"; normalTitle = "RECORD"; ObjectID = "m8S-Cm-dKg"; */
+"m8S-Cm-dKg.normalTitle" = "RECORD";
+
+/* Class = "UILabel"; text = "TITLE OF RESEARCH PROJECT"; ObjectID = "pTy-Hc-jxT"; */
+"pTy-Hc-jxT.text" = "TITLE OF RESEARCH PROJECT";
+
+/* Class = "UILabel"; text = "CONFIDENTIALITY"; ObjectID = "pzW-v6-FG6"; */
+"pzW-v6-FG6.text" = "CONFIDENTIALITY";
+
+/* Class = "UILabel"; text = "RESEARCH DATA & FEEDBACK"; ObjectID = "rTx-jm-4Fb"; */
+"rTx-jm-4Fb.text" = "RESEARCH DATA & FEEDBACK";
+
+/* Class = "UILabel"; text = "Consent Form\nCONCISE SUMMARY"; ObjectID = "tXP-GK-KVN"; */
+"tXP-GK-KVN.text" = "Consent Form\nCONCISE SUMMARY";
+
+/* Class = "UIButton"; normalTitle = "Agree & Continue"; ObjectID = "vRk-Py-f6q"; */
+"vRk-Py-f6q.normalTitle" = "Agree & Continue";
+
+/* Class = "UIButton"; normalTitle = "REDO RECORDING"; ObjectID = "wbs-EG-klS"; */
+"wbs-EG-klS.normalTitle" = "REDO RECORDING";

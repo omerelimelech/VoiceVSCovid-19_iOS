@@ -39,7 +39,7 @@
 		27D45E37243A4EAE0031448E /* RecordInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D45E36243A4EAE0031448E /* RecordInstructions.swift */; };
 		27E01B40243A0E3C0062B4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B3F243A0E3C0062B4A6 /* AppDelegate.swift */; };
 		27E01B44243A0E3C0062B4A6 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B43243A0E3C0062B4A6 /* FormViewController.swift */; };
-		27E01B47243A0E3C0062B4A6 /* Main12.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E01B45243A0E3C0062B4A6 /* Main12.storyboard */; };
+		27E01B47243A0E3C0062B4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E01B45243A0E3C0062B4A6 /* Main.storyboard */; };
 		27E01B4A243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B48243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld */; };
 		27E01B4C243A0E3E0062B4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E01B4B243A0E3E0062B4A6 /* Assets.xcassets */; };
 		27E01B5A243A0E3E0062B4A6 /* Covid19VOCAAiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E01B59243A0E3E0062B4A6 /* Covid19VOCAAiTests.swift */; };
@@ -90,6 +90,8 @@
 		E0829334245C621900737F33 /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829332245C621900737F33 /* TextCollectionViewCell.swift */; };
 		E0829335245C621900737F33 /* TextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0829333245C621900737F33 /* TextCollectionViewCell.xib */; };
 		E082933A245CC1E800737F33 /* PersonalDetails1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */; };
+		E08CB99C246DD217002433D2 /* GeneralFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB99B246DD217002433D2 /* GeneralFunctions.swift */; };
+		E08CB99E246DD9BC002433D2 /* RecorderViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB99D246DD9BC002433D2 /* RecorderViewController+Animation.swift */; };
 		E094F165245DCA5B00DFD604 /* OxymeterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F164245DCA5B00DFD604 /* OxymeterPresenter.swift */; };
 		E094F167245DCA6300DFD604 /* OxymeterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F166245DCA6300DFD604 /* OxymeterModel.swift */; };
 		E094F169245DCA6C00DFD604 /* OxymeterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F168245DCA6C00DFD604 /* OxymeterDelegate.swift */; };
@@ -101,6 +103,8 @@
 		E0992A3D245759220087E7DD /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0992A3C245759220087E7DD /* OnBoardingPageViewController.swift */; };
 		E0D6D0D42469E2D500C4E605 /* PersonalDetails2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6D0D32469E2D500C4E605 /* PersonalDetails2ViewController.swift */; };
 		E0D6D0D72469E6B700C4E605 /* PersonalDetails3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6D0D62469E6B700C4E605 /* PersonalDetails3ViewController.swift */; };
+		E0D6D0DB246B3DD000C4E605 /* PersonalDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6D0DA246B3DD000C4E605 /* PersonalDetailsPresenter.swift */; };
+		E0D6D0DD246B3DDF00C4E605 /* PersonalDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6D0DC246B3DDF00C4E605 /* PersonalDetailsModel.swift */; };
 		E0DC280924584B0A00F1AF97 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC280824584B0A00F1AF97 /* ImageProcessing.swift */; };
 		E0DC280C24584FD800F1AF97 /* Oxymeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC280B24584FD800F1AF97 /* Oxymeter.swift */; };
 		E0DC280E2458509C00F1AF97 /* OxymeterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC280D2458509C00F1AF97 /* OxymeterImpl.swift */; };
@@ -222,13 +226,14 @@
 		E00FC077245776CB00924B8D /* DTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOModel.swift; sourceTree = "<group>"; };
 		E02B4A7A245E032300A9F3E5 /* OxymeterPreperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterPreperViewController.swift; sourceTree = "<group>"; };
 		E0571F35245DE3310097AB61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E081A46B245B4986005D8086 /* he */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = he; path = he.lproj/Main12.storyboard; sourceTree = "<group>"; };
 		E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 		E0829322245C40AA00737F33 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		E0829325245C5EC500737F33 /* BackgroundDiseasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDiseasesViewController.swift; sourceTree = "<group>"; };
 		E0829332245C621900737F33 /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0829333245C621900737F33 /* TextCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCollectionViewCell.xib; sourceTree = "<group>"; };
 		E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails1ViewController.swift; sourceTree = "<group>"; };
+		E08CB99B246DD217002433D2 /* GeneralFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFunctions.swift; sourceTree = "<group>"; };
+		E08CB99D246DD9BC002433D2 /* RecorderViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+Animation.swift"; sourceTree = "<group>"; };
 		E094F164245DCA5B00DFD604 /* OxymeterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterPresenter.swift; sourceTree = "<group>"; };
 		E094F166245DCA6300DFD604 /* OxymeterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterModel.swift; sourceTree = "<group>"; };
 		E094F168245DCA6C00DFD604 /* OxymeterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterDelegate.swift; sourceTree = "<group>"; };
@@ -242,6 +247,11 @@
 		E0D6D0D12469E29F00C4E605 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/onboarding.strings; sourceTree = "<group>"; };
 		E0D6D0D32469E2D500C4E605 /* PersonalDetails2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails2ViewController.swift; sourceTree = "<group>"; };
 		E0D6D0D62469E6B700C4E605 /* PersonalDetails3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails3ViewController.swift; sourceTree = "<group>"; };
+		E0D6D0DA246B3DD000C4E605 /* PersonalDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsPresenter.swift; sourceTree = "<group>"; };
+		E0D6D0DC246B3DDF00C4E605 /* PersonalDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsModel.swift; sourceTree = "<group>"; };
+		E0D6D0DE246BD24300C4E605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0D6D0DF246C4C9300C4E605 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		E0D6D0E0246D23AD00C4E605 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
 		E0DC280824584B0A00F1AF97 /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
 		E0DC280B24584FD800F1AF97 /* Oxymeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oxymeter.swift; sourceTree = "<group>"; };
 		E0DC280D2458509C00F1AF97 /* OxymeterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterImpl.swift; sourceTree = "<group>"; };
@@ -254,7 +264,6 @@
 		E0E0CF54245F68970001875B /* SympthomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympthomsViewController.swift; sourceTree = "<group>"; };
 		E0E0CF57245F68B20001875B /* SympthomsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympthomsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0E0CF58245F68B20001875B /* SympthomsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SympthomsCollectionViewCell.xib; sourceTree = "<group>"; };
-		E0F06C3E245B4E5800D25388 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main12.storyboard; sourceTree = "<group>"; };
 		E0F06C40245B4E6100D25388 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/onboarding.storyboard; sourceTree = "<group>"; };
 		E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -394,6 +403,7 @@
 				27A73986243D027100A3D18C /* RecordPresenter.swift */,
 				27A73989243D028000A3D18C /* RecordDelegate.swift */,
 				27A7398B243D028800A3D18C /* RecordModel.swift */,
+				E08CB99D246DD9BC002433D2 /* RecorderViewController+Animation.swift */,
 			);
 			path = RecordViewController;
 			sourceTree = "<group>";
@@ -444,7 +454,7 @@
 				27E01BA4243A14F80062B4A6 /* Views */,
 				E094F16A245DD65800DFD604 /* VoiceUpMainViewController */,
 				271210A0244510830074DFBD /* Controllers */,
-				27E01B45243A0E3C0062B4A6 /* Main12.storyboard */,
+				27E01B45243A0E3C0062B4A6 /* Main.storyboard */,
 				27E01B4B243A0E3E0062B4A6 /* Assets.xcassets */,
 				27E01B50243A0E3E0062B4A6 /* Info.plist */,
 				E0571F35245DE3310097AB61 /* GoogleService-Info.plist */,
@@ -481,6 +491,7 @@
 				27E01B74243A0E720062B4A6 /* Extention */,
 				27E01B84243A0E720062B4A6 /* LocalizationManager */,
 				27A73993243D0EAD00A3D18C /* S3Uploader.swift */,
+				E08CB99B246DD217002433D2 /* GeneralFunctions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -831,6 +842,8 @@
 			isa = PBXGroup;
 			children = (
 				E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */,
+				E0D6D0DA246B3DD000C4E605 /* PersonalDetailsPresenter.swift */,
+				E0D6D0DC246B3DDF00C4E605 /* PersonalDetailsModel.swift */,
 				E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */,
 				E0829336245CC1BD00737F33 /* PersonalDetailsControllers */,
 			);
@@ -955,7 +968,7 @@
 				E0F06C44245C28DC00D25388 /* PersonalDetails.storyboard in Resources */,
 				2761E875243F43BD00C06C75 /* Montserrat-Black.ttf in Resources */,
 				E0E0CF5A245F68B20001875B /* SympthomsCollectionViewCell.xib in Resources */,
-				27E01B47243A0E3C0062B4A6 /* Main12.storyboard in Resources */,
+				27E01B47243A0E3C0062B4A6 /* Main.storyboard in Resources */,
 				2761E874243F43BD00C06C75 /* Montserrat-Light.ttf in Resources */,
 				E0829335245C621900737F33 /* TextCollectionViewCell.xib in Resources */,
 				27D45E2C243A28430031448E /* MultiInputView.xib in Resources */,
@@ -1116,6 +1129,7 @@
 				E0829326245C5EC500737F33 /* BackgroundDiseasesViewController.swift in Sources */,
 				27E01B8B243A0E720062B4A6 /* InterfaceBuilder+Localization.swift in Sources */,
 				27A73992243D0BA200A3D18C /* ThankYouForRecordModel.swift in Sources */,
+				E0D6D0DD246B3DDF00C4E605 /* PersonalDetailsModel.swift in Sources */,
 				27E01B8C243A0E720062B4A6 /* TableViewCell+Utils.swift in Sources */,
 				27D45E2E243A284C0031448E /* MultiInputView.swift in Sources */,
 				27E01B8D243A0E720062B4A6 /* NSLocale+Utils.swift in Sources */,
@@ -1142,9 +1156,11 @@
 				27E01B95243A0E720062B4A6 /* UIImage+Utils.swift in Sources */,
 				27D45E32243A3EC80031448E /* RecordViewController.swift in Sources */,
 				E0E0CF59245F68B20001875B /* SympthomsCollectionViewCell.swift in Sources */,
+				E08CB99E246DD9BC002433D2 /* RecorderViewController+Animation.swift in Sources */,
 				27E01BB4243A23020062B4A6 /* SelectionTableViewCell.swift in Sources */,
 				27A73985243D00A900A3D18C /* GlobalData.swift in Sources */,
 				27E01B9B243A0E720062B4A6 /* UserSettings.swift in Sources */,
+				E0D6D0DB246B3DD000C4E605 /* PersonalDetailsPresenter.swift in Sources */,
 				27A73994243D0EAD00A3D18C /* S3Uploader.swift in Sources */,
 				27A73980243CF71700A3D18C /* FormDelegate.swift in Sources */,
 				E0D6D0D72469E6B700C4E605 /* PersonalDetails3ViewController.swift in Sources */,
@@ -1162,6 +1178,7 @@
 				27D45E37243A4EAE0031448E /* RecordInstructions.swift in Sources */,
 				27E01BB0243A22B10062B4A6 /* MultipleSelectionView.swift in Sources */,
 				2712109124410C450074DFBD /* TermsViewController.swift in Sources */,
+				E08CB99C246DD217002433D2 /* GeneralFunctions.swift in Sources */,
 				27A7397A243CF52200A3D18C /* S3Model.swift in Sources */,
 				2712109C24450F810074DFBD /* LocalizationEnums.swift in Sources */,
 				E02B4A7B245E032300A9F3E5 /* OxymeterPreperViewController.swift in Sources */,
@@ -1212,13 +1229,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		27E01B45243A0E3C0062B4A6 /* Main12.storyboard */ = {
+		27E01B45243A0E3C0062B4A6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E081A46B245B4986005D8086 /* he */,
-				E0F06C3E245B4E5800D25388 /* en */,
+				E0D6D0DE246BD24300C4E605 /* Base */,
+				E0D6D0DF246C4C9300C4E605 /* en */,
+				E0D6D0E0246D23AD00C4E605 /* he */,
 			);
-			name = Main12.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		E0F06C41245B4E6100D25388 /* onboarding.storyboard */ = {
@@ -1358,7 +1376,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 6FHC6MWKSK;
 				INFOPLIST_FILE = Covid19VOCAAi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1382,7 +1400,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 6FHC6MWKSK;
 				INFOPLIST_FILE = Covid19VOCAAi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

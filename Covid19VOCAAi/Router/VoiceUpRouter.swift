@@ -37,7 +37,8 @@ struct VoiceUpAppNavigation: AppNavigation {
             case .voiceExplainer:
                 return UIViewController()
             case .voiceRecording:
-                return UIViewController()
+                let ins = RecordInstructions(stage: .cough)
+                return RecordViewController.initialization(instructions: ins, recordNumber: 1)!
             case .finishRecordScreen:
                 return UIViewController()
             case .notificationScreen:

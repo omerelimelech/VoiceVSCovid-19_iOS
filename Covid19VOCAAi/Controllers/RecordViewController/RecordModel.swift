@@ -7,8 +7,18 @@
 //
 
 import Foundation
+import AVFoundation
+
 
 class RecordModel : NSObject {
+    
+    
+    let recorderSettings = [
+    AVFormatIDKey: kAudioFormatLinearPCM,
+    AVSampleRateKey: 12000,
+    AVNumberOfChannelsKey: 1,
+    AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+       ] as [String : Any]
     
     func sendRecord(recordName: String, completion: @escaping completion){
         APIManager.shared.submitRecord(submitId: GlobalData.shared.currentSubmissionId ?? "", recordName: recordName, completion: completion)

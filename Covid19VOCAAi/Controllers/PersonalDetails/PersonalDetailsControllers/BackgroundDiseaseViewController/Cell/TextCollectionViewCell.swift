@@ -15,24 +15,20 @@ class TextCollectionViewCell: UICollectionViewCell {
     override var isSelected: Bool{
         didSet{
             if isSelected {
-                self.backgroundColor = .purpleBlue
-                self.labelText.font = UIFont(name: "OpenSansHebrew-Bold", size: 16)
-                self.labelText.textColor = .white
+                self.backgroundColor = UIColor.purpleBlue.withAlphaComponent(0.2)
             }else{
                 self.backgroundColor = .white
-                self.labelText.font = UIFont(name: "OpenSansHebrew-Regular", size: 16)
-                self.labelText.textColor = .purpleBlue
             }
-            
-            layoutIfNeeded()
+            selectionButton.isSelected = isSelected
+            selectionButton.select()
         }
     }
     @IBOutlet weak var labelText: UILabel!
     
+    @IBOutlet weak var selectionButton: RadioButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        labelText.transform = CGAffineTransform(scaleX: -1, y: 1) // if isRTL
     }
 
 }

@@ -28,34 +28,25 @@ class RecordInstructions {
     
     enum Stage{
         case cough
-        case ABC
         case count
         case aaa
         case eee
-        case ooo
     }
     
     var instruction: RecordInstruction!{
         didSet{
             guard let _ = instruction else {return}
             switch stage{
-            case .cough:
-                nextStage = .count
-            case .count:
-                
-                nextStage = .ABC
-            case .ABC:
-                
-                nextStage = .ooo
-            case .ooo:
-                
+            case .aaa:
                 nextStage = .eee
             case .eee:
-                
-                nextStage = .aaa
-            case .aaa, .none:
+                nextStage = .count
+            case .count:
+                nextStage = .cough
+            case .cough:
                 nextStage = nil
-
+            default:
+                return
             }
         }
     }
@@ -63,21 +54,17 @@ class RecordInstructions {
     var stage: Stage?
     
     enum Titles : String{
-        case cough = "Please cough three times"
-        case count = "Count from 1 to 20"
-        case ABC = "Please recite the alphabet:"
-        case eee = "Say the vowel \"ee\" for as long ass you can : EEEE"
-        case ooo = "Say the vowel \"o\" for as long ass you can : OOOO"
-        case aaa = "Say the vowel \"a\" for as long ass you can : AAAA"
+        case cough = "שיעול 3 פעמים"
+        case count = "ספירה באנגלית מ1 עד 10"
+        case eee = "אייייי"
+        case aaa = "אההההה"
     }
     
     enum Descriptions: String{
         case cough = ""
-        case count = " "
-        case ABC = "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"
-        case eee = "(as in the word \"cheese\")"
-        case ooo = "(as in the word \"box\")"
-        case aaa = "(as in the word \"sad\")"
+        case count = "בלי הפסקות, אם לא נוח באנגלית, אפשר גם בעברית"
+        case eee = "כמו במילה אמא, ארוך בלי הפסקות עד שיגמר לך האוויר"
+        case aaa = "כמו במילה אבא, ארוך בלי הספקות עד שיגמר לך האוויר"
         
     }
     
@@ -86,22 +73,16 @@ class RecordInstructions {
         switch stage{
         case .cough:
             instruction = RecordInstruction(title: .cough, desc: .cough, recordName: "cough")
-            self.nextStage = .count
+            self.nextStage = nil
         case .count:
             instruction = RecordInstruction(title: .count, desc: .count, recordName: "count")
-            self.nextStage = .ABC
-        case .ABC:
-            instruction = RecordInstruction(title: .ABC, desc: .ABC, recordName: "ABC")
-            self.nextStage = .ooo
-        case .ooo:
-            instruction = RecordInstruction(title: .ooo, desc: .ooo, recordName: "ooo")
-            self.nextStage = .eee
+            self.nextStage = .cough
         case .eee:
             instruction = RecordInstruction(title: .eee, desc: .eee, recordName: "eee")
-            self.nextStage = .aaa
+            self.nextStage = .count
         case .aaa:
             instruction = RecordInstruction(title: .aaa, desc: .aaa, recordName: "aaa")
-            self.nextStage = nil
+            self.nextStage = .eee
             
         }
     }
