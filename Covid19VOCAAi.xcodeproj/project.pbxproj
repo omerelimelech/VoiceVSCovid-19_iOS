@@ -76,6 +76,9 @@
 		27EB59BD243FD99300A9CA52 /* NewMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB59BC243FD99300A9CA52 /* NewMainViewController.swift */; };
 		37F552A7B3AB9262BFBA7C4A /* Pods_Covid19VOCAAi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93404E59A34D04B3B3EA53F /* Pods_Covid19VOCAAi.framework */; };
 		47FEDE26B00838BF8EF38EB2 /* Pods_Covid19VOCAAiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */; };
+		575DAC01246BE45700F6974C /* DatePickerActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC00246BE45700F6974C /* DatePickerActionSheet.swift */; };
+		57AEC32224670F46007199E9 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32124670F46007199E9 /* StringHelper.swift */; };
+		57AEC33024674DC6007199E9 /* UIView+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */; };
 		62223CB9DFCF2EE098767FC5 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */; };
 		E001CA842469D85700B48CCD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E001CA832469D85700B48CCD /* Router.swift */; };
 		E001CA862469D86E00B48CCD /* VoiceUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E001CA852469D86E00B48CCD /* VoiceUpRouter.swift */; };
@@ -92,6 +95,18 @@
 		E082933A245CC1E800737F33 /* PersonalDetails1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */; };
 		E08CB99C246DD217002433D2 /* GeneralFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB99B246DD217002433D2 /* GeneralFunctions.swift */; };
 		E08CB99E246DD9BC002433D2 /* RecorderViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB99D246DD9BC002433D2 /* RecorderViewController+Animation.swift */; };
+		E08CB9B7246EB51B002433D2 /* ActionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB9AA246EB51B002433D2 /* ActionButtonCell.swift */; };
+		E08CB9B8246EB51B002433D2 /* QuestionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB9AB246EB51B002433D2 /* QuestionListCell.swift */; };
+		E08CB9B9246EB51B002433D2 /* QuestionCheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB9AC246EB51B002433D2 /* QuestionCheckboxCell.swift */; };
+		E08CB9BA246EB51B002433D2 /* QuestionCheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E08CB9AD246EB51B002433D2 /* QuestionCheckboxCell.xib */; };
+		E08CB9BB246EB51B002433D2 /* ActionButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E08CB9AE246EB51B002433D2 /* ActionButtonCell.xib */; };
+		E08CB9BC246EB51B002433D2 /* QuestionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E08CB9AF246EB51B002433D2 /* QuestionListCell.xib */; };
+		E08CB9BD246EB51B002433D2 /* DailyQuestionsViewController+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB9B0246EB51B002433D2 /* DailyQuestionsViewController+Table.swift */; };
+		E08CB9BE246EB51B002433D2 /* DailyQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB9B1246EB51B002433D2 /* DailyQuestionModel.swift */; };
+		E08CB9BF246EB51B002433D2 /* DailyQuestionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB9B2246EB51B002433D2 /* DailyQuestionsPresenter.swift */; };
+		E08CB9C0246EB51B002433D2 /* DailyQuestionsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB9B4246EB51B002433D2 /* DailyQuestionsHeaderView.swift */; };
+		E08CB9C1246EB51B002433D2 /* DailyQuestionsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E08CB9B5246EB51B002433D2 /* DailyQuestionsHeaderView.xib */; };
+		E08CB9C2246EB51B002433D2 /* DailyQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB9B6246EB51B002433D2 /* DailyQuestionsViewController.swift */; };
 		E094F165245DCA5B00DFD604 /* OxymeterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F164245DCA5B00DFD604 /* OxymeterPresenter.swift */; };
 		E094F167245DCA6300DFD604 /* OxymeterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F166245DCA6300DFD604 /* OxymeterModel.swift */; };
 		E094F169245DCA6C00DFD604 /* OxymeterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E094F168245DCA6C00DFD604 /* OxymeterDelegate.swift */; };
@@ -214,7 +229,22 @@
 		2C53D8587E7DC3F81E5E125C /* Pods-Covid19VOCAAi-Covid19VOCAAiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi-Covid19VOCAAiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi-Covid19VOCAAiUITests/Pods-Covid19VOCAAi-Covid19VOCAAiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		498C6093FB6A0614335226E5 /* Pods-Covid19VOCAAiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAiTests.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAiTests/Pods-Covid19VOCAAiTests.release.xcconfig"; sourceTree = "<group>"; };
 		54C81089705B59FC47FEF190 /* Pods-Covid19VOCAAi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi/Pods-Covid19VOCAAi.debug.xcconfig"; sourceTree = "<group>"; };
+		5732C013246AE58F0024334E /* QuestionCheckboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCheckboxCell.swift; sourceTree = "<group>"; };
+		5732C014246AE58F0024334E /* QuestionCheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCheckboxCell.xib; sourceTree = "<group>"; };
+		575DAC00246BE45700F6974C /* DatePickerActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerActionSheet.swift; sourceTree = "<group>"; };
 		578F41A7C45C9C9ED24FDFFB /* Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi-Covid19VOCAAiUITests/Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsViewController.swift; sourceTree = "<group>"; };
+		57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyQuestionsHeaderView.xib; sourceTree = "<group>"; };
+		57AEC3042465C80B007199E9 /* DailyQuestionsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsHeaderView.swift; sourceTree = "<group>"; };
+		57AEC31B2466D9D3007199E9 /* QuestionListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListCell.swift; sourceTree = "<group>"; };
+		57AEC31C2466D9D3007199E9 /* QuestionListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionListCell.xib; sourceTree = "<group>"; };
+		57AEC32124670F46007199E9 /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		57AEC32424671693007199E9 /* DailyQuestionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuestionsPresenter.swift; sourceTree = "<group>"; };
+		57AEC32724673A76007199E9 /* ActionButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonCell.swift; sourceTree = "<group>"; };
+		57AEC32824673A76007199E9 /* ActionButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionButtonCell.xib; sourceTree = "<group>"; };
+		57AEC32B24673D33007199E9 /* DailyQuestionsViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyQuestionsViewController+Table.swift"; sourceTree = "<group>"; };
+		57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Interaction.swift"; sourceTree = "<group>"; };
+		57AEC3312467541D007199E9 /* DailyQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuestionModel.swift; sourceTree = "<group>"; };
 		838C70F42504E96D1926E879 /* Pods-Covid19VOCAAiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAiTests.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAiTests/Pods-Covid19VOCAAiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +264,18 @@
 		E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails1ViewController.swift; sourceTree = "<group>"; };
 		E08CB99B246DD217002433D2 /* GeneralFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFunctions.swift; sourceTree = "<group>"; };
 		E08CB99D246DD9BC002433D2 /* RecorderViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+Animation.swift"; sourceTree = "<group>"; };
+		E08CB9AA246EB51B002433D2 /* ActionButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButtonCell.swift; sourceTree = "<group>"; };
+		E08CB9AB246EB51B002433D2 /* QuestionListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionListCell.swift; sourceTree = "<group>"; };
+		E08CB9AC246EB51B002433D2 /* QuestionCheckboxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCheckboxCell.swift; sourceTree = "<group>"; };
+		E08CB9AD246EB51B002433D2 /* QuestionCheckboxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionCheckboxCell.xib; sourceTree = "<group>"; };
+		E08CB9AE246EB51B002433D2 /* ActionButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionButtonCell.xib; sourceTree = "<group>"; };
+		E08CB9AF246EB51B002433D2 /* QuestionListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionListCell.xib; sourceTree = "<group>"; };
+		E08CB9B0246EB51B002433D2 /* DailyQuestionsViewController+Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DailyQuestionsViewController+Table.swift"; sourceTree = "<group>"; };
+		E08CB9B1246EB51B002433D2 /* DailyQuestionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionModel.swift; sourceTree = "<group>"; };
+		E08CB9B2246EB51B002433D2 /* DailyQuestionsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsPresenter.swift; sourceTree = "<group>"; };
+		E08CB9B4246EB51B002433D2 /* DailyQuestionsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsHeaderView.swift; sourceTree = "<group>"; };
+		E08CB9B5246EB51B002433D2 /* DailyQuestionsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyQuestionsHeaderView.xib; sourceTree = "<group>"; };
+		E08CB9B6246EB51B002433D2 /* DailyQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsViewController.swift; sourceTree = "<group>"; };
 		E094F164245DCA5B00DFD604 /* OxymeterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterPresenter.swift; sourceTree = "<group>"; };
 		E094F166245DCA6300DFD604 /* OxymeterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterModel.swift; sourceTree = "<group>"; };
 		E094F168245DCA6C00DFD604 /* OxymeterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterDelegate.swift; sourceTree = "<group>"; };
@@ -325,6 +367,7 @@
 		271210A0244510830074DFBD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E08CB9A8246EB51B002433D2 /* DailyQuestionnaireViewController */,
 				E001CA892469DAB800B48CCD /* DailyQuestionnaire */,
 				E001CA882469DAA600B48CCD /* onBoarding */,
 				E0F06C42245C28CA00D25388 /* PersonalDetails */,
@@ -428,6 +471,7 @@
 				27E01B3D243A0E3C0062B4A6 /* Products */,
 				451D1166B94FFE470A466E41 /* Pods */,
 				BB17CF1D299E6B8F5F19CC24 /* Frameworks */,
+				E08CB9A7246EB4A7002433D2 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -484,6 +528,7 @@
 		27E01B72243A0E720062B4A6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				57AEC32024670F36007199E9 /* Helpers */,
 				E001CA872469DA6500B48CCD /* OldControllers */,
 				2712109A24450F740074DFBD /* Localozation */,
 				2761E86C243F43A600C06C75 /* Fonts */,
@@ -514,6 +559,7 @@
 				27E01B81243A0E720062B4A6 /* String+Utils.swift */,
 				27E01B82243A0E720062B4A6 /* ScrollView+Utils.swift */,
 				27E01B83243A0E720062B4A6 /* Notification+Utils.swift */,
+				57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -557,6 +603,7 @@
 		27E01BA4243A14F80062B4A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				575DABFF246BE42D00F6974C /* DatePickerActionSheet */,
 				E082931F245C408600737F33 /* RadioButtons */,
 				27D45E2A243A282B0031448E /* MultiInputView */,
 				27E01BAC243A228F0062B4A6 /* MulitipleSelectionView */,
@@ -613,6 +660,22 @@
 				498C6093FB6A0614335226E5 /* Pods-Covid19VOCAAiTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		575DABFF246BE42D00F6974C /* DatePickerActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				575DAC00246BE45700F6974C /* DatePickerActionSheet.swift */,
+			);
+			path = DatePickerActionSheet;
+			sourceTree = "<group>";
+		};
+		57AEC32024670F36007199E9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				57AEC32124670F46007199E9 /* StringHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		BB17CF1D299E6B8F5F19CC24 /* Frameworks */ = {
@@ -724,6 +787,60 @@
 				E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */,
 			);
 			path = PersonalDetails1;
+			sourceTree = "<group>";
+		};
+		E08CB9A7246EB4A7002433D2 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */,
+				57AEC3042465C80B007199E9 /* DailyQuestionsHeaderView.swift */,
+				57AEC32424671693007199E9 /* DailyQuestionsPresenter.swift */,
+				57AEC32724673A76007199E9 /* ActionButtonCell.swift */,
+				5732C013246AE58F0024334E /* QuestionCheckboxCell.swift */,
+				57AEC3312467541D007199E9 /* DailyQuestionModel.swift */,
+				57AEC31B2466D9D3007199E9 /* QuestionListCell.swift */,
+				57AEC32B24673D33007199E9 /* DailyQuestionsViewController+Table.swift */,
+				57AEC32824673A76007199E9 /* ActionButtonCell.xib */,
+				57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */,
+				57AEC31C2466D9D3007199E9 /* QuestionListCell.xib */,
+				5732C014246AE58F0024334E /* QuestionCheckboxCell.xib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		E08CB9A8246EB51B002433D2 /* DailyQuestionnaireViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E08CB9A9246EB51B002433D2 /* Cells */,
+				E08CB9B0246EB51B002433D2 /* DailyQuestionsViewController+Table.swift */,
+				E08CB9B1246EB51B002433D2 /* DailyQuestionModel.swift */,
+				E08CB9B2246EB51B002433D2 /* DailyQuestionsPresenter.swift */,
+				E08CB9B3246EB51B002433D2 /* Views */,
+				E08CB9B6246EB51B002433D2 /* DailyQuestionsViewController.swift */,
+			);
+			path = DailyQuestionnaireViewController;
+			sourceTree = "<group>";
+		};
+		E08CB9A9246EB51B002433D2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E08CB9AA246EB51B002433D2 /* ActionButtonCell.swift */,
+				E08CB9AB246EB51B002433D2 /* QuestionListCell.swift */,
+				E08CB9AC246EB51B002433D2 /* QuestionCheckboxCell.swift */,
+				E08CB9AD246EB51B002433D2 /* QuestionCheckboxCell.xib */,
+				E08CB9AE246EB51B002433D2 /* ActionButtonCell.xib */,
+				E08CB9AF246EB51B002433D2 /* QuestionListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E08CB9B3246EB51B002433D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E08CB9B4246EB51B002433D2 /* DailyQuestionsHeaderView.swift */,
+				E08CB9B5246EB51B002433D2 /* DailyQuestionsHeaderView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E094F163245DCA4800DFD604 /* OxymeterViewController */ = {
@@ -961,6 +1078,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E08CB9BA246EB51B002433D2 /* QuestionCheckboxCell.xib in Resources */,
 				2761E873243F43BD00C06C75 /* Montserrat-Bold.ttf in Resources */,
 				E0571F36245DE3310097AB61 /* GoogleService-Info.plist in Resources */,
 				2761E872243F43BD00C06C75 /* Montserrat-Regular.ttf in Resources */,
@@ -968,14 +1086,17 @@
 				E0F06C44245C28DC00D25388 /* PersonalDetails.storyboard in Resources */,
 				2761E875243F43BD00C06C75 /* Montserrat-Black.ttf in Resources */,
 				E0E0CF5A245F68B20001875B /* SympthomsCollectionViewCell.xib in Resources */,
+				E08CB9C1246EB51B002433D2 /* DailyQuestionsHeaderView.xib in Resources */,
 				27E01B47243A0E3C0062B4A6 /* Main.storyboard in Resources */,
 				2761E874243F43BD00C06C75 /* Montserrat-Light.ttf in Resources */,
 				E0829335245C621900737F33 /* TextCollectionViewCell.xib in Resources */,
 				27D45E2C243A28430031448E /* MultiInputView.xib in Resources */,
+				E08CB9BC246EB51B002433D2 /* QuestionListCell.xib in Resources */,
 				E0992A3624574BAB0087E7DD /* OpenSansHebrew-Bold.ttf in Resources */,
 				27E01BA8243A15C10062B4A6 /* TitlePickerView.xib in Resources */,
 				2761E876243F43BD00C06C75 /* Montserrat-Medium.ttf in Resources */,
 				271210992441D6A70074DFBD /* CountriesPickerView.xib in Resources */,
+				E08CB9BB246EB51B002433D2 /* ActionButtonCell.xib in Resources */,
 				27E01BB5243A23020062B4A6 /* SelectionTableViewCell.xib in Resources */,
 				27E01BAE243A22A30062B4A6 /* MultipleSelectionView.xib in Resources */,
 				E0992A3524574BAB0087E7DD /* OpenSansHebrew-Regular.ttf in Resources */,
@@ -1113,12 +1234,15 @@
 				E094F167245DCA6300DFD604 /* OxymeterModel.swift in Sources */,
 				27E01B9A243A0E720062B4A6 /* LocalizationManager.swift in Sources */,
 				27E01B89243A0E720062B4A6 /* Constants.swift in Sources */,
+				E08CB9BE246EB51B002433D2 /* DailyQuestionModel.swift in Sources */,
 				E0DC281924589D8200F1AF97 /* dataTestFile.swift in Sources */,
+				57AEC32224670F46007199E9 /* StringHelper.swift in Sources */,
 				E0DC281724588CED00F1AF97 /* FFT.swift in Sources */,
 				27A7397E243CF6DC00A3D18C /* FormModel.swift in Sources */,
 				27E01BA0243A0E890062B4A6 /* UrlManager.swift in Sources */,
 				2712109F24450FFB0074DFBD /* languageCode.swift in Sources */,
 				E0DC28132458518000F1AF97 /* SMA.swift in Sources */,
+				E08CB9C0246EB51B002433D2 /* DailyQuestionsHeaderView.swift in Sources */,
 				27EB59BD243FD99300A9CA52 /* NewMainViewController.swift in Sources */,
 				27E01B90243A0E720062B4A6 /* Optionals+Utils.swift in Sources */,
 				27E01B4A243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld in Sources */,
@@ -1126,6 +1250,7 @@
 				271210982441D6A20074DFBD /* CountriesPickerView.swift in Sources */,
 				E0992A3D245759220087E7DD /* OnBoardingPageViewController.swift in Sources */,
 				27D45E35243A49D00031448E /* ThankYouForRecordViewController.swift in Sources */,
+				E08CB9BF246EB51B002433D2 /* DailyQuestionsPresenter.swift in Sources */,
 				E0829326245C5EC500737F33 /* BackgroundDiseasesViewController.swift in Sources */,
 				27E01B8B243A0E720062B4A6 /* InterfaceBuilder+Localization.swift in Sources */,
 				27A73992243D0BA200A3D18C /* ThankYouForRecordModel.swift in Sources */,
@@ -1146,12 +1271,14 @@
 				27E01B44243A0E3C0062B4A6 /* FormViewController.swift in Sources */,
 				27E01B97243A0E720062B4A6 /* ScrollView+Utils.swift in Sources */,
 				27E01B93243A0E720062B4A6 /* SVProgressHud+Utils.swift in Sources */,
+				E08CB9B8246EB51B002433D2 /* QuestionListCell.swift in Sources */,
 				E0DC2815245851D100F1AF97 /* LinkedList.swift in Sources */,
 				27E01B8A243A0E720062B4A6 /* CALayer+Utils.swift in Sources */,
 				27A7398C243D028800A3D18C /* RecordModel.swift in Sources */,
 				276FEA662440FD6300000BD5 /* FormNavigationController.swift in Sources */,
 				27E01B40243A0E3C0062B4A6 /* AppDelegate.swift in Sources */,
 				E0DC280E2458509C00F1AF97 /* OxymeterImpl.swift in Sources */,
+				575DAC01246BE45700F6974C /* DatePickerActionSheet.swift in Sources */,
 				E001CA862469D86E00B48CCD /* VoiceUpRouter.swift in Sources */,
 				27E01B95243A0E720062B4A6 /* UIImage+Utils.swift in Sources */,
 				27D45E32243A3EC80031448E /* RecordViewController.swift in Sources */,
@@ -1171,6 +1298,7 @@
 				27E01BA3243A117F0062B4A6 /* BasePresenter.swift in Sources */,
 				27E01B94243A0E720062B4A6 /* Collections+Utils.swift in Sources */,
 				E0E0CF55245F68970001875B /* SympthomsViewController.swift in Sources */,
+				E08CB9B9246EB51B002433D2 /* QuestionCheckboxCell.swift in Sources */,
 				E0DC280924584B0A00F1AF97 /* ImageProcessing.swift in Sources */,
 				E094F165245DCA5B00DFD604 /* OxymeterPresenter.swift in Sources */,
 				E00FC078245776CB00924B8D /* DTOModel.swift in Sources */,
@@ -1183,6 +1311,7 @@
 				2712109C24450F810074DFBD /* LocalizationEnums.swift in Sources */,
 				E02B4A7B245E032300A9F3E5 /* OxymeterPreperViewController.swift in Sources */,
 				27A73990243D0B9B00A3D18C /* ThankYouForRecordPresenter.swift in Sources */,
+				57AEC33024674DC6007199E9 /* UIView+Interaction.swift in Sources */,
 				27A7397C243CF6D300A3D18C /* FormPresenter.swift in Sources */,
 				27E01B99243A0E720062B4A6 /* EventBus.swift in Sources */,
 				E00FC076245776AC00924B8D /* APIModels.swift in Sources */,
@@ -1190,8 +1319,11 @@
 				E094F170245DD6AD00DFD604 /* VoiceUpMainModel.swift in Sources */,
 				E0DC281B2458CE0800F1AF97 /* OxymeterViewController.swift in Sources */,
 				27A73987243D027100A3D18C /* RecordPresenter.swift in Sources */,
+				E08CB9C2246EB51B002433D2 /* DailyQuestionsViewController.swift in Sources */,
 				27A7398A243D028100A3D18C /* RecordDelegate.swift in Sources */,
+				E08CB9BD246EB51B002433D2 /* DailyQuestionsViewController+Table.swift in Sources */,
 				E0829323245C40AA00737F33 /* RadioButton.swift in Sources */,
+				E08CB9B7246EB51B002433D2 /* ActionButtonCell.swift in Sources */,
 				27E01B8F243A0E720062B4A6 /* UIView+Utils.swift in Sources */,
 				27E01BAA243A15E60062B4A6 /* TitlePickerView.swift in Sources */,
 			);
