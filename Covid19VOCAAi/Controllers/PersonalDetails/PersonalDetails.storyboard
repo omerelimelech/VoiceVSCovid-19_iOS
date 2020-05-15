@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UrW-fI-91j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jkn-uV-1fQ">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -416,7 +416,7 @@
         <!--Voice Up Main View Controller-->
         <scene sceneID="SSa-mR-R50">
             <objects>
-                <viewController id="Eus-6a-5UH" customClass="VoiceUpMainViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoiceUpMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Eus-6a-5UH" customClass="VoiceUpMainViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="feX-lZ-hAI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1349,15 +1349,39 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5LU-eR-12t">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_doctor_circle" translatesAutoresizingMaskIntoConstraints="NO" id="dl6-zw-7lL">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Wgc-Te-CD5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What symptoms are you experiencing? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHR-K2-BBP">
+                                        <rect key="frame" x="120" y="32.666666666666671" width="273" height="54.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="20"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="What symptoms are you experiencing?"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstItem="dl6-zw-7lL" firstAttribute="top" secondItem="5LU-eR-12t" secondAttribute="top" id="7Ob-mq-Uh0"/>
+                                    <constraint firstItem="dHR-K2-BBP" firstAttribute="leading" secondItem="dl6-zw-7lL" secondAttribute="trailing" id="BeS-HN-gCI"/>
+                                    <constraint firstAttribute="bottom" secondItem="dl6-zw-7lL" secondAttribute="bottom" id="DVM-GA-XI0"/>
                                     <constraint firstAttribute="height" constant="120" id="IqZ-dk-6rZ"/>
+                                    <constraint firstItem="dl6-zw-7lL" firstAttribute="leading" secondItem="5LU-eR-12t" secondAttribute="leading" id="Kki-vA-nJG"/>
+                                    <constraint firstAttribute="trailing" secondItem="dHR-K2-BBP" secondAttribute="trailing" constant="21" id="QLx-sP-dYr"/>
+                                    <constraint firstItem="dHR-K2-BBP" firstAttribute="centerY" secondItem="5LU-eR-12t" secondAttribute="centerY" id="b4z-XY-2KE"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dHR-K2-BBP" secondAttribute="bottom" constant="8" id="xC9-V7-0Zj"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sfa-nh-cd9">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sfa-nh-cd9">
                                 <rect key="frame" x="0.0" y="120" width="414" height="528"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="geR-sU-Ejy">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="geR-sU-Ejy">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -1386,6 +1410,9 @@
                                         <color key="value" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueTapped:" destination="mhl-Do-ePc" eventType="touchUpInside" id="JBo-P6-DhH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1587,6 +1614,7 @@
     </scenes>
     <resources>
         <image name="VoiceUpLogo" width="64" height="59"/>
+        <image name="blue_doctor_circle" width="126" height="126"/>
         <image name="doctor illustration toward" width="64" height="103.66666412353516"/>
         <image name="doctor_left_to_right" width="124.66666412353516" height="207.33332824707031"/>
         <image name="fingerOnCamera" width="68.333335876464844" height="76.666664123535156"/>

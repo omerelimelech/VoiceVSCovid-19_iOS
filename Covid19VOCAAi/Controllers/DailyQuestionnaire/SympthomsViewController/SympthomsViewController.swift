@@ -29,6 +29,7 @@ struct QuestionElement: Codable {
 struct JSONExtraDatum: Codable {
     let optionName, optionValue: String
     let optionImage: String
+    let optionPngImage: String
 }
 
 typealias Question = [QuestionElement]
@@ -46,12 +47,16 @@ class SympthomsViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: SympthomsCollectionViewCell.reuseId, bundle: nil), forCellWithReuseIdentifier: SympthomsCollectionViewCell.reuseId)
+        collectionView.allowsMultipleSelection = true
         self.presenter = SympthomsPresenter(delegate: self)
         self.presenter?.getQuestions()
     }
     
 
+    @IBAction func continueTapped(_ sender: GradientButton) {
 
+    }
+    
 }
 
 
