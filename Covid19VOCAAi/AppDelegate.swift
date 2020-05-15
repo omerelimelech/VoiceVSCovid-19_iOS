@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Router.default.setupAppNavigation(appNavigation: VoiceUpAppNavigation())
 
         let vc = RecordViewController.initialization(instructions: RecordInstructions(stage: .aaa), recordNumber: 1)
-        let vc2 = UIStoryboard(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "DailyQuestionsViewController") as! DailyQuestionsViewController
+        let vc2 = UIStoryboard(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "VoiceUpMainViewController") as! VoiceUpMainViewController
         let nav = UINavigationController(rootViewController: vc2)
         nav.isNavigationBarHidden = true
         window?.rootViewController = nav

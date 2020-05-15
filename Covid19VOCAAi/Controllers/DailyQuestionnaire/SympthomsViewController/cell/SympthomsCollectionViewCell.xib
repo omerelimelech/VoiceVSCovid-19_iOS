@@ -29,8 +29,8 @@
                             <constraint firstAttribute="height" constant="50" id="TLV-MQ-CBx"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiV-1l-Dsy">
-                        <rect key="frame" x="44" y="90.5" width="35.5" height="19.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiV-1l-Dsy">
+                        <rect key="frame" x="8" y="90.5" width="107" height="19.5"/>
                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -39,8 +39,10 @@
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="oiV-1l-Dsy" secondAttribute="trailing" constant="8" id="2c7-3y-5Eh"/>
                 <constraint firstItem="W5E-KZ-QA4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="GbN-Gd-HYP"/>
-                <constraint firstItem="oiV-1l-Dsy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="W5E-KZ-QA4" secondAttribute="bottom" constant="13" id="Grh-2W-sVO"/>
+                <constraint firstItem="oiV-1l-Dsy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="W5E-KZ-QA4" secondAttribute="bottom" constant="2" id="Grh-2W-sVO"/>
+                <constraint firstItem="oiV-1l-Dsy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="W4m-JN-IO3"/>
                 <constraint firstAttribute="bottom" secondItem="oiV-1l-Dsy" secondAttribute="bottom" constant="4" id="pOL-6t-Y0j"/>
                 <constraint firstItem="W5E-KZ-QA4" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="sCZ-4L-FrQ"/>
                 <constraint firstItem="oiV-1l-Dsy" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="wHo-Kp-Bm2"/>
