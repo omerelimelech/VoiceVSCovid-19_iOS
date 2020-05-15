@@ -78,6 +78,7 @@
 		47FEDE26B00838BF8EF38EB2 /* Pods_Covid19VOCAAiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */; };
 		575DAC01246BE45700F6974C /* DatePickerActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC00246BE45700F6974C /* DatePickerActionSheet.swift */; };
 		575DAC03246EDFF900F6974C /* NSAttributedString+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC02246EDFF900F6974C /* NSAttributedString+Utils.swift */; };
+		575DAC09246F33F800F6974C /* HapticFeedbackHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC08246F33F800F6974C /* HapticFeedbackHelper.swift */; };
 		57AEC32224670F46007199E9 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32124670F46007199E9 /* StringHelper.swift */; };
 		57AEC33024674DC6007199E9 /* UIView+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */; };
 		62223CB9DFCF2EE098767FC5 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */; };
@@ -234,6 +235,7 @@
 		5732C014246AE58F0024334E /* QuestionCheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCheckboxCell.xib; sourceTree = "<group>"; };
 		575DAC00246BE45700F6974C /* DatePickerActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerActionSheet.swift; sourceTree = "<group>"; };
 		575DAC02246EDFF900F6974C /* NSAttributedString+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Utils.swift"; sourceTree = "<group>"; };
+		575DAC08246F33F800F6974C /* HapticFeedbackHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackHelper.swift; sourceTree = "<group>"; };
 		578F41A7C45C9C9ED24FDFFB /* Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAi-Covid19VOCAAiUITests/Pods-Covid19VOCAAi-Covid19VOCAAiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		57AEC2FE2465C7D9007199E9 /* DailyQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuestionsViewController.swift; sourceTree = "<group>"; };
 		57AEC3012465C80B007199E9 /* DailyQuestionsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyQuestionsHeaderView.xib; sourceTree = "<group>"; };
@@ -677,6 +679,7 @@
 			isa = PBXGroup;
 			children = (
 				57AEC32124670F46007199E9 /* StringHelper.swift */,
+				575DAC08246F33F800F6974C /* HapticFeedbackHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1294,6 +1297,7 @@
 				27A73994243D0EAD00A3D18C /* S3Uploader.swift in Sources */,
 				27A73980243CF71700A3D18C /* FormDelegate.swift in Sources */,
 				E0D6D0D72469E6B700C4E605 /* PersonalDetails3ViewController.swift in Sources */,
+				575DAC09246F33F800F6974C /* HapticFeedbackHelper.swift in Sources */,
 				27E01B98243A0E720062B4A6 /* Notification+Utils.swift in Sources */,
 				27E01B96243A0E720062B4A6 /* String+Utils.swift in Sources */,
 				E094F169245DCA6C00DFD604 /* OxymeterDelegate.swift in Sources */,
