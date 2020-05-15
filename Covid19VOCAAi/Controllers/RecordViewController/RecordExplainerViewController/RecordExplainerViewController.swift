@@ -47,7 +47,7 @@ class RecordExplainerViewController: UIViewController {
     }
     
     private func initUI() {
-        actionButton.setTitle("Get started", for: .normal)
+        actionButton.setTitle("Get Started", for: .normal)
         actionButton.addShadow(UIColor.mainBlue.cgColor,
                                shadowOffset: CGSize(width: 0, height: 10),
                                shadowOpacity: 0.3,
