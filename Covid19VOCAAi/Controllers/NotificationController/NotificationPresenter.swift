@@ -23,15 +23,13 @@ public class NotificationPresenter:NSObject{
     init(with delegate: NotificationDelegate){
         self.delegate = delegate
     }
-    
+    //request authorization/check if have authorization
     func checkAuthorization(){
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]
         notificationCenter.requestAuthorization(options: options) {
             (didAllow, error) in
-            if !didAllow {
-                print("User has declined notifications")
-                self.delegate?.authorizationDenied()
-            }
+                self.delegate?.authorizationResult(isAllowed:didAllow)
+            
         }
         //if you want the app to do something as a result of a notification, fill in the notification delegate extension
         //notificationCenter.delegate = self
@@ -92,13 +90,24 @@ public class NotificationPresenter:NSObject{
     
 }
 
-extension NotificationPresenter: UNUserNotificationCenterDelegate{
-        //if we wnt notification to show when app is in foreground, uncomment this.
+//extension NotificationPresenter: UNUserNotificationCenterDelegate{
+        //if we want notification to show when app is in foreground, uncomment this.
         /*func userNotificationCenter(_ center: UNUserNotificationCenter,
                                     willPresent notification: UNNotification,
                                     withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
             completionHandler([.alert, .sound])
 
         }*/
+    //if you want to perform an additional action on the notification (now it opens the app automatically), uncomment this
+    /*func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        if response.notification.request.identifier == "Local Notification" {
+            print("Handling notifications with the Local Notification Identifier")
+        }
+        
+        completionHandler()
+    }*/
     
-}
+//}

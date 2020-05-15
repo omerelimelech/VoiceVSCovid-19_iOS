@@ -11,14 +11,13 @@ import Foundation
 
 class NotificationModel : NSObject {
     private var defaults = UserDefaults.standard
-    
-    static var shared = NotificationModel()//assuming that notificaiton update works with the same model
-    
+        
     //notification time
     var time: Date? {
         set{ defaults.set(newValue, forKey: "notificationDate") }
         get{ defaults.value(forKey: "notificationDate") as? Date }
     }
+    
     //can use Date (if set or not set) instead, but this is clearer and doesn't count on various null
     //values to work.
     var isSet:Bool? {

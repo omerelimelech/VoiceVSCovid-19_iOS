@@ -18,16 +18,7 @@ class NotificationViewController: UIViewController {
     
     var presenter: NotificationPresenter?
     
-    @IBAction func setNotification(_ sender: UIButton) {
-        //get user time
-        let date = timePicker.date;
-        presenter?.setNotification(date: date)
-    }
     
-    @IBAction func setLater(_ sender: UIButton) {
-        print("pressed setlater")
-        presenter?.setLater()
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         //initialize presenter
@@ -36,13 +27,13 @@ class NotificationViewController: UIViewController {
         label.text = "When to remind you again?".localized()
         label.sizeToFit()
         label.center.x = self.view.center.x
-        //use presenter to ask for permission to set notifications
+        //use presenter to check if have permission to set notifications
         presenter?.checkAuthorization()
         
         //***REMOVE THIS*** for full program
         //refresh every time view comes in foreground
         NotificationCenter.default.addObserver(self, selector: #selector(onResume), name:
-        UIApplication.willEnterForegroundNotification, object: nil)
+            UIApplication.willEnterForegroundNotification, object: nil)
         
         
     }
@@ -51,9 +42,18 @@ class NotificationViewController: UIViewController {
     //when application comes into foreground, check mode
     @objc func onResume() {
         presenter?.checkNotification()
-
+        
     }
     
+    @IBAction func setNotification(_ sender: UIButton) {
+        //get user time
+        let date = timePicker.date;
+        presenter?.setNotification(date: date)
+    }
+    
+    @IBAction func setLater(_ sender: UIButton) {
+        presenter?.setLater()
+    }
     
     
     
@@ -70,14 +70,10 @@ class NotificationViewController: UIViewController {
 }
 
 extension NotificationViewController:NotificationDelegate{
-    func authorizationDenied() {
-                    print ("no notifications for you")
-
-    }
-    
+    //reaction to authorization check
     func authorizationResult(isAllowed: Bool) {
-        //show message and go to next?
         if (!isAllowed){
+            //show message and go to next view?
             print ("no notifications for you")
             doneButton.isEnabled = false
         }
@@ -87,35 +83,43 @@ extension NotificationViewController:NotificationDelegate{
         }
     }
     
-    //reaction on error
+    //reaction on notification error
     func notificationFailed(error: Error) {
         //show error somehow?
         print("Uh oh... \(error.localizedDescription)")
     }
+    
     //reaction on successful notification
     func notificationOK() {
         //go to next view
         print("great!")
     }
+    
     //arrange view according to current mode
     func setView(haveNotification: Bool, date:Date?) {
         if (haveNotification){
             //arrange button text
-            doneButton.setTitle("Done".localized(), for:.normal)
-            laterButton.setTitle("Remove Notification".localized(), for: .normal)
-            if let notificationDate = date {//set to notification time
-                timePicker.date = notificationDate
+            DispatchQueue.main.async {
+                self.doneButton.setTitle("Done".localized(), for:.normal)
+                self.laterButton.setTitle("Remove Notification".localized(), for: .normal)
+                if let notificationDate = date {//set to notification time
+                    self.timePicker.date = notificationDate
+                }
             }
         }
         else {
-            doneButton.setTitle("Done".localized(), for:.normal)
-            laterButton.setTitle("Later".localized(), for: .normal)
-            timePicker.date = Date()//set to current time
+            DispatchQueue.main.async {
+                self.doneButton.setTitle("Done".localized(), for:.normal)
+                self.laterButton.setTitle("Later".localized(), for: .normal)
+                self.timePicker.date = Date()//set to current time
+            }
         }
-        doneButton.sizeToFit()
-        doneButton.center.x = self.view.center.x
-        laterButton.sizeToFit()
-        laterButton.center.x = self.view.center.x
+        DispatchQueue.main.async {
+            self.doneButton.sizeToFit()
+            self.doneButton.center.x = self.view.center.x
+            self.laterButton.sizeToFit()
+            self.laterButton.center.x = self.view.center.x
+        }
     }
     
     

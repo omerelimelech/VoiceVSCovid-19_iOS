@@ -14,6 +14,6 @@ protocol NotificationDelegate : class {
     
     func setView(haveNotification:Bool,date:Date?)//set view differently if notification exists/doesn't exist
     
-    func authorizationDenied()//what to do if notifications denied
+    func authorizationResult(isAllowed: Bool) //what to do if notifications allowed/denied
     
 }
