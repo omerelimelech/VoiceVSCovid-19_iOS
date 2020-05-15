@@ -57,7 +57,7 @@ class RecordExplainerViewController: UIViewController {
     }
     
     @IBAction func actionButtonDidTap(_ sender: UIButton) {
-        sender.animateTapResponse()
+        //.//sender.animateTapResponse()
     }
 }
 

@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let vc = RecordViewController.initialization(instructions: RecordInstructions(stage: .aaa), recordNumber: 1)
         let vc2 = UIStoryboard(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "VoiceUpMainViewController") as! VoiceUpMainViewController
-        let nav = UINavigationController(rootViewController: vc2)
+        let nav = UINavigationController(rootViewController: vc!)
         nav.isNavigationBarHidden = true
         window?.rootViewController = nav
         window?.makeKeyAndVisible()

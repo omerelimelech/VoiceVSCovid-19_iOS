@@ -63,7 +63,7 @@ class GradientButton : UIButton {
     @IBInspectable var endLocation:   Double =   0.95 { didSet { updateLocations() }}
     @IBInspectable var horizontalMode:  Bool =  false { didSet { updatePoints() }}
     @IBInspectable var diagonalMode:    Bool =  false { didSet { updatePoints() }}
-
+    @IBInspectable var haptic:    Bool =  true { didSet { if haptic == false {removeHaptic()} }}
     override public class var layerClass: AnyClass { CAGradientLayer.self }
 
     var gradientLayer: CAGradientLayer { layer as! CAGradientLayer }
@@ -88,5 +88,17 @@ class GradientButton : UIButton {
         updatePoints()
         updateLocations()
         updateColors()
+        self.addTarget(self, action: #selector(enableHaptic), for: .touchUpInside)
     }
+    
+    @objc func enableHaptic(){
+        if haptic{
+            self.animateTapResponse()
+        }
+    }
+    
+    func removeHaptic(){
+        self.removeTarget(self, action: #selector(enableHaptic), for: .touchUpInside)
+    }
+    
 }
