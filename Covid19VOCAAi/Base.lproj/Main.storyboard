@@ -1517,6 +1517,11 @@ We thank you for your participation.</string>
                                     <constraint firstAttribute="height" constant="88" id="k32-py-ctd"/>
                                 </constraints>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="xMa-j7-h4N">
+                                <rect key="frame" x="168" y="687" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.054901960780000002" green="0.42352941179999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1533,7 +1538,9 @@ We thank you for your participation.</string>
                             <constraint firstItem="DNn-uS-Pms" firstAttribute="leading" secondItem="UHn-t5-dfr" secondAttribute="leading" constant="46" id="akF-wW-l9W"/>
                             <constraint firstItem="5et-6h-J0W" firstAttribute="centerY" secondItem="HJA-yN-vgF" secondAttribute="centerY" constant="-30" id="dFa-sd-fhV"/>
                             <constraint firstItem="ENI-U4-dX2" firstAttribute="top" secondItem="HJA-yN-vgF" secondAttribute="bottom" constant="-70" id="gUD-LE-F0K"/>
+                            <constraint firstItem="UHn-t5-dfr" firstAttribute="bottom" secondItem="xMa-j7-h4N" secondAttribute="bottom" constant="54" id="iXG-ug-SsI"/>
                             <constraint firstItem="ENI-U4-dX2" firstAttribute="trailing" secondItem="HJA-yN-vgF" secondAttribute="trailing" id="obd-hO-hMl"/>
+                            <constraint firstItem="xMa-j7-h4N" firstAttribute="centerX" secondItem="GLP-FE-8BS" secondAttribute="centerX" id="wW1-mv-eA8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UHn-t5-dfr"/>
                     </view>
@@ -1632,14 +1639,24 @@ We thank you for your participation.</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="docot_with_stat" translatesAutoresizingMaskIntoConstraints="NO" id="Z0F-pe-66n">
                                 <rect key="frame" x="4" y="526.33333333333337" width="116.33333333333333" height="251.66666666666663"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EM-s3-jpv">
+                                <rect key="frame" x="34" y="76" width="281" height="264"/>
+                                <string key="text">Your Data is Safe All data collected is anonymized. We take data security very seriously and will handle your data with utmost respect. Your data is protected by us act from 2020. It will only be used for health research and will not be used for commercial purposes. You can read more about how your data will be used, your rights and the steps we take to ensure it’s protected in our Privacy Policy and Frequently Asked Questions.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="SZi-tp-RrX" firstAttribute="leading" secondItem="2EM-s3-jpv" secondAttribute="trailing" constant="12" id="2ov-Qe-jyW"/>
                             <constraint firstItem="SZi-tp-RrX" firstAttribute="width" secondItem="eOP-Ks-Unu" secondAttribute="width" multiplier="0.128019" id="8Fq-Gg-FsE"/>
                             <constraint firstItem="g6T-sK-ISP" firstAttribute="bottom" secondItem="Z0F-pe-66n" secondAttribute="bottom" id="CiG-A9-NdE"/>
                             <constraint firstItem="SZi-tp-RrX" firstAttribute="top" secondItem="g6T-sK-ISP" secondAttribute="top" constant="18" id="Ff9-uF-PP6"/>
+                            <constraint firstItem="2EM-s3-jpv" firstAttribute="top" secondItem="g6T-sK-ISP" secondAttribute="top" constant="32" id="T6B-Mp-fTB"/>
                             <constraint firstItem="Z0F-pe-66n" firstAttribute="leading" secondItem="g6T-sK-ISP" secondAttribute="leading" constant="4" id="Yby-Wj-9Lg"/>
                             <constraint firstItem="Z0F-pe-66n" firstAttribute="width" secondItem="eOP-Ks-Unu" secondAttribute="width" multiplier="0.31" id="Yvb-JE-hIl"/>
+                            <constraint firstItem="2EM-s3-jpv" firstAttribute="leading" secondItem="g6T-sK-ISP" secondAttribute="leading" constant="34" id="il6-2z-YcF"/>
                             <constraint firstItem="Z0F-pe-66n" firstAttribute="height" secondItem="eOP-Ks-Unu" secondAttribute="height" multiplier="0.31" id="k7Z-ko-KG0"/>
                             <constraint firstItem="SZi-tp-RrX" firstAttribute="height" secondItem="eOP-Ks-Unu" secondAttribute="height" multiplier="0.28" id="qJc-pE-LVY"/>
                             <constraint firstAttribute="trailing" secondItem="SZi-tp-RrX" secondAttribute="trailing" id="zDO-Vw-flQ"/>
@@ -1670,7 +1687,8 @@ We thank you for your participation.</string>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoR-hK-Qjz">
                                 <rect key="frame" x="146.33333333333337" y="75.999999999999986" width="184.66666666666663" height="182.66666666666663"/>
-                                <string key="text">We Thank You! By using this app you are helping strengthen our collective knowledge about COVID-19, so we can get better at containing it, and ultimately defeat it. </string>
+                                <string key="text">We Thank You! By using this app you are helping strengthen our collective knowledge about COVID-19, so we can get better at containing it, and ultimately defeat it. 
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
