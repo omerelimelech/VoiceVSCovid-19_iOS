@@ -10,12 +10,12 @@ import UIKit
 
 extension NSMutableAttributedString {
     func appendString(_ string: String,
-                      fontSize: CGFloat,
+                      fontSize: CGFloat = 14,
                       weight: UIFont.Weight = .regular,
                       color: UIColor = .black,
                       underlined: Bool = false,
                       underlineColor: UIColor = .black,
-                      preferredAttrs: [NSAttributedString.Key : Any]) -> NSMutableAttributedString {
+                      preferredAttrs: [NSAttributedString.Key : Any] = [:]) {
         
         var defaultAttrs: [NSAttributedString.Key : Any] = [
             .font : UIFont.systemFont(ofSize: fontSize, weight: weight),
@@ -26,7 +26,8 @@ extension NSMutableAttributedString {
             defaultAttrs[.underlineColor] = underlineColor
         }
         
+        defaultAttrs = defaultAttrs.merge(right: preferredAttrs)
+        
         self.append(NSAttributedString(string: string, attributes: defaultAttrs))
-        return self
     }
 }
