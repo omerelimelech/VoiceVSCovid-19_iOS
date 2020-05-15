@@ -1458,16 +1458,16 @@ We thank you for your participation.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gX3-rY-sJR">
-                                        <rect key="frame" x="49.999999999999986" y="74" width="34.666666666666671" height="14"/>
+                                        <rect key="frame" x="49.999999999999986" y="71.333333333333314" width="35.666666666666671" height="16.666666666666671"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="כעת" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVF-mA-DT7">
-                                                <rect key="frame" x="0.0" y="0.0" width="19.666666666666668" height="14"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="16.666666666666668"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="l97-xp-QuB">
-                                                <rect key="frame" x="19.666666666666686" y="3" width="15" height="8"/>
+                                                <rect key="frame" x="20.666666666666686" y="4.3333333333333712" width="15" height="8"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="V_icon" translatesAutoresizingMaskIntoConstraints="NO" id="apm-83-rm7">
                                                         <rect key="frame" x="0.0" y="0.0" width="10" height="8"/>
@@ -1505,7 +1505,7 @@ We thank you for your participation.</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הקול שלך יכול  לנצח את הקורונה" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNn-uS-Pms">
-                                <rect key="frame" x="46" y="268" width="289" height="84"/>
+                                <rect key="frame" x="46" y="253.66666666666666" width="289" height="98.333333333333343"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1668,18 +1668,49 @@ We thank you for your participation.</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle_doctor_right" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-Xc-6Ef">
                                 <rect key="frame" x="0.0" y="69" width="131.33333333333334" height="211"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoR-hK-Qjz">
+                                <rect key="frame" x="146.33333333333337" y="75.999999999999986" width="184.66666666666663" height="182.66666666666663"/>
+                                <string key="text">We Thank You! By using this app you are helping strengthen our collective knowledge about COVID-19, so we can get better at containing it, and ultimately defeat it. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNe-3w-Amh">
+                                <rect key="frame" x="25.999999999999986" y="328.66666666666674" width="247.66666666666663" height="284.33333333333326"/>
+                                <string key="text">Research With You! This research is led by Dr. Tal Patalon, MD, Head of Innovation at Assuta Ashdod Hospital, in collaboration with the Weizmann Institute. The COVID Case Tracker was designed by doctors and scientists and originated as a volunteer initiative from the COVID-19 Sprint organized by Assuta Ashdod Hospital and IDF Innovation. 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partner_logo" translatesAutoresizingMaskIntoConstraints="NO" id="RIN-Up-dFU">
+                                <rect key="frame" x="199.33333333333334" y="623" width="78.000000000000028" height="33"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partner_logo2" translatesAutoresizingMaskIntoConstraints="NO" id="Y4d-wb-u6y">
+                                <rect key="frame" x="123.33333333333331" y="621" width="56" height="37"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="NoR-hK-Qjz" firstAttribute="leading" secondItem="c9e-Xc-6Ef" secondAttribute="trailing" constant="15" id="2Xg-vs-aTf"/>
                             <constraint firstItem="Qcf-UI-R8K" firstAttribute="centerY" secondItem="fZU-hf-R11" secondAttribute="centerY" constant="80" id="2Zr-Yq-zXH"/>
+                            <constraint firstItem="TNe-3w-Amh" firstAttribute="leading" secondItem="fZU-hf-R11" secondAttribute="leading" constant="26" id="5en-Gf-lD7"/>
+                            <constraint firstItem="TNe-3w-Amh" firstAttribute="top" secondItem="NoR-hK-Qjz" secondAttribute="bottom" constant="70" id="6qQ-hy-dhl"/>
                             <constraint firstItem="c9e-Xc-6Ef" firstAttribute="top" secondItem="fZU-hf-R11" secondAttribute="top" constant="25" id="CxA-9F-6Z3"/>
                             <constraint firstItem="DiV-ZD-HZg" firstAttribute="height" secondItem="Ekq-18-qLl" secondAttribute="height" multiplier="0.51" id="EOX-s0-TUr"/>
+                            <constraint firstItem="fZU-hf-R11" firstAttribute="trailing" secondItem="NoR-hK-Qjz" secondAttribute="trailing" constant="44" id="EP7-hK-T66"/>
+                            <constraint firstItem="DiV-ZD-HZg" firstAttribute="leading" secondItem="RIN-Up-dFU" secondAttribute="trailing" constant="4" id="HCR-pB-k4L"/>
                             <constraint firstItem="DiV-ZD-HZg" firstAttribute="width" secondItem="Ekq-18-qLl" secondAttribute="width" multiplier="0.25" id="Njs-S6-Vw7"/>
                             <constraint firstItem="Qcf-UI-R8K" firstAttribute="width" secondItem="Ekq-18-qLl" secondAttribute="width" multiplier="0.26" id="Qfa-pa-aiH"/>
+                            <constraint firstItem="RIN-Up-dFU" firstAttribute="top" secondItem="TNe-3w-Amh" secondAttribute="bottom" constant="10" id="Rhc-Mo-dlM"/>
+                            <constraint firstItem="Qcf-UI-R8K" firstAttribute="leading" secondItem="TNe-3w-Amh" secondAttribute="trailing" constant="4" id="Skf-3a-4J5"/>
                             <constraint firstItem="c9e-Xc-6Ef" firstAttribute="width" secondItem="Ekq-18-qLl" secondAttribute="width" multiplier="0.35" id="XPz-Gi-viq"/>
+                            <constraint firstItem="Y4d-wb-u6y" firstAttribute="centerY" secondItem="RIN-Up-dFU" secondAttribute="centerY" id="dnS-zK-bf4"/>
                             <constraint firstItem="fZU-hf-R11" firstAttribute="trailing" secondItem="Qcf-UI-R8K" secondAttribute="trailing" id="eGE-c0-mUw"/>
                             <constraint firstItem="Qcf-UI-R8K" firstAttribute="height" secondItem="Ekq-18-qLl" secondAttribute="height" multiplier="0.42" id="hax-EW-7My"/>
+                            <constraint firstItem="NoR-hK-Qjz" firstAttribute="top" secondItem="fZU-hf-R11" secondAttribute="top" constant="32" id="iLR-mv-vlV"/>
                             <constraint firstItem="c9e-Xc-6Ef" firstAttribute="height" secondItem="Ekq-18-qLl" secondAttribute="height" multiplier="0.26" id="lbo-hc-CSc"/>
+                            <constraint firstItem="RIN-Up-dFU" firstAttribute="leading" secondItem="Y4d-wb-u6y" secondAttribute="trailing" constant="20" id="pOD-Zy-Jc6"/>
                             <constraint firstItem="fZU-hf-R11" firstAttribute="bottom" secondItem="DiV-ZD-HZg" secondAttribute="bottom" id="qdo-g4-qwL"/>
                             <constraint firstItem="fZU-hf-R11" firstAttribute="trailing" secondItem="DiV-ZD-HZg" secondAttribute="trailing" id="qpF-9V-cyS"/>
                             <constraint firstItem="c9e-Xc-6Ef" firstAttribute="leading" secondItem="fZU-hf-R11" secondAttribute="leading" id="tgB-rM-LSF"/>
@@ -1689,7 +1720,7 @@ We thank you for your participation.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdR-Qn-kXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1719" y="-867"/>
+            <point key="canvasLocation" x="-1719.2" y="-867.48768472906409"/>
         </scene>
         <!--New Main View Controller-->
         <scene sceneID="vIY-vA-AEG">
@@ -2015,6 +2046,8 @@ we can beat the Coronavirus
         <image name="heart_rate_icon" width="89" height="87"/>
         <image name="mic_white" width="45" height="45"/>
         <image name="multiply" catalog="system" width="128" height="111"/>
+        <image name="partner_logo" width="78" height="33"/>
+        <image name="partner_logo2" width="56" height="37"/>
         <image name="play_button" width="25.333333969116211" height="25.333333969116211"/>
         <image name="recordExplainer" width="156" height="120"/>
         <image name="text_bubble_background" width="264" height="125.66666412353516"/>
