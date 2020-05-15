@@ -36,14 +36,18 @@ class NotificationViewController: UIViewController {
         label.text = "When to remind you again?".localized()
         label.sizeToFit()
         label.center.x = self.view.center.x
-        //use presenter to see what mode we are in
-        presenter?.checkNotification()
+        //use presenter to ask for permission to set notifications
+        presenter?.checkAuthorization()
+        
+        //***REMOVE THIS*** for full program
         //refresh every time view comes in foreground
         NotificationCenter.default.addObserver(self, selector: #selector(onResume), name:
         UIApplication.willEnterForegroundNotification, object: nil)
         
         
     }
+    
+    //***REMOVE THIS*** for full program
     //when application comes into foreground, check mode
     @objc func onResume() {
         presenter?.checkNotification()
@@ -66,6 +70,23 @@ class NotificationViewController: UIViewController {
 }
 
 extension NotificationViewController:NotificationDelegate{
+    func authorizationDenied() {
+                    print ("no notifications for you")
+
+    }
+    
+    func authorizationResult(isAllowed: Bool) {
+        //show message and go to next?
+        if (!isAllowed){
+            print ("no notifications for you")
+            doneButton.isEnabled = false
+        }
+        else {
+            //use presenter to see what mode we are in
+            presenter?.checkNotification()
+        }
+    }
+    
     //reaction on error
     func notificationFailed(error: Error) {
         //show error somehow?

@@ -11,8 +11,10 @@ import Foundation
 import UserNotifications
 
 
-public class NotificationPresenter{
+
+public class NotificationPresenter:NSObject{
     
+    let notificationCenter = UNUserNotificationCenter.current()
     
     weak var delegate: NotificationDelegate?
     
@@ -21,6 +23,20 @@ public class NotificationPresenter{
     init(with delegate: NotificationDelegate){
         self.delegate = delegate
     }
+    
+    func checkAuthorization(){
+        let options: UNAuthorizationOptions = [.alert, .sound, .badge]
+        notificationCenter.requestAuthorization(options: options) {
+            (didAllow, error) in
+            if !didAllow {
+                print("User has declined notifications")
+                self.delegate?.authorizationDenied()
+            }
+        }
+        //if you want the app to do something as a result of a notification, fill in the notification delegate extension
+        //notificationCenter.delegate = self
+    }
+    
     //checks ifnotification exists
     func checkNotification(){
         if let isSet = model.isSet  {
@@ -49,7 +65,7 @@ public class NotificationPresenter{
     func setNotification(date:Date){
         //update model
         model.time = date
-        model.isSet = true;
+        model.isSet = true
         //create daily trigger
         let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: date)
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
@@ -76,3 +92,13 @@ public class NotificationPresenter{
     
 }
 
+extension NotificationPresenter: UNUserNotificationCenterDelegate{
+        //if we wnt notification to show when app is in foreground, uncomment this.
+        /*func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                    willPresent notification: UNNotification,
+                                    withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+            completionHandler([.alert, .sound])
+
+        }*/
+    
+}

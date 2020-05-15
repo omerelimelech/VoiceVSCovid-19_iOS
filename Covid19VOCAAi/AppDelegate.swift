@@ -9,12 +9,10 @@
 import UIKit
 import CoreData
 import IQKeyboardManagerSwift
-import UserNotifications
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    let notificationCenter = UNUserNotificationCenter.current()
 
 
     lazy var window: UIWindow? = {
@@ -22,16 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let options: UNAuthorizationOptions = [.alert, .sound, .badge]
-        notificationCenter.requestAuthorization(options: options) {
-            (didAllow, error) in
-            if !didAllow {
-                print("User has declined notifications")
-            }
-        }
-        notificationCenter.delegate = self
         IQKeyboardManager.shared.enable = true
-        
         return true
     }
     
@@ -98,13 +87,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-extension AppDelegate: UNUserNotificationCenterDelegate {
-    //if we wnt notification to show when app is in foreground, uncomment this. Mostly used for testing.
-    /*func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                willPresent notification: UNNotification,
-                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.alert, .sound])
 
-    }*/
-}
 
