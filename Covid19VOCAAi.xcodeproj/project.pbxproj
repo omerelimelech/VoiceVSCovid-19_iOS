@@ -141,6 +141,10 @@
 		E0E0CF5A245F68B20001875B /* SympthomsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E0CF58245F68B20001875B /* SympthomsCollectionViewCell.xib */; };
 		E0F06C3F245B4E6100D25388 /* onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F06C41245B4E6100D25388 /* onboarding.storyboard */; };
 		E0F06C44245C28DC00D25388 /* PersonalDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */; };
+		657EA5FE24686B2600E29C75 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657EA5FD24686B2600E29C75 /* NotificationViewController.swift */; };
+		65E58FC7246AC9DD0092B0C9 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E58FC6246AC9DD0092B0C9 /* NotificationModel.swift */; };
+		65E58FC9246ACBF30092B0C9 /* NotificationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E58FC8246ACBF30092B0C9 /* NotificationPresenter.swift */; };
+		65E58FCB246ACE320092B0C9 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E58FCA246ACE320092B0C9 /* NotificationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +260,10 @@
 		57AEC32B24673D33007199E9 /* DailyQuestionsViewController+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailyQuestionsViewController+Table.swift"; sourceTree = "<group>"; };
 		57AEC32F24674DC6007199E9 /* UIView+Interaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Interaction.swift"; sourceTree = "<group>"; };
 		57AEC3312467541D007199E9 /* DailyQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyQuestionModel.swift; sourceTree = "<group>"; };
+		657EA5FD24686B2600E29C75 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		65E58FC6246AC9DD0092B0C9 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		65E58FC8246ACBF30092B0C9 /* NotificationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPresenter.swift; sourceTree = "<group>"; };
+		65E58FCA246ACE320092B0C9 /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
 		838C70F42504E96D1926E879 /* Pods-Covid19VOCAAiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19VOCAAiTests.debug.xcconfig"; path = "Target Support Files/Pods-Covid19VOCAAiTests/Pods-Covid19VOCAAiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		948EB86102406B8DBAE3F510 /* Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAi_Covid19VOCAAiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92566CA1583B6A4FA8034C2 /* Pods_Covid19VOCAAiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid19VOCAAiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,6 +399,10 @@
 				E02B4A79245E031300A9F3E5 /* OxymeterPreperVIew */,
 				E094F163245DCA4800DFD604 /* OxymeterViewController */,
 				E0992A37245758DF0087E7DD /* OnBoardingPageController */,
+				657EA5FC24686AFD00E29C75 /* NotificationController */,
+				276FEA642440FD4800000BD5 /* FormNavController */,
+				2712108F24410C2C0074DFBD /* TermsViewController */,
+				27D45E33243A49BD0031448E /* ThankYouForRecordVC */,
 				27D45E30243A3EAC0031448E /* RecordViewController */,
 				E0DC281E2458FF5700F1AF97 /* Covid19VOCAAi-Bridging-Header.h */,
 			);
@@ -704,6 +716,17 @@
 				575DAC08246F33F800F6974C /* HapticFeedbackHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		657EA5FC24686AFD00E29C75 /* NotificationController */ = {
+			isa = PBXGroup;
+			children = (
+				657EA5FD24686B2600E29C75 /* NotificationViewController.swift */,
+				65E58FC8246ACBF30092B0C9 /* NotificationPresenter.swift */,
+				65E58FC6246AC9DD0092B0C9 /* NotificationModel.swift */,
+				65E58FCA246ACE320092B0C9 /* NotificationDelegate.swift */,
+			);
+			path = NotificationController;
 			sourceTree = "<group>";
 		};
 		BB17CF1D299E6B8F5F19CC24 /* Frameworks */ = {
@@ -1294,6 +1317,7 @@
 				27EB59BD243FD99300A9CA52 /* NewMainViewController.swift in Sources */,
 				27E01B90243A0E720062B4A6 /* Optionals+Utils.swift in Sources */,
 				27E01B4A243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld in Sources */,
+				657EA5FE24686B2600E29C75 /* NotificationViewController.swift in Sources */,
 				27E01BA6243A155B0062B4A6 /* BaseView.swift in Sources */,
 				271210982441D6A20074DFBD /* CountriesPickerView.swift in Sources */,
 				E08BEC7A246F4D2B0090E573 /* OnBoarding2ViewController.swift in Sources */,
@@ -1307,6 +1331,7 @@
 				E0D6D0DD246B3DDF00C4E605 /* PersonalDetailsModel.swift in Sources */,
 				27E01B8C243A0E720062B4A6 /* TableViewCell+Utils.swift in Sources */,
 				27D45E2E243A284C0031448E /* MultiInputView.swift in Sources */,
+				65E58FC7246AC9DD0092B0C9 /* NotificationModel.swift in Sources */,
 				27E01B8D243A0E720062B4A6 /* NSLocale+Utils.swift in Sources */,
 				27E01B92243A0E720062B4A6 /* UIFont+Utils.swift in Sources */,
 				E08BEC78246F4D200090E573 /* OnBoarding1ViewController.swift in Sources */,
@@ -1356,6 +1381,8 @@
 				E0DC280924584B0A00F1AF97 /* ImageProcessing.swift in Sources */,
 				E094F165245DCA5B00DFD604 /* OxymeterPresenter.swift in Sources */,
 				E00FC078245776CB00924B8D /* DTOModel.swift in Sources */,
+				27796551243F18A700B6BF05 /* RecordYouVoiceButton.swift in Sources */,
+				65E58FC9246ACBF30092B0C9 /* NotificationPresenter.swift in Sources */,
 				27E01B91243A0E720062B4A6 /* UIColor+Utils.swift in Sources */,
 				27D45E37243A4EAE0031448E /* RecordInstructions.swift in Sources */,
 				27E01BB0243A22B10062B4A6 /* MultipleSelectionView.swift in Sources */,
@@ -1381,6 +1408,7 @@
 				E0829323245C40AA00737F33 /* RadioButton.swift in Sources */,
 				E08CB9B7246EB51B002433D2 /* ActionButtonCell.swift in Sources */,
 				27E01B8F243A0E720062B4A6 /* UIView+Utils.swift in Sources */,
+				65E58FCB246ACE320092B0C9 /* NotificationDelegate.swift in Sources */,
 				27E01BAA243A15E60062B4A6 /* TitlePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1567,6 +1595,7 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 6FHC6MWKSK;
 				INFOPLIST_FILE = Covid19VOCAAi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1591,6 +1620,7 @@
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 6FHC6MWKSK;
 				INFOPLIST_FILE = Covid19VOCAAi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
