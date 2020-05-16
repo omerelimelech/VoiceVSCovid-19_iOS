@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "2cw-Dn-CLD"; */
+"2cw-Dn-CLD.normalTitle" = "Get Started";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3C0-Gx-C2c"; */
+"3C0-Gx-C2c.text" = "Label";
+
+/* Class = "UILabel"; text = "כעת"; ObjectID = "52Y-A7-F2C"; */
+"52Y-A7-F2C.text" = "כעת";
+
+/* Class = "UILabel"; text = "Your Data is Safe All data collected is anonymized. We take data security very seriously and will handle your data with utmost respect. Your data is protected by us act from 2020. It will only be used for health research and will not be used for commercial purposes. You can read more about how your data will be used, your rights and the steps we take to ensure it’s protected in our Privacy Policy and Frequently Asked Questions."; ObjectID = "APw-QZ-OfF"; */
+"APw-QZ-OfF.text" = "Your Data is Safe All data collected is anonymized. We take data security very seriously and will handle your data with utmost respect. Your data is protected by us act from 2020. It will only be used for health research and will not be used for commercial purposes. You can read more about how your data will be used, your rights and the steps we take to ensure it’s protected in our Privacy Policy and Frequently Asked Questions.";
+
+/* Class = "UILabel"; text = "הקול שלך יכול  לנצח את הקורונה"; ObjectID = "Uay-9E-Q9N"; */
+"Uay-9E-Q9N.text" = "הקול שלך יכול  לנצח את הקורונה";
+
+/* Class = "UILabel"; text = "We Thank You! By using this app you are helping strengthen our collective knowledge about COVID-19, so we can get better at containing it, and ultimately defeat it. \n"; ObjectID = "aPM-zk-Sod"; */
+"aPM-zk-Sod.text" = "We Thank You! By using this app you are helping strengthen our collective knowledge about COVID-19, so we can get better at containing it, and ultimately defeat it. \n";
+
+/* Class = "UILabel"; text = "Research With You! This research is led by Dr. Tal Patalon, MD, Head of Innovation at Assuta Ashdod Hospital, in collaboration with the Weizmann Institute. The COVID Case Tracker was designed by doctors and scientists and originated as a volunteer initiative from the COVID-19 Sprint organized by Assuta Ashdod Hospital and IDF Innovation. \n"; ObjectID = "c5h-cV-sXn"; */
+"c5h-cV-sXn.text" = "Research With You! This research is led by Dr. Tal Patalon, MD, Head of Innovation at Assuta Ashdod Hospital, in collaboration with the Weizmann Institute. The COVID Case Tracker was designed by doctors and scientists and originated as a volunteer initiative from the COVID-19 Sprint organized by Assuta Ashdod Hospital and IDF Innovation. \n";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "n9K-47-KSK"; */
+"n9K-47-KSK.text" = "Label";
+
+/* Class = "UILabel"; text = "תרומת הקול שלך תוכל לעזור לקדם כלי איתור חינמי, מהיר ונגיש לכולם"; ObjectID = "r9P-r3-Y0h"; */
+"r9P-r3-Y0h.text" = "תרומת הקול שלך תוכל לעזור לקדם כלי איתור חינמי, מהיר ונגיש לכולם";

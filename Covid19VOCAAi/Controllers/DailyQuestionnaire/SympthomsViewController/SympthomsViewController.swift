@@ -37,6 +37,9 @@ typealias Question = [QuestionElement]
 
 class SympthomsViewController: UIViewController {
 
+    static func initialization() -> SympthomsViewController {
+        return UIStoryboard(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "SympthomsViewController") as! SympthomsViewController
+    }
     var element: QuestionElement?
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -54,7 +57,7 @@ class SympthomsViewController: UIViewController {
     
 
     @IBAction func continueTapped(_ sender: GradientButton) {
-
+        navigate(.voiceExplainer)
     }
     
 }

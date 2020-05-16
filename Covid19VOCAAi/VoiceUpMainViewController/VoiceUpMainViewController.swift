@@ -11,6 +11,9 @@ import SVProgressHUD
 
 class VoiceUpMainViewController: UIViewController {
 
+    static func initialization() -> VoiceUpMainViewController{
+        return UIStoryboard(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "VoiceUpMainViewController") as! VoiceUpMainViewController
+    }
     let presenter = VoiceUpMainPresenter()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +30,7 @@ class VoiceUpMainViewController: UIViewController {
     
 
     @IBAction func startTestTapped(_ sender: UIButton) {
-        guard let cameraVC = UIStoryboard(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "SympthomsViewController") as? SympthomsViewController else {return}
-        
-        self.present(cameraVC, animated: true, completion: nil)
+        navigate(.dailyQuestionnaire2)
     }
     
     

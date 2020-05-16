@@ -25,4 +25,12 @@ extension UIFont {
     static func appBoldFont(with size: CGFloat) -> UIFont {
         return UIFont.init(name: "CircularStd-Bold", size: size)!
     }
+    
+    static func openSansRegular(size: CGFloat) -> UIFont{
+        return UIFont(name: "OpenSansHebrew-Regular", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    static func openSansBold(size: CGFloat) -> UIFont{
+       return UIFont(name: "OpenSansHebrew-Bold", size: size) ?? UIFont.systemFont(ofSize: size)
+   }
 }

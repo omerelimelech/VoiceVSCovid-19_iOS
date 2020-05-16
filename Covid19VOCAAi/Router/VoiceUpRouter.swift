@@ -14,8 +14,10 @@ enum VoiceUpNavigation: Navigation {
     case homeScreen
     case personalDetails
     case dailyQuestionnaire
+    case dailyQuestionnaire2
+    case dailyQuestionnaire3
     case voiceExplainer
-    case voiceRecording
+    case voiceRecording(instruction: RecordInstructions, number: Int)
     case finishRecordScreen
     case notificationScreen
 }
@@ -33,14 +35,17 @@ struct VoiceUpAppNavigation: AppNavigation {
             case .personalDetails:
                 return PersonalDetailsViewController.initialization()
             case .dailyQuestionnaire:
-                return UIViewController()
+                return DailyQuestionsViewController.initialization()
+            case .dailyQuestionnaire2:
+                return ExperienceSymptomsViewController.initialization()
+            case .dailyQuestionnaire3:
+                return SympthomsViewController.initialization()
             case .voiceExplainer:
-                return UIViewController()
-            case .voiceRecording:
-                let ins = RecordInstructions(stage: .cough)
-                return RecordViewController.initialization(instructions: ins, recordNumber: 1)!
+                return RecordExplainerViewController.initialization()
+            case .voiceRecording(let instruction, let number):
+                return RecordViewController.initialization(instructions: instruction, recordNumber: number)!
             case .finishRecordScreen:
-                return UIViewController()
+                return FinishViewController.initialization()
             case .notificationScreen:
                 return UIViewController()
             }

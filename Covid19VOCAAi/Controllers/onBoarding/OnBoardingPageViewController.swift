@@ -87,7 +87,9 @@ class TransformableViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   transformSubviewsForView(view: self.view)
+        if !isRTL(){
+            transformSubviewsForView(view: self.view)
+        }
     }
     
 }

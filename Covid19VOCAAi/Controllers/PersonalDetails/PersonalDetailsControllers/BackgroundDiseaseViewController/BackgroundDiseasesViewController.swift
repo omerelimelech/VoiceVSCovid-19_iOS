@@ -25,6 +25,7 @@ class BackgroundDiseasesViewController: TransformableViewController {
 
         collectionView.delegate = self
         collectionView.dataSource = self
+        
         //collectionView.transform = CGAffineTransform(scaleX: -1, y: 1) // if isRTL
         
         collectionView.allowsMultipleSelection = true

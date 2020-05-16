@@ -88,6 +88,8 @@
 		E001CA8C2469DC4B00B48CCD /* OnBoardingDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E001CA8B2469DC4B00B48CCD /* OnBoardingDoneViewController.swift */; };
 		E00FC076245776AC00924B8D /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC075245776AC00924B8D /* APIModels.swift */; };
 		E00FC078245776CB00924B8D /* DTOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FC077245776CB00924B8D /* DTOModel.swift */; };
+		E00FE84E247019FD00AED696 /* ExperienceSymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FE84D247019FD00AED696 /* ExperienceSymptomsViewController.swift */; };
+		E00FE851247036E500AED696 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FE850247036E500AED696 /* FinishViewController.swift */; };
 		E02B4A7B245E032300A9F3E5 /* OxymeterPreperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02B4A7A245E032300A9F3E5 /* OxymeterPreperViewController.swift */; };
 		E0571F36245DE3310097AB61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0571F35245DE3310097AB61 /* GoogleService-Info.plist */; };
 		E082931E245C3AFE00737F33 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */; };
@@ -96,6 +98,9 @@
 		E0829334245C621900737F33 /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829332245C621900737F33 /* TextCollectionViewCell.swift */; };
 		E0829335245C621900737F33 /* TextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0829333245C621900737F33 /* TextCollectionViewCell.xib */; };
 		E082933A245CC1E800737F33 /* PersonalDetails1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */; };
+		E08BEC78246F4D200090E573 /* OnBoarding1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BEC77246F4D200090E573 /* OnBoarding1ViewController.swift */; };
+		E08BEC7A246F4D2B0090E573 /* OnBoarding2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BEC79246F4D2B0090E573 /* OnBoarding2ViewController.swift */; };
+		E08BEC7C246F4D350090E573 /* OnBoarding3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BEC7B246F4D350090E573 /* OnBoarding3ViewController.swift */; };
 		E08CB99C246DD217002433D2 /* GeneralFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB99B246DD217002433D2 /* GeneralFunctions.swift */; };
 		E08CB99E246DD9BC002433D2 /* RecorderViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB99D246DD9BC002433D2 /* RecorderViewController+Animation.swift */; };
 		E08CB9B7246EB51B002433D2 /* ActionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CB9AA246EB51B002433D2 /* ActionButtonCell.swift */; };
@@ -260,6 +265,8 @@
 		E001CA8B2469DC4B00B48CCD /* OnBoardingDoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingDoneViewController.swift; sourceTree = "<group>"; };
 		E00FC075245776AC00924B8D /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
 		E00FC077245776CB00924B8D /* DTOModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOModel.swift; sourceTree = "<group>"; };
+		E00FE84D247019FD00AED696 /* ExperienceSymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceSymptomsViewController.swift; sourceTree = "<group>"; };
+		E00FE850247036E500AED696 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		E02B4A7A245E032300A9F3E5 /* OxymeterPreperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxymeterPreperViewController.swift; sourceTree = "<group>"; };
 		E0571F35245DE3310097AB61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E082931D245C3AFE00737F33 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +275,10 @@
 		E0829332245C621900737F33 /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0829333245C621900737F33 /* TextCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCollectionViewCell.xib; sourceTree = "<group>"; };
 		E0829339245CC1E800737F33 /* PersonalDetails1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetails1ViewController.swift; sourceTree = "<group>"; };
+		E08BEC76246F4C1C0090E573 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/onboarding.strings; sourceTree = "<group>"; };
+		E08BEC77246F4D200090E573 /* OnBoarding1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding1ViewController.swift; sourceTree = "<group>"; };
+		E08BEC79246F4D2B0090E573 /* OnBoarding2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding2ViewController.swift; sourceTree = "<group>"; };
+		E08BEC7B246F4D350090E573 /* OnBoarding3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding3ViewController.swift; sourceTree = "<group>"; };
 		E08CB99B246DD217002433D2 /* GeneralFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFunctions.swift; sourceTree = "<group>"; };
 		E08CB99D246DD9BC002433D2 /* RecorderViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+Animation.swift"; sourceTree = "<group>"; };
 		E08CB9AA246EB51B002433D2 /* ActionButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButtonCell.swift; sourceTree = "<group>"; };
@@ -312,7 +323,6 @@
 		E0E0CF54245F68970001875B /* SympthomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympthomsViewController.swift; sourceTree = "<group>"; };
 		E0E0CF57245F68B20001875B /* SympthomsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympthomsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0E0CF58245F68B20001875B /* SympthomsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SympthomsCollectionViewCell.xib; sourceTree = "<group>"; };
-		E0F06C40245B4E6100D25388 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/onboarding.storyboard; sourceTree = "<group>"; };
 		E0F06C43245C28DC00D25388 /* PersonalDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalDetails.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -373,6 +383,7 @@
 		271210A0244510830074DFBD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E00FE84F247036D300AED696 /* FinishViewController */,
 				E08CB9A8246EB51B002433D2 /* DailyQuestionnaireViewController */,
 				E001CA892469DAB800B48CCD /* DailyQuestionnaire */,
 				E001CA882469DAA600B48CCD /* onBoarding */,
@@ -740,6 +751,7 @@
 		E001CA892469DAB800B48CCD /* DailyQuestionnaire */ = {
 			isa = PBXGroup;
 			children = (
+				E00FE84C247019BC00AED696 /* ExperienceSymptomsViewController */,
 				E0E0CF53245F68810001875B /* SympthomsViewController */,
 			);
 			path = DailyQuestionnaire;
@@ -749,8 +761,27 @@
 			isa = PBXGroup;
 			children = (
 				E001CA8B2469DC4B00B48CCD /* OnBoardingDoneViewController.swift */,
+				E08BEC77246F4D200090E573 /* OnBoarding1ViewController.swift */,
+				E08BEC79246F4D2B0090E573 /* OnBoarding2ViewController.swift */,
+				E08BEC7B246F4D350090E573 /* OnBoarding3ViewController.swift */,
 			);
 			path = OnBoardingControllers;
+			sourceTree = "<group>";
+		};
+		E00FE84C247019BC00AED696 /* ExperienceSymptomsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E00FE84D247019FD00AED696 /* ExperienceSymptomsViewController.swift */,
+			);
+			path = ExperienceSymptomsViewController;
+			sourceTree = "<group>";
+		};
+		E00FE84F247036D300AED696 /* FinishViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E00FE850247036E500AED696 /* FinishViewController.swift */,
+			);
+			path = FinishViewController;
 			sourceTree = "<group>";
 		};
 		E02B4A79245E031300A9F3E5 /* OxymeterPreperVIew */ = {
@@ -1265,6 +1296,8 @@
 				27E01B4A243A0E3C0062B4A6 /* Covid19VOCAAi.xcdatamodeld in Sources */,
 				27E01BA6243A155B0062B4A6 /* BaseView.swift in Sources */,
 				271210982441D6A20074DFBD /* CountriesPickerView.swift in Sources */,
+				E08BEC7A246F4D2B0090E573 /* OnBoarding2ViewController.swift in Sources */,
+				E00FE851247036E500AED696 /* FinishViewController.swift in Sources */,
 				E0992A3D245759220087E7DD /* OnBoardingPageViewController.swift in Sources */,
 				27D45E35243A49D00031448E /* ThankYouForRecordViewController.swift in Sources */,
 				E08CB9BF246EB51B002433D2 /* DailyQuestionsPresenter.swift in Sources */,
@@ -1276,6 +1309,7 @@
 				27D45E2E243A284C0031448E /* MultiInputView.swift in Sources */,
 				27E01B8D243A0E720062B4A6 /* NSLocale+Utils.swift in Sources */,
 				27E01B92243A0E720062B4A6 /* UIFont+Utils.swift in Sources */,
+				E08BEC78246F4D200090E573 /* OnBoarding1ViewController.swift in Sources */,
 				E094F16C245DD68E00DFD604 /* VoiceUpMainViewController.swift in Sources */,
 				27E01B8E243A0E720062B4A6 /* UIDevice+Utils.swift in Sources */,
 				27A73982243CFD2B00A3D18C /* Submission.swift in Sources */,
@@ -1314,6 +1348,7 @@
 				E094F169245DCA6C00DFD604 /* OxymeterDelegate.swift in Sources */,
 				575DAC03246EDFF900F6974C /* NSAttributedString+Utils.swift in Sources */,
 				E094F16E245DD69900DFD604 /* VoiceUpMainPresenter.swift in Sources */,
+				E08BEC7C246F4D350090E573 /* OnBoarding3ViewController.swift in Sources */,
 				27E01BA3243A117F0062B4A6 /* BasePresenter.swift in Sources */,
 				27E01B94243A0E720062B4A6 /* Collections+Utils.swift in Sources */,
 				E0E0CF55245F68970001875B /* SympthomsViewController.swift in Sources */,
@@ -1339,6 +1374,7 @@
 				E094F170245DD6AD00DFD604 /* VoiceUpMainModel.swift in Sources */,
 				E0DC281B2458CE0800F1AF97 /* OxymeterViewController.swift in Sources */,
 				27A73987243D027100A3D18C /* RecordPresenter.swift in Sources */,
+				E00FE84E247019FD00AED696 /* ExperienceSymptomsViewController.swift in Sources */,
 				E08CB9C2246EB51B002433D2 /* DailyQuestionsViewController.swift in Sources */,
 				27A7398A243D028100A3D18C /* RecordDelegate.swift in Sources */,
 				E08CB9BD246EB51B002433D2 /* DailyQuestionsViewController+Table.swift in Sources */,
@@ -1394,9 +1430,9 @@
 		E0F06C41245B4E6100D25388 /* onboarding.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E0F06C40245B4E6100D25388 /* en */,
 				E0D6D0CF2469E29C00C4E605 /* Base */,
 				E0D6D0D12469E29F00C4E605 /* he */,
+				E08BEC76246F4C1C0090E573 /* en */,
 			);
 			name = onboarding.storyboard;
 			sourceTree = "<group>";

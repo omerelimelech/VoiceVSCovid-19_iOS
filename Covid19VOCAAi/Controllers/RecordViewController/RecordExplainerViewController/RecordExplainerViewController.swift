@@ -10,6 +10,9 @@ import UIKit
 
 class RecordExplainerViewController: UIViewController {
     
+    static func initialization() -> RecordExplainerViewController {
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RecordExplainerViewController") as! RecordExplainerViewController
+    }
     struct RecordExplainerTextModel {
         let title = "Sound and pulse testing"
         
@@ -57,7 +60,8 @@ class RecordExplainerViewController: UIViewController {
     }
     
     @IBAction func actionButtonDidTap(_ sender: UIButton) {
-        //.//sender.animateTapResponse()
+        let ins = RecordInstructions(stage: .aaa)
+        navigate(.voiceRecording(instruction: ins, number: 1))
     }
 }
 

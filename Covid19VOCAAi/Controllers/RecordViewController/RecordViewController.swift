@@ -184,10 +184,12 @@ class RecordViewController: UIViewController {
     }
     
     @IBAction func continueButtonTapped(_ sender: GradientButton) {
-        guard let nextStage = instructions?.nextStage,
-                    let nextVC = RecordViewController.initialization(instructions: RecordInstructions(stage: nextStage), recordNumber: recordNumber + 1)
-                    else { self.navigationController?.dismiss(animated: true, completion: nil); return}
-                self.navigationController?.pushViewController(nextVC, animated: true)
+        if let nextStage = instructions?.nextStage {
+            let instructions = RecordInstructions(stage: nextStage)
+            navigate(.voiceRecording(instruction: instructions, number: recordNumber + 1))
+        }else{
+            navigate(.finishRecordScreen)
+        }
     }
     
     

@@ -72,6 +72,10 @@ class VoiceUpContinueButton: GradientButton {
         isEnabled = false
     }
     
+    func setClear(withColor color: UIColor = .white){
+        startColor = color
+        endColor = color
+    }
     func setEnabled(){
         startColor = .lightBlue
         endColor = .softenBlue

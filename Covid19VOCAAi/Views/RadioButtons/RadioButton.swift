@@ -76,5 +76,8 @@ extension UIColor {
         return UIColor.hexStringToUIColor(hex: "C4C4C4")
     }
     
+    class var labelBlack: UIColor {
+        return UIColor.hexStringToUIColor(hex: "333333")
+    }
     
 }

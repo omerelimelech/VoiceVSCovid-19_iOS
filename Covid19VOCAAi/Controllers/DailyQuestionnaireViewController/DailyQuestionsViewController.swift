@@ -10,6 +10,10 @@ import UIKit
 
 class DailyQuestionsViewController: UIViewController {
     
+    
+    static func initialization() -> DailyQuestionsViewController {
+        return UIStoryboard.init(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "DailyQuestionsViewController") as! DailyQuestionsViewController
+    }
     @IBOutlet weak var tableView: UITableView!
     
     var questions = [DailyQuestion]() {
@@ -45,6 +49,7 @@ class DailyQuestionsViewController: UIViewController {
     
     func sendResults() {
         print(questions)
+        navigate(.dailyQuestionnaire2)
     }
 }
 

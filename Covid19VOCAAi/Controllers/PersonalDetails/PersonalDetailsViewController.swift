@@ -155,14 +155,16 @@ extension PersonalDetailsViewController : PersonalDetailsDelegate {
         self.presenter?.registerUser()
     }
     
+    
 }
 
-extension UIPageViewController {
+extension PersonalDetailsViewController {
     func goToNextPage(animated: Bool = true, completion: ((Bool) -> Void)? = nil) {
         if let currentViewController = viewControllers?[0] {
-            if let nextPage = dataSource?.pageViewController(self, viewControllerAfter: currentViewController) {
-                setViewControllers([nextPage], direction: .reverse, animated: animated, completion: completion)
-            }
+            let index = self.controllers.firstIndex(of: currentViewController)!
+            let nextPage = controllers[index + 1]
+            setViewControllers([nextPage], direction: isRTL() ? .reverse : .forward, animated: animated, completion: completion)
+            
         }
     }
 }

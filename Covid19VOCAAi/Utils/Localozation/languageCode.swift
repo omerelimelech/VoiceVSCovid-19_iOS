@@ -23,3 +23,7 @@ public enum LanguageType: String {
         return LanguageType.init(rawValue: lang) ?? .other
     }
 }
+
+func isRTL() -> Bool {
+    return LanguageType.current == .heb
+}

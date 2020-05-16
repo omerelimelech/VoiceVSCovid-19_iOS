@@ -22,7 +22,6 @@ extension DailyQuestionsViewController: UITableViewDelegate, UITableViewDataSour
         if indexPath == continueButtonIndexPath {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ActionButtonCell.ReuseIdentifier, for: indexPath) as? ActionButtonCell else { return UITableViewCell() }
             cell.actionButton.setTitle("Continue", for: .normal)
-            cell.actionButton.transform = LanguageType.current == .heb ? CGAffineTransform(scaleX: -1, y: 1) : .identity
             cell.delegate = self
             return cell
         }
