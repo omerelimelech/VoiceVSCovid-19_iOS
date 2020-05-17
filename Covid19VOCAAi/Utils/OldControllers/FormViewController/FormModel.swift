@@ -37,6 +37,7 @@ class FormModel: NSObject {
 extension FormModel {
 
     func countriesArray() -> [String]{
+        return englishCountries
         guard let code = languageCode() else {return []}
         switch code {
         case "en":

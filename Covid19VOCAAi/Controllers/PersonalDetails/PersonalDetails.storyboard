@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jkn-uV-1fQ">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,13 +24,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2se-DR-ffc" customClass="VoiceUpContinueButton" customModule="VoiceUp" customModuleProvider="target">
-                                <rect key="frame" x="75" y="596" width="264" height="50"/>
+                                <rect key="frame" x="75" y="656" width="264" height="50"/>
                                 <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="vq3-M2-NcV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="24"/>
-                                <state key="normal" title="המשך">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -66,20 +65,20 @@
                                     <constraint firstItem="yzV-eP-0iC" firstAttribute="height" secondItem="eqB-79-9Jy" secondAttribute="height" id="YY5-rU-MZG"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מחלות רקע" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6J-W7-ews">
-                                <rect key="frame" x="27" y="58" width="360" height="49.666666666666657"/>
-                                <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background diseases" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6J-W7-ews">
+                                <rect key="frame" x="27" y="58" width="360" height="46.333333333333343"/>
+                                <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="34"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="האם אובחנת עם האחת ממחלות הרקע הבאות?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryv-bW-iQK">
-                                <rect key="frame" x="27" y="115.66666666666667" width="360" height="23.333333333333329"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you been diagnozed with one of the following diseases?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryv-bW-iQK">
+                                <rect key="frame" x="27" y="112.33333333333333" width="360" height="46.333333333333329"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x8g-II-HHF">
-                                <rect key="frame" x="0.0" y="147" width="414" height="441"/>
+                                <rect key="frame" x="0.0" y="166.66666666666666" width="414" height="477.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Nj-Oe-06V">
                                     <size key="itemSize" width="128" height="128"/>
@@ -96,7 +95,7 @@
                             <constraint firstItem="eqB-79-9Jy" firstAttribute="leading" secondItem="g6J-W7-ews" secondAttribute="leading" id="6Z6-Ib-uD3"/>
                             <constraint firstItem="x8g-II-HHF" firstAttribute="top" secondItem="ryv-bW-iQK" secondAttribute="bottom" constant="8" id="AbJ-hy-wRK"/>
                             <constraint firstItem="2se-DR-ffc" firstAttribute="leading" secondItem="EFQ-Ck-4Hc" secondAttribute="leading" constant="75" id="Jjz-vN-kSi"/>
-                            <constraint firstItem="2se-DR-ffc" firstAttribute="top" secondItem="x8g-II-HHF" secondAttribute="bottom" constant="8" id="N1b-ZB-MTB"/>
+                            <constraint firstItem="2se-DR-ffc" firstAttribute="top" secondItem="x8g-II-HHF" secondAttribute="bottom" constant="12" id="N1b-ZB-MTB"/>
                             <constraint firstItem="EFQ-Ck-4Hc" firstAttribute="trailing" secondItem="x8g-II-HHF" secondAttribute="trailing" id="O1q-86-wcI"/>
                             <constraint firstItem="EFQ-Ck-4Hc" firstAttribute="trailing" secondItem="g6J-W7-ews" secondAttribute="trailing" constant="27" id="P1n-7s-Jxp"/>
                             <constraint firstItem="x8g-II-HHF" firstAttribute="leading" secondItem="EFQ-Ck-4Hc" secondAttribute="leading" id="RAe-Hm-vd9"/>
@@ -107,7 +106,7 @@
                             <constraint firstItem="ryv-bW-iQK" firstAttribute="top" secondItem="g6J-W7-ews" secondAttribute="bottom" constant="8" id="ifv-qI-HvX"/>
                             <constraint firstItem="g6J-W7-ews" firstAttribute="top" secondItem="eqB-79-9Jy" secondAttribute="bottom" constant="22" id="kct-MF-XTk"/>
                             <constraint firstItem="g6J-W7-ews" firstAttribute="leading" secondItem="EFQ-Ck-4Hc" secondAttribute="leading" constant="27" id="nwG-Rq-dbf"/>
-                            <constraint firstItem="EFQ-Ck-4Hc" firstAttribute="bottom" secondItem="2se-DR-ffc" secondAttribute="bottom" constant="90" id="v9c-uS-vna"/>
+                            <constraint firstItem="EFQ-Ck-4Hc" firstAttribute="bottom" secondItem="2se-DR-ffc" secondAttribute="bottom" constant="30" id="v9c-uS-vna"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EFQ-Ck-4Hc"/>
                     </view>
@@ -143,7 +142,7 @@
                                     <constraint firstAttribute="height" constant="50" id="wCt-n3-mWI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="24"/>
-                                <state key="normal" title="המשך">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -178,17 +177,17 @@
                                     <constraint firstItem="zsK-uO-Abe" firstAttribute="centerY" secondItem="8cZ-bu-mdM" secondAttribute="centerY" id="fbp-k6-D6Y"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מה נכון עבורך?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqm-5K-TIm">
-                                <rect key="frame" x="27" y="58" width="360" height="49.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What’s right for you?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqm-5K-TIm">
+                                <rect key="frame" x="27" y="57.999999999999993" width="360" height="98.333333333333314"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="36"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="FXY-Ai-kQv">
-                                <rect key="frame" x="35" y="187.33333333333337" width="350" height="188"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="FXY-Ai-kQv">
+                                <rect key="frame" x="35" y="180.33333333333337" width="350" height="188"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2iV-bV-V3e">
-                                        <rect key="frame" x="0.0" y="0.0" width="108.33333333333333" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="149.66666666666666" height="20"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3E-C1-gsJ" customClass="RadioButton" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -205,8 +204,8 @@
                                                     <action selector="selectionTapped:" destination="kaA-0E-Hsj" eventType="touchUpInside" id="gfp-D8-uEz"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="לא מעשן/ת" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVt-Ik-D1l">
-                                                <rect key="frame" x="27.999999999999993" y="0.0" width="80.333333333333314" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Never smoked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVt-Ik-D1l">
+                                                <rect key="frame" x="28.000000000000007" y="0.0" width="121.66666666666669" height="20"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="18"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -214,7 +213,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oYJ-IT-WIv">
-                                        <rect key="frame" x="0.0" y="83.999999999999972" width="85" height="20"/>
+                                        <rect key="frame" x="0.0" y="83.999999999999972" width="100.66666666666667" height="20"/>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LW-e9-kXj" customClass="RadioButton" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -231,16 +230,16 @@
                                                     <action selector="selectionTapped:" destination="kaA-0E-Hsj" eventType="touchUpInside" id="Ymc-7a-xoa"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מעשן/ת" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dD7-ge-ubG">
-                                                <rect key="frame" x="28" y="0.0" width="57" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smoking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dD7-ge-ubG">
+                                                <rect key="frame" x="28.000000000000007" y="0.0" width="72.666666666666686" height="20"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="18"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-ih-Cad">
-                                        <rect key="frame" x="0.0" y="167.99999999999997" width="283.66666666666669" height="20"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-ih-Cad">
+                                        <rect key="frame" x="0.0" y="167.99999999999997" width="350" height="20"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJS-H4-xTx" customClass="RadioButton" customModule="VoiceUp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -257,8 +256,8 @@
                                                     <action selector="selectionTapped:" destination="kaA-0E-Hsj" eventType="touchUpInside" id="kxD-ps-ZUJ"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="עישנתי והפסקתי ב5 שנים האחרונות" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx7-Na-AD1">
-                                                <rect key="frame" x="27.999999999999986" y="0.0" width="255.66666666666663" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="haven't smoke in 5 years" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx7-Na-AD1">
+                                                <rect key="frame" x="28" y="0.0" width="322" height="20"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="18"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -266,6 +265,9 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="NfT-ih-Cad" firstAttribute="width" secondItem="FXY-Ai-kQv" secondAttribute="width" id="dme-3C-4j7"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -275,7 +277,7 @@
                             <constraint firstItem="pqm-5K-TIm" firstAttribute="top" secondItem="8cZ-bu-mdM" secondAttribute="bottom" constant="22" id="6Wl-Oq-1jT"/>
                             <constraint firstItem="FXY-Ai-kQv" firstAttribute="leading" secondItem="ZGF-8H-3la" secondAttribute="leading" constant="35" id="AsW-6J-B3K"/>
                             <constraint firstItem="ZGF-8H-3la" firstAttribute="bottom" secondItem="J4v-jw-Is7" secondAttribute="bottom" constant="90" id="BpE-Ep-J8u"/>
-                            <constraint firstItem="FXY-Ai-kQv" firstAttribute="top" secondItem="pqm-5K-TIm" secondAttribute="bottom" constant="80" id="HWs-ZO-yuZ"/>
+                            <constraint firstItem="FXY-Ai-kQv" firstAttribute="top" secondItem="pqm-5K-TIm" secondAttribute="bottom" constant="24" id="HWs-ZO-yuZ"/>
                             <constraint firstItem="pqm-5K-TIm" firstAttribute="leading" secondItem="ZGF-8H-3la" secondAttribute="leading" constant="27" id="Ncq-xN-ovO"/>
                             <constraint firstItem="J4v-jw-Is7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FXY-Ai-kQv" secondAttribute="bottom" constant="8" id="UJf-Mj-uNb"/>
                             <constraint firstItem="ZGF-8H-3la" firstAttribute="trailing" secondItem="J4v-jw-Is7" secondAttribute="trailing" constant="75" id="Xu7-xp-rz3"/>
@@ -306,23 +308,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryL-Cd-A1u" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
-                                <rect key="frame" x="27" y="199" width="360" height="74"/>
+                                <rect key="frame" x="27" y="200" width="360" height="74"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="UM6-yx-BO8"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="מספר טלפון"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Phone number"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xql-gE-rbe" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
-                                <rect key="frame" x="27" y="299" width="360" height="74"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xql-gE-rbe" customClass="CountriesPickerView" customModule="VoiceUp" customModuleProvider="target">
+                                <rect key="frame" x="27" y="300" width="360" height="74"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="DTE-Y1-BI3"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="מדינת מגורים"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Country"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFd-EY-9SR" customClass="VoiceUpContinueButton" customModule="VoiceUp" customModuleProvider="target">
@@ -332,7 +334,7 @@
                                     <constraint firstAttribute="height" constant="50" id="89G-rb-Ki4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="24"/>
-                                <state key="normal" title="המשך">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -367,14 +369,14 @@
                                     <constraint firstItem="s0y-kB-pms" firstAttribute="height" secondItem="Q2S-Cx-EK2" secondAttribute="height" id="sVH-LZ-b0n"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="קצת עליך" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txF-ma-PL4">
-                                <rect key="frame" x="28" y="58" width="358" height="49.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txF-ma-PL4">
+                                <rect key="frame" x="28" y="58" width="358" height="50"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="36"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="אל תדאגו, נבקש למלא רק פעם אחת :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNn-94-w2e">
-                                <rect key="frame" x="28" y="115.66666666666667" width="358" height="23.333333333333329"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't worry, we'll ask it once" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNn-94-w2e">
+                                <rect key="frame" x="28" y="116" width="358" height="24"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1145,7 +1147,7 @@
                                     <constraint firstAttribute="height" constant="50" id="dkY-lQ-QbG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="24"/>
-                                <state key="normal" title="המשך">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1180,7 +1182,7 @@
                                     <constraint firstAttribute="height" constant="1" id="mcg-ew-HUg"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="עוד קצת עליך" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sl2-4U-ldK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More about you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sl2-4U-ldK">
                                 <rect key="frame" x="27" y="58" width="360" height="49.333333333333343"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="36"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1207,7 +1209,7 @@
                                                     <action selector="genderTapped:" destination="TPN-rO-glS" eventType="touchUpInside" id="acg-Qc-Xw1"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="זכר" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXv-rB-guW">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXv-rB-guW">
                                                 <rect key="frame" x="28" y="0.0" width="142.66666666666666" height="20"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="18"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1233,7 +1235,7 @@
                                                     <action selector="genderTapped:" destination="TPN-rO-glS" eventType="touchUpInside" id="jdW-PN-BIs"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="נקבה" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jON-P3-JWf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jON-P3-JWf">
                                                 <rect key="frame" x="28" y="0.0" width="142.33333333333334" height="20"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="18"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1243,7 +1245,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מין מולד" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rx3-Nw-x2y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rx3-Nw-x2y">
                                 <rect key="frame" x="29" y="133" width="377" height="19.333333333333343"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="14"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1259,7 +1261,7 @@
                                             <constraint firstAttribute="height" constant="74" id="hSF-J7-pnQ"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="גיל"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Age"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmj-6s-KNj" customClass="TitlePickerView" customModule="VoiceUp" customModuleProvider="target">
@@ -1269,8 +1271,8 @@
                                             <constraint firstAttribute="height" constant="74" id="Mxb-DD-xPd"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="גובה"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="unitText" value="ס&quot;מ"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Height"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="unitText" value="cm"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
@@ -1279,8 +1281,8 @@
                                 <rect key="frame" x="29" y="344.66666666666669" width="174" height="74"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="unitText" value="ק&quot;ג"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="משקל"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="unitText" value="Kg"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Weight"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -1297,7 +1299,7 @@
                             <constraint firstItem="oa0-et-TLj" firstAttribute="leading" secondItem="Yfg-p5-DGI" secondAttribute="leadingMargin" constant="27" id="Rei-cE-7WB"/>
                             <constraint firstItem="lHv-16-wn7" firstAttribute="height" secondItem="Nwl-qa-dJe" secondAttribute="height" id="W1f-gk-JA4"/>
                             <constraint firstItem="6X2-cl-cRz" firstAttribute="trailing" secondItem="F5h-IJ-IfN" secondAttribute="trailing" constant="29" id="Xuc-SP-uTd"/>
-                            <constraint firstItem="pAc-Pz-8Gc" firstAttribute="leading" secondItem="6X2-cl-cRz" secondAttribute="leading" constant="29" id="b2u-CL-V99"/>
+                            <constraint firstItem="pAc-Pz-8Gc" firstAttribute="leading" secondItem="rx3-Nw-x2y" secondAttribute="leading" id="bA3-si-wwg"/>
                             <constraint firstItem="F5h-IJ-IfN" firstAttribute="leading" secondItem="6X2-cl-cRz" secondAttribute="leading" constant="29" id="hMc-K7-YU2"/>
                             <constraint firstItem="lHv-16-wn7" firstAttribute="top" secondItem="pAc-Pz-8Gc" secondAttribute="bottom" constant="30" id="i57-dn-kYE"/>
                             <constraint firstItem="pAc-Pz-8Gc" firstAttribute="top" secondItem="F5h-IJ-IfN" secondAttribute="bottom" constant="54" id="lfT-Lq-paq"/>
@@ -1396,7 +1398,7 @@
                                     <constraint firstAttribute="height" constant="50" id="E3o-Id-hqh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="24"/>
-                                <state key="normal" title="המשך">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1432,6 +1434,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Sfa-nh-cd9" id="8lg-X8-mtR"/>
+                        <outlet property="continueButton" destination="ZXP-QF-5WE" id="6In-WU-FjR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh7-ts-aqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1470,41 +1473,41 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eka-km-GzV">
-                                <rect key="frame" x="0.0" y="126" width="414" height="449"/>
+                                <rect key="frame" x="0.0" y="126.00000000000003" width="414" height="473.66666666666674"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="סיימנו" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lST-sp-hsK">
-                                        <rect key="frame" x="175.66666666666666" y="0.0" width="63" height="33"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All done 😄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lST-sp-hsK">
+                                        <rect key="frame" x="142.66666666666666" y="0.0" width="128.99999999999997" height="33"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="24"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תודה שתרמת :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdN-sQ-WPy">
-                                        <rect key="frame" x="152" y="52.999999999999993" width="110.33333333333331" height="24.666666666666664"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your samples! Keep practicing good hygein!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdN-sQ-WPy">
+                                        <rect key="frame" x="50" y="53" width="314" height="49.333333333333343"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="18"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy_people" translatesAutoresizingMaskIntoConstraints="NO" id="pW2-8g-ZJV">
-                                        <rect key="frame" x="114" y="97.666666666666657" width="186" height="90"/>
+                                        <rect key="frame" x="114" y="122.33333333333334" width="186" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="186" id="BRT-Eu-L1V"/>
                                             <constraint firstAttribute="height" constant="90" id="suG-7i-aTe"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="523 בדיקות נעשו עד כה!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hD-I1-VOr">
-                                        <rect key="frame" x="8" y="207.66666666666669" width="398" height="45"/>
+                                        <rect key="frame" x="8" y="232.33333333333331" width="398" height="45"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="33"/>
                                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ככל שיותר אנשים ירתמו למאבק, ככה נצליח יותר מהר." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDj-7G-QZS">
-                                        <rect key="frame" x="45" y="272.66666666666669" width="324" height="46.333333333333314"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help us research and return the world to normal by sharing this app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDj-7G-QZS">
+                                        <rect key="frame" x="45" y="297.33333333333331" width="324" height="46.333333333333314"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8a-vc-o1W" customClass="VoiceUpContinueButton" customModule="VoiceUp" customModuleProvider="target">
-                                        <rect key="frame" x="75" y="339" width="264" height="50"/>
+                                        <rect key="frame" x="75" y="363.66666666666669" width="264" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="PGk-Rf-5D6"/>
                                         </constraints>
@@ -1530,7 +1533,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5W-3S-MKz">
-                                        <rect key="frame" x="182.66666666666666" y="409" width="49" height="40"/>
+                                        <rect key="frame" x="182.66666666666666" y="433.66666666666663" width="49" height="40"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="20"/>
                                         <state key="normal" title="המשך">
                                             <color key="titleColor" red="0.062745098040000002" green="0.43137254899999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1544,6 +1547,8 @@
                                     <constraint firstItem="5hD-I1-VOr" firstAttribute="leading" secondItem="eka-km-GzV" secondAttribute="leading" constant="8" id="4bO-XH-roa"/>
                                     <constraint firstAttribute="trailing" secondItem="5hD-I1-VOr" secondAttribute="trailing" constant="8" id="54t-WY-r3T"/>
                                     <constraint firstAttribute="trailing" secondItem="dDj-7G-QZS" secondAttribute="trailing" constant="45" id="MKH-cY-11R"/>
+                                    <constraint firstAttribute="trailing" secondItem="PdN-sQ-WPy" secondAttribute="trailing" constant="50" id="RKY-Ti-KzJ"/>
+                                    <constraint firstItem="PdN-sQ-WPy" firstAttribute="leading" secondItem="eka-km-GzV" secondAttribute="leading" constant="50" id="b7J-3d-CnC"/>
                                     <constraint firstItem="dDj-7G-QZS" firstAttribute="leading" secondItem="eka-km-GzV" secondAttribute="leading" constant="45" id="cir-iH-TBX"/>
                                     <constraint firstAttribute="trailing" secondItem="L8a-vc-o1W" secondAttribute="trailing" constant="75" id="k7s-hV-WJC"/>
                                     <constraint firstItem="L8a-vc-o1W" firstAttribute="leading" secondItem="eka-km-GzV" secondAttribute="leading" constant="75" id="oqU-yy-Z6t"/>
@@ -1687,7 +1692,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="MDx-hn-cPe" secondAttribute="bottom" constant="80" id="2dG-pH-z6e"/>
-                            <constraint firstItem="GnO-7l-XSd" firstAttribute="top" secondItem="rsY-AN-6NV" secondAttribute="top" id="Ato-v1-1FV"/>
+                            <constraint firstItem="GnO-7l-XSd" firstAttribute="top" secondItem="fVE-e1-e4g" secondAttribute="top" id="FRC-zs-tfO"/>
                             <constraint firstItem="MDx-hn-cPe" firstAttribute="leading" secondItem="fVE-e1-e4g" secondAttribute="leading" constant="36" id="FSR-cg-md7"/>
                             <constraint firstItem="fVE-e1-e4g" firstAttribute="trailing" secondItem="GnO-7l-XSd" secondAttribute="trailing" id="K8O-12-rGv"/>
                             <constraint firstItem="MDx-hn-cPe" firstAttribute="centerX" secondItem="fVE-e1-e4g" secondAttribute="centerX" id="c5T-DB-T1J"/>

@@ -22,14 +22,16 @@ class PersonalDetails1ViewController: UIViewController {
     @IBOutlet weak var phoneNumberPickerView: TitlePickerView!
     
     
-    @IBOutlet weak var countryPickerView: TitlePickerView!
+    @IBOutlet weak var countryPickerView: CountriesPickerView!
     
     weak var delegate: PersonalDetailsDelegate?
     
     @IBOutlet weak var continueButton: VoiceUpContinueButton!
-    
+    var country: String = "IL"
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        countryPickerView.configure(with: "Country", dataSource: FormModel().countryDataSource, isPrimary: false)
         phoneNumberPickerView.onFillData = { (text) in
             self.checkData()
         }
@@ -49,7 +51,7 @@ class PersonalDetails1ViewController: UIViewController {
     }
     
     @IBAction func continueButtonTapped(_ sender: GradientButton) {
-        self.delegate?.personalDetailsViewController(self, didTapContiueWith: [PersonalDetailsKey.phoneNumber.rawValue : phoneNumberPickerView.pickerTextField.text, PersonalDetailsKey.country.rawValue: countryPickerView.pickerTextField.text])
+        self.delegate?.personalDetailsViewController(self, didTapContiueWith: [PersonalDetailsKey.phoneNumber.rawValue : phoneNumberPickerView.pickerTextField.text, PersonalDetailsKey.country.rawValue: country])
     }
 }
 

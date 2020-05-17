@@ -30,7 +30,12 @@ class VoiceUpMainViewController: UIViewController {
     
 
     @IBAction func startTestTapped(_ sender: UIButton) {
-        navigate(.dailyQuestionnaire2)
+        let vc2 = DailyQuestionsViewController.initialization()
+        let nav = UINavigationController(rootViewController: vc2)
+        nav.isNavigationBarHidden = true
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
+//        navigate(.dailyQuestionnaire2)
     }
     
     

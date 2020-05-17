@@ -44,6 +44,8 @@ class SympthomsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+  
+    @IBOutlet weak var continueButton: VoiceUpContinueButton!
     var presenter: SympthomsPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +55,8 @@ class SympthomsViewController: UIViewController {
         collectionView.allowsMultipleSelection = true
         self.presenter = SympthomsPresenter(delegate: self)
         self.presenter?.getQuestions()
+        continueButton.setEnabled()
+        
     }
     
 

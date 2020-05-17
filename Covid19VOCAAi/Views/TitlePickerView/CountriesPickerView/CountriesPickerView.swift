@@ -21,12 +21,15 @@ class CountriesPickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSourc
     @IBOutlet weak var pickerTextField: UITextField!
     var isPrimary = true
     
+     var onFillData: ( (_ text: String?) -> Void)?
+    
      let pickerView = UIPickerView()
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialConfig()
         
     }
+    
     
     
     required init?(coder: NSCoder) {
@@ -44,6 +47,7 @@ class CountriesPickerView: BaseView, UIPickerViewDelegate, UIPickerViewDataSourc
         self.selectedString = self.dataSource[pickerView.selectedRow(inComponent: 0)]
         self.pickerTextField.text = dataSource[pickerView.selectedRow(inComponent: 0)].localized()
         endEditing(true)
+        onFillData?("IL")
     }
     
     

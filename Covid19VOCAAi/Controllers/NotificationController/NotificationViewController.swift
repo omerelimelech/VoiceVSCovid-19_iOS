@@ -10,11 +10,24 @@ import UIKit
 
 class NotificationViewController: UIViewController {
     
-    @IBOutlet weak var label: UILabel!
+    static func initialization() -> NotificationViewController{
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NotificationViewController") as! NotificationViewController
+    }
+    
+    
+    struct strings {
+        static let weWouldLoveToSee = "We Would love to see you tomorrow!".localized()
+        static let reminderOnUs = "Reminder on us".localized()
+        static let reminderText = "When do you want to do your next test?".localized()
+        static let setReminder = "Set Reminder".localized()
+        static let later = "I'll do it later".localized()
+    }
+    @IBOutlet weak var reminderLabel: UILabel!
     @IBOutlet weak var timePicker: UIDatePicker!
     
+    @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var laterButton: UIButton!
-    @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet weak var doneButton: VoiceUpContinueButton!
     
     var presenter: NotificationPresenter?
     
@@ -24,12 +37,20 @@ class NotificationViewController: UIViewController {
         //initialize presenter
         presenter = NotificationPresenter(with:self)
         //arrange question text
-        label.text = "When to remind you again?".localized()
-        label.sizeToFit()
-        label.center.x = self.view.center.x
+        reminderLabel.text = strings.reminderText
         //use presenter to check if have permission to set notifications
+        doneButton.setEnabled()
         presenter?.checkAuthorization()
         
+        
+        let att = NSMutableAttributedString()
+            .bold(strings.weWouldLoveToSee, size: 24)
+            .normal("\n", size: 12)
+            .bold(strings.reminderOnUs, size: 24, color: .mainBlue)
+        topLabel.attributedText = att
+        
+        laterButton.setTitle(strings.later, for: .normal)
+        doneButton.setTitle(strings.setReminder, for: .normal)
         //***REMOVE THIS*** for full program
         //refresh every time view comes in foreground
         NotificationCenter.default.addObserver(self, selector: #selector(onResume), name:
@@ -56,17 +77,6 @@ class NotificationViewController: UIViewController {
     }
     
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
 
 extension NotificationViewController:NotificationDelegate{
@@ -92,7 +102,16 @@ extension NotificationViewController:NotificationDelegate{
     //reaction on successful notification
     func notificationOK() {
         //go to next view
-        print("great!")
+        let alert = UIAlertController(title: "Thank you!", message: "Reminder is set successfully", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default) { (action) in
+            alert.dismiss(animated: true) {
+                self.navigationController?.dismiss(animated: true, completion: nil)
+            }
+        }
+        alert.addAction(action)
+        DispatchQueue.main.async {
+             self.present(alert, animated: true, completion: nil)
+        }
     }
     
     //arrange view according to current mode
@@ -100,7 +119,7 @@ extension NotificationViewController:NotificationDelegate{
         if (haveNotification){
             //arrange button text
             DispatchQueue.main.async {
-                self.doneButton.setTitle("Done".localized(), for:.normal)
+                self.doneButton.setTitle(strings.setReminder, for:.normal)
                 self.laterButton.setTitle("Remove Notification".localized(), for: .normal)
                 if let notificationDate = date {//set to notification time
                     self.timePicker.date = notificationDate
@@ -109,7 +128,7 @@ extension NotificationViewController:NotificationDelegate{
         }
         else {
             DispatchQueue.main.async {
-                self.doneButton.setTitle("Done".localized(), for:.normal)
+                self.doneButton.setTitle(strings.setReminder, for:.normal)
                 self.laterButton.setTitle("Later".localized(), for: .normal)
                 self.timePicker.date = Date()//set to current time
             }

@@ -12,7 +12,7 @@ class BackgroundDiseasesViewController: TransformableViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var dataSource = ["לא אובחנתי עם אף מחלה","סוכרת","מחלה אוטואמונית","אסטמה","מחלה ריאתית כרונית","מחלת כליות כרונית","יתר לחץ דם","יש או היה לי בעבר סרטן"]
+    var dataSource = ["None of those diseases","Autoimmune disease", "Diabetes", "Chronic lung disease", "Asthma", "Hypertension", "Chronic kidney disease", "Have or had cancer"]
     
     var selectedItems = [IndexPath]()
    

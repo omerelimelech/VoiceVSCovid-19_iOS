@@ -23,10 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
         Router.default.setupAppNavigation(appNavigation: VoiceUpAppNavigation())
-
-        let vc = RecordViewController.initialization(instructions: RecordInstructions(stage: .aaa), recordNumber: 1)
-        let vc2 = VoiceUpMainViewController.initialization()
-        let nav = UINavigationController(rootViewController: vc2)
+        UIView.appearance().semanticContentAttribute = .forceLeftToRight
+        var vc: UIViewController!
+        if isFirstOpen(){
+            vc = OnBoardingPageViewController.initialization()
+        }else{
+            vc = VoiceUpMainViewController.initialization()
+        }
+        let nav = UINavigationController(rootViewController: vc)
         nav.isNavigationBarHidden = true
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
@@ -34,7 +38,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-
+    func isFirstOpen() -> Bool{
+        if let _ = UserDefaults.standard.value(forKey: "firstOpen"){
+            return true
+        }else{
+            UserDefaults.standard.set(true, forKey: "firstOpen")
+            return true
+        }
+        
+    }
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {

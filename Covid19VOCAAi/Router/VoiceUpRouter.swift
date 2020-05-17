@@ -47,7 +47,7 @@ struct VoiceUpAppNavigation: AppNavigation {
             case .finishRecordScreen:
                 return FinishViewController.initialization()
             case .notificationScreen:
-                return UIViewController()
+                return NotificationViewController.initialization()
             }
         }
         return UIViewController()

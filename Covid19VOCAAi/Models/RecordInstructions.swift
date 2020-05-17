@@ -54,17 +54,17 @@ class RecordInstructions {
     var stage: Stage?
     
     enum Titles : String{
-        case cough = "שיעול 3 פעמים"
-        case count = "ספירה באנגלית מ1 עד 10"
-        case eee = "אייייי"
-        case aaa = "אההההה"
+        case cough = "Cough 3 times"//"שיעול 3 פעמים"
+        case count = "Count from 1 to 10"//"ספירה באנגלית מ1 עד 10"
+        case eee = "EEEEE"//"אייייי"
+        case aaa = "AAAAA" //"אההההה"
     }
     
     enum Descriptions: String{
         case cough = ""
-        case count = "בלי הפסקות, אם לא נוח באנגלית, אפשר גם בעברית"
-        case eee = "כמו במילה אמא, ארוך בלי הפסקות עד שיגמר לך האוויר"
-        case aaa = "כמו במילה אבא, ארוך בלי הספקות עד שיגמר לך האוויר"
+        case count = "Can count in any language"//"בלי הפסקות, אם לא נוח באנגלית, אפשר גם בעברית"
+        case eee = "As in the word 'Cheese'"//"כמו במילה אמא, ארוך בלי הפסקות עד שיגמר לך האוויר"
+        case aaa = "As in the word 'After'" //"כמו במילה אבא, ארוך בלי הספקות עד שיגמר לך האוויר"
         
     }
     
