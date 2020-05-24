@@ -10,7 +10,6 @@ import UIKit
 
 class DailyQuestionsViewController: UIViewController {
     
-    
     static func initialization() -> DailyQuestionsViewController {
         return UIStoryboard.init(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "DailyQuestionsViewController") as! DailyQuestionsViewController
     }

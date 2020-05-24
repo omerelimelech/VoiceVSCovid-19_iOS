@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,11 +89,11 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="bottomSeparator" destination="sWJ-uy-uvm" id="ejS-sO-PM6"/>
-                <outlet property="firstOptionCheckmark" destination="Zw4-1C-u17" id="EXz-am-gpu"/>
-                <outlet property="firstOptionCheckmarkLabel" destination="fNL-9J-aQC" id="ufT-IY-XzN"/>
                 <outlet property="label" destination="JGO-Je-ien" id="Nkq-7s-h5u"/>
-                <outlet property="secondOptionCheckmark" destination="fi0-Zn-kbG" id="kDA-nV-SK6"/>
-                <outlet property="secondOptionCheckmarkLabel" destination="uDP-AR-xrp" id="L2f-MA-vHT"/>
+                <outlet property="negativeOptionCheckmark" destination="fi0-Zn-kbG" id="kDA-nV-SK6"/>
+                <outlet property="negativeOptionCheckmarkLabel" destination="uDP-AR-xrp" id="L2f-MA-vHT"/>
+                <outlet property="positiveOptionCheckmark" destination="Zw4-1C-u17" id="EXz-am-gpu"/>
+                <outlet property="positiveOptionCheckmarkLabel" destination="fNL-9J-aQC" id="ufT-IY-XzN"/>
             </connections>
             <point key="canvasLocation" x="70" y="76"/>
         </tableViewCell>
