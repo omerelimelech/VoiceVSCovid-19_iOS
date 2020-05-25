@@ -7,7 +7,7 @@
 //
 
 protocol DailyQuestionsDelegate: class {
-    func dailyQuestionsPresenter(didUpdateWith questions: [DailyQuestion])
+    func dailyQuestionsPresenter(didUpdateWith questions: [DailyQuestionVM])
 }
 
 class DailyQuestionsPresenter: BasePresenter{
@@ -16,18 +16,14 @@ class DailyQuestionsPresenter: BasePresenter{
     
     var dailyQuestionsDataSource = [
         
-        DailyQuestion(type: .yesNoWithInput(inputType: .number(inputFieldName: "Temperature:")),
-                      text: "Do you have a fever?",
-                      answerOptions: ["Yes", "No"]),
-        DailyQuestion(type: .yesNoWithInput(inputType: .date(inputFieldName: "Date:")),
-                      text: "Have you been exposed as a verified corona patient?",
-                      answerOptions: ["Yes", "No"]),
-        DailyQuestion(type: .yesNoWithInput(inputType: .date(inputFieldName: "Date of test")),
-                      text: "Have you been checked for corona?",
-                      answerOptions: ["Yes", "No"]),
-        DailyQuestion(type: .checkboxed,
-                      text: "How are you feeling today?",
-                      answerOptions: ["Same", "Better", "Worse"])
+        DailyQuestionVM(question: DailyQuestion(question: .tempMeasurement, type: .yesNoWithInput(inputType: .number(inputFieldName: "Temperature:")), answerOptions: ["Yes", "No"])),
+        
+        DailyQuestionVM(question: DailyQuestion(question: .exposureDate, type: .yesNoWithInput(inputType: .date(inputFieldName: "Date:")), answerOptions: ["Yes", "No"])),
+        
+        DailyQuestionVM(question: DailyQuestion(question: .testedForPositiveCovid, type: .yesNoType, answerOptions: ["Yes", "No"]), nestedQuestion: DailyQuestion(question: .isResultPositive, type: .yesNoWithInput(inputType: .date(inputFieldName: "Date of test")), answerOptions: ["Yes", "No"], isNested: true)),
+        
+        DailyQuestionVM(question: DailyQuestion(question: .generalFeeling, type: .checkboxed,
+        answerOptions: ["Same", "Better", "Worse"]))
     ]
     
     init(with delegate : DailyQuestionsDelegate){

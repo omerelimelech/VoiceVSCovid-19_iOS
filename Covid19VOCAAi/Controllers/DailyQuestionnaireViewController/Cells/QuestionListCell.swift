@@ -65,7 +65,7 @@ class QuestionListCell: UITableViewCell {
     
     weak var delegate: QuestionListCellDelegate?
     
-    var question: DailyQuestion? {
+    var question: DailyQuestionVM? {
         didSet {
             didSetQuestion()
         }
@@ -120,9 +120,9 @@ class QuestionListCell: UITableViewCell {
     
     func didSetQuestion() {
         guard let currentQuestion = question else { return }
-        label.text = currentQuestion.text
-        firstOptionCheckmarkLabel.text = currentQuestion.answerOptions.first
-        secondOptionCheckmarkLabel.text = currentQuestion.answerOptions.last
+        label.text = currentQuestion.question.text
+        firstOptionCheckmarkLabel.text = currentQuestion.question.answerOptions.first
+        secondOptionCheckmarkLabel.text = currentQuestion.question.answerOptions.last
         inputField.text = currentQuestion.inputDataAnswer
         
         switch currentQuestion.type {
@@ -179,14 +179,14 @@ extension QuestionListCell {
     func selectYes() {
         self.firstOptionCheckmark.setImage(self.selectedButtonImage, for: .normal)
         self.secondOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal)
-        delegate?.questionListCell(self, didSelectAnswer: question?.answerOptions.first ?? "")
+        delegate?.questionListCell(self, didSelectAnswer: question?.question.answerOptions.first ?? "")
     }
     
     func selectNo() {
         self.firstOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal)
         self.secondOptionCheckmark.setImage(self.selectedButtonImage, for: .normal)
         
-        delegate?.questionListCell(self, didSelectAnswer: question?.answerOptions.last ?? "")
+        delegate?.questionListCell(self, didSelectAnswer: question?.question.answerOptions.last ?? "")
     }
     
     func setDefaultState() {

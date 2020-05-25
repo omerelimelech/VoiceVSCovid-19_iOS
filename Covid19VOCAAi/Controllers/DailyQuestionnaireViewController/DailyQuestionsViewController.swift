@@ -7,16 +7,16 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class DailyQuestionsViewController: UIViewController {
-    
     
     static func initialization() -> DailyQuestionsViewController {
         return UIStoryboard.init(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "DailyQuestionsViewController") as! DailyQuestionsViewController
     }
     @IBOutlet weak var tableView: UITableView!
     
-    var questions = [DailyQuestion]() {
+    var questions = [DailyQuestionVM]() {
         didSet {
             tableView.reloadData()
         }
@@ -47,14 +47,42 @@ class DailyQuestionsViewController: UIViewController {
         tableView.register(UINib(nibName: "QuestionCheckboxCell", bundle: nil), forCellReuseIdentifier: QuestionCheckboxCell.ReuseIdentifier)
     }
     
+    func isValid() -> Bool {
+        
+        var validationResult = false
+        
+        questions.forEach { (question) in
+            switch question.type {
+            case .yesNoWithInput:
+                validationResult = question.submittedAnswer != nil && question.inputDataAnswer != nil
+            default:
+                validationResult = question.submittedAnswer != nil
+            }
+        }
+        return validationResult
+    }
+    
     func sendResults() {
-        print(questions)
-        navigate(.dailyQuestionnaire2)
+        guard isValid() else { return }
+        
+        SVProgressHUD.show()
+        APIManager.shared.sendMeasurment(method: .post, params:
+            ["tag": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+             "tempMeasurement": "36",
+             "exposureDate": "2020-05-02",
+             "positiveTestDate": "2020-05-02",
+             "negativeTestDate": "2020-05-02",
+             "generalFeeling": "SAME"]) { [weak self] (result) in
+                self?.presenter?.handleResult(result: result, type: DailyQuestionsDTO.self, completion: { [weak self] (res) in
+                    SVProgressHUD.hideOnMain()
+                    self?.navigate(.dailyQuestionnaire2)
+                })
+        }
     }
 }
 
 extension DailyQuestionsViewController: DailyQuestionsDelegate {
-    func dailyQuestionsPresenter(didUpdateWith questions: [DailyQuestion]) {
+    func dailyQuestionsPresenter(didUpdateWith questions: [DailyQuestionVM]) {
         self.questions = questions
     }
 }

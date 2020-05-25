@@ -47,11 +47,11 @@ class QuestionCheckboxCell: UITableViewCell {
         ])
     }
     
-    func setData(question: DailyQuestion) {
-        self.question = question
-        self.variants = question.answerOptions
+    func setData(question: DailyQuestionVM) {
+        self.question = question.question
+        self.variants = question.question.answerOptions
         
-        label.text = question.text
+        label.text = question.question.text
         
         configureStackView()
     }
