@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 enum PersonalDetailsKey: String{
     case phoneNumber = "phoneNumber"
@@ -84,7 +85,7 @@ class PersonalDetailsViewController: UIPageViewController, UIPageViewControllerD
     var presenter: PersonalDetailsPresenter?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Analytics.logEvent("personal_details",parameters: nil)
         setViewControllers([controllers.first!], direction: .forward, animated: true, completion: nil)
         dataSource = self
         self.presenter = PersonalDetailsPresenter(delegate: self, userInfo: userInfo)
@@ -125,17 +126,19 @@ class PersonalDetailsViewController: UIPageViewController, UIPageViewControllerD
 
 extension PersonalDetailsViewController : PersonalDetailsDelegate {
     func personalDetailsDoneSuccessfully() {
-        navigate(.dailyQuestionnaire)
+        navigate(.dailyQuestionnaire(full_flow: true))
     }
     
     func personalDetailsViewController(_ controller: UIViewController, didTapContiueWith values: [String : Any?]) {
       
         if let _ = controller as? PersonalDetails1ViewController {
+            Analytics.logEvent("personal_details_step_1",parameters: nil)
             self.userInfo.country = values[PersonalDetailsKey.country.rawValue] as? String
              self.userInfo.phoneNumber = values[PersonalDetailsKey.phoneNumber.rawValue] as? String
         }
         
         if let _ = controller as? PersonalDetails2ViewController {
+            Analytics.logEvent("personal_details_step_2",parameters: nil)
             self.userInfo.age = Int(values[PersonalDetailsKey.age.rawValue] as! String)
             self.userInfo.sex = values[PersonalDetailsKey.sex.rawValue] as? Sex
             self.userInfo.weight = values[PersonalDetailsKey.weight.rawValue] as? String
@@ -143,6 +146,7 @@ extension PersonalDetailsViewController : PersonalDetailsDelegate {
         }
         
         if let _ = controller as? PersonalDetails3ViewController {
+            Analytics.logEvent("personal_details_step_3",parameters: nil)
             self.userInfo.smokingStatus = values[PersonalDetailsKey.smokingStatus.rawValue] as? SmokingStatus
         }
         
@@ -151,6 +155,7 @@ extension PersonalDetailsViewController : PersonalDetailsDelegate {
     
     
     func personalDetailsViewController(_ controller: UIViewController, didFinishPickingDiseases values: [String]) {
+        Analytics.logEvent("personal_details_step_4",parameters: nil)
         self.userInfo.backgroundDiseases = values
         self.presenter?.registerUser()
     }

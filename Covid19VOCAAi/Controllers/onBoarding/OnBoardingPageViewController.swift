@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class OnBoardingPageViewController: UIPageViewController, UIPageViewControllerDataSource {
     
@@ -17,10 +18,11 @@ class OnBoardingPageViewController: UIPageViewController, UIPageViewControllerDa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Analytics.logEvent("onboarding_presented",parameters: nil)
         setupControllers()
         setViewControllers([controllers.first!], direction: .forward, animated: true, completion: nil)
         dataSource = self
+        
         
     }
     
@@ -65,6 +67,7 @@ class OnBoardingPageViewController: UIPageViewController, UIPageViewControllerDa
 
 extension OnBoardingPageViewController: OnBoardingDelegate {
     func continueTapped(){
+        Analytics.logEvent("onboarding_continue_tapped",parameters: nil)
         navigate(.personalDetails)
     }
 }

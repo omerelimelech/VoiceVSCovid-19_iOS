@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ExperienceSymptomsViewController: UIViewController {
 
@@ -29,6 +30,9 @@ class ExperienceSymptomsViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: VoiceUpContinueButton) {
         // YES TAG - 1
         // NO TAG - 2
+        let hasSymptoms = (sender.tag==1) ? true :false;
+        Analytics.logEvent("has_symptoms_tapped",parameters: [
+        "has_symptoms": hasSymptoms as NSObject])
         switch sender.tag {
         case 1:
             yesButton.setEnabled()

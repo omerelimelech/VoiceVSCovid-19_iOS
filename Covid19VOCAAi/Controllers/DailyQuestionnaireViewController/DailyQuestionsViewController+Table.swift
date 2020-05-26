@@ -57,7 +57,7 @@ extension DailyQuestionsViewController: UITableViewDelegate, UITableViewDataSour
         guard let view = DailyQuestionsHeaderView().loadNib(StringHelper.stringForClass(DailyQuestionsHeaderView.self)) as? DailyQuestionsHeaderView else { return nil }
         view.imageView.image = UIImage(named: "medical_left_to_right")
         view.imageView.transform = LanguageType.current == .eng ? CGAffineTransform(scaleX: -1, y: 1) : .identity
-        view.titleLabel.text = "Please, andswer the questions"
+        view.titleLabel.text = "Please, answer the questions"
         return view
     }
     

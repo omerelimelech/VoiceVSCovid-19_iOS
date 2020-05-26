@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class DailyQuestionsViewController: UIViewController {
     
     
-    static func initialization() -> DailyQuestionsViewController {
-        return UIStoryboard.init(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "DailyQuestionsViewController") as! DailyQuestionsViewController
+    static func initialization(full_flow:Bool = false) -> DailyQuestionsViewController? {
+        guard let vc =  UIStoryboard.init(name: "PersonalDetails", bundle: nil).instantiateViewController(withIdentifier: "DailyQuestionsViewController") as? DailyQuestionsViewController
+            else { return nil}
+        vc.fullFlowAnalytics = full_flow
+        return vc
     }
+    var fullFlowAnalytics:Bool = false;
     @IBOutlet weak var tableView: UITableView!
     
     var questions = [DailyQuestion]() {
@@ -30,6 +35,8 @@ class DailyQuestionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Analytics.logEvent("daily_questionnaire",parameters: [
+        "full_flow": fullFlowAnalytics as NSObject])
         presenter = DailyQuestionsPresenter(with: self)
         configure()
         presenter?.getDailyQuestions()
@@ -49,6 +56,13 @@ class DailyQuestionsViewController: UIViewController {
     
     func sendResults() {
         print(questions)
+        let has_fever = questions[0].submittedAnswer ?? ""
+        let exposed = questions[1].submittedAnswer ?? ""
+        let covid_positive = questions[2].submittedAnswer ?? ""
+        Analytics.logEvent("daily_questionnaire_continue_tapped",parameters: [
+        "has_fever": has_fever as NSObject,
+        "exposed":exposed as NSObject,
+        "covid_positive":covid_positive as NSObject])
         navigate(.dailyQuestionnaire2)
     }
 }

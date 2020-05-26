@@ -13,7 +13,7 @@ enum VoiceUpNavigation: Navigation {
     case onBoarding
     case homeScreen
     case personalDetails
-    case dailyQuestionnaire
+    case dailyQuestionnaire(full_flow:Bool)
     case dailyQuestionnaire2
     case dailyQuestionnaire3
     case voiceExplainer
@@ -34,8 +34,8 @@ struct VoiceUpAppNavigation: AppNavigation {
                 return UIViewController()
             case .personalDetails:
                 return PersonalDetailsViewController.initialization()
-            case .dailyQuestionnaire:
-                return DailyQuestionsViewController.initialization()
+            case .dailyQuestionnaire(let full_flow):
+                return DailyQuestionsViewController.initialization(full_flow:full_flow)!
             case .dailyQuestionnaire2:
                 return ExperienceSymptomsViewController.initialization()
             case .dailyQuestionnaire3:

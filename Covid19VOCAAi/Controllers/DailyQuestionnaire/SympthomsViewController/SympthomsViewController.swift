@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 struct QuestionElement: Codable {
     let id: Int
@@ -56,6 +57,7 @@ class SympthomsViewController: UIViewController {
         self.presenter = SympthomsPresenter(delegate: self)
         self.presenter?.getQuestions()
         continueButton.setEnabled()
+        Analytics.logEvent("symptoms_view",parameters: nil)
         
     }
     
