@@ -11,6 +11,7 @@ import AVFoundation
 import SVProgressHUD
 import PKHUD
 import SoundWave
+import Firebase
 
 
 class RecordViewController: UIViewController {
@@ -74,7 +75,7 @@ class RecordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Analytics.logEvent("record_view",parameters: nil)
         self.presenter = RecordPresenter(with: self)
         recordingSession = AVAudioSession.sharedInstance()
         try? recordingSession.setCategory(.playAndRecord)
@@ -122,6 +123,8 @@ class RecordViewController: UIViewController {
         indicateIsStoppedRecord()
         self.audioVisualization.audioVisualizationMode = .read
         self.audioVisualization.meteringLevels = meterArr
+        Analytics.logEvent("finished_record",parameters: [
+        "record_number": recordNumber as NSObject])
         //HUD.show(.progress)
         
         //presenter?.sendRecord(with: instructions?.instruction.recordName ?? "")

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FinishViewController: UIViewController {
 
@@ -39,7 +40,7 @@ class FinishViewController: UIViewController {
         .normal("!", size: 18)
         
         checkedInLabel.attributedText = att
-        
+        //Analytics.logEvent("finish_flow_view",parameters:nil)//need flow time
         
 
     }

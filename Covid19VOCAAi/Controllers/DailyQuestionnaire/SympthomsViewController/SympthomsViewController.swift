@@ -63,6 +63,7 @@ class SympthomsViewController: UIViewController {
     
 
     @IBAction func continueTapped(_ sender: GradientButton) {
+        //collectionView
         navigate(.voiceExplainer)
     }
     

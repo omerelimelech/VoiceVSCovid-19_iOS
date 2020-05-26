@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NotificationViewController: UIViewController {
     
@@ -34,6 +35,7 @@ class NotificationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Analytics.logEvent("notification_view",parameters: nil)
         //initialize presenter
         presenter = NotificationPresenter(with:self)
         //arrange question text
@@ -73,6 +75,7 @@ class NotificationViewController: UIViewController {
     }
     
     @IBAction func setLater(_ sender: UIButton) {
+        Analytics.logEvent("user_left_without_set_notification",parameters: nil)
         presenter?.setLater()
     }
     
@@ -102,6 +105,7 @@ extension NotificationViewController:NotificationDelegate{
     //reaction on successful notification
     func notificationOK() {
         //go to next view
+        Analytics.logEvent("user_set_notification",parameters: nil)
         let alert = UIAlertController(title: "Thank you!", message: "Reminder is set successfully", preferredStyle: .alert)
         let action = UIAlertAction(title: "Ok", style: .default) { (action) in
             alert.dismiss(animated: true) {
