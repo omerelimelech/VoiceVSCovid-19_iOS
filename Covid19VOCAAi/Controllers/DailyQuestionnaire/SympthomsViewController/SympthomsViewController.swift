@@ -45,6 +45,8 @@ class SympthomsViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var numSymptoms:Int?
+    
   
     @IBOutlet weak var continueButton: VoiceUpContinueButton!
     var presenter: SympthomsPresenter?
@@ -58,12 +60,13 @@ class SympthomsViewController: UIViewController {
         self.presenter?.getQuestions()
         continueButton.setEnabled()
         Analytics.logEvent("symptoms_view",parameters: nil)
+        numSymptoms? = 1
         
     }
     
 
     @IBAction func continueTapped(_ sender: GradientButton) {
-        //collectionView
+        Analytics.logEvent("symptoms_selected",parameters: ["number_of_symptoms":numSymptoms as NSObject? ?? 0])
         navigate(.voiceExplainer)
     }
     

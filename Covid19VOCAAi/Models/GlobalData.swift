@@ -24,4 +24,9 @@ class GlobalData : NSObject {
         get{ defaults.value(forKey: "agreedToTerms") as? Bool ?? false }
     }
     
+    var startedFlow:Double?{
+        set{defaults.set(newValue,forKey: "startFlow") }
+        get{defaults.value(forKey: "startFlow") as? Double ?? 0}
+    }
+    
 }

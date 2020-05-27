@@ -40,7 +40,11 @@ class FinishViewController: UIViewController {
         .normal("!", size: 18)
         
         checkedInLabel.attributedText = att
-        //Analytics.logEvent("finish_flow_view",parameters:nil)//need flow time
+        let start = GlobalData.shared.startedFlow
+        let now = NSDate().timeIntervalSince1970
+        let diff = now-(start ?? 0)
+        
+        Analytics.logEvent("finish_flow_view",parameters:["flow_time":diff as NSObject])
         
 
     }

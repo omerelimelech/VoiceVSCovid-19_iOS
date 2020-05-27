@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Router.default.setupAppNavigation(appNavigation: VoiceUpAppNavigation())
         UIView.appearance().semanticContentAttribute = .forceLeftToRight
         var vc: UIViewController!
+        GlobalData.shared.startedFlow = NSDate().timeIntervalSince1970
         if isFirstOpen(){
             vc = OnBoardingPageViewController.initialization()
         }else{

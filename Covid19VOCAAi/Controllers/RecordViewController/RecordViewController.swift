@@ -191,6 +191,8 @@ class RecordViewController: UIViewController {
             let instructions = RecordInstructions(stage: nextStage)
             navigate(.voiceRecording(instruction: instructions, number: recordNumber + 1))
         }else{
+            Analytics.logEvent("record_flow_done",parameters: [
+                   "number_of_records": recordNumber as NSObject])
             navigate(.finishRecordScreen)
         }
     }
