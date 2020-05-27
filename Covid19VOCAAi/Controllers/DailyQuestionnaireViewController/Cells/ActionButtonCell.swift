@@ -24,4 +24,17 @@ class ActionButtonCell: UITableViewCell {
         sender.animateTapResponse()
         delegate?.actionButtonDidTap(cell: self, button: actionButton)
     }
+    
+    func setDisabled(){
+        actionButton.startColor = .disabledGray
+        actionButton.endColor = .disabledGray
+        actionButton.isEnabled = false
+    }
+
+    func setEnabled(){
+        actionButton.startColor = .lightBlue
+        actionButton.endColor = .softenBlue
+        actionButton.horizontalMode = true
+        actionButton.isEnabled = true
+    }
 }

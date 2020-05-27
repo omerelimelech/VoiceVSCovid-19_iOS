@@ -8,9 +8,15 @@
 
 import Foundation
 
-struct DailyQuestion {
+// MARK: Question - related types
+
+struct DailyQuestion: Equatable {
     
-    enum Question: String {
+    static func == (lhs: DailyQuestion, rhs: DailyQuestion) -> Bool {
+        return lhs.questionTitle.localized == rhs.questionTitle.localized
+    }
+    
+    enum QuestionTitle: String {
         case tempMeasurement
         case exposureDate
         case testedForPositiveCovid
@@ -44,67 +50,113 @@ struct DailyQuestion {
         case yesNoWithInput(inputType: RelatedData)
     }
     
-    enum Feeling: String, Codable {
-        case same = "SAME"
-        case better = "BETTER"
-        case worse = "WORSE"
-    }
-    
     var text: String {
-        return question.localized
+        return questionTitle.localized
     }
     
-    let question: Question
+    let questionTitle: QuestionTitle
     let type: QuestionType
-    var answerOptions: [String]
+    var answerOptions: [Answer]
     var isNested: Bool = false
-    var submittedAnswer: String? = nil
+    var submittedAnswer: Answer? = nil
     var inputDataAnswer: String? = nil
 }
 
-struct DailyQuestionVM {
-    var question: DailyQuestion
-    var nestedQuestion: DailyQuestion? = nil
+protocol Answer {
+    var localizedAnswer: String { get }
+    func isEqual(to answer: Answer) -> Bool
+}
+
+enum AnswerOption: Answer {
     
-    var type: DailyQuestion.QuestionType {
-        return question.type
+    func isEqual(to answer: Answer) -> Bool {
+        return self == answer as? AnswerOption
+    }
+        
+    case positive
+    case negative
+    
+    var localizedAnswer: String {
+        switch self {
+        case .positive: return "Yes"
+        case .negative: return "No"
+        }
+    }
+}
+
+enum Feeling: String, Codable, Answer {
+    case same = "SAME"
+    case better = "BETTER"
+    case worse = "WORSE"
+    
+    var localizedAnswer: String {
+        switch self {
+            case .same: return "Same"
+            case .better: return "Better"
+            case .worse: return "Worse"
+        }
     }
     
-    var submittedAnswer: String? {
+    func isEqual(to answer: Answer) -> Bool {
+        return self == answer as? Feeling
+    }
+}
+
+// MARK: View Model
+
+struct DailyQuestionVM: Equatable {
+    
+    static func == (lhs: DailyQuestionVM, rhs: DailyQuestionVM) -> Bool {
+        return lhs.origin == rhs.origin
+    }
+    
+    var origin: DailyQuestion
+    var nestedQuestion: DailyQuestion? = nil
+    var currentlyShowsNested = false
+    
+    var type: DailyQuestion.QuestionType {
+        return origin.type
+    }
+    
+    var submittedAnswer: Answer? {
         get {
-            return question.submittedAnswer
+            return origin.submittedAnswer
         }
         set {
-            question.submittedAnswer = newValue
+            origin.submittedAnswer = newValue
         }
     }
     
     var inputDataAnswer: String? {
         get {
-            return question.inputDataAnswer
+            return origin.inputDataAnswer
         }
         set {
-            question.inputDataAnswer = newValue
+            origin.inputDataAnswer = newValue
         }
+    }
+    
+    var isNested: Bool {
+        return origin.isNested
     }
 }
 
+// MARK: Server Model
+
 struct DailyQuestionsDTO: Codable {
     
-    enum Feeling: String, Codable {
-        case same = "SAME"
-        case better = "BETTER"
-        case worse = "WORSE"
-    }
-    
-    let id: Int
-    let filledOn: String
-    let tag: String
-    let tempMeasurement: String
-    let exposureDate: String
-    let positiveTestDate: String
-    let negativeTestDate: String
-    let generalFeeling: Feeling
+    var id: Int = 0
+    var filledOn: String = ""
+    var tag: String = ""
+    var tempMeasurement: String?
+    var exposureDate: String?
+    var positiveTestDate: String?
+    var negativeTestDate: String?
+    var generalFeeling: Feeling?
+}
+
+struct DateQuestionsPostDTO: Encodable {
+    let data: DailyQuestionsDTO
 }
 
 

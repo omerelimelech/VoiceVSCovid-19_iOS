@@ -11,8 +11,9 @@ import UIKit
 import UIKit
 
 protocol QuestionListCellDelegate: class {
-    func questionListCell(_ cell: QuestionListCell, didSelectAnswer answer: String)
-    func questionListCell(_ cell: QuestionListCell, inputFieldTextDidChange text: String)
+    func questionListCellDidSelectPositiveAnswer(forQuestion question: DailyQuestionVM)
+    func questionListCellDidSelectNegativeAnswer(forQuestion question: DailyQuestionVM)
+    func questionListCell(inputFieldTextDidChange text: String, forQuestion question: DailyQuestionVM)
     func questionListCellDatePickerRequestedFor(cell: QuestionListCell)
 }
 
@@ -23,10 +24,10 @@ class QuestionListCell: UITableViewCell {
     static let ReuseIdentifier = StringHelper.stringForClass(QuestionListCell.self)
     
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var firstOptionCheckmark: UIButton!
-    @IBOutlet weak var firstOptionCheckmarkLabel: UILabel!
-    @IBOutlet weak var secondOptionCheckmark: UIButton!
-    @IBOutlet weak var secondOptionCheckmarkLabel: UILabel!
+    @IBOutlet weak var positiveOptionCheckmark: UIButton!
+    @IBOutlet weak var positiveOptionCheckmarkLabel: UILabel!
+    @IBOutlet weak var negativeOptionCheckmark: UIButton!
+    @IBOutlet weak var negativeOptionCheckmarkLabel: UILabel!
     @IBOutlet weak var bottomSeparator: UIView!
     
     lazy var inputField: UITextField = {
@@ -84,6 +85,8 @@ class QuestionListCell: UITableViewCell {
         }
     }
     
+    var hidesTextFieldOnNegativeAnswer: Bool = true
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         configure()
@@ -95,7 +98,7 @@ class QuestionListCell: UITableViewCell {
         
         NSLayoutConstraint.activate([
             inputFieldLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 27),
-            inputFieldLabel.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 24),
+            inputFieldLabel.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 32),
             
             inputField.centerYAnchor.constraint(equalTo: inputFieldLabel.centerYAnchor),
             inputField.widthAnchor.constraint(equalToConstant: 100),
@@ -120,17 +123,13 @@ class QuestionListCell: UITableViewCell {
     
     func didSetQuestion() {
         guard let currentQuestion = question else { return }
-        label.text = currentQuestion.question.text
-        firstOptionCheckmarkLabel.text = currentQuestion.question.answerOptions.first
-        secondOptionCheckmarkLabel.text = currentQuestion.question.answerOptions.last
+        label.text = currentQuestion.origin.text
+        positiveOptionCheckmarkLabel.text = (currentQuestion.origin.answerOptions as? [AnswerOption])?.first?.localizedAnswer
+        negativeOptionCheckmarkLabel.text = (currentQuestion.origin.answerOptions  as? [AnswerOption])?.last?.localizedAnswer
         inputField.text = currentQuestion.inputDataAnswer
         
         switch currentQuestion.type {
         case .yesNoWithInput(inputType: let inputType):
-            
-            inputFieldLabel.isHidden = false
-            inputFieldBottomLine.isHidden = false
-            inputField.isHidden = false
             
             switch inputType {
             case .date(inputFieldName: let datePickerTitle):
@@ -146,12 +145,65 @@ class QuestionListCell: UITableViewCell {
                 textFieldCoverView.isHidden = true
             }
             
+            if hidesTextFieldOnNegativeAnswer, let submittedAnswer = question?.submittedAnswer as? AnswerOption, submittedAnswer == .positive {
+                setHidden(false, animated: true)
+            } else if !hidesTextFieldOnNegativeAnswer, let _ = question?.submittedAnswer as? AnswerOption {
+                setHidden(false, animated: true)
+            } else {
+                setHidden(true, animated: true)
+            }
+        
         default:
-            inputFieldLabel.isHidden = true
-            inputFieldBottomLine.isHidden = true
-            inputField.isHidden = true
+            setInputFieldHidden(true, animated: false)
         }
+        
         layoutIfNeeded()
+    }
+    
+    func setHidden(_ isHidden: Bool, animated: Bool) {
+        guard let question = question else { return }
+        switch question.type {
+        case .yesNoWithInput:
+            setInputFieldHidden(isHidden, animated: animated)
+        default: break
+        }
+    }
+    
+    func setInputFieldHidden(_ isHidden: Bool, animated: Bool) {
+        
+        func set() {
+            inputFieldLabel.isHidden = isHidden
+            inputFieldBottomLine.isHidden = isHidden
+            inputField.isHidden = isHidden
+        }
+        
+        guard animated else { set(); return }
+        
+        if isHidden {
+            UIView.animate(withDuration: 0.2,
+                           delay: 0,
+                           animations: {
+                            self.inputFieldLabel.transform = CGAffineTransform(translationX: -300, y: 0)
+                            self.inputFieldBottomLine.transform = CGAffineTransform(translationX: -300, y: 0)
+                            self.inputField.transform = CGAffineTransform(translationX: -300, y: 0)
+            }) { _ in
+                set()
+            }
+        } else {
+            
+            set()
+            
+            UIView.animate(withDuration: 0.3,
+                           delay: 0,
+                           usingSpringWithDamping: 0.8,
+                           initialSpringVelocity: 6,
+                           options: [.beginFromCurrentState],
+                           animations: {
+                                self.inputFieldLabel.transform = .identity
+                                self.inputFieldBottomLine.transform = .identity
+                                self.inputField.transform = .identity
+            }, completion: nil)
+        }
     }
     
     //Called if question input based on date
@@ -169,7 +221,8 @@ class QuestionListCell: UITableViewCell {
     }
     
     func submit() {
-        delegate?.questionListCell(self, inputFieldTextDidChange: inputField.text ?? "")
+        guard let question = question else { return }
+        delegate?.questionListCell(inputFieldTextDidChange: inputField.text ?? "", forQuestion: question)
     }
 }
 
@@ -177,21 +230,22 @@ class QuestionListCell: UITableViewCell {
 
 extension QuestionListCell {
     func selectYes() {
-        self.firstOptionCheckmark.setImage(self.selectedButtonImage, for: .normal)
-        self.secondOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal)
-        delegate?.questionListCell(self, didSelectAnswer: question?.question.answerOptions.first ?? "")
+        self.positiveOptionCheckmark.setImage(self.selectedButtonImage, for: .normal)
+        self.negativeOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal)
+        guard let question = question else { return }
+        delegate?.questionListCellDidSelectPositiveAnswer(forQuestion: question)
     }
     
     func selectNo() {
-        self.firstOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal)
-        self.secondOptionCheckmark.setImage(self.selectedButtonImage, for: .normal)
-        
-        delegate?.questionListCell(self, didSelectAnswer: question?.question.answerOptions.last ?? "")
+        self.positiveOptionCheckmark.setImage(self.unselectedButtonImage, for: .normal)
+        self.negativeOptionCheckmark.setImage(self.selectedButtonImage, for: .normal)
+        guard let question = question else { return }
+        delegate?.questionListCellDidSelectNegativeAnswer(forQuestion: question)
     }
     
     func setDefaultState() {
-        firstOptionCheckmark.setImage(unselectedButtonImage, for: .normal)
-        secondOptionCheckmark.setImage(unselectedButtonImage, for: .normal)
+        positiveOptionCheckmark.setImage(unselectedButtonImage, for: .normal)
+        negativeOptionCheckmark.setImage(unselectedButtonImage, for: .normal)
     }
     
     @IBAction func didSelectFirstOption(_ sender: UIButton) {

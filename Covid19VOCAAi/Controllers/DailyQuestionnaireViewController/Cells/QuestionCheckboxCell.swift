@@ -9,7 +9,7 @@
 import UIKit
 
 protocol QuestionCheckboxCellDelegate: class {
-    func questionCheckboxCell(_ cell: QuestionCheckboxCell, didSelectVariant variant: String)
+    func questionCheckboxCell(didSelectAnswer answer: Answer, forQuestion question: DailyQuestion)
 }
 
 class QuestionCheckboxCell: UITableViewCell {
@@ -27,8 +27,8 @@ class QuestionCheckboxCell: UITableViewCell {
     }()
     
     var question: DailyQuestion!
-    private var variants = [String]()
-    private var selectedVariant: String? = nil
+    private var variants = [Answer]()
+    private var selectedVariant: Answer? = nil
     
     private var checkboxViews = [CheckboxView]()
     
@@ -48,10 +48,10 @@ class QuestionCheckboxCell: UITableViewCell {
     }
     
     func setData(question: DailyQuestionVM) {
-        self.question = question.question
-        self.variants = question.question.answerOptions
+        self.question = question.origin
+        self.variants = question.origin.answerOptions
         
-        label.text = question.question.text
+        label.text = question.origin.text
         
         configureStackView()
     }
@@ -60,8 +60,9 @@ class QuestionCheckboxCell: UITableViewCell {
         
         var checkboxes = [CheckboxView]()
         
-        for variant in variants {
-            let checkboxView = CheckboxView(title: variant, delegate: self, isSelected: question.submittedAnswer == variant)
+        for (index, variant) in variants.enumerated() {
+            let checkboxView = CheckboxView(title: variant.localizedAnswer, delegate: self, isSelected: question.submittedAnswer?.isEqual(to: variant) ?? false)
+            checkboxView.tag = index
             checkboxes.append(checkboxView)
         }
         checkboxViews = checkboxes
@@ -83,17 +84,18 @@ class QuestionCheckboxCell: UITableViewCell {
 }
 
 extension QuestionCheckboxCell: CheckboxViewDelegate {
-    func didSelectCheckboxWithTitle(_ title: String) {
-        guard title != selectedVariant else { return }
-        selectedVariant = title
-        delegate?.questionCheckboxCell(self, didSelectVariant: title)
+    func didSelectCheckbox(_ checkbox: UIView) {
+        let selected = variants[checkbox.tag]
+        //guard !selected.isEqual(to: variants[checkbox.tag]) else { return }
+        selectedVariant = selected
+        delegate?.questionCheckboxCell(didSelectAnswer: selected, forQuestion: question)
     }
 }
 
 // MARK: - Checkbox View
 
 protocol CheckboxViewDelegate: class {
-    func didSelectCheckboxWithTitle(_ title: String)
+    func didSelectCheckbox(_ checkbox: UIView)
 }
 
 class CheckboxView: UIView {
@@ -159,6 +161,6 @@ class CheckboxView: UIView {
     }
     
     @objc func checkboxDidTap() {
-        delegate?.didSelectCheckboxWithTitle(title)
+        delegate?.didSelectCheckbox(self)
     }
 }

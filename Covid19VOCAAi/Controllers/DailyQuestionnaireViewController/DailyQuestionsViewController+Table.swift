@@ -14,7 +14,7 @@ extension DailyQuestionsViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return questions.count + 1 // + continue button row
+        return rows.count + 1 // + continue button row
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -23,16 +23,13 @@ extension DailyQuestionsViewController: UITableViewDelegate, UITableViewDataSour
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ActionButtonCell.ReuseIdentifier, for: indexPath) as? ActionButtonCell else { return UITableViewCell() }
             cell.actionButton.setTitle("Continue", for: .normal)
             cell.delegate = self
+            isValid() ? cell.setEnabled() : cell.setDisabled()
             return cell
         }
         
-        let question = questions[indexPath.row]
+        let question = rows[indexPath.row].question
         
         switch question.type {
-        case .yesNoType:
-            //No case for this cell
-            return UITableViewCell()
-            
         case .checkboxed:
             
             guard let cell = tableView.dequeueReusableCell(withIdentifier: QuestionCheckboxCell.ReuseIdentifier, for: indexPath) as? QuestionCheckboxCell else { return UITableViewCell() }
@@ -40,12 +37,19 @@ extension DailyQuestionsViewController: UITableViewDelegate, UITableViewDataSour
             cell.setData(question: question)
             return cell
             
-        case .yesNoWithInput:
+        case .yesNoType, .yesNoWithInput:
             
             guard let cell = tableView.dequeueReusableCell(withIdentifier: QuestionListCell.ReuseIdentifier, for: indexPath) as? QuestionListCell else { return UITableViewCell() }
             cell.delegate = self
             cell.question = question
-             return cell
+            
+            switch question.origin.questionTitle {
+            case .isResultPositive:
+                cell.hidesTextFieldOnNegativeAnswer = false
+            default:
+                cell.hidesTextFieldOnNegativeAnswer = true
+            }
+            return cell
         }
     }
     
@@ -69,15 +73,34 @@ extension DailyQuestionsViewController: UITableViewDelegate, UITableViewDataSour
 // MARK: Cell Delegate
 
 extension DailyQuestionsViewController: QuestionListCellDelegate {
-    
-    func questionListCell(_ cell: QuestionListCell, didSelectAnswer answer: String) {
-        guard let indexPath = tableView.indexPath(for: cell) else { return }
-        questions[indexPath.row].submittedAnswer = answer
+    func questionListCellDidSelectPositiveAnswer(forQuestion question: DailyQuestionVM) {
+        
+        if let parent = questions.first(where: { $0.nestedQuestion == question.origin }), let index = questions.firstIndex(of: parent) {
+            questions[index].nestedQuestion?.submittedAnswer = AnswerOption.positive
+        } else {
+            guard let index = questions.firstIndex(of: question) else { return }
+            questions[index].submittedAnswer = AnswerOption.positive
+            checkForNestedQuestions(question: questions[index], shouldExpandNested: true)
+        }
     }
     
-    func questionListCell(_ cell: QuestionListCell, inputFieldTextDidChange text: String) {
-        guard let indexPath = tableView.indexPath(for: cell) else { return }
-        questions[indexPath.row].inputDataAnswer = text
+    func questionListCellDidSelectNegativeAnswer(forQuestion question: DailyQuestionVM) {
+        if let parent = questions.first(where: { $0.nestedQuestion == question.origin }), let index = questions.firstIndex(of: parent) {
+            questions[index].nestedQuestion?.submittedAnswer = AnswerOption.negative
+        } else {
+            guard let index = questions.firstIndex(of: question) else { return }
+            questions[index].submittedAnswer = AnswerOption.negative
+            checkForNestedQuestions(question: questions[index], shouldExpandNested: false)
+        }
+    }
+
+    func questionListCell(inputFieldTextDidChange text: String, forQuestion question: DailyQuestionVM) {
+        if let parent = questions.first(where: { $0.nestedQuestion == question.origin }), let index = questions.firstIndex(of: parent) {
+            questions[index].nestedQuestion?.inputDataAnswer = text
+        } else {
+            guard let index = questions.firstIndex(of: question) else { return }
+            questions[index].inputDataAnswer = text
+        }
     }
     
     func questionListCellDatePickerRequestedFor(cell: QuestionListCell) {
@@ -96,9 +119,9 @@ extension DailyQuestionsViewController: QuestionListCellDelegate {
 
 extension DailyQuestionsViewController: QuestionCheckboxCellDelegate {
     
-    func questionCheckboxCell(_ cell: QuestionCheckboxCell, didSelectVariant variant: String) {
-        guard let indexPath = tableView.indexPath(for: cell) else { return }
-        questions[indexPath.row].submittedAnswer = variant
+    func questionCheckboxCell(didSelectAnswer answer: Answer, forQuestion question: DailyQuestion) {
+        guard let index = questions.firstIndex(where: {$0.origin == question}) else { return }
+        questions[index].submittedAnswer = answer
     }
 }
 
