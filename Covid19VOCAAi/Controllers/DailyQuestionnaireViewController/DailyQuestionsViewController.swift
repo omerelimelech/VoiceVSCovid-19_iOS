@@ -42,6 +42,7 @@ class DailyQuestionsViewController: UIViewController {
         tableView.allowsSelection = false
         tableView.estimatedRowHeight = 110
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.showsVerticalScrollIndicator = false
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: StringHelper.stringForClass(QuestionListCell.self), bundle: nil), forCellReuseIdentifier: "QuestionListCell")
@@ -122,7 +123,7 @@ class DailyQuestionsViewController: UIViewController {
         
         SVProgressHUD.show()
         
-        let postDTO = try? DateQuestionsPostDTO(data: measurementDTO).asDictionary()
+        let postDTO = try? measurementDTO.asDictionary()
         
         APIManager.shared.sendMeasurment(method: .post, params: postDTO) { [weak self] (result) in
             

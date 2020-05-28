@@ -67,6 +67,8 @@ protocol Answer {
     func isEqual(to answer: Answer) -> Bool
 }
 
+// MARK: Answer
+
 enum AnswerOption: Answer {
     
     func isEqual(to answer: Answer) -> Bool {
@@ -144,7 +146,6 @@ struct DailyQuestionVM: Equatable {
 // MARK: Server Model
 
 struct DailyQuestionsDTO: Codable {
-    
     var id: Int = 0
     var filledOn: String = ""
     var tag: String = ""
@@ -153,10 +154,6 @@ struct DailyQuestionsDTO: Codable {
     var positiveTestDate: String?
     var negativeTestDate: String?
     var generalFeeling: Feeling?
-}
-
-struct DateQuestionsPostDTO: Encodable {
-    let data: DailyQuestionsDTO
 }
 
 
