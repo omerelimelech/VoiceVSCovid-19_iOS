@@ -34,16 +34,32 @@ class APIManager : NSObject {
     private let Alamofire = AF
     func sendReport(params: [String: Any], completion: @escaping completion){
         let url = UrlManager.shared.url(endpoint: .submissions)
-        print (url)
         self.baseRequest(withUrlString: url, method: .post, params: params, completion: completion)
-        
     }
     
-    func submitRecord(submitId: String, recordName: String, completion: @escaping completion){
+    func submitRecord(submitId: String, recordName: String, completion: @escaping completion) {
         let url = UrlManager.shared.url(endpoint: .record(submitId, recordName))
-        print (url)
         let json = ["fileType": "audio/wav"]
         self.baseRequest(withUrlString: url, method: .post, params: json, completion: completion)
+    }
+    
+    func postVoiceRecording(measurementId: Int, withName name: String, file: Data, completion: @escaping completion) {
+        
+        let url = UrlManager.shared.url(endpoint: .voiceRecording)
+        
+        let audioMetadata = ["recordingType" : name, "fileFormat" : "wav"]
+        let dataParameters = try? JSONEncoder().encode(audioMetadata)
+        
+        AF.upload(multipartFormData: { (multipart) in
+            
+            multipart.append(file, withName: "recordingFile", fileName: UUID().uuidString, mimeType: "audio/wav")
+            multipart.append("\(measurementId)".data(using: .utf8) ?? Data(), withName: "measurement")
+            multipart.append(dataParameters ?? Data(), withName: "recordingMetadata")
+            
+        }, to: url).responseJSON { (res) in
+            print(res)
+            
+        }
     }
     
     func submitFeedback(submitId: String){
@@ -179,11 +195,8 @@ class APIManager : NSObject {
             case .failure(let error):
                 completion(.failure(error))
             }
-            
         }
     }
-    
-    
 }
 
 //MARK: Base requests

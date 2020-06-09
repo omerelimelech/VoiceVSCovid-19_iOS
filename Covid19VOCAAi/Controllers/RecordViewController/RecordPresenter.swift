@@ -15,8 +15,6 @@ class RecordPresenter: BasePresenter {
     
     var model = RecordModel()
     
-    
-    
     init(with delegate: RecordDelegate){
         self.delegate = delegate
     }
@@ -57,9 +55,6 @@ class RecordPresenter: BasePresenter {
         
     }
     
-  
-    
-    
     func sendRecord(with recordName: String){
         self.model.sendRecord(recordName: recordName) { (result) in
             self.handleResult(result: result, type: S3Model.self) { (s3) in
@@ -70,5 +65,21 @@ class RecordPresenter: BasePresenter {
                 self.delegate?.recordPresenter(self, didPostRecordWith: s3)
             }
         }
+    }
+    
+    func postRecord(recordName: String) {
+        
+        guard let file = audioFile(withName: recordName), let id = GlobalData.shared.currentMeasurementId else { return }
+        
+        APIManager.shared.postVoiceRecording(measurementId: id,
+                                             withName: recordName,
+                                             file: file) { (res) in
+                                                
+        }
+    }
+    
+    func audioFile(withName name: String) -> Data? {
+        let audioFileUrl = getDocumentsDirectory().appendingPathComponent("\(name).wav")
+        return try? Data (contentsOf: audioFileUrl)
     }
 }

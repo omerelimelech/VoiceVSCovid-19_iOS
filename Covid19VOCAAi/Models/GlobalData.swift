@@ -19,6 +19,8 @@ class GlobalData : NSObject {
         get{ defaults.value(forKey: "currentSubmissionId") as? String }
     }
     
+    var currentMeasurementId: Int? = nil
+    
     var agreedToTerms: Bool? {
         set{ defaults.set(newValue, forKey: "agreedToTerms") }
         get{ defaults.value(forKey: "agreedToTerms") as? Bool ?? false }

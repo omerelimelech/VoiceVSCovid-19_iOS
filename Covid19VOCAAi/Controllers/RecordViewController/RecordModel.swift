@@ -24,5 +24,14 @@ class RecordModel : NSObject {
         APIManager.shared.submitRecord(submitId: GlobalData.shared.currentSubmissionId ?? "", recordName: recordName, completion: completion)
     }
     
-    
+    func postRecord(recordName: String) {
+        
+    }
+}
+
+struct VoiceRecordingDTO: Codable {
+    var id: Int
+    var recordingFile: String
+    var recordingMetadata: String
+    var measurement: Int
 }

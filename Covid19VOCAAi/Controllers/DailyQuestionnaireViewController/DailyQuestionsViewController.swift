@@ -89,6 +89,7 @@ class DailyQuestionsViewController: UIViewController {
                                                negativeTestDate: nil,
                                                generalFeeling: nil)
         
+        measurementDTO.id = Int(GlobalData.shared.currentSubmissionId ?? "") ?? 0
         measurementDTO.tag = "3fa85f64-5717-4562-b3fc-2c963f66afa6"
         measurementDTO.filledOn = serverDateFromCurrentDate()
         
@@ -122,16 +123,18 @@ class DailyQuestionsViewController: UIViewController {
         }
         
         SVProgressHUD.show()
-        
-        let postDTO = try? measurementDTO.asDictionary()
-        
-        APIManager.shared.sendMeasurment(method: .post, params: postDTO) { [weak self] (result) in
+        presenter?.sendMeasurement(measurementObject: measurementDTO, completion: { [weak self] (res) in
+            SVProgressHUD.hideOnMain()
             
-                self?.presenter?.handleResult(result: result, type: DailyQuestionsDTO.self, completion: { [weak self] (res) in
-                    SVProgressHUD.hideOnMain()
-                    self?.navigate(.dailyQuestionnaire2)
-                })
-        }
+            switch res {
+            case .success(let res):
+                guard let resDict = res as? [String : Any] else { return }
+                GlobalData.shared.currentMeasurementId = resDict["id"] as? Int
+                self?.navigate(.dailyQuestionnaire2)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        })
     }
     
     func serverDateFromCurrentDate() -> String {

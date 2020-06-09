@@ -37,5 +37,10 @@ class DailyQuestionsPresenter: BasePresenter{
     func getDailyQuestions() {
         delegate?.dailyQuestionsPresenter(didUpdateWith: dailyQuestionsDataSource)
     }
+    
+    func sendMeasurement(measurementObject: DailyQuestionsDTO, completion: @escaping completion) {
+        let postDTO = try? measurementObject.asDictionary()
+        APIManager.shared.sendMeasurment(method: .post, params: postDTO, completion: completion)
+    }
 }
 

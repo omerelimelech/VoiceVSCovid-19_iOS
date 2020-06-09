@@ -19,6 +19,7 @@ struct UrlManager {
             typealias RawValue = String
             case submissions
             case record(String, String)
+            case voiceRecording
             case feedback(String)
             case me
             case questions
@@ -58,6 +59,8 @@ struct UrlManager {
                 return "/api/ppg-measurement/"
                case .measurment:
                 return "/api/measurement/"
+               case .voiceRecording:
+                return "/api/voice-recording"
             }
                 
            }

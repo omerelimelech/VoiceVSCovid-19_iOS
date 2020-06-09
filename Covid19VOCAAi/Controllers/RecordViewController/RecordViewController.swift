@@ -122,9 +122,8 @@ class RecordViewController: UIViewController {
         indicateIsStoppedRecord()
         self.audioVisualization.audioVisualizationMode = .read
         self.audioVisualization.meteringLevels = meterArr
-        //HUD.show(.progress)
-        
-        //presenter?.sendRecord(with: instructions?.instruction.recordName ?? "")
+        HUD.show(.progress)
+        presenter?.postRecord(recordName: instructions?.instruction.recordName ?? "")
     }
     
     var meterArr = [Float]()
@@ -218,13 +217,10 @@ extension RecordViewController: RecordDelegate{
         HUD.hide()
         recordButton.setImage(UIImage(named: "rec"), for: .normal)
     }
-    
-    
 }
 
 
 extension RecordViewController {
-    
     
     func startRecording() {
         audioVisualization.audioVisualizationMode = .write
@@ -234,5 +230,4 @@ extension RecordViewController {
         self.presenter?.startRecording(recorder: self.audioRecorder)
                self.timer = Timer.scheduledTimer(timeInterval: 0.0295, target: self, selector: #selector(refreshAudioView(_:)), userInfo: nil, repeats: true)
        }
-    
 }
