@@ -18,7 +18,7 @@ class OnBoardingDoneViewController: TransformableViewController {
     
     struct strings{
         static let letUsKnow = "Let us know you better!"
-        static let yourvoice = "your voice can beat the COVID-19"
+        static let yourvoice = "your voice can beat respiratory disease"
         static let getStarted = "Get Started".localized()
     }
     @IBOutlet weak var continueButton: GradientButton!

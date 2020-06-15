@@ -15,8 +15,8 @@ class OnBoarding1ViewController: TransformableViewController {
         static let voice = "voice ".localized()
         static let can = "can ".localized()
         static let beat = "beat ".localized()
-        static let theCovid19 = "the COVID-19 ".localized()
-        static let yourVoiceCanBeatCovid19 = "Your voice can beat the COVID-19".localized()
+        static let theCovid19 = "respiratory disease".localized()
+        static let yourVoiceCanBeatCovid19 = "Your voice can beat respiratory disease".localized()
         static let now = "Now".localized()
     }
     @IBOutlet weak var topLabel: UILabel!

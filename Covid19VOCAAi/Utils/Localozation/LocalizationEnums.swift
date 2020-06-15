@@ -71,11 +71,11 @@ enum Diagnoses : String, LocalizedEnum{
 enum CurrentStatus : String, LocalizedEnum{
     case notIn = "Not in isolation"
     case hospitalized = "Hospitalized"
-    case dueToCovid = "in isolation due to being diagnoed with COVID-19"
+    case dueToCovid = "in isolation due to being diagnosed with respiratory disease"
     
-    case dueToTravel = "in isulation due to recent international travel"
-    case contactWithIndividual = "in isolation due to contant with an individual who was infected with coronavirus or an individual who recently"
-    case dueToGovernment = "in isulation due to govenrment regulations"
+    case dueToTravel = "in isolation due to recent international travel"
+    case contactWithIndividual = "in isolation due to contact with an individual who was infected or an individual who recently"
+    case dueToGovernment = "in isolation due to government regulations"
     
     func localizedString() -> String {
         return self.rawValue.localized()
@@ -134,7 +134,7 @@ enum Sympthoms : String, LocalizedEnum {
 
 
 enum TempertureType : String, LocalizedEnum{
-    case celsious = "Celsious"
+    case celsious = "Celsius"
     case fahrenheit = "Fahrenheit"
     
     func localizedString() -> String {

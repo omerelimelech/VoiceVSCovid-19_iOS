@@ -44,7 +44,7 @@ class FormPresenter: BasePresenter{
     }
     
     func configureAreYouDisgnoseDataSource(view: ConfigureView){
-        configure(view: view, with: "Were you diagnosed with COVID-19?".localized(), dataSource: model.areYouDisgnoseDataSource, isPrimary: true)
+        configure(view: view, with: "Were you diagnosed with Respiratory disease?".localized(), dataSource: model.areYouDisgnoseDataSource, isPrimary: true)
     }
     
     func configureSympthoms(view: ConfigureView){

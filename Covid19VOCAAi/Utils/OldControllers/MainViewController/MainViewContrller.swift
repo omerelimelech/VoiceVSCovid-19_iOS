@@ -59,12 +59,12 @@ func adjustUITextViewHeight(arg : UITextView)
 extension MainViewController {
     
     func setupTexts(){
-        self.bottomTextView.text = "Corona Voice Detect, is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO & Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevention in spreading. We’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with the virus from voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect COVID-19 and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis of Coronavirus.".localized()
+        self.bottomTextView.text = "VocaApp is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO & Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevent the spread of disease. We’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with respiratory disease using voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect respiratory diseases and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis.".localized()
         
-        self.topTextVIew.text = "The project, Corona Voice Detect, was created for early diagnosis of COVID-19 (Coronavirus). It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors.".localized()
+        self.topTextVIew.text = "The project was created for early diagnosis of respiratory disease. It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors.".localized()
         
         
-        summaryTextView.text = "Following the success of the data collection phase, people will soon be able to determine the likelihood of contracting the virus – with just one short voice recording\nNOW THAT SOUNDS REMARKABLE!!!".localized()
+        summaryTextView.text = "Following the success of the data collection phase, people will soon be able to determine the likelihood of contracting respiratory disease – with just one short voice recording\nNOW THAT SOUNDS REMARKABLE!!!".localized()
         
     }
 }

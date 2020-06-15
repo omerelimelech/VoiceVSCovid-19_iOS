@@ -15,7 +15,7 @@ class NewMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        mainTextView.text = "Together with researches from all around the world, we are developing a COVID19 diagnostic tool that is based on your voice samples only from both healthy individuals and those tested positive for Coronavirus. Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of Coronavirus and bring remote testing to every human in the world at NO EXPENSE!.".localized()
+        mainTextView.text = "Together with researchers from all around the world, we are developing a diagnostic tool that is based on your voice samples only from both healthy individuals and those tested positive for respiratory diseases. Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of viruses and bring remote testing to every human in the world at NO EXPENSE!.".localized()
     }
     @IBAction func recordTapped(_ sender: UIButton) {
         guard let navigation = FormNavigationController.initialization() as? UINavigationController else {return}

@@ -13,7 +13,7 @@ class OnBoarding2ViewController: TransformableViewController {
     struct strings {
         static let weThank = "We Thank ".localized()
         static let you = "You".localized()
-        static let topExp = "By using this app you are helping strengthen our collective knowledge about COVID-19, so we can get better at containing it, and ultimately defeat it".localized()
+        static let topExp = "By using this app you are helping strengthen our collective knowledge about respiratory disease, so we can get better at containing it, and ultimately defeat it".localized()
         static let research = "Research "
         static let withYou = "With You".localized()
         static let bottomExp = "This research is led by Dr. Tal Patalon, MD, Head of Innovation at Assuta Ashdod Hospital, in collaboration with the Weizmann Institute. The COVID Case Tracker was designed by doctors and scientists and originated as a volunteer initiative from the COVID-19 Sprint organized by Assuta Ashdod Hospital and IDF Innovation.".localized()

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="45V-g9-BUn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="45V-g9-BUn">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -168,7 +168,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGh-uP-eif">
                                                 <rect key="frame" x="0.0" y="230" width="375" height="120"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid-19 (CoronaVirus)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2t-uZ-6wB">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respiratory diseases" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2t-uZ-6wB">
                                                         <rect key="frame" x="16" y="0.0" width="351" height="112"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
                                                         <color key="textColor" red="0.77254901960784317" green="0.12156862745098039" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -187,7 +187,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRZ-XZ-Vur">
                                                 <rect key="frame" x="0.0" y="360" width="375" height="89"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Voca.ai and Carnegie Mellon University partner to enable fast diagnosis of COVID-19." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ke-oI-mNW">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Voca.ai and Carnegie Mellon University partner to enable fast diagnosis of respiratory disease." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ke-oI-mNW">
                                                         <rect key="frame" x="16" y="0.0" width="351" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="QV5-jA-Gfg"/>
@@ -211,11 +211,11 @@
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-xu-VDo">
                                                         <rect key="frame" x="8" y="0.0" width="359" height="562.5"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <string key="text">The project, Corona Voice Detect, was created for early diagnosis of COVID-19 (Coronavirus). It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors.
+                                                        <mutableString key="text">The project VoiceApp was created for early diagnosis of respiratory disease. It combines recently developed AI and voice forensic technologies, finding specific patterns in voice, tone and other sounds that we produce as we speak, that relate to unique illnesses and other human factors.
 
-But first we need your help! We need to curate recordings from both healthy individuals and those tested positive for Coronavirus in order to gather enough data for consumer use. Please record your voice daily and reply to a few questions to help us fight this illness! Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of Coronavirus and bring remote testing to every human in the world at NO EXPENSE!
+But first we need your help! We need to curate recordings from both healthy individuals and those tested positive in order to gather enough data for consumer use. Please record your voice daily and reply to a few questions to help us fight illness! Make your mark and become a part of this historic journey by helping us diagnose and slow the spreading of respiratory disease and bring remote testing to every human in the world at NO EXPENSE!
 
-CLICK BELOW TO ANSWER THE QUESTIONNAIRE &amp; RECORD YOUR VOICE TO HELP US STOP COVID-19.</string>
+CLICK BELOW TO ANSWER THE QUESTIONNAIRE &amp; RECORD YOUR VOICE TO HELP US STOP DISEASE.</mutableString>
                                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -296,9 +296,7 @@ CLICK BELOW TO ANSWER THE QUESTIONNAIRE &amp; RECORD YOUR VOICE TO HELP US STOP 
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8I-o6-QqA">
                                                         <rect key="frame" x="16" y="0.0" width="343" height="1014.5"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                        <string key="text">Corona Voice Detect, is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO &amp; Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevention in spreading. 
-
-We’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with the virus from voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect COVID-19 and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis of Coronavirus.</string>
+                                                        <mutableString key="text">VocaApp is led by Dr. Shmuel Ur a renowned Israeli inventor and Dr. Alan Bekker, CTO &amp; Co-founder at Voca.ai. The success of this project will have an immense impact on the health of our communities and prevent the spread of disease. We’re starting with global data collection. With this data, we will be able to identify and develop technologies to determine the probability of being infected with respiratory disease using voice analysis. The research and development effort is being conducted in collaboration with Professor Rita Singh from Carnegie Mellon University, and other researchers worldwide. Researchers will use this data to study and develop algorithms that will automatically detect respiratory diseases and related illnesses from voice. These will potentially serve as rapid tests that can be performed over a phone or computer, and aid in the diagnosis</mutableString>
                                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -450,7 +448,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
             </objects>
             <point key="canvasLocation" x="-691" y="68"/>
         </scene>
-        <!--Corona Form-->
+        <!--Health Form-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="FormViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FormViewController" customModule="VoiceUp" customModuleProvider="target" sceneMemberID="viewController">
@@ -594,7 +592,7 @@ NOW THAT SOUNDS REMARKABLE!!!</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Corona Form" id="fnJ-K2-kEb">
+                    <navigationItem key="navigationItem" title="Health Form" id="fnJ-K2-kEb">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="multiply" catalog="system" id="7Wy-gU-pGc">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -661,9 +659,9 @@ CONCISE SUMMARY</string>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m2Q-5m-Uvg">
                                                         <rect key="frame" x="24" y="0.0" width="327" height="703"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                        <string key="text">The purpose of this venture is to collect data that is useful for diagnosis of COVID-19 patients based on voice analysis. If successful, we hope to use voice samples as a new screening method for early detection of COVID-19 infection. However, at this stage, we are simply collecting information to be made available for the research community and advance rapid new techniques for COVID-19 detection.
-You will be shown a short questionnaire to collect demographic information, as well as an indication whether or not you have been tested positive for COVID-19. You will be asked to provide a voice sample. We may request that you log-on using your GOOGLE™ account, to enable provisioning of multiple samples over time. 
-If you are interested in learning more about this study, please continue to read below.</string>
+                                                        <mutableString key="text">The purpose of this venture is to collect data that is useful for diagnosis of respiratory disease based on voice analysis. If successful, we hope to use voice samples as a new screening method for early detection of disease infection. However, at this stage, we are simply collecting information to be made available for the research community and advance rapid new techniques for detection.
+You will be shown a short questionnaire to collect demographic information, as well as an indication whether or not you have been tested positive for respiratory disease. You will be asked to provide a voice sample. We may request that you log-on using your GOOGLE™ account, to enable provisioning of multiple samples over time. 
+If you are interested in learning more about this study, please continue to read below.</mutableString>
                                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -742,7 +740,7 @@ By clicking the button, you are agreeing that you’ve had time to read and cons
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzI-Ds-x0e">
                                                 <rect key="frame" x="0.0" y="1641" width="375" height="703"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Corona Voice Detect" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RZP-47-Jfb">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="VoiceApp" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RZP-47-Jfb">
                                                         <rect key="frame" x="24" y="0.0" width="327" height="703"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -784,7 +782,7 @@ By clicking the button, you are agreeing that you’ve had time to read and cons
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8L8-yt-ik5">
                                                         <rect key="frame" x="24" y="0.0" width="327" height="703"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                        <string key="text">We hope to be able to assist in early and remote diagnosis of COVID-19 patients, to target suspected cases for expensive laboratory tests. 
+                                                        <string key="text">We hope to be able to assist in early and remote diagnosis of respiratory disease, to target suspected cases for expensive laboratory tests. 
 We have not identified any particular risk associated with your participation in this venture. </string>
                                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
@@ -825,8 +823,8 @@ We have not identified any particular risk associated with your participation in
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IDt-5a-Yiw">
                                                         <rect key="frame" x="24" y="0.0" width="327" height="703"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                        <string key="text">We will keep your information confidential and will not divulge any non-anonymized data. Anonymized dataset may be transferred to third parties. In particular, anonymized data may be transferred to third parties for COVID-19 related research purposes. 
-If you log-in using your GOOGLE™ identifier, we will not collect any information from your GOOGLE™ account other than your identifier. The identifier will be retained in a hashed manner, preventing us from being able to reconstruct your identifier, and being useful for the sole purpose of determining if a new identifier is identical to a previously retained one. </string>
+                                                        <mutableString key="text">We will keep your information confidential and will not divulge any non-anonymized data. Anonymized dataset may be transferred to third parties. In particular, anonymized data may be transferred to third parties for related research purposes. 
+If you log-in using your GOOGLE™ identifier, we will not collect any information from your GOOGLE™ account other than your identifier. The identifier will be retained in a hashed manner, preventing us from being able to reconstruct your identifier, and being useful for the sole purpose of determining if a new identifier is identical to a previously retained one. </mutableString>
                                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1504,8 +1502,8 @@ We thank you for your participation.</string>
                                     <constraint firstItem="Rqb-BR-nej" firstAttribute="top" secondItem="5et-6h-J0W" secondAttribute="top" constant="16" id="slB-Dt-HtV"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הקול שלך יכול  לנצח את הקורונה" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNn-uS-Pms">
-                                <rect key="frame" x="30" y="179.5" width="310" height="98.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הקול שלך יכול  לנצח מחלות נשימתיות" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNn-uS-Pms">
+                                <rect key="frame" x="30" y="130.5" width="310" height="147.5"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1615,7 +1613,7 @@ We thank you for your participation.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your voice can beat the COVID-19" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwp-Sw-MKJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your voice can beat respiratory disease" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwp-Sw-MKJ">
                                 <rect key="frame" x="80" y="276.5" width="215" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1748,7 +1746,7 @@ We thank you for your participation.</string>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoR-hK-Qjz">
                                 <rect key="frame" x="146.5" y="32" width="184.5" height="183"/>
-                                <string key="text">We Thank You! By using this app you are helping strengthen our collective knowledge about COVID-19, so we can get better at containing it, and ultimately defeat it. 
+                                <string key="text">We Thank You! By using this app you are helping strengthen our collective knowledge about respiratory disease, so we can get better at containing it, and ultimately defeat it. 
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1851,7 +1849,7 @@ We thank you for your participation.</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YL5-tv-KDp">
                                 <rect key="frame" x="20.5" y="72" width="334" height="132"/>
                                 <string key="text">With your voice sample
-we can beat the Coronavirus
+we can beat the respiratory ilness
 </string>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="27"/>
                                 <color key="textColor" red="0.13725490196078433" green="0.25098039215686274" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1966,10 +1964,10 @@ we can beat the Coronavirus
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor illustration toward-1" translatesAutoresizingMaskIntoConstraints="NO" id="Lpa-Du-xnQ">
-                                <rect key="frame" x="50" y="20" width="110" height="198"/>
+                                <rect key="frame" x="50" y="20" width="220" height="252"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF4-Ke-mc8" customClass="VoiceUpContinueButton" customModule="VoiceUp" customModuleProvider="target">
-                                <rect key="frame" x="75" y="519" width="225" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF4-Ke-mc8" customClass="VoiceUpContinueButton" customModule="VoiceUp" customModuleProvider="target">
+                                <rect key="frame" x="75" y="523" width="225" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="owz-tj-X5z"/>
                                 </constraints>
@@ -1987,7 +1985,7 @@ we can beat the Coronavirus
                                     <action selector="setNotification:" destination="vLR-P5-PtF" eventType="touchUpInside" id="WNj-2I-JLc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb0-El-mfu">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb0-El-mfu">
                                 <rect key="frame" x="169.5" y="617" width="36" height="30"/>
                                 <state key="normal" title="Later"/>
                                 <connections>
@@ -1995,22 +1993,22 @@ we can beat the Coronavirus
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="H1u-kr-GQJ">
-                                <rect key="frame" x="39" y="119" width="132" height="99"/>
+                                <rect key="frame" x="28" y="146" width="264" height="126"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc4-HP-oFY">
-                                <rect key="frame" x="168" y="20" width="199" height="20.5"/>
+                                <rect key="frame" x="278" y="20" width="89" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4g-Zj-hSK">
-                                <rect key="frame" x="50" y="238" width="275" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4g-Zj-hSK">
+                                <rect key="frame" x="50" y="238" width="275" height="25"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="98Y-50-Gk5">
-                                <rect key="frame" x="0.0" y="283" width="375" height="216"/>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="98Y-50-Gk5">
+                                <rect key="frame" x="0.0" y="287" width="375" height="216"/>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2230,7 +2228,7 @@ we can beat the Coronavirus
         <image name="doctors_background" width="182" height="124"/>
         <image name="heart_rate_icon" width="89" height="87"/>
         <image name="mic_white" width="45" height="45"/>
-        <image name="multiply" catalog="system" width="128" height="111"/>
+        <image name="multiply" catalog="system" width="64" height="54"/>
         <image name="partner_logo" width="78" height="33"/>
         <image name="partner_logo2" width="56" height="37"/>
         <image name="play_button" width="25" height="25"/>
