@@ -67,15 +67,14 @@ class RecordPresenter: BasePresenter {
         }
     }
     
-    func postRecord(recordName: String) {
+    func postRecord(recordName: String, completion: @escaping completion) {
         
         guard let file = audioFile(withName: recordName), let id = GlobalData.shared.currentMeasurementId else { return }
         
         APIManager.shared.postVoiceRecording(measurementId: id,
                                              withName: recordName,
-                                             file: file) { (res) in
-                                                
-        }
+                                             file: file,
+                                             completion: completion)
     }
     
     func audioFile(withName name: String) -> Data? {

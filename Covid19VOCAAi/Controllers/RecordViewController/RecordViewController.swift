@@ -123,7 +123,9 @@ class RecordViewController: UIViewController {
         self.audioVisualization.audioVisualizationMode = .read
         self.audioVisualization.meteringLevels = meterArr
         HUD.show(.progress)
-        presenter?.postRecord(recordName: instructions?.instruction.recordName ?? "")
+        presenter?.postRecord(recordName: instructions?.instruction.recordName ?? "", completion: { [weak self] res in
+            HUD.hide()
+        })
     }
     
     var meterArr = [Float]()

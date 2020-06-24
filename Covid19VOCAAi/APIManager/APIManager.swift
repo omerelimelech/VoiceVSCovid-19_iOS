@@ -45,20 +45,27 @@ class APIManager : NSObject {
     
     func postVoiceRecording(measurementId: Int, withName name: String, file: Data, completion: @escaping completion) {
         
-        let url = UrlManager.shared.url(endpoint: .voiceRecording)
+        guard let url = URL(string: UrlManager.shared.url(endpoint: .voiceRecording)) else {
+            return }
+        
+        let headers: HTTPHeaders = ["Authorization" : "JWT \(UserModel.shared.token?.access ?? "")", "Content-Type" : "application/json"]
         
         let audioMetadata = ["recordingType" : name, "fileFormat" : "wav"]
         let dataParameters = try? JSONEncoder().encode(audioMetadata)
         
         AF.upload(multipartFormData: { (multipart) in
-            
             multipart.append(file, withName: "recordingFile", fileName: UUID().uuidString, mimeType: "audio/wav")
             multipart.append("\(measurementId)".data(using: .utf8) ?? Data(), withName: "measurement")
             multipart.append(dataParameters ?? Data(), withName: "recordingMetadata")
-            
-        }, to: url).responseJSON { (res) in
-            print(res)
-            
+        },
+                  to: url,
+                  headers: headers).responseJSON { (response) in
+                    switch response.result{
+                    case .success(let json):
+                        completion(.success(json))
+                    case .failure(let error):
+                        completion(.failure(error))
+                    }
         }
     }
     
